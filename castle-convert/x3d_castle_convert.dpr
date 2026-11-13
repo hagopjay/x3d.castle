@@ -11,6 +11,10 @@
     --specular-max-f0=F      cap on the F0 asked of KHR_materials_specular (default 0.5)
     --text-quads             keep Text as untextured glyph-cell quads (off by default: Text is skipped)
     --light-scale=F          multiply X3D light intensity (default auto: pi for classic-Material scenes, 1 for PhysicalMaterial)
+    --text-atlas             Text as glyph quads textured with Castle's font atlas, alpha blended (default: Text is skipped)
+    --hidden-switch          also write unselected Switch choices, as nodes with KHR_node_visibility visible=false
+    --scope-lights           global=false point/spot lights: clamp the glTF range to the extent of their scope
+    --events-at=T            run TimeSensor/interpolator events to T seconds and write that state (default: the file as loaded)
     --verbose }
 program x3d_castle_convert;
 {$mode objfpc}{$H+}
@@ -40,6 +44,10 @@ begin
     else if Arg = '--no-phong-specular' then Opt.PhongSpecular := false
     else if Copy(Arg, 1, 18) = '--specular-max-f0=' then Opt.SpecularMaxF0 := StrToFloat(Copy(Arg, 19, Length(Arg)))
     else if Arg = '--text-quads' then Opt.TextQuads := true
+    else if Arg = '--text-atlas' then Opt.TextAtlas := true
+    else if Copy(Arg, 1, 12) = '--events-at=' then Opt.EventsAt := StrToFloat(Copy(Arg, 13, Length(Arg)))
+    else if Arg = '--hidden-switch' then Opt.HiddenSwitch := true
+    else if Arg = '--scope-lights' then Opt.ScopeLights := true
     else if Arg = '--verbose' then Opt.Verbose := true
     else if Arg = '--colour-space=srgb' then Opt.ColourSpace := csSrgb
     else if Arg = '--colour-space=as-is' then Opt.ColourSpace := csAsIs
@@ -58,7 +66,7 @@ begin
   begin
     Writeln('Usage: x3d-castle-convert in.x3d out.glb [--engine-writer] [--colour-space=as-is|srgb] ',
       '[--no-camera] [--no-lights] [--no-headlight] [--no-textures] [--no-phong-specular] [--specular-max-f0=F] [--text-quads] ',
-      '[--light-scale=F] [--verbose]');
+      '[--text-atlas] [--events-at=T] [--hidden-switch] [--scope-lights] [--light-scale=F] [--verbose]');
     Halt(2);
   end;
   ApplicationProperties.OnWarning.Add(@ApplicationProperties.WriteWarningOnConsole);
@@ -69,6 +77,15 @@ begin
       SaveNode(Root, OutFile, 'x3d-castle-convert (Castle Game Engine glTF writer)', InFile);
     finally FreeAndNil(Root); end;
   end else
+  try
     if not ExportScene(InFile, OutFile, Opt) then
       Halt(1);
+  except
+    on E: Exception do
+    begin
+      { a file the engine cannot read is a failed conversion, not a crash }
+      Writeln(ErrOutput, 'x3d-castle-convert: ', E.ClassName, ': ', E.Message);
+      Halt(1);
+    end;
+  end;
 end.

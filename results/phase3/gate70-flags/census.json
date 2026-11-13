@@ -1,0 +1,2425 @@
+{
+ "features": {
+  "texture": {
+   "x3d": 17,
+   "engine_writer": 0,
+   "shape_tree_exporter": 11
+  },
+  "vcolor": {
+   "x3d": 27,
+   "engine_writer": 0,
+   "shape_tree_exporter": 27
+  },
+  "light": {
+   "x3d": 43,
+   "engine_writer": 0,
+   "shape_tree_exporter": 41
+  },
+  "camera": {
+   "x3d": 55,
+   "engine_writer": 0,
+   "shape_tree_exporter": 55
+  },
+  "anim": {
+   "x3d": 21,
+   "engine_writer": 0,
+   "shape_tree_exporter": 0
+  },
+  "lines": {
+   "x3d": 17,
+   "engine_writer": 0,
+   "shape_tree_exporter": 16
+  },
+  "points": {
+   "x3d": 11,
+   "engine_writer": 0,
+   "shape_tree_exporter": 11
+  }
+ },
+ "meshes_engine": 2497,
+ "meshes_new": 3786,
+ "empty_engine": 12,
+ "empty_new": 12,
+ "rows": [
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__annotation-standard",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 7
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__annotation",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__geolod-origin",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lights-after",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lights-before",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lod-control",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lod-scaled",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": true,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 9
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": true,
+    "meshes": 14
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__nurbs-weights",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": true,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 11
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": true,
+    "meshes": 17
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 6
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__profile-tables",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 6
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__repair-0-written",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__repair-1-validator",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__repair-2-render",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stars-splats",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stars-view",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-stage",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40",
+   "x3d": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   }
+  },
+  {
+   "key": "docs__demos__confluence-ifc__v1__snapshot__scene-0",
+   "x3d": {
+    "texture": true,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 113
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 114
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 278
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 592
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__habsburg",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 238
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 509
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 16
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 14
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 22
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 12
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 12
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 10
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 10
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 18
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 18
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__rothschild",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 366
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 775
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 16
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 14
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": true,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 22
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 12
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 12
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 10
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 10
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 18
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 18
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 5
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 12
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": true,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 33
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": true,
+    "meshes": 42
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield",
+   "x3d": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 4
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": true,
+    "meshes": 2
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": false,
+    "anim": true,
+    "inline": true,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 92
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 99
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": true,
+    "meshes": 2
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials",
+   "x3d": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 12
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 16
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": true,
+    "meshes": 2
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": true,
+    "meshes": 2
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__source__bird",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": true,
+    "lines": true,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 141
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": true,
+    "meshes": 230
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__source__giza-nest",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": false,
+    "anim": true,
+    "inline": true,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 92
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 99
+   }
+  },
+  {
+   "key": "docs__demos__gobbler3-webgpu__v1__gobbler3",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": true,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 11
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": true,
+    "meshes": 20
+   }
+  },
+  {
+   "key": "docs__demos__heritage-facade__v1__facade",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__library-hall-webgpu__v1__hall",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": true,
+    "points": true,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 109
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": true,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": true,
+    "meshes": 130
+   }
+  },
+  {
+   "key": "docs__demos__loomsong__v1__worlds__ode",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 11
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 11
+   }
+  },
+  {
+   "key": "docs__demos__loomsong__v1__worlds__turca",
+   "x3d": {
+    "texture": true,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 30
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 30
+   }
+  },
+  {
+   "key": "docs__demos__manifold-webgpu__v1__scenes__manifold",
+   "x3d": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": true,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 4
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": true,
+    "light": false,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": true,
+    "meshes": 6
+   }
+  },
+  {
+   "key": "docs__demos__material-odyssey-webgpu__v1__odyssey",
+   "x3d": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": true,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 285
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 285
+   }
+  },
+  {
+   "key": "docs__demos__ontology-constellation__v1__ontology-constellation",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": true
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 484
+   },
+   "new_glb": {
+    "texture": true,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 515
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__chirp__scenes__chirp",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__electron-cloud__scenes__cloud",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 3
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 3
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__living-heart__scenes__heart",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__turing-garden__scenes__garden",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": true,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 1
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": true,
+    "points": false,
+    "meshes": 1
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__vortex-sound__scenes__vortex",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 2
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  },
+  {
+   "key": "docs__demos__tether-firehose__v4__data__physics-ledger",
+   "x3d": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "inline": false,
+    "lines": false,
+    "points": false,
+    "text": false
+   },
+   "old_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": false,
+    "camera": false,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   },
+   "new_glb": {
+    "texture": false,
+    "vcolor": false,
+    "light": true,
+    "camera": true,
+    "anim": false,
+    "lines": false,
+    "points": false,
+    "meshes": 0
+   }
+  }
+ ]
+}

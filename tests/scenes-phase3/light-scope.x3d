@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="DirectionalLight global=false inside one group: scope recorded as extras; PointLight global=false with --scope-lights gets a range"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Group DEF="GroupA">
+ <DirectionalLight DEF="ScopedSun" direction="0 -1 0" global="false" intensity="1"/>
+ <PointLight DEF="ScopedPoint" location="0 1 0" global="false" intensity="2" radius="100"/>
+ <Transform translation="-6 0 0"><Shape><Appearance><PhysicalMaterial baseColor="0.8 0.8 0.8"/></Appearance><Sphere/></Shape></Transform>
+</Group>
+<Group DEF="GroupB">
+ <Transform translation="6 0 0"><Shape><Appearance><PhysicalMaterial baseColor="0.8 0.8 0.8"/></Appearance><Sphere/></Shape></Transform>
+</Group>
+</Scene>
+</X3D>

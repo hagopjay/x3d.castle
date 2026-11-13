@@ -1,0 +1,5 @@
+[export] Viewpoint "": fov 0.7854 rad
+[export] 1 active shapes
+[export] image 0: image/png file://tests/scenes-phase3/img/checker.png, 104 bytes
+[export] shape 0 shape_0: 2 verts, 2 indices, mode 0, material 0, uv=y col=n nrm=n
+[export] light units AUTO: physical scene (0 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800

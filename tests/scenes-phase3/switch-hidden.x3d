@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="Switch with whichChoice=-1 and one with whichChoice=1: with --hidden-switch the unselected choices are written as nodes with KHR_node_visibility visible=false"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
+<Switch DEF="Frames" whichChoice="-1">
+ <Transform translation="-2 0 0"><Shape><Appearance><PhysicalMaterial baseColor="1 0 0"/></Appearance><Box/></Shape></Transform>
+ <Transform translation="0 0 0"><Shape><Appearance><PhysicalMaterial baseColor="0 1 0"/></Appearance><Box/></Shape></Transform>
+</Switch>
+<Switch DEF="Pick" whichChoice="1">
+ <Shape><Appearance><PhysicalMaterial baseColor="0 0 1"/></Appearance><Sphere radius="0.5"/></Shape>
+ <Transform translation="2 0 0"><Shape><Appearance><PhysicalMaterial baseColor="1 1 0"/></Appearance><Sphere radius="0.5"/></Shape></Transform>
+</Switch>
+</Scene>
+</X3D>

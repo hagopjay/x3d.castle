@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="PhysicalMaterial with only baseColor (metallic and roughness at their X3D defaults of 1): PasGLTF drops pbrMetallicRoughness unless the exporter keeps it"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
+<Shape><Appearance><PhysicalMaterial baseColor="1 1 0" transparency="0.25"/></Appearance><Sphere radius="0.5"/></Shape>
+</Scene>
+</X3D>

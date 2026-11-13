@@ -1,0 +1,23 @@
+[
+ {
+  "file": "results/phase3/fixtures/tangent-normalmap.glb",
+  "bytes": 2476,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 2,
+   "vertices": 6,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

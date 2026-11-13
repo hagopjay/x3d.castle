@@ -1,0 +1,6 @@
+[export] Viewpoint "": fov 0.7854 rad
+[export] 1 active shapes
+[export] image 0: image/png , 274268 bytes
+[export] shape 0 shape_0: 54 verts, 54 indices, mode 4, material 0, uv=y col=n nrm=y
+[export] light units AUTO: classic scene (1 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.799
+[export] light light_0: directional, X3D intensity 1.000 written 3.1416

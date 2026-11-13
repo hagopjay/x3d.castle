@@ -1,0 +1,23 @@
+[
+ {
+  "file": "results/phase3/fixtures/text-default.glb",
+  "bytes": 732,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

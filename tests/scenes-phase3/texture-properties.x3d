@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="TextureProperties: NEAREST filters and MIRRORED_REPEAT boundary mode must reach the glTF sampler"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
+<Shape>
+ <Appearance>
+  <Material diffuseColor="1 1 1"/>
+  <ImageTexture url='"img/checker.png"' repeatS="true" repeatT="true">
+   <TextureProperties containerField="textureProperties" magnificationFilter="NEAREST_PIXEL" minificationFilter="NEAREST_PIXEL" generateMipMaps="false" boundaryModeS="MIRRORED_REPEAT" boundaryModeT="CLAMP_TO_EDGE"/>
+  </ImageTexture>
+ </Appearance>
+ <IndexedFaceSet coordIndex="0 1 2 3 -1" solid="false">
+ <Coordinate point="-1 -1 0, 1 -1 0, 1 1 0, -1 1 0"/>
+  <TextureCoordinate point="0 0, 3 0, 3 3, 0 3"/>
+ </IndexedFaceSet>
+</Shape>
+</Scene>
+</X3D>

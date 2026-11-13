@@ -1,0 +1,1545 @@
+[
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__annotation-standard.glb",
+  "bytes": 600996,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 7,
+   "materials": 7,
+   "triangles": 1504,
+   "vertices": 1247,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__annotation.glb",
+  "bytes": 302960,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 5,
+   "triangles": 376,
+   "vertices": 632,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth.glb",
+  "bytes": 700,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon.glb",
+  "bytes": 700,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin.glb",
+  "bytes": 612,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__geolod-origin.glb",
+  "bytes": 612,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__lights-after.glb",
+  "bytes": 24384,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 974,
+   "vertices": 601,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__lights-before.glb",
+  "bytes": 24404,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 974,
+   "vertices": 601,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__lod-control.glb",
+  "bytes": 2216,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 12,
+   "vertices": 24,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__lod-scaled.glb",
+  "bytes": 2336,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 12,
+   "vertices": 24,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied.glb",
+  "bytes": 476536,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 14,
+   "materials": 14,
+   "triangles": 8386,
+   "vertices": 5490,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights.glb",
+  "bytes": 519696,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 17,
+   "materials": 17,
+   "triangles": 10614,
+   "vertices": 6636,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed.glb",
+  "bytes": 327560,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 6,
+   "materials": 6,
+   "triangles": 1684,
+   "vertices": 1339,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables.glb",
+  "bytes": 327560,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 6,
+   "materials": 6,
+   "triangles": 1684,
+   "vertices": 1339,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz.glb",
+  "bytes": 292732,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 286,
+   "vertices": 386,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw.glb",
+  "bytes": 292732,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 286,
+   "vertices": 386,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__repair-0-written.glb",
+  "bytes": 94580,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 4560,
+   "vertices": 2604,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__repair-1-validator.glb",
+  "bytes": 94580,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 4560,
+   "vertices": 2604,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__repair-2-render.glb",
+  "bytes": 94524,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 4560,
+   "vertices": 2604,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__stars-splats.glb",
+  "bytes": 700,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__stars-view.glb",
+  "bytes": 648,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k.glb",
+  "bytes": 1052,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-stage.glb",
+  "bytes": 1241240,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 5,
+   "triangles": 27560,
+   "vertices": 14705,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40.glb",
+  "bytes": 1241088,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 5,
+   "triangles": 27560,
+   "vertices": 14705,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__confluence-ifc__v1__snapshot__scene-0.glb",
+  "bytes": 326564,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_node_visibility"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 114,
+   "materials": 11,
+   "triangles": 11306,
+   "vertices": 6514,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood.glb",
+  "bytes": 1615112,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 592,
+   "materials": 592,
+   "triangles": 6060,
+   "vertices": 18633,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__habsburg.glb",
+  "bytes": 1456332,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 509,
+   "materials": 509,
+   "triangles": 5434,
+   "vertices": 17225,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood.glb",
+  "bytes": 836204,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 16,
+   "materials": 14,
+   "triangles": 31628,
+   "vertices": 26214,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg.glb",
+  "bytes": 985928,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 14,
+   "materials": 12,
+   "triangles": 36468,
+   "vertices": 31322,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild.glb",
+  "bytes": 1395484,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 22,
+   "materials": 20,
+   "triangles": 49716,
+   "vertices": 44754,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood.glb",
+  "bytes": 2599172,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 12,
+   "materials": 12,
+   "triangles": 22668,
+   "vertices": 21732,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg.glb",
+  "bytes": 3822064,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 5,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 10,
+   "materials": 10,
+   "triangles": 27508,
+   "vertices": 26840,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild.glb",
+  "bytes": 5778216,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 8,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 18,
+   "materials": 18,
+   "triangles": 40756,
+   "vertices": 40272,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__rothschild.glb",
+  "bytes": 1941980,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 775,
+   "materials": 775,
+   "triangles": 7024,
+   "vertices": 21831,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood.glb",
+  "bytes": 836216,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 16,
+   "materials": 14,
+   "triangles": 31628,
+   "vertices": 26214,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg.glb",
+  "bytes": 985940,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 14,
+   "materials": 12,
+   "triangles": 36468,
+   "vertices": 31322,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild.glb",
+  "bytes": 1395496,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 22,
+   "materials": 20,
+   "triangles": 49716,
+   "vertices": 44754,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood.glb",
+  "bytes": 2599188,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 12,
+   "materials": 12,
+   "triangles": 22668,
+   "vertices": 21732,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg.glb",
+  "bytes": 3822080,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 5,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 10,
+   "materials": 10,
+   "triangles": 27508,
+   "vertices": 26840,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild.glb",
+  "bytes": 5778232,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 8,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 18,
+   "materials": 18,
+   "triangles": 40756,
+   "vertices": 40272,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds.glb",
+  "bytes": 287544,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 2267,
+   "vertices": 6801,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon.glb",
+  "bytes": 147792,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 1280,
+   "vertices": 3840,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet.glb",
+  "bytes": 585568,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 5120,
+   "vertices": 15360,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village.glb",
+  "bytes": 2413304,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 5,
+   "triangles": 21114,
+   "vertices": 63342,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers.glb",
+  "bytes": 580660,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 12,
+   "materials": 3,
+   "triangles": 4496,
+   "vertices": 13488,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3.glb",
+  "bytes": 1670316,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 42,
+   "materials": 42,
+   "triangles": 15399,
+   "vertices": 39640,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield.glb",
+  "bytes": 7576104,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 240700,
+   "vertices": 123156,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky.glb",
+  "bytes": 122904,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 3332,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest.glb",
+  "bytes": 666724,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 99,
+   "materials": 99,
+   "triangles": 21972,
+   "vertices": 17220,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky.glb",
+  "bytes": 122904,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 3332,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials.glb",
+  "bytes": 2854912,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_texture_transform",
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 16,
+   "materials": 15,
+   "triangles": 11988,
+   "vertices": 24864,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky.glb",
+  "bytes": 122904,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 3332,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon.glb",
+  "bytes": 700,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky.glb",
+  "bytes": 122904,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 3332,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__source__bird.glb",
+  "bytes": 3931380,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 230,
+   "materials": 177,
+   "triangles": 51440,
+   "vertices": 102720,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler-worlds-within__v1__source__giza-nest.glb",
+  "bytes": 666408,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_materials_specular",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 99,
+   "materials": 99,
+   "triangles": 21972,
+   "vertices": 17220,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__gobbler3-webgpu__v1__gobbler3.glb",
+  "bytes": 566892,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 20,
+   "materials": 20,
+   "triangles": 6853,
+   "vertices": 14002,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__heritage-facade__v1__facade.glb",
+  "bytes": 612,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__library-hall-webgpu__v1__hall.glb",
+  "bytes": 47098764,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 39,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 130,
+   "materials": 130,
+   "triangles": 142658,
+   "vertices": 435908,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__loomsong__v1__worlds__ode.glb",
+  "bytes": 1201300,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_materials_specular"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 11,
+   "materials": 11,
+   "triangles": 22284,
+   "vertices": 33525,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__loomsong__v1__worlds__turca.glb",
+  "bytes": 1807808,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_materials_specular"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 30,
+   "materials": 30,
+   "triangles": 60686,
+   "vertices": 53696,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__manifold-webgpu__v1__scenes__manifold.glb",
+  "bytes": 12682592,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_materials_specular"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 6,
+   "materials": 6,
+   "triangles": 525390,
+   "vertices": 267382,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__material-odyssey-webgpu__v1__odyssey.glb",
+  "bytes": 37227676,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_texture_transform",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 285,
+   "materials": 100,
+   "triangles": 107606,
+   "vertices": 218272,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__ontology-constellation__v1__ontology-constellation.glb",
+  "bytes": 9937184,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 515,
+   "materials": 151,
+   "triangles": 461010,
+   "vertices": 267971,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__stem__v1__chirp__scenes__chirp.glb",
+  "bytes": 48888,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 2280,
+   "vertices": 1302,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__stem__v1__electron-cloud__scenes__cloud.glb",
+  "bytes": 50572,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_specular",
+   "KHR_materials_unlit",
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 2280,
+   "vertices": 1310,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__stem__v1__living-heart__scenes__heart.glb",
+  "bytes": 2112,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__stem__v1__turing-garden__scenes__garden.glb",
+  "bytes": 3436,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 0,
+   "vertices": 8,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__stem__v1__vortex-sound__scenes__vortex.glb",
+  "bytes": 2172,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "out/final70-flags/glb/docs__demos__tether-firehose__v4__data__physics-ledger.glb",
+  "bytes": 700,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

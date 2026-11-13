@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="MultiTextureCoordinate with mapping names: baseTexture uses set A (TEXCOORD_0), emissiveTexture uses set B (TEXCOORD_1, texCoord 1)"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
+<Shape>
+ <Appearance>
+  <PhysicalMaterial baseColor="1 1 1" baseTextureMapping="A" emissiveTextureMapping="B" roughness="0.8">
+   <ImageTexture containerField="baseTexture" url='"img/checker.png"'/>
+   <ImageTexture containerField="emissiveTexture" url='"img/half-alpha.png"'/>
+  </PhysicalMaterial>
+ </Appearance>
+ <IndexedFaceSet coordIndex="0 1 2 3 -1" solid="false">
+  <Coordinate point="-1 -1 0, 1 -1 0, 1 1 0, -1 1 0"/>
+  <MultiTextureCoordinate>
+   <TextureCoordinate mapping="A" point="0 0, 1 0, 1 1, 0 1"/>
+   <TextureCoordinate mapping="B" point="0 0, 4 0, 4 4, 0 4"/>
+  </MultiTextureCoordinate>
+ </IndexedFaceSet>
+</Shape>
+</Scene>
+</X3D>

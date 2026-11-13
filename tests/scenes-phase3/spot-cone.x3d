@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="SpotLight beamWidth/cutOffAngle to inner/outer cone, radius to range; a second spot with beamWidth above cutOffAngle"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Shape><Appearance><PhysicalMaterial baseColor="0.8 0.8 0.8"/></Appearance><Box size="4 0.1 4"/></Shape>
+<SpotLight DEF="S1" location="0 3 0" direction="0 -1 0" beamWidth="0.3" cutOffAngle="0.8" radius="12" intensity="2" color="1 0.9 0.7"/>
+<SpotLight DEF="S2" location="2 3 0" direction="0 -1 0" beamWidth="1.2" cutOffAngle="0.5" intensity="1"/>
+</Scene>
+</X3D>

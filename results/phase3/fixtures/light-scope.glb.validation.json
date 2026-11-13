@@ -1,0 +1,23 @@
+[
+ {
+  "file": "results/phase3/fixtures/light-scope.glb",
+  "bytes": 47672,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 2280,
+   "vertices": 1302,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

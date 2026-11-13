@@ -1,0 +1,144 @@
+{
+ "text-atlas": {
+  "base": [
+   6.9,
+   6.9
+  ],
+  "new": [
+   6.9,
+   6.9
+  ],
+  "flags": [
+   9.41,
+   9.41
+  ]
+ },
+ "texture-properties": {
+  "base": [
+   9.68,
+   9.68
+  ],
+  "new": [
+   0.34,
+   0.34
+  ],
+  "flags": [
+   0.34,
+   0.34
+  ]
+ },
+ "texcoord-sets": {
+  "base": [
+   32.06,
+   32.06
+  ],
+  "new": [
+   32.06,
+   32.06
+  ],
+  "flags": [
+   32.06,
+   32.06
+  ],
+  "final_after_emissive_fix": 2.87
+ },
+ "alpha-modes": {
+  "base": [
+   5.06,
+   5.06
+  ],
+  "new": [
+   1.92,
+   1.92
+  ],
+  "flags": [
+   1.92,
+   1.92
+  ]
+ },
+ "tangent-normalmap": {
+  "base": [
+   0.23,
+   0.23
+  ],
+  "new": [
+   0.23,
+   0.23
+  ],
+  "flags": [
+   0.23,
+   0.23
+  ]
+ },
+ "spot-cone": {
+  "base": [
+   0.0,
+   0.0
+  ],
+  "new": [
+   0.0,
+   0.0
+  ],
+  "flags": [
+   0.0,
+   0.0
+  ]
+ },
+ "light-scope": {
+  "base": [
+   0.0,
+   0.0
+  ],
+  "new": [
+   0.0,
+   0.0
+  ],
+  "flags": [
+   0.0,
+   0.0
+  ]
+ },
+ "switch-hidden": {
+  "base": [
+   2.26,
+   2.26
+  ],
+  "new": [
+   0.94,
+   0.94
+  ],
+  "flags": [
+   0.94,
+   0.94
+  ]
+ },
+ "emissive-strength": {
+  "base": [
+   0.16,
+   0.16
+  ],
+  "new": [
+   0.16,
+   0.16
+  ],
+  "flags": [
+   0.16,
+   0.16
+  ]
+ },
+ "light-extras": {
+  "base": [
+   6.84,
+   6.84
+  ],
+  "new": [
+   4.44,
+   4.44
+  ],
+  "flags": [
+   4.44,
+   4.44
+  ]
+ },
+ "_note": "mean abs difference from X_ITE 16.7.1, Babylon 9.32, Chromium 153 SwiftShader; base=phase 2 binary, new=this PR default, flags=--text-atlas --hidden-switch --scope-lights; 2 repeats; texcoord-sets re-run once after the emissive fix"
+}

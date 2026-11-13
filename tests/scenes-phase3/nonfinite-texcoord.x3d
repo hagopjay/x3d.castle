@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="A textured PointSet of two points on one line: Castle generates texture coordinates from the bounding box, which has zero extent in two axes (NaN); the glb must hold finite numbers"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Shape><Appearance><PointProperties pointSizeScaleFactor="8"/><ImageTexture url='"img/checker.png"'/></Appearance>
+<PointSet><Coordinate point="0 0 0, 1 0 0"/></PointSet></Shape>
+</Scene>
+</X3D>

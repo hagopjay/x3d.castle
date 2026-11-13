@@ -33,6 +33,10 @@ type
     TextQuads: Boolean;     // keep Text as Castle's untextured glyph-cell quads (off by default: they read as solid bars)
     ColourSpace: TColourSpaceMode; // csSrgb: classic (display-space) colours to linear
     LightScale: Single;     // multiplies X3D light intensity; 0 = auto (pi when the lit shapes are mostly classic Material, else 1)
+    TextAtlas: Boolean;     // Text as glyph quads textured with Castle's font atlas (alpha blended); off: Text is skipped
+    EventsAt: Single;       // >= 0: run the scene's events and write the state at this time (seconds); -1 = file as loaded
+    HiddenSwitch: Boolean;  // write unselected Switch choices too, as nodes with KHR_node_visibility visible=false
+    ScopeLights: Boolean;   // global=false point/spot lights: clamp the glTF range to the extent of their scope
     Verbose: Boolean;
   end;
 
@@ -48,7 +52,7 @@ uses SysUtils, Classes, Math, TypInfo, Generics.Collections,
   CastlePasGLTF, CastlePasJSON,
   CastleUtils, CastleVectors, CastleLog, CastleClassUtils, CastleStringUtils,
   CastleDownload, CastleUriUtils, CastleImages, CastleRenderOptions,
-  CastleSceneCore, CastleShapes, X3DNodes, X3DFields,
+  CastleSceneCore, CastleShapes, CastleBoxes, X3DNodes, X3DFields,
   CastleInternalGeometryArrays, CastleInternalGLUtils;
 
 function DefaultExportOptions: TExportOptions;
@@ -62,6 +66,10 @@ begin
   Result.TextQuads := false;
   Result.ColourSpace := csSrgb;
   Result.LightScale := 0; { 0 = auto }
+  Result.TextAtlas := false;
+  Result.HiddenSwitch := false;
+  Result.EventsAt := -1;
+  Result.ScopeLights := false;
   Result.Verbose := false;
 end;
 
@@ -88,7 +96,7 @@ type
     Scene: TCastleSceneCore;
     CameraNode: Integer;
     { stats }
-    NShapes, NShapesSkipped, NTextSkipped, NVerts, NTris, NLineSegs, NPoints: Integer;
+    NShapes, NShapesSkipped, NTextSkipped, NVerts, NTris, NLineSegs, NPoints, NNonFinite: Integer;
     NMaterials, NTextures, NImages, NLights, NCameras: Integer;
     NVertexColourShapes, NTexturedShapes, NUnlitMaterials, NBaked: Integer;
     ImageBytes: Int64;
@@ -103,6 +111,19 @@ type
     CamPos, CamDir, CamUp: TVector3;
     CamFov: Single;
     CamFromViewpoint: Boolean;
+    SamplerCodes: array of array [0..3] of Integer; { min, mag, wrapS, wrapT per glTF sampler (see WriteOut) }
+    NTangentsGenerated, NEmissiveStrength, NTexCoordSets: Integer;
+    { exported shapes: the X3D Shape node, the glTF node it became, its world box (light scopes, hidden switch) }
+    ExpShapeNode: array of Pointer;
+    ExpGltfNode: array of Integer;
+    ExpBox: array of TBox3D;
+    NLightsGlobalFalse, NLightsScoped, NLightsUnscopable, NLightsRangeClamped, NLightsOff: Integer;
+    NHiddenSwitchNodes, NTextExported, NSceneExtras: Integer;
+    TextFontTex: TAbstractTexture2DNode; { set while a Text shape is exported with --text-atlas }
+    HiddenNow: Boolean;                  { set while an unselected Switch choice is exported }
+    HiddenSwitch: String;
+    HiddenChoice: Integer;
+    SceneExtrasJson: String;
 
     constructor Create;
     destructor Destroy; override;
@@ -116,19 +137,26 @@ type
     function GetImage(const T2: TAbstractTexture2DNode): Integer;
     function GetTexture(const Tex: TAbstractTextureNode): Integer;
     procedure SetTexInfo(const Info: TPasGLTF.TMaterial.TTexture; const TexIdx: Integer;
-      const App: TAppearanceNode);
+      const App: TAppearanceNode; const TexCoordSet: Integer);
+    function TexSetOf(const Geom: TAbstractGeometryNode; const Mapping: String): Integer;
+    procedure SetEmissive(const GM: TPasGLTF.TMaterial; const E: TVector3);
     function GetMaterial(const Shape: TShape; const G: TGeometryArrays; const Lines: Boolean): Integer;
     procedure ExportShape(const Shape: TShape; const Index: Integer);
     procedure ResolveCamera;
     procedure UpdateLods(const T: TShapeTree);
     procedure ExportCamera;
     procedure ExportLights;
+    procedure ExportSceneExtras;
+    procedure ExportHiddenSwitchChoices(const Active: TShapeList);
+    procedure ScopeOf(const Parent: TX3DNode; out Covers: Boolean; out Nodes: TPasJSONItemArray;
+      out Box: TBox3D);
     procedure PrepareLightUnits;
     function Level(const X: Single): Single;
     function ReferenceDistance(const Origin: TVector3; const Radius: Single;
       const HasAxis: Boolean; const Axis: TVector3; const CutOff: Single): Single;
     function AddLightNode(const LightIdx: Integer; const M: TPasGLTF.TMatrix4x4;
       const Name: String; const Parent: Integer): Integer;
+    procedure WriteOut(const Stream: TStream; const IsBinary: Boolean);
     function Run(const InUrl, OutFile: String): Boolean;
     function JsonReport(const InUrl, OutFile: String): String;
   end;
@@ -257,12 +285,26 @@ var
   Acc: TPasGLTF.TAccessor;
   N, I, C: Integer;
   Mn, Mx: array [0..3] of Single;
+  Clean: TSingleArray;
 begin
   N := Length(A) div Comps;
   if N = 0 then
     Exit(-1);
+  { glTF forbids NaN and Infinity in an accessor (validator ACCESSOR_INVALID_FLOAT). Castle's arrays can hold them, for
+    example the generated texture coordinates of a degenerate line set. Write 0 for those values and count them. }
+  Clean := nil;
+  for I := 0 to Length(A) - 1 do
+    if IsNan(A[I]) or IsInfinite(A[I]) then
+    begin
+      if Clean = nil then
+        Clean := Copy(A);
+      Clean[I] := 0;
+      Inc(NNonFinite);
+    end;
+  if Clean = nil then
+    Clean := A;
   Acc := TPasGLTF.TAccessor.Create(Doc);
-  Acc.BufferView := AddView(A[0], Length(A) * SizeOf(Single), TPasGLTF.TBufferView.TTargetType.ArrayBuffer);
+  Acc.BufferView := AddView(Clean[0], Length(Clean) * SizeOf(Single), TPasGLTF.TBufferView.TTargetType.ArrayBuffer);
   Acc.ByteOffset := 0;
   Acc.ComponentType := TPasGLTF.TAccessor.TComponentType.Float;
   case Comps of
@@ -276,14 +318,14 @@ begin
   begin
     for C := 0 to Comps - 1 do
     begin
-      Mn[C] := A[C];
-      Mx[C] := A[C];
+      Mn[C] := Clean[C];
+      Mx[C] := Clean[C];
     end;
     for I := 1 to N - 1 do
       for C := 0 to Comps - 1 do
       begin
-        if A[I * Comps + C] < Mn[C] then Mn[C] := A[I * Comps + C];
-        if A[I * Comps + C] > Mx[C] then Mx[C] := A[I * Comps + C];
+        if Clean[I * Comps + C] < Mn[C] then Mn[C] := Clean[I * Comps + C];
+        if Clean[I * Comps + C] > Mx[C] then Mx[C] := Clean[I * Comps + C];
       end;
     case Comps of
       2: begin Acc.MinArray.Add([Mn[0], Mn[1]]); Acc.MaxArray.Add([Mx[0], Mx[1]]); end;
@@ -414,6 +456,10 @@ var
   Sm: TPasGLTF.TSampler;
   Tx: TPasGLTF.TTexture;
   Img: Integer;
+  Props: TTexturePropertiesNode;
+  WS, WT: TPasGLTF.TSampler.TWrappingMode;
+  Mag: TPasGLTF.TSampler.TMagFilter;
+  Min: TPasGLTF.TSampler.TMinFilter;
 
   function Wrap(const R: Boolean): TPasGLTF.TSampler.TWrappingMode;
   begin
@@ -421,6 +467,18 @@ var
       Result := TPasGLTF.TSampler.TWrappingMode.Repeat_
     else
       Result := TPasGLTF.TSampler.TWrappingMode.ClampToEdge;
+  end;
+
+  { X3D TextureProperties boundary modes replace repeatS/T (Castle does the same). CLAMP_TO_BOUNDARY
+    is not in glTF; Castle draws it as CLAMP_TO_EDGE too. }
+  function WrapMode(const M: TBoundaryMode): TPasGLTF.TSampler.TWrappingMode;
+  begin
+    case M of
+      bmRepeat: Result := TPasGLTF.TSampler.TWrappingMode.Repeat_;
+      bmMirroredRepeat: Result := TPasGLTF.TSampler.TWrappingMode.MirroredRepeat;
+    else
+      Result := TPasGLTF.TSampler.TWrappingMode.ClampToEdge;
+    end;
   end;
 
 begin
@@ -437,7 +495,27 @@ begin
     Exit;
   end;
   T2 := TAbstractTexture2DNode(T);
-  Key := PtrKey(T2) + '|' + BoolToStr(T2.RepeatS, '1', '0') + BoolToStr(T2.RepeatT, '1', '0');
+  Props := T2.TextureProperties;
+  WS := Wrap(T2.RepeatS);
+  WT := Wrap(T2.RepeatT);
+  Mag := TPasGLTF.TSampler.TMagFilter.Linear;
+  Min := TPasGLTF.TSampler.TMinFilter.LinearMipMapLinear;
+  if Props <> nil then
+  begin
+    WS := WrapMode(Props.BoundaryModeS);
+    WT := WrapMode(Props.BoundaryModeT);
+    case Props.MagnificationFilter of
+      magNearest, magFastest: Mag := TPasGLTF.TSampler.TMagFilter.Nearest;
+    end;
+    case Props.MinificationFilter of
+      minNearest, minFastest: Min := TPasGLTF.TSampler.TMinFilter.Nearest;
+      minLinear: Min := TPasGLTF.TSampler.TMinFilter.Linear;
+      minNearestMipmapNearest: Min := TPasGLTF.TSampler.TMinFilter.NearestMipMapNearest;
+      minNearestMipmapLinear: Min := TPasGLTF.TSampler.TMinFilter.NearestMipMapLinear;
+      minLinearMipmapNearest: Min := TPasGLTF.TSampler.TMinFilter.LinearMipMapNearest;
+    end;
+  end;
+  Key := PtrKey(T2) + '|' + IntToStr(Ord(WS)) + IntToStr(Ord(WT)) + IntToStr(Ord(Mag)) + IntToStr(Ord(Min));
   if TexCache.TryGetValue(Key, Result) then
     Exit;
   Result := -1;
@@ -450,11 +528,16 @@ begin
   if Img < 0 then
     Exit;
   Sm := TPasGLTF.TSampler.Create(Doc);
-  Sm.WrapS := Wrap(T2.RepeatS);
-  Sm.WrapT := Wrap(T2.RepeatT);
-  Sm.MagFilter := TPasGLTF.TSampler.TMagFilter.Linear;
-  Sm.MinFilter := TPasGLTF.TSampler.TMinFilter.LinearMipMapLinear;
+  Sm.WrapS := WS;
+  Sm.WrapT := WT;
+  Sm.MagFilter := Mag;
+  Sm.MinFilter := Min;
   Doc.Samplers.Add(Sm);
+  SetLength(SamplerCodes, Doc.Samplers.Count);
+  SamplerCodes[High(SamplerCodes)][0] := Ord(Min);
+  SamplerCodes[High(SamplerCodes)][1] := Ord(Mag);
+  SamplerCodes[High(SamplerCodes)][2] := Ord(WS);
+  SamplerCodes[High(SamplerCodes)][3] := Ord(WT);
   Tx := TPasGLTF.TTexture.Create(Doc);
   Tx.Source := Img;
   Tx.Sampler := Doc.Samplers.Count - 1;
@@ -467,7 +550,7 @@ end;
 { Fill a glTF textureInfo. X3D TextureTransform becomes KHR_texture_transform: build the X3D
   3x3 (T * C * R * S * C^-1), conjugate by the V flip, read offset / rotation / scale. }
 procedure TExporter.SetTexInfo(const Info: TPasGLTF.TMaterial.TTexture; const TexIdx: Integer;
-  const App: TAppearanceNode);
+  const App: TAppearanceNode; const TexCoordSet: Integer);
 var
   TT: TTextureTransformNode;
   Cs, Sn, Sx, Sy, Cx, Cy, Tx, Ty: Double;
@@ -479,7 +562,7 @@ var
   Rot, S0, S1: Double;
 begin
   Info.Index := TexIdx;
-  Info.TexCoord := 0;
+  Info.TexCoord := TexCoordSet;
   if (App = nil) or not (App.TextureTransform is TTextureTransformNode) then
     Exit;
   TT := TTextureTransformNode(App.TextureTransform);
@@ -526,6 +609,42 @@ end;
 
 { Materials ------------------------------------------------------------------ }
 
+{ Which TEXCOORD_n a material texture reads: X3D 4.0 texture mapping names ("A" in
+  baseTextureMapping) are matched to the MultiTextureCoordinate children by Castle itself. }
+function TExporter.TexSetOf(const Geom: TAbstractGeometryNode; const Mapping: String): Integer;
+begin
+  Result := 0;
+  if (Geom = nil) or (Mapping = '') then
+    Exit;
+  Geom.FindTextureMapping(Mapping, Result, false);
+  if Result < 0 then
+  begin
+    Result := 0;
+    Warn('texture mapping "' + Mapping + '" matches no texture coordinate node: set 0 used');
+  end;
+end;
+
+{ glTF emissiveFactor is in 0..1 (the validator rejects more); X3D emissiveColor is not clamped. A colour above 1
+  becomes emissiveFactor = colour / max and KHR_materials_emissive_strength = max. }
+procedure TExporter.SetEmissive(const GM: TPasGLTF.TMaterial; const E: TVector3);
+var
+  Mx: Single;
+  Ext: TPasJSONItemObject;
+begin
+  Mx := Max(E.X, Max(E.Y, E.Z));
+  if Mx > 1 then
+  begin
+    GM.EmissiveFactor := V3G(E / Mx);
+    Ext := TPasJSONItemObject.Create;
+    Ext.Add('emissiveStrength', TPasJSONItemNumber.Create(Mx));
+    GM.Extensions.Add('KHR_materials_emissive_strength', Ext);
+    if Doc.ExtensionsUsed.IndexOf('KHR_materials_emissive_strength') < 0 then
+      Doc.ExtensionsUsed.Add('KHR_materials_emissive_strength');
+    Inc(NEmissiveStrength);
+  end else
+    GM.EmissiveFactor := V3G(E);
+end;
+
 function TExporter.GetMaterial(const Shape: TShape; const G: TGeometryArrays;
   const Lines: Boolean): Integer;
 var
@@ -547,6 +666,11 @@ var
   MainTex: TAbstractTextureNode;
   Ext: TPasJSONItemObject;
   SpecArr: TPasJSONItemArray;
+  Geom: TAbstractGeometryNode;
+  { TEXCOORD sets the textures of this material read }
+  UvMain, UvMR, UvOcc, UvNormal, UvEmis: Integer;
+  OneSided: TAbstractOneSidedMaterialNode;
+  MI: TMaterialInfo;
 
   procedure UseExt(const Name: String);
   begin
@@ -564,10 +688,39 @@ begin
     Mat := App.Material;
   DoubleSided := not G.CullFace;
   AC := Shape.AlphaChannel;
+  Geom := Shape.OriginalGeometry;
+
+  UvMain := 0; UvMR := 0; UvOcc := 0; UvNormal := 0; UvEmis := 0;
+  if Mat <> nil then
+  begin
+    MI := Mat.MaterialInfo;
+    if (MI <> nil) and (Geom <> nil) then
+    begin
+      MI.MainTexture(App, nil, Geom, UvMain);
+      if UvMain < 0 then
+        UvMain := 0;
+    end;
+    if Mat is TAbstractOneSidedMaterialNode then
+    begin
+      OneSided := TAbstractOneSidedMaterialNode(Mat);
+      UvNormal := TexSetOf(Geom, OneSided.NormalTextureMapping);
+      UvEmis := TexSetOf(Geom, OneSided.EmissiveTextureMapping);
+    end;
+    if Mat is TPhysicalMaterialNode then
+    begin
+      UvMR := TexSetOf(Geom, TPhysicalMaterialNode(Mat).MetallicRoughnessTextureMapping);
+      UvOcc := TexSetOf(Geom, TPhysicalMaterialNode(Mat).OcclusionTextureMapping);
+    end else
+    if Mat is TMaterialNode then
+      UvOcc := TexSetOf(Geom, TMaterialNode(Mat).OcclusionTextureMapping);
+  end;
+  if (App <> nil) and (App.NormalMap <> nil) and (Mat = nil) then
+    UvNormal := 0;
 
   Key := PtrKey(App) + '|' + BoolToStr(DoubleSided, '1', '0') + '|' + IntToStr(Ord(G.ColorType)) + '|' +
     IntToStr(Ord(G.ColorMode)) + '|' + BoolToStr(Lines, '1', '0') + '|' + IntToStr(Ord(AC)) + '|' +
-    BoolToStr(G.ForceUnlit, '1', '0');
+    BoolToStr(G.ForceUnlit, '1', '0') + '|' + PtrKey(TextFontTex) + '|' + IntToStr(UvMain) + IntToStr(UvMR) + IntToStr(UvOcc) +
+    IntToStr(UvNormal) + IntToStr(UvEmis);
   if MatCache.TryGetValue(Key, Result) then
     Exit;
 
@@ -578,6 +731,8 @@ begin
 
   Unlit := Lines or G.ForceUnlit or (Mat = nil) or (Mat is TUnlitMaterialNode);
   MainTex := Shape.State.MainTexture;
+  if TextFontTex <> nil then
+    MainTex := TextFontTex;
   BaseTex := GetTexture(MainTex);
   Base := Vector4(1, 1, 1, 1);
 
@@ -600,7 +755,7 @@ begin
     GM.Extensions.Add('KHR_materials_unlit', TPasJSONItemObject.Create);
     UseExt('KHR_materials_unlit');
     if BaseTex >= 0 then
-      SetTexInfo(GM.PBRMetallicRoughness.BaseColorTexture, BaseTex, App);
+      SetTexInfo(GM.PBRMetallicRoughness.BaseColorTexture, BaseTex, App, UvMain);
   end else
   if Mat is TPhysicalMaterialNode then
   begin
@@ -612,26 +767,27 @@ begin
     GM.PBRMetallicRoughness.BaseColorFactor := V4G(Base);
     GM.PBRMetallicRoughness.MetallicFactor := Phys.Metallic;
     GM.PBRMetallicRoughness.RoughnessFactor := Phys.Roughness;
-    GM.EmissiveFactor := V3G(Phys.EmissiveColor);
+    SetEmissive(GM, Phys.EmissiveColor);
     if BaseTex >= 0 then
-      SetTexInfo(GM.PBRMetallicRoughness.BaseColorTexture, BaseTex, App);
+      SetTexInfo(GM.PBRMetallicRoughness.BaseColorTexture, BaseTex, App, UvMain);
     T := GetTexture(Phys.MetallicRoughnessTexture);
     if T >= 0 then
-      SetTexInfo(GM.PBRMetallicRoughness.MetallicRoughnessTexture, T, App);
+      SetTexInfo(GM.PBRMetallicRoughness.MetallicRoughnessTexture, T, App, UvMR);
     T := GetTexture(Phys.OcclusionTexture);
     if T >= 0 then
     begin
-      SetTexInfo(GM.OcclusionTexture, T, App);
+      SetTexInfo(GM.OcclusionTexture, T, App, UvOcc);
       GM.OcclusionTexture.Strength := Phys.OcclusionStrength;
     end;
     T := GetTexture(Phys.NormalTexture);
     if T >= 0 then
-      SetTexInfo(GM.NormalTexture, T, App);
+      SetTexInfo(GM.NormalTexture, T, App, UvNormal);
     T := GetTexture(Phys.EmissiveTexture);
     if T >= 0 then
     begin
-      SetTexInfo(GM.EmissiveTexture, T, App);
-      GM.EmissiveFactor := V3G(Vector3(1, 1, 1));
+      SetTexInfo(GM.EmissiveTexture, T, App, UvEmis);
+      { X3D multiplies the emissive texture by emissiveColor (X_ITE does too), so the colour is kept, black included:
+        a PhysicalMaterial with an emissiveTexture and the default emissiveColor 0 0 0 emits nothing, as in the X3D text. }
     end;
   end else
   begin
@@ -650,17 +806,22 @@ begin
     GM.PBRMetallicRoughness.RoughnessFactor := Roughness;
     GM.PBRMetallicRoughness.MetallicFactor := 0;
     Em := Phong.EmissiveColor;
-    GM.EmissiveFactor := V3G(Vector3(Lin(Em.X), Lin(Em.Y), Lin(Em.Z)));
+    SetEmissive(GM, Vector3(Lin(Em.X), Lin(Em.Y), Lin(Em.Z)));
     if BaseTex >= 0 then
-      SetTexInfo(GM.PBRMetallicRoughness.BaseColorTexture, BaseTex, App);
+      SetTexInfo(GM.PBRMetallicRoughness.BaseColorTexture, BaseTex, App, UvMain);
     T := GetTexture(Phong.NormalTexture);
     if T >= 0 then
-      SetTexInfo(GM.NormalTexture, T, App);
+      SetTexInfo(GM.NormalTexture, T, App, UvNormal);
+    T := GetTexture(Phong.OcclusionTexture);
+    if T >= 0 then
+    begin
+      SetTexInfo(GM.OcclusionTexture, T, App, UvOcc);
+      GM.OcclusionTexture.Strength := 1;
+    end;
     T := GetTexture(Phong.EmissiveTexture);
     if T >= 0 then
     begin
-      SetTexInfo(GM.EmissiveTexture, T, App);
-      GM.EmissiveFactor := V3G(Vector3(1, 1, 1));
+      SetTexInfo(GM.EmissiveTexture, T, App, UvEmis); { texture times emissiveColor, as in X3D }
     end;
     if Opt.PhongSpecular then
     begin
@@ -689,8 +850,18 @@ begin
   begin
     T := GetTexture(App.NormalMap);
     if T >= 0 then
-      SetTexInfo(GM.NormalTexture, T, App);
+      SetTexInfo(GM.NormalTexture, T, App, 0);
   end;
+
+  { PasGLTF writes "pbrMetallicRoughness" only when metallic or roughness differ from 1 or a texture is set:
+    its Empty test ignores baseColorFactor, so a PhysicalMaterial that has only a baseColor (X3D defaults
+    metallic 1, roughness 1) would lose its colour. A roughness of 0.9999 keeps the object in the file. }
+  if (GM.PBRMetallicRoughness.MetallicFactor = 1) and (GM.PBRMetallicRoughness.RoughnessFactor = 1) and
+     (GM.PBRMetallicRoughness.BaseColorTexture.Index < 0) and
+     (GM.PBRMetallicRoughness.MetallicRoughnessTexture.Index < 0) and
+     ((GM.PBRMetallicRoughness.BaseColorFactor[0] <> 1) or (GM.PBRMetallicRoughness.BaseColorFactor[1] <> 1) or
+      (GM.PBRMetallicRoughness.BaseColorFactor[2] <> 1) or (GM.PBRMetallicRoughness.BaseColorFactor[3] <> 1)) then
+    GM.PBRMetallicRoughness.RoughnessFactor := 0.9999;
 
   { alpha }
   AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Opaque;
@@ -706,6 +877,12 @@ begin
       acBlending: AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Blend;
       acTest: AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Mask;
     end;
+  end;
+  if (TextFontTex <> nil) and (AlphaMode = TPasGLTF.TMaterial.TAlphaMode.Opaque) then
+  begin
+    { glyph coverage is in the atlas alpha }
+    AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Blend;
+    GM.DoubleSided := true;
   end;
   GM.AlphaMode := AlphaMode;
   if AlphaMode = TPasGLTF.TMaterial.TAlphaMode.Mask then
@@ -750,6 +927,82 @@ var
   Bake, HasTangent: Boolean;
   Tan: TSingleArray;
   V4t: TVector4;
+  { texture coordinate sets: UvAttr[K] is TEXCOORD_K (empty when the material reads no set K) }
+  UvAttr: array of TSingleArray;
+  UvReal: array of Boolean;
+  NormalSet, UvSetsUsed: Integer;
+  MatRef: TPasGLTF.TMaterial;
+  TanT, TanB: TSingleArray;
+  Ext: TPasJSONItemObject;
+  TA, TB, TC, TIdx: UInt32;
+  II: Integer;
+  E1, E2, TV, BV: TVector3;
+  U1, V1, U2, V2, Rd: Single;
+
+  { one glTF texture coordinate set from Castle's set K; False when Castle has no usable coordinates for it }
+  function BuildUV(const K: Integer; out Arr: TSingleArray): Boolean;
+  var
+    TexGen: TGeometryTexCoord;
+    II: Integer;
+    Sv: TVector4;
+    P: TVector3;
+    V4: TVector4;
+  begin
+    Result := false;
+    SetLength(Arr, 0);
+    if (K >= G.TexCoords.Count) or (G.TexCoords[K] = nil) then
+      Exit;
+    TexGen := G.TexCoords[K];
+    SetLength(Arr, N * 2);
+    case TexGen.Generation of
+      tgExplicit:
+        for II := 0 to N - 1 do
+        begin
+          case TexGen.Dimensions of
+            2: begin Arr[II * 2] := G.TexCoord2D(K, II)^.X; Arr[II * 2 + 1] := G.TexCoord2D(K, II)^.Y; end;
+            3: begin Arr[II * 2] := G.TexCoord3D(K, II)^.X; Arr[II * 2 + 1] := G.TexCoord3D(K, II)^.Y; end;
+            4: begin
+                 V4 := G.TexCoord4D(K, II)^;
+                 if V4.W <> 0 then begin Arr[II * 2] := V4.X / V4.W; Arr[II * 2 + 1] := V4.Y / V4.W; end
+                 else begin Arr[II * 2] := V4.X; Arr[II * 2 + 1] := V4.Y; end;
+               end;
+          end;
+          Arr[II * 2 + 1] := 1 - Arr[II * 2 + 1];
+        end;
+      tgBounds2d, tgBounds3d:
+        for II := 0 to N - 1 do
+        begin
+          P := G.Position(II)^;
+          Sv := TexGen.GenerationBoundsVector[0];
+          Arr[II * 2] := Sv[0] * P.X + Sv[1] * P.Y + Sv[2] * P.Z + Sv[3];
+          Sv := TexGen.GenerationBoundsVector[1];
+          Arr[II * 2 + 1] := 1 - (Sv[0] * P.X + Sv[1] * P.Y + Sv[2] * P.Z + Sv[3]);
+        end;
+    else
+      begin
+        SetLength(Arr, 0);
+        Warn('texture coordinate generation not exported: ' + GetEnumName(TypeInfo(TTextureCoordinateGeneration), Ord(TexGen.Generation)));
+        Exit;
+      end;
+    end;
+    Result := true;
+  end;
+
+  { the sets a texture slot reads, collected once per material slot }
+  procedure NeedSet(const Info: TPasGLTF.TMaterial.TTexture);
+  var
+    K: Integer;
+  begin
+    if Info.Index < 0 then
+      Exit;
+    K := Info.TexCoord;
+    if K >= Length(UvAttr) then
+    begin
+      SetLength(UvAttr, K + 1);
+      SetLength(UvReal, K + 1);
+    end;
+    UvReal[K] := true;
+  end;
 
   function IdxAt(const KK: Integer): UInt32;
   begin
@@ -827,12 +1080,23 @@ var
   end;
 
 begin
-  if (not Opt.TextQuads) and (Shape.OriginalGeometry is TTextNode) then
+  TextFontTex := nil;
+  if (Shape.OriginalGeometry is TTextNode) then
   begin
-    Inc(NShapesSkipped);
-    Inc(NTextSkipped);
-    Warn('Text not exported (Castle gives glyph-cell quads without the font atlas): ' + Shape.NiceName);
-    Exit;
+    if Opt.TextAtlas then
+    begin
+      { the proxy's first texture coordinate set addresses the font atlas Castle draws with }
+      TextFontTex := TTextNode(Shape.OriginalGeometry).FontTextureNode;
+      if TextFontTex = nil then
+        Warn('Text font atlas not available: ' + Shape.NiceName);
+    end;
+    if (TextFontTex = nil) and (not Opt.TextQuads) then
+    begin
+      Inc(NShapesSkipped);
+      Inc(NTextSkipped);
+      Warn('Text not exported (Castle gives glyph-cell quads without the font atlas; --text-atlas writes them with it): ' + Shape.NiceName);
+      Exit;
+    end;
   end;
   G := Shape.GeometryArrays;
   try
@@ -940,51 +1204,38 @@ begin
         Surfaces[High(Surfaces)].Half := (Shape.BoundingBox.Data[1] - Shape.BoundingBox.Data[0]).Length * 0.5;
       end;
     end;
+    { texture coordinate sets the material reads (TEXCOORD_n, n from the *TextureMapping names) }
     HasUV := false;
-    if (Doc.Materials[MatIdx].PBRMetallicRoughness.BaseColorTexture.Index >= 0) or
-       (Doc.Materials[MatIdx].NormalTexture.Index >= 0) or
-       (Doc.Materials[MatIdx].EmissiveTexture.Index >= 0) or
-       (Doc.Materials[MatIdx].OcclusionTexture.Index >= 0) or
-       (Doc.Materials[MatIdx].PBRMetallicRoughness.MetallicRoughnessTexture.Index >= 0) then
-    begin
-      if (G.TexCoords.Count > 0) and (G.TexCoords[0] <> nil) then
+    MatRef := Doc.Materials[MatIdx];
+    SetLength(UvAttr, 0);
+    SetLength(UvReal, 0);
+    NeedSet(MatRef.PBRMetallicRoughness.BaseColorTexture);
+    NeedSet(MatRef.PBRMetallicRoughness.MetallicRoughnessTexture);
+    NeedSet(MatRef.NormalTexture);
+    NeedSet(MatRef.EmissiveTexture);
+    NeedSet(MatRef.OcclusionTexture);
+    NormalSet := MatRef.NormalTexture.TexCoord;
+    UvSetsUsed := 0;
+    for K := 0 to High(UvAttr) do
+      if UvReal[K] then
       begin
-        TexGen := G.TexCoords[0];
-        SetLength(UV, N * 2);
-        HasUV := true;
-        case TexGen.Generation of
-          tgExplicit:
-            for I := 0 to N - 1 do
-            begin
-              case TexGen.Dimensions of
-                2: begin UV[I * 2] := G.TexCoord2D(0, I)^.X; UV[I * 2 + 1] := G.TexCoord2D(0, I)^.Y; end;
-                3: begin UV[I * 2] := G.TexCoord3D(0, I)^.X; UV[I * 2 + 1] := G.TexCoord3D(0, I)^.Y; end;
-                4: begin
-                     V4 := G.TexCoord4D(0, I)^;
-                     if V4.W <> 0 then begin UV[I * 2] := V4.X / V4.W; UV[I * 2 + 1] := V4.Y / V4.W; end
-                     else begin UV[I * 2] := V4.X; UV[I * 2 + 1] := V4.Y; end;
-                   end;
-              end;
-              UV[I * 2 + 1] := 1 - UV[I * 2 + 1];
-            end;
-          tgBounds2d, tgBounds3d:
-            for I := 0 to N - 1 do
-            begin
-              P := G.Position(I)^;
-              Sv := TexGen.GenerationBoundsVector[0];
-              UV[I * 2] := Sv[0] * P.X + Sv[1] * P.Y + Sv[2] * P.Z + Sv[3];
-              Sv := TexGen.GenerationBoundsVector[1];
-              UV[I * 2 + 1] := 1 - (Sv[0] * P.X + Sv[1] * P.Y + Sv[2] * P.Z + Sv[3]);
-            end;
+        { a set Castle has no coordinates for reads set 0, else zeros: the material must never name a missing
+          TEXCOORD (the validator rejects that), and the texture then shows one texel }
+        if BuildUV(K, UvAttr[K]) then
+          HasUV := true
         else
-          begin
-            HasUV := false;
-            Warn('texture coordinate generation not exported: ' + GetEnumName(TypeInfo(TTextureCoordinateGeneration), Ord(TexGen.Generation)));
-          end;
+        if (K > 0) and (Length(UvAttr[0]) > 0) then
+          UvAttr[K] := UvAttr[0]
+        else
+        begin
+          SetLength(UvAttr[K], N * 2);
+          FillChar(UvAttr[K][0], N * 2 * SizeOf(Single), 0);
+          Warn('textured shape without usable texture coordinates for set ' + IntToStr(K) + ': ' + Shape.NiceName);
         end;
-      end else
-        Warn('textured shape without texture coordinates: ' + Shape.NiceName);
-    end;
+        Inc(UvSetsUsed);
+      end;
+    if UvSetsUsed > 1 then
+      Inc(NTexCoordSets);
 
     HasCol := false;
     if G.ColorType = ctRgb then
@@ -1009,7 +1260,8 @@ begin
     end;
 
     HasTangent := false;
-    if G.HasTangent and (Doc.Materials[MatIdx].NormalTexture.Index >= 0) and HasUV and HasNormals then
+    if G.HasTangent and (MatRef.NormalTexture.Index >= 0) and HasNormals and
+       (NormalSet < Length(UvAttr)) and (Length(UvAttr[NormalSet]) > 0) then
     begin
       SetLength(Tan, N * 4);
       for I := 0 to N - 1 do
@@ -1058,6 +1310,67 @@ begin
       Exit;
     end;
 
+    { A normal map needs tangents. Castle makes them only for an IndexedTriangleSet with matching arrays; for every
+      other geometry the glTF viewer would have to guess (the validator says so with
+      MESH_PRIMITIVE_GENERATED_TANGENT_SPACE). Generate them from the normal texture's coordinate set: per triangle
+      dP/du and dP/dv summed per vertex, made orthogonal to the normal; w is the handedness for
+      bitangent = cross(normal, tangent) * w, where the glTF bitangent points to decreasing file-V. }
+    if (not HasTangent) and (not (Lines or Points)) and HasNormals and (MatRef.NormalTexture.Index >= 0) and
+       (NormalSet < Length(UvAttr)) and (Length(UvAttr[NormalSet]) > 0) then
+    begin
+      SetLength(Tan, N * 4);
+      SetLength(TanT, N * 3);
+      SetLength(TanB, N * 3);
+      FillChar(TanT[0], Length(TanT) * SizeOf(Single), 0);
+      FillChar(TanB[0], Length(TanB) * SizeOf(Single), 0);
+      K := 0;
+      while K + 2 < IdxCount do
+      begin
+        TA := Idx[K]; TB := Idx[K + 1]; TC := Idx[K + 2];
+        Inc(K, 3);
+        if (TA >= UInt32(N)) or (TB >= UInt32(N)) or (TC >= UInt32(N)) then
+          Continue;
+        E1 := Vector3(Pos[TB * 3] - Pos[TA * 3], Pos[TB * 3 + 1] - Pos[TA * 3 + 1], Pos[TB * 3 + 2] - Pos[TA * 3 + 2]);
+        E2 := Vector3(Pos[TC * 3] - Pos[TA * 3], Pos[TC * 3 + 1] - Pos[TA * 3 + 1], Pos[TC * 3 + 2] - Pos[TA * 3 + 2]);
+        U1 := UvAttr[NormalSet][TB * 2] - UvAttr[NormalSet][TA * 2];
+        V1 := UvAttr[NormalSet][TB * 2 + 1] - UvAttr[NormalSet][TA * 2 + 1];
+        U2 := UvAttr[NormalSet][TC * 2] - UvAttr[NormalSet][TA * 2];
+        V2 := UvAttr[NormalSet][TC * 2 + 1] - UvAttr[NormalSet][TA * 2 + 1];
+        Rd := U1 * V2 - U2 * V1;
+        if Abs(Rd) < 1e-20 then
+          Continue;
+        TV := (E1 * V2 - E2 * V1) / Rd;
+        BV := (E2 * U1 - E1 * U2) / Rd;
+        for II := 0 to 2 do
+        begin
+          case II of 0: TIdx := TA; 1: TIdx := TB; else TIdx := TC; end;
+          TanT[TIdx * 3] := TanT[TIdx * 3] + TV.X; TanT[TIdx * 3 + 1] := TanT[TIdx * 3 + 1] + TV.Y; TanT[TIdx * 3 + 2] := TanT[TIdx * 3 + 2] + TV.Z;
+          TanB[TIdx * 3] := TanB[TIdx * 3] + BV.X; TanB[TIdx * 3 + 1] := TanB[TIdx * 3 + 1] + BV.Y; TanB[TIdx * 3 + 2] := TanB[TIdx * 3 + 2] + BV.Z;
+        end;
+      end;
+      for I := 0 to N - 1 do
+      begin
+        V3 := Vector3(Nor[I * 3], Nor[I * 3 + 1], Nor[I * 3 + 2]);
+        TV := Vector3(TanT[I * 3], TanT[I * 3 + 1], TanT[I * 3 + 2]);
+        BV := Vector3(TanB[I * 3], TanB[I * 3 + 1], TanB[I * 3 + 2]);
+        TV := TV - V3 * TVector3.DotProduct(V3, TV);
+        if TV.Length < 1e-12 then
+        begin
+          { no usable UV derivative here: any vector orthogonal to the normal }
+          if Abs(V3.X) < 0.9 then TV := TVector3.CrossProduct(V3, Vector3(1, 0, 0))
+          else TV := TVector3.CrossProduct(V3, Vector3(0, 1, 0));
+        end;
+        TV := TV.Normalize;
+        Tan[I * 4] := TV.X; Tan[I * 4 + 1] := TV.Y; Tan[I * 4 + 2] := TV.Z;
+        if TVector3.DotProduct(TVector3.CrossProduct(V3, TV), -BV) < 0 then
+          Tan[I * 4 + 3] := -1
+        else
+          Tan[I * 4 + 3] := 1;
+      end;
+      HasTangent := true;
+      Inc(NTangentsGenerated);
+    end;
+
     Prim := TPasGLTF.TMesh.TPrimitive.Create(Doc);
     if Lines then
       Prim.Mode := TPasGLTF.TMesh.TPrimitive.TMode.Lines
@@ -1072,8 +1385,9 @@ begin
       Prim.Attributes.Add('NORMAL', AddFloatAccessor(Nor, 3, false));
     if HasTangent then
       Prim.Attributes.Add('TANGENT', AddFloatAccessor(Tan, 4, false));
-    if HasUV then
-      Prim.Attributes.Add('TEXCOORD_0', AddFloatAccessor(UV, 2, false));
+    for K := 0 to High(UvAttr) do
+      if UvReal[K] and (Length(UvAttr[K]) > 0) then
+        Prim.Attributes.Add('TEXCOORD_' + IntToStr(K), AddFloatAccessor(UvAttr[K], 2, false));
     if HasCol then
     begin
       if G.ColorType = ctRgb then
@@ -1106,8 +1420,27 @@ begin
       if not IsIdentityGltf(M) then
         GNode.Matrix := M;
     end;
+    if HiddenNow then
+    begin
+      Ext := TPasJSONItemObject.Create;
+      Ext.Add('visible', TPasJSONItemBoolean.Create(false));
+      GNode.Extensions.Add('KHR_node_visibility', Ext);
+      if Doc.ExtensionsUsed.IndexOf('KHR_node_visibility') < 0 then
+        Doc.ExtensionsUsed.Add('KHR_node_visibility');
+      Ext := TPasJSONItemObject.Create;
+      Ext.Add('switch', TPasJSONItemString.Create(HiddenSwitch));
+      Ext.Add('choice', TPasJSONItemNumber.Create(HiddenChoice));
+      GNode.Extras.Add('x3d', Ext);
+      Inc(NHiddenSwitchNodes);
+    end;
     Doc.Nodes.Add(GNode);
     GScene.Nodes.Add(Doc.Nodes.Count - 1);
+    SetLength(ExpShapeNode, Length(ExpShapeNode) + 1);
+    SetLength(ExpGltfNode, Length(ExpGltfNode) + 1);
+    SetLength(ExpBox, Length(ExpBox) + 1);
+    ExpShapeNode[High(ExpShapeNode)] := Shape.OriginalState.ShapeNode;
+    ExpGltfNode[High(ExpGltfNode)] := Doc.Nodes.Count - 1;
+    ExpBox[High(ExpBox)] := Shape.BoundingBox;
 
     Inc(NShapes);
     Inc(NVerts, N);
@@ -1116,6 +1449,7 @@ begin
     else Inc(NTris, IdxCount div 3);
     if HasCol then Inc(NVertexColourShapes);
     if HasUV then Inc(NTexturedShapes);
+    if TextFontTex <> nil then Inc(NTextExported);
     Log(Format('shape %d %s: %d verts, %d indices, mode %d, material %d, uv=%s col=%s nrm=%s',
       [Index, Nm, N, IdxCount, Ord(Prim.Mode), MatIdx, BoolToStr(HasUV, 'y', 'n'),
        BoolToStr(HasCol, 'y', 'n'), BoolToStr(HasNormals, 'y', 'n')]));
@@ -1226,6 +1560,48 @@ type
     function Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
       ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
   end;
+
+  { Collects every node of one class under a node (the scope of a light, the first Background, ...). }
+  TNodeCollector = class
+  public
+    Found: TList;
+    constructor Create;
+    destructor Destroy; override;
+    function Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
+      ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
+  end;
+
+constructor TNodeCollector.Create;
+begin
+  inherited;
+  Found := TList.Create;
+end;
+
+destructor TNodeCollector.Destroy;
+begin
+  FreeAndNil(Found);
+  inherited;
+end;
+
+function TNodeCollector.Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
+  ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
+begin
+  Result := nil;
+  Found.Add(Node);
+end;
+
+function JNum(const V: Double): TPasJSONItemNumber;
+begin
+  Result := TPasJSONItemNumber.Create(V);
+end;
+
+function JVec3(const V: TVector3): TPasJSONItemArray;
+begin
+  Result := TPasJSONItemArray.Create;
+  Result.Add(JNum(V.X));
+  Result.Add(JNum(V.Y));
+  Result.Add(JNum(V.Z));
+end;
 
 function NewLightJson(const TypeName, Name: String; const Col: TVector3;
   const Intensity: Single): TPasJSONItemObject;
@@ -1361,6 +1737,39 @@ begin
     Result := 0.5 * (Ds[N - 1] + Ds[N]);
 end;
 
+{ Shapes under a node, as glTF node indices. Covers = the scope holds every exported shape (so nothing is lost
+  by glTF lights being global). Box = union of their world boxes. }
+procedure TExporter.ScopeOf(const Parent: TX3DNode; out Covers: Boolean; out Nodes: TPasJSONItemArray;
+  out Box: TBox3D);
+var
+  C: TNodeCollector;
+  I, J, Hits: Integer;
+begin
+  Covers := false;
+  Nodes := TPasJSONItemArray.Create;
+  Box := TBox3D.Empty;
+  if (Parent = nil) or (Parent = Scene.RootNode) then
+  begin
+    Covers := true;
+    Exit;
+  end;
+  C := TNodeCollector.Create;
+  try
+    Parent.Traverse(TAbstractShapeNode, @C.Collect);
+    Hits := 0;
+    for I := 0 to High(ExpShapeNode) do
+      for J := 0 to C.Found.Count - 1 do
+        if C.Found[J] = ExpShapeNode[I] then
+        begin
+          Nodes.Add(JNum(ExpGltfNode[I]));
+          Box := Box + ExpBox[I];
+          Inc(Hits);
+          Break;
+        end;
+    Covers := Hits >= Length(ExpShapeNode);
+  finally FreeAndNil(C) end;
+end;
+
 function TLightCollector.Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
   ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
 var
@@ -1369,9 +1778,16 @@ var
   J: TPasJSONItemObject;
   Sp: TPasJSONItemObject;
   Nm, Kind: String;
-  Inner, Outer, D, Fade, Candela: Single;
+  Inner, Outer, D, Fade, Candela, IfOn, Written, RangeV: Single;
   Att: TVector3;
   Up: TVector3;
+  OnNow, Covers: Boolean;
+  Scope: TPasJSONItemArray;
+  Box: TBox3D;
+  Ex, X3: TPasJSONItemObject;
+  Corners8: TBoxCorners;
+  CI: Integer;
+  ParentNode: TX3DNode;
 
   { X3D 4.0 17.2.2.3: 1 / max(c1 + c2 d + c3 d^2, 1) }
   function AttenuationAt(const Dist: Single): Single;
@@ -1404,39 +1820,106 @@ var
       [Nm, D, Fade, Candela, L.Intensity]));
   end;
 
+  { Everything glTF cannot say about the light goes to extras.x3d, so a viewer that knows X3D can use it:
+    the authored intensity, ambientIntensity (glTF has no ambient light), shadows, on, global and the glTF
+    nodes of the scope. }
+  procedure AddExtras(const LJ: TPasJSONItemObject; const IfOnIntensity: Single);
+  begin
+    Ex := TPasJSONItemObject.Create;
+    X3 := TPasJSONItemObject.Create;
+    X3.Add('global', TPasJSONItemBoolean.Create(L.Global));
+    X3.Add('intensity', JNum(L.Intensity));
+    if L.AmbientIntensity <> 0 then
+      X3.Add('ambientIntensity', JNum(L.AmbientIntensity));
+    if L.Shadows then
+      X3.Add('shadows', TPasJSONItemBoolean.Create(true));
+    if not OnNow then
+    begin
+      X3.Add('on', TPasJSONItemBoolean.Create(false));
+      X3.Add('intensityIfOn', JNum(IfOnIntensity));
+    end;
+    if Scope <> nil then
+    begin
+      X3.Add('scopeNodes', Scope);
+      Scope := nil;
+    end;
+    Ex.Add('x3d', X3);
+    LJ.Add('extras', Ex);
+  end;
+
 begin
   Result := nil;
   if not (Node is TAbstractLightNode) then
     Exit;
   L := TAbstractLightNode(Node);
-  if not L.IsOn then
-    Exit;
+  OnNow := L.IsOn;
   Nm := L.X3DName;
   if Nm = '' then
     Nm := Format('light_%d', [Owner.NLights]);
   LI := L.CreateLightInstance(StateStack.Top.Transformation);
   Up := Vector3(0, 1, 0);
   Kind := L.NiceName;
+  Scope := nil;
+  Covers := true;
+  Box := TBox3D.Empty;
+  if not L.Global then
+  begin
+    { X3D scopes a global=false light to its parent group; glTF lights are global }
+    ParentNode := nil;
+    if ParentInfo <> nil then
+      ParentNode := ParentInfo^.Node;
+    Owner.ScopeOf(ParentNode, Covers, Scope, Box);
+    Inc(Owner.NLightsGlobalFalse);
+    if Covers then
+      FreeAndNil(Scope)
+    else
+      Inc(Owner.NLightsScoped);
+  end;
   if L is TDirectionalLightNode then
   begin
-    J := NewLightJson('directional', Nm, L.Color, Owner.Level(L.Intensity));
+    IfOn := Owner.Level(L.Intensity);
+    J := NewLightJson('directional', Nm, L.Color, IfThenSingle(OnNow, IfOn, 0));
+    AddExtras(J, IfOn);
     Owner.LightsArr.Add(J);
     Owner.AddLightNode(Owner.LightsArr.Count - 1,
       BasisMatrix(Vector3(0, 0, 0), LI.Direction, Up), Nm, -1);
-    Owner.Log(Format('light %s: directional, X3D intensity %.3f written %.4f', [Nm, L.Intensity, Owner.Level(L.Intensity)]));
+    Owner.Log(Format('light %s: directional, X3D intensity %.3f written %.4f', [Nm, L.Intensity, IfOn]));
+    if (not L.Global) and (not Covers) then
+    begin
+      Inc(Owner.NLightsUnscopable);
+      Owner.Warn('DirectionalLight global=false scoped to part of the scene: glTF directional lights are global (extras.x3d.scopeNodes lists the scope): ' + Nm);
+    end;
   end else
   if L is TSpotLightNode then
   begin
-    Inner := Min(TSpotLightNode(L).BeamWidth, TSpotLightNode(L).CutOffAngle);
-    Outer := TSpotLightNode(L).CutOffAngle;
+    Outer := Min(TSpotLightNode(L).CutOffAngle, Pi / 2);
+    { glTF wants innerConeAngle < outerConeAngle: an X3D beamWidth at or above cutOffAngle (hard edge) is written just inside it }
+    Inner := Max(0, Min(TSpotLightNode(L).BeamWidth, Outer - 0.001));
     PointLike(true);
-    J := NewLightJson('spot', Nm, L.Color, Candela);
+    IfOn := Candela;
+    J := NewLightJson('spot', Nm, L.Color, IfThenSingle(OnNow, IfOn, 0));
     Sp := TPasJSONItemObject.Create;
-    Sp.Add('innerConeAngle', TPasJSONItemNumber.Create(Inner));
-    Sp.Add('outerConeAngle', TPasJSONItemNumber.Create(Outer));
+    Sp.Add('innerConeAngle', JNum(Inner));
+    Sp.Add('outerConeAngle', JNum(Outer));
     J.Add('spot', Sp);
-    if TAbstractPositionalLightNode(L).Radius > 0 then
-      J.Add('range', TPasJSONItemNumber.Create(TAbstractPositionalLightNode(L).Radius));
+    RangeV := TAbstractPositionalLightNode(L).Radius;
+    if (not L.Global) and (not Covers) then
+      if Owner.Opt.ScopeLights and (not Box.IsEmpty) then
+      begin
+        D := 0;
+        Box.Corners(Corners8);
+        for CI := 0 to 7 do
+          D := Max(D, (Corners8[CI] - LI.Location).Length);
+        if (D > 0) and ((RangeV <= 0) or (D < RangeV)) then
+        begin
+          RangeV := D;
+          Inc(Owner.NLightsRangeClamped);
+        end;
+      end else
+        Inc(Owner.NLightsUnscopable);
+    if RangeV > 0 then
+      J.Add('range', JNum(RangeV));
+    AddExtras(J, IfOn);
     Owner.LightsArr.Add(J);
     Owner.AddLightNode(Owner.LightsArr.Count - 1,
       BasisMatrix(LI.Location, LI.Direction, Up), Nm, -1);
@@ -1444,20 +1927,38 @@ begin
   if L is TAbstractPositionalLightNode then
   begin
     PointLike(false);
-    J := NewLightJson('point', Nm, L.Color, Candela);
-    if TAbstractPositionalLightNode(L).Radius > 0 then
-      J.Add('range', TPasJSONItemNumber.Create(TAbstractPositionalLightNode(L).Radius));
+    IfOn := Candela;
+    J := NewLightJson('point', Nm, L.Color, IfThenSingle(OnNow, IfOn, 0));
+    RangeV := TAbstractPositionalLightNode(L).Radius;
+    if (not L.Global) and (not Covers) then
+      if Owner.Opt.ScopeLights and (not Box.IsEmpty) then
+      begin
+        D := 0;
+        Box.Corners(Corners8);
+        for CI := 0 to 7 do
+          D := Max(D, (Corners8[CI] - LI.Location).Length);
+        if (D > 0) and ((RangeV <= 0) or (D < RangeV)) then
+        begin
+          RangeV := D;
+          Inc(Owner.NLightsRangeClamped);
+        end;
+      end else
+        Inc(Owner.NLightsUnscopable);
+    if RangeV > 0 then
+      J.Add('range', JNum(RangeV));
+    AddExtras(J, IfOn);
     Owner.LightsArr.Add(J);
     Owner.AddLightNode(Owner.LightsArr.Count - 1,
       BasisMatrix(LI.Location, Vector3(0, 0, -1), Up), Nm, -1);
   end else
   begin
     Owner.Warn('light type not exported: ' + Kind);
+    FreeAndNil(Scope);
     Exit;
   end;
+  if not OnNow then
+    Inc(Owner.NLightsOff);
   Inc(Owner.NLights);
-  if (L is TDirectionalLightNode) and (not L.Global) then
-    Owner.Log(Format('light %s: global=false (X3D scopes it to its parent group; glTF lights are global)', [Nm]));
 end;
 
 procedure TExporter.ExportLights;
@@ -1499,6 +2000,209 @@ begin
     Doc.ExtensionsUsed.Add('KHR_lights_punctual');
 end;
 
+{ --hidden-switch: Castle's shape tree holds every Switch choice; the exporter normally writes only the selected one.
+  Here each shape of an unselected choice is written too, as a node with KHR_node_visibility visible=false and
+  extras.x3d.switch / choice, so the frames of a frame-by-frame Switch survive in the file. A viewer without the
+  extension would draw them all, which is why this is a flag. }
+procedure TExporter.ExportHiddenSwitchChoices(const Active: TShapeList);
+var
+  Sw: TNodeCollector;
+  All: TShapeList;
+  Choice: TNodeCollector;
+  SN: TSwitchNode;
+  I, J, K, M, Idx: Integer;
+  Sh: TShape;
+  Done: array of Boolean;
+  IsActive: Boolean;
+begin
+  All := Scene.Shapes.TraverseList(false);
+  SetLength(Done, All.Count);
+  Sw := TNodeCollector.Create;
+  try
+    if Scene.RootNode <> nil then
+      Scene.RootNode.Traverse(TSwitchNode, @Sw.Collect);
+    Idx := Active.Count;
+    for I := 0 to Sw.Found.Count - 1 do
+    begin
+      SN := TSwitchNode(Sw.Found[I]);
+      for J := 0 to SN.FdChildren.Count - 1 do
+      begin
+        if J = SN.FdWhichChoice.Value then
+          Continue;
+        Choice := TNodeCollector.Create;
+        try
+          SN.FdChildren[J].Traverse(TAbstractShapeNode, @Choice.Collect);
+          for K := 0 to All.Count - 1 do
+          begin
+            if Done[K] then
+              Continue;
+            Sh := All[K];
+            { not an active shape, and its Shape node sits under this choice }
+            IsActive := false;
+            for M := 0 to Active.Count - 1 do
+              if Active[M] = Sh then
+              begin
+                IsActive := true;
+                Break;
+              end;
+            if IsActive then
+              Continue;
+            for M := 0 to Choice.Found.Count - 1 do
+              if Choice.Found[M] = Pointer(Sh.OriginalState.ShapeNode) then
+              begin
+                Done[K] := true;
+                HiddenNow := true;
+                HiddenSwitch := SN.X3DName;
+                HiddenChoice := J;
+                try
+                  ExportShape(Sh, Idx);
+                finally
+                  HiddenNow := false;
+                end;
+                Inc(Idx);
+                Break;
+              end;
+          end;
+        finally FreeAndNil(Choice) end;
+      end;
+    end;
+  finally FreeAndNil(Sw) end;
+end;
+
+{ What the glTF core cannot hold of the scene environment goes to scene.extras.x3d: the first Background
+  (sky and ground gradient, cube urls), the first Fog and any EnvironmentLight. glTF has no sky, no fog and
+  KHR_lights_punctual has no image based light, so a viewer that knows X3D reads these; every other viewer
+  ignores them. }
+procedure TExporter.ExportSceneExtras;
+var
+  C: TNodeCollector;
+  X3, Bg, Fg, El: TPasJSONItemObject;
+  Arr: TPasJSONItemArray;
+  I: Integer;
+  B: TBackgroundNode;
+  F: TFogNode;
+  E: TEnvironmentLightNode;
+
+  function Colours(const A: TVector3List): TPasJSONItemArray;
+  var
+    K: Integer;
+  begin
+    Result := TPasJSONItemArray.Create;
+    for K := 0 to A.Count - 1 do
+      Result.Add(JVec3(A[K]));
+  end;
+
+  function Floats(const A: TSingleList): TPasJSONItemArray;
+  var
+    K: Integer;
+  begin
+    Result := TPasJSONItemArray.Create;
+    for K := 0 to A.Count - 1 do
+      Result.Add(JNum(A[K]));
+  end;
+
+  function FirstUrl(const A: TMFString): TPasJSONItemString;
+  begin
+    if A.Count > 0 then
+      Result := TPasJSONItemString.Create(A.Items[0])
+    else
+      Result := nil;
+  end;
+
+  procedure AddUrl(const O: TPasJSONItemObject; const Key: String; const A: TMFString);
+  var
+    U: TPasJSONItemString;
+  begin
+    U := FirstUrl(A);
+    if U <> nil then
+      O.Add(Key, U);
+  end;
+
+  procedure AddEnvTexture(const O: TPasJSONItemObject; const Key: String; const T: TX3DNode);
+  var
+    Tx: TPasJSONItemObject;
+  begin
+    if T = nil then
+      Exit;
+    Tx := TPasJSONItemObject.Create;
+    Tx.Add('node', TPasJSONItemString.Create(T.X3DType));
+    if T is TImageCubeMapTextureNode then
+      AddUrl(Tx, 'url', TImageCubeMapTextureNode(T).FdUrl);
+    O.Add(Key, Tx);
+  end;
+
+begin
+  X3 := TPasJSONItemObject.Create;
+  C := TNodeCollector.Create;
+  try
+    Scene.RootNode.Traverse(TBackgroundNode, @C.Collect);
+    if C.Found.Count > 0 then
+    begin
+      B := TBackgroundNode(C.Found[0]);
+      Bg := TPasJSONItemObject.Create;
+      Bg.Add('skyColor', Colours(B.FdSkyColor.Items));
+      Bg.Add('skyAngle', Floats(B.FdSkyAngle.Items));
+      Bg.Add('groundColor', Colours(B.FdGroundColor.Items));
+      Bg.Add('groundAngle', Floats(B.FdGroundAngle.Items));
+      if B.FdTransparency.Value <> 0 then
+        Bg.Add('transparency', JNum(B.FdTransparency.Value));
+      AddUrl(Bg, 'frontUrl', B.FdFrontUrl);
+      AddUrl(Bg, 'backUrl', B.FdBackUrl);
+      AddUrl(Bg, 'leftUrl', B.FdLeftUrl);
+      AddUrl(Bg, 'rightUrl', B.FdRightUrl);
+      AddUrl(Bg, 'topUrl', B.FdTopUrl);
+      AddUrl(Bg, 'bottomUrl', B.FdBottomUrl);
+      X3.Add('background', Bg);
+      Inc(NSceneExtras);
+    end;
+  finally FreeAndNil(C) end;
+  C := TNodeCollector.Create;
+  try
+    Scene.RootNode.Traverse(TFogNode, @C.Collect);
+    if C.Found.Count > 0 then
+    begin
+      F := TFogNode(C.Found[0]);
+      Fg := TPasJSONItemObject.Create;
+      Fg.Add('type', TPasJSONItemString.Create(F.FdFogType.Value));
+      Fg.Add('color', JVec3(F.Color));
+      Fg.Add('visibilityRange', JNum(F.VisibilityRange));
+      X3.Add('fog', Fg);
+      Inc(NSceneExtras);
+    end;
+  finally FreeAndNil(C) end;
+  C := TNodeCollector.Create;
+  try
+    Scene.RootNode.Traverse(TEnvironmentLightNode, @C.Collect);
+    if C.Found.Count > 0 then
+    begin
+      Arr := TPasJSONItemArray.Create;
+      for I := 0 to C.Found.Count - 1 do
+      begin
+        E := TEnvironmentLightNode(C.Found[I]);
+        El := TPasJSONItemObject.Create;
+        El.Add('color', JVec3(E.Color));
+        El.Add('intensity', JNum(E.Intensity));
+        AddEnvTexture(El, 'diffuseTexture', E.DiffuseTexture);
+        AddEnvTexture(El, 'specularTexture', E.SpecularTexture);
+        Arr.Add(El);
+      end;
+      { one is the usual case; the first is the one written as "environmentLight", all are listed in "environmentLights" }
+      X3.Add('environmentLight', TPasJSONItemObject(TPasJSONItemObject(Arr.Items[0]).Clone));
+      if Arr.Count > 1 then
+        X3.Add('environmentLights', Arr)
+      else
+        FreeAndNil(Arr);
+      Inc(NSceneExtras);
+    end;
+  finally FreeAndNil(C) end;
+  if X3.Count = 0 then
+  begin
+    FreeAndNil(X3);
+    Exit;
+  end;
+  GScene.Extras.Add('x3d', X3);
+end;
+
 { Driver ----------------------------------------------------------------------- }
 
 function JsonStr(const S: String): String;
@@ -1520,6 +2224,9 @@ begin
     '  "shapes": ' + IntToStr(NShapes) + ',' + LineEnding +
     '  "shapes_skipped": ' + IntToStr(NShapesSkipped) + ',' + LineEnding +
     '  "text_shapes_skipped": ' + IntToStr(NTextSkipped) + ',' + LineEnding +
+    '  "nonfinite_values_zeroed": ' + IntToStr(NNonFinite) + ',' + LineEnding +
+    '  "text_shapes_exported": ' + IntToStr(NTextExported) + ',' + LineEnding +
+    '  "hidden_switch_nodes": ' + IntToStr(NHiddenSwitchNodes) + ',' + LineEnding +
     '  "shapes_baked_for_shear": ' + IntToStr(NBaked) + ',' + LineEnding +
     '  "vertices": ' + IntToStr(NVerts) + ',' + LineEnding +
     '  "triangles": ' + IntToStr(NTris) + ',' + LineEnding +
@@ -1535,6 +2242,15 @@ begin
     '  "lights": ' + IntToStr(NLights) + ',' + LineEnding +
     '  "headlight": ' + BoolToStr(HeadlightWritten, 'true', 'false') + ',' + LineEnding +
     '  "cameras": ' + IntToStr(NCameras) + ',' + LineEnding +
+    '  "lights_global_false": ' + IntToStr(NLightsGlobalFalse) + ',' + LineEnding +
+    '  "lights_scoped_to_part_of_scene": ' + IntToStr(NLightsScoped) + ',' + LineEnding +
+    '  "lights_scoped_unscopable": ' + IntToStr(NLightsUnscopable) + ',' + LineEnding +
+    '  "lights_scope_range_clamped": ' + IntToStr(NLightsRangeClamped) + ',' + LineEnding +
+    '  "lights_off": ' + IntToStr(NLightsOff) + ',' + LineEnding +
+    '  "scene_extras": ' + IntToStr(NSceneExtras) + ',' + LineEnding +
+    '  "tangents_generated_shapes": ' + IntToStr(NTangentsGenerated) + ',' + LineEnding +
+    '  "emissive_strength_materials": ' + IntToStr(NEmissiveStrength) + ',' + LineEnding +
+    '  "shapes_with_several_texcoord_sets": ' + IntToStr(NTexCoordSets) + ',' + LineEnding +
     '  "light_units": ' + JsonStr(LightUnitsName) + ',' + LineEnding +
     '  "lit_classic_shapes": ' + IntToStr(NLitClassic) + ',' + LineEnding +
     '  "lit_physical_shapes": ' + IntToStr(NLitPhysical) + ',' + LineEnding +
@@ -1546,6 +2262,66 @@ begin
     Result := Result + JsonStr(Warnings[I]);
   end;
   Result := Result + ']' + LineEnding + '}' + LineEnding;
+end;
+
+{ Write the document. PasGLTF 's sampler writer puts wrapT under the key "wrapS" (see docs/castle-gaps.md), so
+  wrapT would be lost and a clamped T would overwrite wrapS. The samplers array is therefore rewritten here from
+  the codes kept at creation time; everything else is PasGLTF's own JSON, unchanged. }
+procedure TExporter.WriteOut(const Stream: TStream; const IsBinary: Boolean);
+type
+  TChunkHead = packed record
+    Len, Kind: UInt32;
+  end;
+var
+  Json, Samplers: AnsiString;
+  I, P, Q: Integer;
+  Head: array [0..2] of UInt32;
+  JHead, BHead: TChunkHead;
+  HasBin: Boolean;
+begin
+  Json := Doc.SaveToJSON(false);
+  P := Pos('"samplers":[', Json);
+  if (Length(SamplerCodes) > 0) and (P > 0) then
+  begin
+    Q := P + Length('"samplers":[');
+    while (Q <= Length(Json)) and (Json[Q] <> ']') do
+      Inc(Q);
+    Samplers := '"samplers":[';
+    for I := 0 to High(SamplerCodes) do
+    begin
+      if I > 0 then
+        Samplers := Samplers + ',';
+      Samplers := Samplers + Format('{"minFilter":%d,"magFilter":%d,"wrapS":%d,"wrapT":%d}',
+        [SamplerCodes[I][0], SamplerCodes[I][1], SamplerCodes[I][2], SamplerCodes[I][3]]);
+    end;
+    Json := Copy(Json, 1, P - 1) + Samplers + Copy(Json, Q, Length(Json));
+  end;
+  if not IsBinary then
+  begin
+    if Length(Json) > 0 then
+      Stream.WriteBuffer(Json[1], Length(Json));
+    Exit;
+  end;
+  while (Length(Json) = 0) or ((Length(Json) and 3) <> 0) do
+    Json := Json + ' ';
+  HasBin := (Doc.Buffers.Count > 0) and (Doc.Buffers[0].Data.Size > 0);
+  Head[0] := $46546C67; { 'glTF' }
+  Head[1] := 2;
+  Head[2] := 12 + 8 + Length(Json);
+  if HasBin then
+    Inc(Head[2], 8 + Doc.Buffers[0].Data.Size);
+  JHead.Len := Length(Json);
+  JHead.Kind := $4E4F534A; { 'JSON' }
+  Stream.WriteBuffer(Head, SizeOf(Head));
+  Stream.WriteBuffer(JHead, SizeOf(JHead));
+  Stream.WriteBuffer(Json[1], Length(Json));
+  if HasBin then
+  begin
+    BHead.Len := Doc.Buffers[0].Data.Size;
+    BHead.Kind := $004E4942; { 'BIN' }
+    Stream.WriteBuffer(BHead, SizeOf(BHead));
+    Stream.WriteBuffer(Doc.Buffers[0].Data.Memory^, Doc.Buffers[0].Data.Size);
+  end;
 end;
 
 function TExporter.Run(const InUrl, OutFile: String): Boolean;
@@ -1561,6 +2337,16 @@ begin
   Doc := TPasGLTF.TDocument.Create;
   try
     Scene.Load(InUrl);
+    if Opt.EventsAt >= 0 then
+    begin
+      { TimeSensor, interpolators and scripts-free routes move fields; the exporter reads node fields, so the state
+        at this time is what gets written (a still of the animation, not the animation) }
+      Scene.ProcessEvents := true;
+      Scene.ResetTime(0);
+      if Opt.EventsAt > 0 then
+        Scene.SetTime(Opt.EventsAt);
+      Log(Format('events run to t = %.3f s', [Opt.EventsAt]));
+    end;
     Doc.Asset.Version := '2.0';
     Doc.Asset.Generator := 'x3d-castle-convert (Castle Game Engine shape-tree exporter)';
     Buf := TPasGLTF.TBuffer.Create(Doc);
@@ -1576,10 +2362,13 @@ begin
     Log(Format('%d active shapes', [Shapes.Count]));
     for I := 0 to Shapes.Count - 1 do
       ExportShape(Shapes[I], I);
+    if Opt.HiddenSwitch then
+      ExportHiddenSwitchChoices(Shapes);
     if Opt.Camera or Opt.Headlight then
       ExportCamera;
     if Opt.Lights or Opt.Headlight then
       ExportLights;
+    ExportSceneExtras;
 
     Align4;
     if Buf.Data.Size = 0 then
@@ -1594,7 +2383,7 @@ begin
       Buf.SetEmbeddedResourceData;
     Stream := TFileStream.Create(OutFile, fmCreate);
     try
-      Doc.SaveToStream(Stream, IsBinary, not IsBinary);
+      WriteOut(Stream, IsBinary);
     finally FreeAndNil(Stream) end;
 
     Rep := TStringList.Create;

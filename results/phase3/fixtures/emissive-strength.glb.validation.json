@@ -1,0 +1,24 @@
+[
+ {
+  "file": "results/phase3/fixtures/emissive-strength.glb",
+  "bytes": 24224,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_emissive_strength",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 1140,
+   "vertices": 651,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

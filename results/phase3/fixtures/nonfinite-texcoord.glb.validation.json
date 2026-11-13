@@ -1,0 +1,23 @@
+[
+ {
+  "file": "results/phase3/fixtures/nonfinite-texcoord.glb",
+  "bytes": 1668,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 0,
+   "vertices": 2,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

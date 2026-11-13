@@ -39,7 +39,8 @@ renders are comparable; originals are never modified.
     ./x3d-castle-convert scene.x3d scene.glb --verbose
 
 Options: `--engine-writer` (Castle's stock glTF writer, the baseline), `--colour-space=as-is|srgb`,
-`--no-camera --no-lights --no-headlight --no-textures --no-phong-specular`, `--specular-max-f0=F`, `--text-quads`, `--light-scale=F`.
+`--no-camera --no-lights --no-headlight --no-textures --no-phong-specular`, `--specular-max-f0=F`, `--text-quads`, `--light-scale=F`;
+added in phase 3, all off by default: `--text-atlas`, `--hidden-switch`, `--scope-lights`, `--events-at=T`.
 
 ## 4. Census, validator, rig comparisons
 
@@ -50,6 +51,20 @@ Options: `--engine-writer` (Castle's stock glTF writer, the baseline), `--colour
         --prev results/h2h-castle2 --conv castle-convert/x3d-castle-convert --out results/phase2
 
 The rig (`x3d-blender-io/tools/fidelity_rig`) is reused as it is, not copied.
+
+### Phase 3 gate (fixtures, 70 scenes, 21-scene rig)
+
+    (cd tools && npm ci)                                             # pins gltf-validator 2.0.0-dev.3.10
+    CASTLE_CONVERT=castle-convert/x3d-castle-convert python3 tests/phase3_check.py --json results/phase3/fixtures.json   # 17 fixtures, each also validated
+    python3 tools/export_all.py scenes.txt out/ castle-convert/x3d-castle-convert REPO_ROOT   # then the validator and census as above
+    # rig: a folder holding render.mjs, xite.html, babylon.html of the x3d-blender-io fidelity rig plus `npm install` there
+    python3 tools/phase3_rig.py --rig /path/rigcopy --conv castle-convert/x3d-castle-convert --scenes tools/phase3_scenes.json \
+        --out results/phase3/rig-r1 --variant self= --variant rigcam=--no-headlight
+
+`tools/phase3_rig.py` renders X_ITE itself (the older rig output folders are gone), so it needs no earlier run. The rig is noisy on animated scenes
+(the same glb gave villagers 5.51 and 0.37 in two runs), so the gate is 3 repeats and the per-scene median. Variants: `rigcam` = `--no-headlight`
+(the rig adds its headlight, lux 1.0), `self` = converter defaults (the glb carries camera and headlight). Hardware for every rig number: this
+container, 4 vCPU, no GPU, Chromium 153.0.8010.12 with SwiftShader, X_ITE 16.7.1, Babylon.js 9.32.0, 512 x 512.
 
 ## 5. Quality run: every leg against a path-traced reference
 
