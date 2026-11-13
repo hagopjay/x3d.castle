@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="castle-render" standalone_source="castle_render.dpr" qualified_name="io.x3d.castlerender" caption="castle-render" version="0.1">
+  <data exists="false"/>
+</project>

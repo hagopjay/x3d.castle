@@ -1,0 +1,146 @@
+{
+ "chosen": [
+  "ssaa4",
+  "shading_gouraud"
+ ],
+ "rule": "per group, the lever with the lowest mean (flip_mean(lever) - flip_mean(castle_native)) against ref.png over the scenes where both rendered, kept when that mean is below -0.0001; ibl is never in the combination. In-sample: the same scenes choose and score it.",
+ "table": {
+  "shadows": {
+   "group": "shadow",
+   "n_scenes": 9,
+   "mean_delta_flip": 0.003982029855251312,
+   "scenes_better": 2,
+   "scenes_worse": 3
+  },
+  "shadows2048": {
+   "group": "shadow",
+   "n_scenes": 9,
+   "mean_delta_flip": 0.003148607909679413,
+   "scenes_better": 4,
+   "scenes_worse": 3
+  },
+  "ssao": {
+   "group": "ssao",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.006468011469890674,
+   "scenes_better": 2,
+   "scenes_worse": 8
+  },
+  "ssr": {
+   "group": "ssr",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.0001881990892191728,
+   "scenes_better": 2,
+   "scenes_worse": 3
+  },
+  "tonemap_aces": {
+   "group": "tonemap",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.03524647249529759,
+   "scenes_better": 2,
+   "scenes_worse": 12
+  },
+  "tonemap_uncharted": {
+   "group": "tonemap",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.02464576062435905,
+   "scenes_better": 7,
+   "scenes_worse": 8
+  },
+  "tonemap_hejl": {
+   "group": "tonemap",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.022811039707933863,
+   "scenes_better": 5,
+   "scenes_worse": 10
+  },
+  "shading_phong": {
+   "group": "shading",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.0,
+   "scenes_better": 0,
+   "scenes_worse": 0
+  },
+  "shading_gouraud": {
+   "group": "shading",
+   "n_scenes": 15,
+   "mean_delta_flip": -0.0003853681186834971,
+   "scenes_better": 3,
+   "scenes_worse": 1
+  },
+  "shading_pbr": {
+   "group": "shading",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.007921794801950455,
+   "scenes_better": 0,
+   "scenes_worse": 6
+  },
+  "msaa4": {
+   "group": "aa",
+   "n_scenes": 15,
+   "mean_delta_flip": -0.00032597969596584637,
+   "scenes_better": 11,
+   "scenes_worse": 3
+  },
+  "ssaa2": {
+   "group": "aa",
+   "n_scenes": 15,
+   "mean_delta_flip": -0.0018308120779693127,
+   "scenes_better": 11,
+   "scenes_worse": 2
+  },
+  "ssaa4": {
+   "group": "aa",
+   "n_scenes": 15,
+   "mean_delta_flip": -0.0027482759207487105,
+   "scenes_better": 10,
+   "scenes_worse": 2
+  },
+  "aniso16": {
+   "group": "aniso",
+   "n_scenes": 15,
+   "mean_delta_flip": -6.136993567148844e-05,
+   "scenes_better": 1,
+   "scenes_worse": 0
+  },
+  "colorspace_linear": {
+   "group": "colorspace",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.11184835533301035,
+   "scenes_better": 1,
+   "scenes_worse": 8
+  },
+  "colorspace_srgb": {
+   "group": "colorspace",
+   "n_scenes": 15,
+   "mean_delta_flip": 0.044281339800606175,
+   "scenes_better": 2,
+   "scenes_worse": 6
+  },
+  "ibl": {
+   "group": null,
+   "n_scenes": 15,
+   "mean_delta_flip": 0.04373704856261611,
+   "scenes_better": 0,
+   "scenes_worse": 13
+  }
+ },
+ "n_scenes": 15,
+ "scenes": [
+  "annotation-standard",
+  "earth-planet",
+  "lights-after",
+  "materials-world",
+  "nurbs-weights",
+  "p1-point-physical",
+  "p2-point-classic",
+  "p3-directional-classic-i1",
+  "p4-point-quadratic-physical",
+  "p5-directional-physical-i03",
+  "quaternion-xyzw",
+  "repair-2-render",
+  "stilllife-direct",
+  "stilllife-stage",
+  "village"
+ ]
+}

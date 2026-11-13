@@ -1,0 +1,10 @@
+castle-convert/castle-engine-output
+castle-convert/x3d-castle-convert
+castle-render/castle-engine-output
+castle-render/castle-render
+**/__pycache__
+**/*.pyc
+results
+screens
+qual
+.git

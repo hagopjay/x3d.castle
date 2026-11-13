@@ -1,0 +1,54 @@
+per-leg mean over the scenes that have the leg (n), against ref.png (Cycles, GI on, 256 spp); and each leg against xite.png
+leg                          n flip_mean flip_expnorm    ssim   psnr    |d|  |d|geo | vs X_ITE:    |d|  |d|geo    flip
+ref                          - |   4.39    8.75  0.0748
+xite                        15    0.0748       0.0735  0.8890  31.76   4.39    8.75 | -
+babylon_addon               15    0.0516       0.0594  0.9550  32.00   3.17    8.71 |   4.44    9.09  0.0666
+babylon_castle              15    0.0658       0.0699  0.9415  31.03   4.12   12.10 |   5.04    9.73  0.0728
+castle_native               15    0.1321       0.1045  0.8527  25.40  11.69   26.73 |   8.92   19.87  0.0915
+castle_shadows               9    0.1986       0.1678  0.7599  22.91  16.66   23.35 |  12.80   18.99  0.1432
+castle_shadows2048           9    0.1978       0.1681  0.7599  22.85  16.56   23.22 |  12.66   18.81  0.1413
+castle_ssao                 15    0.1386       0.1083  0.8513  25.26  11.73   26.71 |   9.00   19.90  0.1004
+castle_ssr                  15    0.1323       0.1056  0.8506  25.39  11.67   26.71 |   9.00   19.97  0.0939
+castle_tonemap_aces         15    0.1674       0.1180  0.8528  23.86  14.50   32.77 |  13.52   28.56  0.1561
+castle_tonemap_uncharted    15    0.1567       0.1178  0.8607  23.62  12.42   35.78 |  11.04   29.51  0.1418
+castle_tonemap_hejl         15    0.1549       0.1224  0.8407  23.93  13.04   33.13 |  11.95   27.62  0.1423
+castle_shading_phong        15    0.1321       0.1045  0.8527  25.40  11.69   26.73 |   8.92   19.87  0.0915
+castle_shading_gouraud      15    0.1317       0.1040  0.8534  25.39  11.65   26.58 |   8.88   19.68  0.0912
+castle_shading_pbr          15    0.1400       0.1131  0.8491  24.46  12.50   32.62 |  10.08   27.62  0.1045
+castle_msaa4                15    0.1318       0.1045  0.8561  26.59  11.59   26.10 |   8.80   19.19  0.0897
+castle_ssaa2                15    0.1303       0.1044  0.8564  26.58  11.37   25.91 |   8.62   19.07  0.0880
+castle_ssaa4                15    0.1294       0.1045  0.8574  26.97  11.24   25.69 |   8.57   18.98  0.0877
+castle_aniso16              15    0.1320       0.1045  0.8526  25.40  11.67   26.70 |   8.91   19.84  0.0915
+castle_colorspace_linear    15    0.2440       0.1349  0.7817  22.05  23.95   45.13 |  22.24   41.27  0.2294
+castle_colorspace_srgb      15    0.1764       0.1258  0.7765  23.20  16.15   32.51 |  13.74   26.71  0.1424
+castle_ibl                  15    0.1758       0.1086  0.8341  20.75  16.32   48.00 |  14.55   45.44  0.1525
+castle_all                  15    0.1289       0.1037  0.8581  26.98  11.19   25.55 |   8.52   18.78  0.0873
+
+core legs over the 15 scenes where xite, babylon_addon, babylon_castle and castle_native all have numbers:
+  xite               n=15 mean flip_mean 0.0748  mean flip_mean_expnorm 0.0735
+  babylon_addon      n=15 mean flip_mean 0.0516  mean flip_mean_expnorm 0.0594
+  babylon_castle     n=15 mean flip_mean 0.0658  mean flip_mean_expnorm 0.0699
+  castle_native      n=15 mean flip_mean 0.1321  mean flip_mean_expnorm 0.1045
+  castle_all         n=15 mean flip_mean 0.1289  mean flip_mean_expnorm 0.1037
+reference noise floor (Cycles seed 0 vs seed 1): mean flip_mean 0.0034, max 0.0107 over 15 scenes
+
+per scene flip_mean against ref.png (noise floor in the last column; ref(vs xite) = Cycles ref against xite.png)
+scene                            ref(vs xite)           xite  babylon_addon babylon_castle  castle_native     castle_all  noise_floor
+stilllife-direct                       0.0846         0.0846         0.0855         0.0855         0.0842         0.0841       0.0061
+stilllife-stage                        0.0922         0.0922         0.0928         0.0928         0.0951         0.0950       0.0076
+materials-world                        0.1121         0.1121         0.1653         0.1708         0.5956         0.5941       0.0107
+lights-after                           0.1068         0.1068         0.1067         0.1067         0.2852         0.2847       0.0083
+village                                0.0780         0.0780         0.0499         0.0510         0.0772         0.0773       0.0017
+earth-planet                           0.0031         0.0031         0.0068         0.0068         0.0023         0.0031       0.0003
+annotation-standard                    0.1958         0.1958         0.0459         0.1399         0.1975         0.1979       0.0032
+p1-point-physical                      0.0053         0.0053         0.0060         0.0060         0.0546         0.0544       0.0002
+p2-point-classic                       0.0436         0.0436         0.0068         0.0086         0.0465         0.0432       0.0004
+p3-directional-classic-i1              0.0039         0.0039         0.0077         0.0075         0.0163         0.0147       0.0002
+p4-point-quadratic-physical            0.0085         0.0085         0.0085         0.0085         0.0446         0.0446       0.0002
+p5-directional-physical-i03            0.0015         0.0015         0.0022         0.0022         0.0047         0.0042       0.0001
+nurbs-weights                          0.1828         0.1828         0.0338         0.1004         0.2122         0.1728       0.0011
+quaternion-xyzw                        0.1962         0.1962         0.1548         0.1986         0.2611         0.2598       0.0104
+repair-2-render                        0.0070         0.0070         0.0017         0.0019         0.0044         0.0042       0.0002
+
+castle_all levers: ssaa4, shading_gouraud   (per group, the lever with the lowest mean (flip_mean(lever) - flip_mean(castle_native)) against ref.png over the scenes where both rendered, kept when that mean is below -0.0001; ibl is never in the combination. In-sample: the same scenes choose and score it.)
+skipped / failed legs: none

@@ -50,3 +50,20 @@ Options: `--engine-writer` (Castle's stock glTF writer, the baseline), `--colour
         --prev results/h2h-castle2 --conv castle-convert/x3d-castle-convert --out results/phase2
 
 The rig (`x3d-blender-io/tools/fidelity_rig`) is reused as it is, not copied.
+
+## 5. Quality run: every leg against a path-traced reference
+
+`tools/run_quality.py` makes, per scene, a Cycles reference (`cycles_reference.py`, 256 spp, two seeds for the noise floor),
+X_ITE and Babylon.js renders through the rig, our exporter's glb in Babylon.js, `castle-render` (native and one lever at a time,
+plus `castle_all`), then the metrics of `quality_metrics.py` against the reference and against X_ITE, one sheet per scene and one
+`results.json`. It re-executes itself under the venv that has bpy, flip-evaluator and scikit-image.
+
+    (cd castle-render && ./build.sh)                          # castle-render binary; needs CASTLE_ENGINE_PATH
+    python3 tools/run_quality.py --extra-refs direct,shadows  # public set -> ../qual/public (resumable, ~40 min on 4 shared vCPUs)
+    python3 tools/run_quality.py --scenes scenes.txt --out DIR   # NAME=PATH lines, view from the scene's first Viewpoint
+
+Private scenes: `--scenes` needs `--out`, and the script refuses an `--out` inside the public output folder.
+`--extra-refs direct` adds a reference without indirect light (what X_ITE and Babylon.js can show), `shadows` one where every
+light casts shadows (the file's own `shadows` field is otherwise honoured). The reference is Cycles as the x3d-blender-io add-on
+imports the file: where the add-on drops a node (NurbsCurve, Billboard) or changes a light model (Blender lights always fall off
+with 1/d^2) the reference does too, and a leg that reads the add-on's glb shares that.

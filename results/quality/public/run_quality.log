@@ -1,0 +1,880 @@
+[06:05:55] === run_quality: 15 scene(s) -> $WORK/qual/public_rerun (public set), samples 256, extra refs ['direct', 'shadows'], 17 levers, tries 3
+[06:05:55] --- [1/15] stilllife-direct
+[06:05:55]   stilllife-direct: addon_glb (attempt 1/3)
+[06:05:56]   stilllife-direct: addon_glb ok 1.17 s
+[06:05:56]   stilllife-direct: ref (attempt 1/3)
+[06:06:44]   stilllife-direct: ref ok 47.84 s
+[06:06:44]   stilllife-direct: ref_seed1 (attempt 1/3)
+[06:07:33]   stilllife-direct: ref_seed1 ok 49.32 s
+[06:07:33]   stilllife-direct: rig_addon (attempt 1/3)
+[06:07:40]   stilllife-direct: rig_addon ok 6.55 s
+[06:07:40]   stilllife-direct: castle_export (attempt 1/3)
+[06:07:40]   stilllife-direct: castle_export ok 0.27 s
+[06:07:40]   stilllife-direct: babylon_castle (attempt 1/3)
+[06:07:43]   stilllife-direct: babylon_castle ok 3.58 s
+[06:07:43]   stilllife-direct: castle_native (attempt 1/3)
+[06:07:44]   stilllife-direct: castle_native ok 0.52 s
+[06:07:44]   stilllife-direct: castle_shadows (attempt 1/3)
+[06:07:45]   stilllife-direct: castle_shadows ok 0.57 s
+[06:07:45]   stilllife-direct: castle_shadows2048 (attempt 1/3)
+[06:07:45]   stilllife-direct: castle_shadows2048 ok 0.67 s
+[06:07:45]   stilllife-direct: castle_ssao (attempt 1/3)
+[06:07:46]   stilllife-direct: castle_ssao ok 0.52 s
+[06:07:46]   stilllife-direct: castle_ssr (attempt 1/3)
+[06:07:46]   stilllife-direct: castle_ssr ok 0.57 s
+[06:07:46]   stilllife-direct: castle_tonemap_aces (attempt 1/3)
+[06:07:47]   stilllife-direct: castle_tonemap_aces ok 0.52 s
+[06:07:47]   stilllife-direct: castle_tonemap_uncharted (attempt 1/3)
+[06:07:47]   stilllife-direct: castle_tonemap_uncharted ok 0.62 s
+[06:07:47]   stilllife-direct: castle_tonemap_hejl (attempt 1/3)
+[06:07:48]   stilllife-direct: castle_tonemap_hejl ok 0.52 s
+[06:07:48]   stilllife-direct: castle_shading_phong (attempt 1/3)
+[06:07:48]   stilllife-direct: castle_shading_phong ok 0.52 s
+[06:07:48]   stilllife-direct: castle_shading_gouraud (attempt 1/3)
+[06:07:49]   stilllife-direct: castle_shading_gouraud ok 0.57 s
+[06:07:49]   stilllife-direct: castle_shading_pbr (attempt 1/3)
+[06:07:50]   stilllife-direct: castle_shading_pbr ok 0.52 s
+[06:07:50]   stilllife-direct: castle_msaa4 (attempt 1/3)
+[06:07:50]   stilllife-direct: castle_msaa4 ok 0.57 s
+[06:07:50]   stilllife-direct: castle_ssaa2 (attempt 1/3)
+[06:07:51]   stilllife-direct: castle_ssaa2 ok 0.62 s
+[06:07:51]   stilllife-direct: castle_ssaa4 (attempt 1/3)
+[06:07:51]   stilllife-direct: castle_ssaa4 ok 0.72 s
+[06:07:51]   stilllife-direct: castle_aniso16 (attempt 1/3)
+[06:07:52]   stilllife-direct: castle_aniso16 ok 0.47 s
+[06:07:52]   stilllife-direct: castle_colorspace_linear (attempt 1/3)
+[06:07:52]   stilllife-direct: castle_colorspace_linear ok 0.52 s
+[06:07:52]   stilllife-direct: castle_colorspace_srgb (attempt 1/3)
+[06:07:53]   stilllife-direct: castle_colorspace_srgb ok 0.47 s
+[06:07:53]   stilllife-direct: castle_ibl (attempt 1/3)
+[06:07:54]   stilllife-direct: castle_ibl ok 0.62 s
+[06:08:18]   stilllife-direct: flip_mean xite 0.0846, babylon_addon 0.0855, babylon_castle 0.0855, castle_native 0.0842, castle_shadows 0.1266, castle_shadows2048 0.1282 ...
+[06:08:18] --- [2/15] stilllife-stage
+[06:08:18]   stilllife-stage: addon_glb (attempt 1/3)
+[06:08:19]   stilllife-stage: addon_glb ok 1.02 s
+[06:08:19]   stilllife-stage: ref (attempt 1/3)
+[06:09:07]   stilllife-stage: ref ok 47.87 s
+[06:09:07]   stilllife-stage: ref_seed1 (attempt 1/3)
+[06:09:55]   stilllife-stage: ref_seed1 ok 48.06 s
+[06:09:55]   stilllife-stage: rig_addon (attempt 1/3)
+[06:10:01]   stilllife-stage: rig_addon ok 6.54 s
+[06:10:01]   stilllife-stage: castle_export (attempt 1/3)
+[06:10:02]   stilllife-stage: castle_export ok 0.27 s
+[06:10:02]   stilllife-stage: babylon_castle (attempt 1/3)
+[06:10:05]   stilllife-stage: babylon_castle ok 3.38 s
+[06:10:05]   stilllife-stage: castle_native (attempt 1/3)
+[06:10:06]   stilllife-stage: castle_native ok 0.47 s
+[06:10:06]   stilllife-stage: castle_shadows (attempt 1/3)
+[06:10:06]   stilllife-stage: castle_shadows ok 0.52 s
+[06:10:06]   stilllife-stage: castle_shadows2048 (attempt 1/3)
+[06:10:07]   stilllife-stage: castle_shadows2048 ok 0.62 s
+[06:10:07]   stilllife-stage: castle_ssao (attempt 1/3)
+[06:10:07]   stilllife-stage: castle_ssao ok 0.62 s
+[06:10:07]   stilllife-stage: castle_ssr (attempt 1/3)
+[06:10:08]   stilllife-stage: castle_ssr ok 0.57 s
+[06:10:08]   stilllife-stage: castle_tonemap_aces (attempt 1/3)
+[06:10:08]   stilllife-stage: castle_tonemap_aces ok 0.57 s
+[06:10:08]   stilllife-stage: castle_tonemap_uncharted (attempt 1/3)
+[06:10:09]   stilllife-stage: castle_tonemap_uncharted ok 0.47 s
+[06:10:09]   stilllife-stage: castle_tonemap_hejl (attempt 1/3)
+[06:10:09]   stilllife-stage: castle_tonemap_hejl ok 0.52 s
+[06:10:09]   stilllife-stage: castle_shading_phong (attempt 1/3)
+[06:10:10]   stilllife-stage: castle_shading_phong ok 0.52 s
+[06:10:10]   stilllife-stage: castle_shading_gouraud (attempt 1/3)
+[06:10:10]   stilllife-stage: castle_shading_gouraud ok 0.47 s
+[06:10:10]   stilllife-stage: castle_shading_pbr (attempt 1/3)
+[06:10:11]   stilllife-stage: castle_shading_pbr ok 0.52 s
+[06:10:11]   stilllife-stage: castle_msaa4 (attempt 1/3)
+[06:10:12]   stilllife-stage: castle_msaa4 ok 0.57 s
+[06:10:12]   stilllife-stage: castle_ssaa2 (attempt 1/3)
+[06:10:12]   stilllife-stage: castle_ssaa2 ok 0.57 s
+[06:10:12]   stilllife-stage: castle_ssaa4 (attempt 1/3)
+[06:10:13]   stilllife-stage: castle_ssaa4 ok 0.67 s
+[06:10:13]   stilllife-stage: castle_aniso16 (attempt 1/3)
+[06:10:13]   stilllife-stage: castle_aniso16 ok 0.47 s
+[06:10:13]   stilllife-stage: castle_colorspace_linear (attempt 1/3)
+[06:10:14]   stilllife-stage: castle_colorspace_linear ok 0.47 s
+[06:10:14]   stilllife-stage: castle_colorspace_srgb (attempt 1/3)
+[06:10:14]   stilllife-stage: castle_colorspace_srgb ok 0.57 s
+[06:10:14]   stilllife-stage: castle_ibl (attempt 1/3)
+[06:10:15]   stilllife-stage: castle_ibl ok 0.62 s
+[06:10:41]   stilllife-stage: flip_mean xite 0.0922, babylon_addon 0.0928, babylon_castle 0.0928, castle_native 0.0951, castle_shadows 0.1329, castle_shadows2048 0.1341 ...
+[06:10:41] --- [3/15] materials-world
+[06:10:41]   materials-world: addon_glb (attempt 1/3)
+[06:10:42]   materials-world: addon_glb ok 1.37 s
+[06:10:42]   materials-world: ref (attempt 1/3)
+[06:11:54]   materials-world: ref ok 72.05 s
+[06:11:54]   materials-world: ref_seed1 (attempt 1/3)
+[06:13:10]   materials-world: ref_seed1 ok 75.61 s
+[06:13:10]   materials-world: rig_addon (attempt 1/3)
+[06:13:40]   materials-world: rig_addon ok 29.85 s
+[06:13:40]   materials-world: castle_export (attempt 1/3)
+[06:13:40]   materials-world: castle_export ok 0.37 s
+[06:13:40]   materials-world: babylon_castle (attempt 1/3)
+[06:13:44]   materials-world: babylon_castle ok 4.13 s
+[06:13:44]   materials-world: castle_native (attempt 1/3)
+[06:13:45]   materials-world: castle_native ok 0.72 s
+[06:13:45]   materials-world: castle_shadows (attempt 1/3)
+[06:13:46]   materials-world: castle_shadows ok 0.77 s
+[06:13:46]   materials-world: castle_shadows2048 (attempt 1/3)
+[06:13:47]   materials-world: castle_shadows2048 ok 0.92 s
+[06:13:47]   materials-world: castle_ssao (attempt 1/3)
+[06:13:48]   materials-world: castle_ssao ok 0.87 s
+[06:13:48]   materials-world: castle_ssr (attempt 1/3)
+[06:13:48]   materials-world: castle_ssr ok 0.77 s
+[06:13:48]   materials-world: castle_tonemap_aces (attempt 1/3)
+[06:13:49]   materials-world: castle_tonemap_aces ok 0.82 s
+[06:13:49]   materials-world: castle_tonemap_uncharted (attempt 1/3)
+[06:13:50]   materials-world: castle_tonemap_uncharted ok 0.77 s
+[06:13:50]   materials-world: castle_tonemap_hejl (attempt 1/3)
+[06:13:51]   materials-world: castle_tonemap_hejl ok 0.77 s
+[06:13:51]   materials-world: castle_shading_phong (attempt 1/3)
+[06:13:51]   materials-world: castle_shading_phong ok 0.77 s
+[06:13:51]   materials-world: castle_shading_gouraud (attempt 1/3)
+[06:13:52]   materials-world: castle_shading_gouraud ok 0.77 s
+[06:13:52]   materials-world: castle_shading_pbr (attempt 1/3)
+[06:13:53]   materials-world: castle_shading_pbr ok 0.87 s
+[06:13:53]   materials-world: castle_msaa4 (attempt 1/3)
+[06:13:54]   materials-world: castle_msaa4 ok 0.77 s
+[06:13:54]   materials-world: castle_ssaa2 (attempt 1/3)
+[06:13:55]   materials-world: castle_ssaa2 ok 0.87 s
+[06:13:55]   materials-world: castle_ssaa4 (attempt 1/3)
+[06:13:56]   materials-world: castle_ssaa4 ok 0.92 s
+[06:13:56]   materials-world: castle_aniso16 (attempt 1/3)
+[06:13:56]   materials-world: castle_aniso16 ok 0.72 s
+[06:13:56]   materials-world: castle_colorspace_linear (attempt 1/3)
+[06:13:57]   materials-world: castle_colorspace_linear ok 0.77 s
+[06:13:57]   materials-world: castle_colorspace_srgb (attempt 1/3)
+[06:13:58]   materials-world: castle_colorspace_srgb ok 0.82 s
+[06:13:58]   materials-world: castle_ibl (attempt 1/3)
+[06:13:59]   materials-world: castle_ibl ok 0.77 s
+[06:14:23]   materials-world: flip_mean xite 0.1121, babylon_addon 0.1653, babylon_castle 0.1708, castle_native 0.5956, castle_shadows 0.5548, castle_shadows2048 0.5484 ...
+[06:14:23] --- [4/15] lights-after
+[06:14:23]   lights-after: addon_glb (attempt 1/3)
+[06:14:23]   lights-after: addon_glb ok 0.77 s
+[06:14:23]   lights-after: ref (attempt 1/3)
+[06:15:15]   lights-after: ref ok 51.74 s
+[06:15:15]   lights-after: ref_seed1 (attempt 1/3)
+[06:16:07]   lights-after: ref_seed1 ok 51.78 s
+[06:16:07]   lights-after: rig_addon (attempt 1/3)
+[06:16:12]   lights-after: rig_addon ok 4.59 s
+[06:16:12]   lights-after: castle_export (attempt 1/3)
+[06:16:12]   lights-after: castle_export ok 0.12 s
+[06:16:12]   lights-after: babylon_castle (attempt 1/3)
+[06:16:15]   lights-after: babylon_castle ok 3.03 s
+[06:16:15]   lights-after: castle_native (attempt 1/3)
+[06:16:15]   lights-after: castle_native ok 0.32 s
+[06:16:15]   lights-after: castle_shadows (attempt 1/3)
+[06:16:15]   lights-after: castle_shadows ok 0.32 s
+[06:16:15]   lights-after: castle_shadows2048 (attempt 1/3)
+[06:16:16]   lights-after: castle_shadows2048 ok 0.37 s
+[06:16:16]   lights-after: castle_ssao (attempt 1/3)
+[06:16:16]   lights-after: castle_ssao ok 0.42 s
+[06:16:16]   lights-after: castle_ssr (attempt 1/3)
+[06:16:17]   lights-after: castle_ssr ok 0.37 s
+[06:16:17]   lights-after: castle_tonemap_aces (attempt 1/3)
+[06:16:17]   lights-after: castle_tonemap_aces ok 0.32 s
+[06:16:17]   lights-after: castle_tonemap_uncharted (attempt 1/3)
+[06:16:17]   lights-after: castle_tonemap_uncharted ok 0.32 s
+[06:16:17]   lights-after: castle_tonemap_hejl (attempt 1/3)
+[06:16:17]   lights-after: castle_tonemap_hejl ok 0.32 s
+[06:16:17]   lights-after: castle_shading_phong (attempt 1/3)
+[06:16:18]   lights-after: castle_shading_phong ok 0.32 s
+[06:16:18]   lights-after: castle_shading_gouraud (attempt 1/3)
+[06:16:18]   lights-after: castle_shading_gouraud ok 0.32 s
+[06:16:18]   lights-after: castle_shading_pbr (attempt 1/3)
+[06:16:18]   lights-after: castle_shading_pbr ok 0.32 s
+[06:16:18]   lights-after: castle_msaa4 (attempt 1/3)
+[06:16:19]   lights-after: castle_msaa4 ok 0.42 s
+[06:16:19]   lights-after: castle_ssaa2 (attempt 1/3)
+[06:16:19]   lights-after: castle_ssaa2 ok 0.32 s
+[06:16:19]   lights-after: castle_ssaa4 (attempt 1/3)
+[06:16:20]   lights-after: castle_ssaa4 ok 0.47 s
+[06:16:20]   lights-after: castle_aniso16 (attempt 1/3)
+[06:16:20]   lights-after: castle_aniso16 ok 0.32 s
+[06:16:20]   lights-after: castle_colorspace_linear (attempt 1/3)
+[06:16:20]   lights-after: castle_colorspace_linear ok 0.32 s
+[06:16:20]   lights-after: castle_colorspace_srgb (attempt 1/3)
+[06:16:21]   lights-after: castle_colorspace_srgb ok 0.27 s
+[06:16:21]   lights-after: castle_ibl (attempt 1/3)
+[06:16:21]   lights-after: castle_ibl ok 0.62 s
+[06:16:43]   lights-after: flip_mean xite 0.1068, babylon_addon 0.1067, babylon_castle 0.1067, castle_native 0.2852, castle_shadows 0.2815, castle_shadows2048 0.2818 ...
+[06:16:43] --- [5/15] village
+[06:16:43]   village: addon_glb (attempt 1/3)
+[06:16:44]   village: addon_glb ok 1.02 s
+[06:16:44]   village: ref (attempt 1/3)
+[06:17:00]   village: ref ok 16.18 s
+[06:17:00]   village: ref_seed1 (attempt 1/3)
+[06:17:17]   village: ref_seed1 ok 16.38 s
+[06:17:17]   village: rig_addon (attempt 1/3)
+[06:17:23]   village: rig_addon ok 6.14 s
+[06:17:23]   village: castle_export (attempt 1/3)
+[06:17:23]   village: castle_export ok 0.27 s
+[06:17:23]   village: babylon_castle (attempt 1/3)
+[06:17:26]   village: babylon_castle ok 2.88 s
+[06:17:26]   village: castle_native (attempt 1/3)
+[06:17:27]   village: castle_native ok 0.47 s
+[06:17:27]   village: castle_shadows (attempt 1/3)
+[06:17:27]   village: castle_shadows unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (0 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:17:27]   village: castle_shadows2048 (attempt 1/3)
+[06:17:27]   village: castle_shadows2048 unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (0 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:17:27]   village: castle_ssao (attempt 1/3)
+[06:17:28]   village: castle_ssao ok 0.57 s
+[06:17:28]   village: castle_ssr (attempt 1/3)
+[06:17:29]   village: castle_ssr ok 0.57 s
+[06:17:29]   village: castle_tonemap_aces (attempt 1/3)
+[06:17:29]   village: castle_tonemap_aces ok 0.52 s
+[06:17:29]   village: castle_tonemap_uncharted (attempt 1/3)
+[06:17:30]   village: castle_tonemap_uncharted ok 0.52 s
+[06:17:30]   village: castle_tonemap_hejl (attempt 1/3)
+[06:17:30]   village: castle_tonemap_hejl ok 0.47 s
+[06:17:30]   village: castle_shading_phong (attempt 1/3)
+[06:17:31]   village: castle_shading_phong ok 0.47 s
+[06:17:31]   village: castle_shading_gouraud (attempt 1/3)
+[06:17:31]   village: castle_shading_gouraud ok 0.52 s
+[06:17:31]   village: castle_shading_pbr (attempt 1/3)
+[06:17:32]   village: castle_shading_pbr ok 0.47 s
+[06:17:32]   village: castle_msaa4 (attempt 1/3)
+[06:17:32]   village: castle_msaa4 ok 0.47 s
+[06:17:32]   village: castle_ssaa2 (attempt 1/3)
+[06:17:32]   village: castle_ssaa2 ok 0.47 s
+[06:17:32]   village: castle_ssaa4 (attempt 1/3)
+[06:17:33]   village: castle_ssaa4 ok 0.52 s
+[06:17:33]   village: castle_aniso16 (attempt 1/3)
+[06:17:34]   village: castle_aniso16 ok 0.52 s
+[06:17:34]   village: castle_colorspace_linear (attempt 1/3)
+[06:17:34]   village: castle_colorspace_linear ok 0.52 s
+[06:17:34]   village: castle_colorspace_srgb (attempt 1/3)
+[06:17:35]   village: castle_colorspace_srgb ok 0.47 s
+[06:17:35]   village: castle_ibl (attempt 1/3)
+[06:17:35]   village: castle_ibl ok 0.52 s
+[06:17:53]   village: flip_mean xite 0.078, babylon_addon 0.0499, babylon_castle 0.051, castle_native 0.0772, castle_ssao 0.1751, castle_ssr 0.0958 ...
+[06:17:53] --- [6/15] earth-planet
+[06:17:53]   earth-planet: addon_glb (attempt 1/3)
+[06:17:54]   earth-planet: addon_glb ok 0.92 s
+[06:17:54]   earth-planet: ref (attempt 1/3)
+[06:18:03]   earth-planet: ref ok 8.31 s
+[06:18:03]   earth-planet: ref_seed1 (attempt 1/3)
+[06:18:11]   earth-planet: ref_seed1 ok 7.95 s
+[06:18:11]   earth-planet: rig_addon (attempt 1/3)
+[06:18:16]   earth-planet: rig_addon ok 5.24 s
+[06:18:16]   earth-planet: castle_export (attempt 1/3)
+[06:18:16]   earth-planet: castle_export ok 0.17 s
+[06:18:16]   earth-planet: babylon_castle (attempt 1/3)
+[06:18:19]   earth-planet: babylon_castle ok 2.68 s
+[06:18:19]   earth-planet: castle_native (attempt 1/3)
+[06:18:19]   earth-planet: castle_native ok 0.32 s
+[06:18:19]   earth-planet: castle_shadows (attempt 1/3)
+[06:18:19]   earth-planet: castle_shadows unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (0 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:18:19]   earth-planet: castle_shadows2048 (attempt 1/3)
+[06:18:20]   earth-planet: castle_shadows2048 unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (0 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:18:20]   earth-planet: castle_ssao (attempt 1/3)
+[06:18:20]   earth-planet: castle_ssao ok 0.42 s
+[06:18:20]   earth-planet: castle_ssr (attempt 1/3)
+[06:18:20]   earth-planet: castle_ssr ok 0.32 s
+[06:18:20]   earth-planet: castle_tonemap_aces (attempt 1/3)
+[06:18:21]   earth-planet: castle_tonemap_aces ok 0.32 s
+[06:18:21]   earth-planet: castle_tonemap_uncharted (attempt 1/3)
+[06:18:21]   earth-planet: castle_tonemap_uncharted ok 0.32 s
+[06:18:21]   earth-planet: castle_tonemap_hejl (attempt 1/3)
+[06:18:21]   earth-planet: castle_tonemap_hejl ok 0.32 s
+[06:18:21]   earth-planet: castle_shading_phong (attempt 1/3)
+[06:18:22]   earth-planet: castle_shading_phong ok 0.32 s
+[06:18:22]   earth-planet: castle_shading_gouraud (attempt 1/3)
+[06:18:22]   earth-planet: castle_shading_gouraud ok 0.37 s
+[06:18:22]   earth-planet: castle_shading_pbr (attempt 1/3)
+[06:18:22]   earth-planet: castle_shading_pbr ok 0.37 s
+[06:18:22]   earth-planet: castle_msaa4 (attempt 1/3)
+[06:18:23]   earth-planet: castle_msaa4 ok 0.37 s
+[06:18:23]   earth-planet: castle_ssaa2 (attempt 1/3)
+[06:18:23]   earth-planet: castle_ssaa2 ok 0.32 s
+[06:18:23]   earth-planet: castle_ssaa4 (attempt 1/3)
+[06:18:24]   earth-planet: castle_ssaa4 ok 0.47 s
+[06:18:24]   earth-planet: castle_aniso16 (attempt 1/3)
+[06:18:24]   earth-planet: castle_aniso16 ok 0.47 s
+[06:18:24]   earth-planet: castle_colorspace_linear (attempt 1/3)
+[06:18:24]   earth-planet: castle_colorspace_linear ok 0.37 s
+[06:18:24]   earth-planet: castle_colorspace_srgb (attempt 1/3)
+[06:18:25]   earth-planet: castle_colorspace_srgb ok 0.42 s
+[06:18:25]   earth-planet: castle_ibl (attempt 1/3)
+[06:18:25]   earth-planet: castle_ibl ok 0.42 s
+[06:18:37]   earth-planet: flip_mean xite 0.0031, babylon_addon 0.0068, babylon_castle 0.0068, castle_native 0.0023, castle_ssao 0.0025, castle_ssr 0.0023 ...
+[06:18:37] --- [7/15] annotation-standard
+[06:18:37]   annotation-standard: addon_glb (attempt 1/3)
+[06:18:38]   annotation-standard: addon_glb ok 0.97 s
+[06:18:38]   annotation-standard: ref (attempt 1/3)
+[06:19:05]   annotation-standard: ref ok 26.93 s
+[06:19:05]   annotation-standard: ref_seed1 (attempt 1/3)
+[06:19:33]   annotation-standard: ref_seed1 ok 28.09 s
+[06:19:33]   annotation-standard: rig_addon (attempt 1/3)
+[06:19:38]   annotation-standard: rig_addon ok 5.03 s
+[06:19:38]   annotation-standard: castle_export (attempt 1/3)
+[06:19:38]   annotation-standard: castle_export ok 0.12 s
+[06:19:38]   annotation-standard: babylon_castle (attempt 1/3)
+[06:19:41]   annotation-standard: babylon_castle ok 2.93 s
+[06:19:41]   annotation-standard: castle_native (attempt 1/3)
+[06:19:42]   annotation-standard: castle_native ok 0.47 s
+[06:19:42]   annotation-standard: castle_shadows (attempt 1/3)
+[06:19:42]   annotation-standard: castle_shadows ok 0.47 s
+[06:19:42]   annotation-standard: castle_shadows2048 (attempt 1/3)
+[06:19:43]   annotation-standard: castle_shadows2048 ok 0.47 s
+[06:19:43]   annotation-standard: castle_ssao (attempt 1/3)
+[06:19:43]   annotation-standard: castle_ssao ok 0.52 s
+[06:19:43]   annotation-standard: castle_ssr (attempt 1/3)
+[06:19:44]   annotation-standard: castle_ssr ok 0.52 s
+[06:19:44]   annotation-standard: castle_tonemap_aces (attempt 1/3)
+[06:19:44]   annotation-standard: castle_tonemap_aces ok 0.42 s
+[06:19:44]   annotation-standard: castle_tonemap_uncharted (attempt 1/3)
+[06:19:45]   annotation-standard: castle_tonemap_uncharted ok 0.42 s
+[06:19:45]   annotation-standard: castle_tonemap_hejl (attempt 1/3)
+[06:19:45]   annotation-standard: castle_tonemap_hejl ok 0.42 s
+[06:19:45]   annotation-standard: castle_shading_phong (attempt 1/3)
+[06:19:45]   annotation-standard: castle_shading_phong ok 0.42 s
+[06:19:45]   annotation-standard: castle_shading_gouraud (attempt 1/3)
+[06:19:46]   annotation-standard: castle_shading_gouraud ok 0.42 s
+[06:19:46]   annotation-standard: castle_shading_pbr (attempt 1/3)
+[06:19:46]   annotation-standard: castle_shading_pbr ok 0.42 s
+[06:19:46]   annotation-standard: castle_msaa4 (attempt 1/3)
+[06:19:47]   annotation-standard: castle_msaa4 ok 0.42 s
+[06:19:47]   annotation-standard: castle_ssaa2 (attempt 1/3)
+[06:19:47]   annotation-standard: castle_ssaa2 ok 0.42 s
+[06:19:47]   annotation-standard: castle_ssaa4 (attempt 1/3)
+[06:19:48]   annotation-standard: castle_ssaa4 ok 0.57 s
+[06:19:48]   annotation-standard: castle_aniso16 (attempt 1/3)
+[06:19:48]   annotation-standard: castle_aniso16 ok 0.47 s
+[06:19:48]   annotation-standard: castle_colorspace_linear (attempt 1/3)
+[06:19:49]   annotation-standard: castle_colorspace_linear ok 0.42 s
+[06:19:49]   annotation-standard: castle_colorspace_srgb (attempt 1/3)
+[06:19:49]   annotation-standard: castle_colorspace_srgb ok 0.42 s
+[06:19:49]   annotation-standard: castle_ibl (attempt 1/3)
+[06:19:49]   annotation-standard: castle_ibl ok 0.42 s
+[06:20:14]   annotation-standard: flip_mean xite 0.1958, babylon_addon 0.0459, babylon_castle 0.1399, castle_native 0.1975, castle_shadows 0.1975, castle_shadows2048 0.1983 ...
+[06:20:14] --- [8/15] p1-point-physical
+[06:20:14]   p1-point-physical: addon_glb (attempt 1/3)
+[06:20:14]   p1-point-physical: addon_glb ok 0.82 s
+[06:20:14]   p1-point-physical: ref (attempt 1/3)
+[06:20:25]   p1-point-physical: ref ok 10.76 s
+[06:20:25]   p1-point-physical: ref_seed1 (attempt 1/3)
+[06:20:36]   p1-point-physical: ref_seed1 ok 10.71 s
+[06:20:36]   p1-point-physical: rig_addon (attempt 1/3)
+[06:20:40]   p1-point-physical: rig_addon ok 3.93 s
+[06:20:40]   p1-point-physical: castle_export (attempt 1/3)
+[06:20:40]   p1-point-physical: castle_export ok 0.11 s
+[06:20:40]   p1-point-physical: babylon_castle (attempt 1/3)
+[06:20:43]   p1-point-physical: babylon_castle ok 2.62 s
+[06:20:43]   p1-point-physical: castle_native (attempt 1/3)
+[06:20:43]   p1-point-physical: castle_native ok 0.32 s
+[06:20:43]   p1-point-physical: castle_shadows (attempt 1/3)
+[06:20:43]   p1-point-physical: castle_shadows unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:20:43]   p1-point-physical: castle_shadows2048 (attempt 1/3)
+[06:20:43]   p1-point-physical: castle_shadows2048 unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:20:43]   p1-point-physical: castle_ssao (attempt 1/3)
+[06:20:44]   p1-point-physical: castle_ssao ok 0.32 s
+[06:20:44]   p1-point-physical: castle_ssr (attempt 1/3)
+[06:20:44]   p1-point-physical: castle_ssr ok 0.32 s
+[06:20:44]   p1-point-physical: castle_tonemap_aces (attempt 1/3)
+[06:20:44]   p1-point-physical: castle_tonemap_aces ok 0.32 s
+[06:20:44]   p1-point-physical: castle_tonemap_uncharted (attempt 1/3)
+[06:20:45]   p1-point-physical: castle_tonemap_uncharted ok 0.32 s
+[06:20:45]   p1-point-physical: castle_tonemap_hejl (attempt 1/3)
+[06:20:45]   p1-point-physical: castle_tonemap_hejl ok 0.32 s
+[06:20:45]   p1-point-physical: castle_shading_phong (attempt 1/3)
+[06:20:45]   p1-point-physical: castle_shading_phong ok 0.32 s
+[06:20:45]   p1-point-physical: castle_shading_gouraud (attempt 1/3)
+[06:20:46]   p1-point-physical: castle_shading_gouraud ok 0.27 s
+[06:20:46]   p1-point-physical: castle_shading_pbr (attempt 1/3)
+[06:20:46]   p1-point-physical: castle_shading_pbr ok 0.32 s
+[06:20:46]   p1-point-physical: castle_msaa4 (attempt 1/3)
+[06:20:46]   p1-point-physical: castle_msaa4 ok 0.32 s
+[06:20:46]   p1-point-physical: castle_ssaa2 (attempt 1/3)
+[06:20:47]   p1-point-physical: castle_ssaa2 ok 0.32 s
+[06:20:47]   p1-point-physical: castle_ssaa4 (attempt 1/3)
+[06:20:47]   p1-point-physical: castle_ssaa4 ok 0.37 s
+[06:20:47]   p1-point-physical: castle_aniso16 (attempt 1/3)
+[06:20:47]   p1-point-physical: castle_aniso16 ok 0.27 s
+[06:20:47]   p1-point-physical: castle_colorspace_linear (attempt 1/3)
+[06:20:48]   p1-point-physical: castle_colorspace_linear ok 0.32 s
+[06:20:48]   p1-point-physical: castle_colorspace_srgb (attempt 1/3)
+[06:20:48]   p1-point-physical: castle_colorspace_srgb ok 0.27 s
+[06:20:48]   p1-point-physical: castle_ibl (attempt 1/3)
+[06:20:48]   p1-point-physical: castle_ibl ok 0.32 s
+[06:21:02]   p1-point-physical: flip_mean xite 0.0053, babylon_addon 0.006, babylon_castle 0.006, castle_native 0.0546, castle_ssao 0.0545, castle_ssr 0.0546 ...
+[06:21:02] --- [9/15] p2-point-classic
+[06:21:02]   p2-point-classic: addon_glb (attempt 1/3)
+[06:21:03]   p2-point-classic: addon_glb ok 0.77 s
+[06:21:03]   p2-point-classic: ref (attempt 1/3)
+[06:21:13]   p2-point-classic: ref ok 10.26 s
+[06:21:13]   p2-point-classic: ref_seed1 (attempt 1/3)
+[06:21:24]   p2-point-classic: ref_seed1 ok 10.73 s
+[06:21:24]   p2-point-classic: rig_addon (attempt 1/3)
+[06:21:28]   p2-point-classic: rig_addon ok 3.98 s
+[06:21:28]   p2-point-classic: castle_export (attempt 1/3)
+[06:21:28]   p2-point-classic: castle_export ok 0.11 s
+[06:21:28]   p2-point-classic: babylon_castle (attempt 1/3)
+[06:21:31]   p2-point-classic: babylon_castle ok 2.57 s
+[06:21:31]   p2-point-classic: castle_native (attempt 1/3)
+[06:21:31]   p2-point-classic: castle_native ok 0.27 s
+[06:21:31]   p2-point-classic: castle_shadows (attempt 1/3)
+[06:21:31]   p2-point-classic: castle_shadows unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:21:31]   p2-point-classic: castle_shadows2048 (attempt 1/3)
+[06:21:32]   p2-point-classic: castle_shadows2048 unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:21:32]   p2-point-classic: castle_ssao (attempt 1/3)
+[06:21:32]   p2-point-classic: castle_ssao ok 0.37 s
+[06:21:32]   p2-point-classic: castle_ssr (attempt 1/3)
+[06:21:32]   p2-point-classic: castle_ssr ok 0.32 s
+[06:21:32]   p2-point-classic: castle_tonemap_aces (attempt 1/3)
+[06:21:33]   p2-point-classic: castle_tonemap_aces ok 0.27 s
+[06:21:33]   p2-point-classic: castle_tonemap_uncharted (attempt 1/3)
+[06:21:33]   p2-point-classic: castle_tonemap_uncharted ok 0.32 s
+[06:21:33]   p2-point-classic: castle_tonemap_hejl (attempt 1/3)
+[06:21:33]   p2-point-classic: castle_tonemap_hejl ok 0.32 s
+[06:21:33]   p2-point-classic: castle_shading_phong (attempt 1/3)
+[06:21:33]   p2-point-classic: castle_shading_phong ok 0.27 s
+[06:21:33]   p2-point-classic: castle_shading_gouraud (attempt 1/3)
+[06:21:34]   p2-point-classic: castle_shading_gouraud ok 0.27 s
+[06:21:34]   p2-point-classic: castle_shading_pbr (attempt 1/3)
+[06:21:34]   p2-point-classic: castle_shading_pbr ok 0.32 s
+[06:21:34]   p2-point-classic: castle_msaa4 (attempt 1/3)
+[06:21:34]   p2-point-classic: castle_msaa4 ok 0.32 s
+[06:21:34]   p2-point-classic: castle_ssaa2 (attempt 1/3)
+[06:21:35]   p2-point-classic: castle_ssaa2 ok 0.32 s
+[06:21:35]   p2-point-classic: castle_ssaa4 (attempt 1/3)
+[06:21:35]   p2-point-classic: castle_ssaa4 ok 0.37 s
+[06:21:35]   p2-point-classic: castle_aniso16 (attempt 1/3)
+[06:21:35]   p2-point-classic: castle_aniso16 ok 0.27 s
+[06:21:35]   p2-point-classic: castle_colorspace_linear (attempt 1/3)
+[06:21:36]   p2-point-classic: castle_colorspace_linear ok 0.32 s
+[06:21:36]   p2-point-classic: castle_colorspace_srgb (attempt 1/3)
+[06:21:36]   p2-point-classic: castle_colorspace_srgb ok 0.27 s
+[06:21:36]   p2-point-classic: castle_ibl (attempt 1/3)
+[06:21:36]   p2-point-classic: castle_ibl ok 0.32 s
+[06:21:53]   p2-point-classic: flip_mean xite 0.0436, babylon_addon 0.0068, babylon_castle 0.0086, castle_native 0.0465, castle_ssao 0.0465, castle_ssr 0.0465 ...
+[06:21:53] --- [10/15] p3-directional-classic-i1
+[06:21:53]   p3-directional-classic-i1: addon_glb (attempt 1/3)
+[06:21:54]   p3-directional-classic-i1: addon_glb ok 0.92 s
+[06:21:54]   p3-directional-classic-i1: ref (attempt 1/3)
+[06:22:04]   p3-directional-classic-i1: ref ok 10.16 s
+[06:22:04]   p3-directional-classic-i1: ref_seed1 (attempt 1/3)
+[06:22:14]   p3-directional-classic-i1: ref_seed1 ok 10.16 s
+[06:22:14]   p3-directional-classic-i1: rig_addon (attempt 1/3)
+[06:22:19]   p3-directional-classic-i1: rig_addon ok 4.08 s
+[06:22:19]   p3-directional-classic-i1: castle_export (attempt 1/3)
+[06:22:19]   p3-directional-classic-i1: castle_export ok 0.07 s
+[06:22:19]   p3-directional-classic-i1: babylon_castle (attempt 1/3)
+[06:22:22]   p3-directional-classic-i1: babylon_castle ok 2.98 s
+[06:22:22]   p3-directional-classic-i1: castle_native (attempt 1/3)
+[06:22:22]   p3-directional-classic-i1: castle_native ok 0.37 s
+[06:22:22]   p3-directional-classic-i1: castle_shadows (attempt 1/3)
+[06:22:22]   p3-directional-classic-i1: castle_shadows ok 0.32 s
+[06:22:22]   p3-directional-classic-i1: castle_shadows2048 (attempt 1/3)
+[06:22:23]   p3-directional-classic-i1: castle_shadows2048 ok 0.37 s
+[06:22:23]   p3-directional-classic-i1: castle_ssao (attempt 1/3)
+[06:22:23]   p3-directional-classic-i1: castle_ssao ok 0.42 s
+[06:22:23]   p3-directional-classic-i1: castle_ssr (attempt 1/3)
+[06:22:23]   p3-directional-classic-i1: castle_ssr ok 0.32 s
+[06:22:23]   p3-directional-classic-i1: castle_tonemap_aces (attempt 1/3)
+[06:22:24]   p3-directional-classic-i1: castle_tonemap_aces ok 0.32 s
+[06:22:24]   p3-directional-classic-i1: castle_tonemap_uncharted (attempt 1/3)
+[06:22:24]   p3-directional-classic-i1: castle_tonemap_uncharted ok 0.27 s
+[06:22:24]   p3-directional-classic-i1: castle_tonemap_hejl (attempt 1/3)
+[06:22:24]   p3-directional-classic-i1: castle_tonemap_hejl ok 0.27 s
+[06:22:24]   p3-directional-classic-i1: castle_shading_phong (attempt 1/3)
+[06:22:25]   p3-directional-classic-i1: castle_shading_phong ok 0.32 s
+[06:22:25]   p3-directional-classic-i1: castle_shading_gouraud (attempt 1/3)
+[06:22:25]   p3-directional-classic-i1: castle_shading_gouraud ok 0.32 s
+[06:22:25]   p3-directional-classic-i1: castle_shading_pbr (attempt 1/3)
+[06:22:25]   p3-directional-classic-i1: castle_shading_pbr ok 0.32 s
+[06:22:25]   p3-directional-classic-i1: castle_msaa4 (attempt 1/3)
+[06:22:26]   p3-directional-classic-i1: castle_msaa4 ok 0.32 s
+[06:22:26]   p3-directional-classic-i1: castle_ssaa2 (attempt 1/3)
+[06:22:26]   p3-directional-classic-i1: castle_ssaa2 ok 0.37 s
+[06:22:26]   p3-directional-classic-i1: castle_ssaa4 (attempt 1/3)
+[06:22:26]   p3-directional-classic-i1: castle_ssaa4 ok 0.37 s
+[06:22:26]   p3-directional-classic-i1: castle_aniso16 (attempt 1/3)
+[06:22:27]   p3-directional-classic-i1: castle_aniso16 ok 0.32 s
+[06:22:27]   p3-directional-classic-i1: castle_colorspace_linear (attempt 1/3)
+[06:22:27]   p3-directional-classic-i1: castle_colorspace_linear ok 0.37 s
+[06:22:27]   p3-directional-classic-i1: castle_colorspace_srgb (attempt 1/3)
+[06:22:27]   p3-directional-classic-i1: castle_colorspace_srgb ok 0.37 s
+[06:22:27]   p3-directional-classic-i1: castle_ibl (attempt 1/3)
+[06:22:28]   p3-directional-classic-i1: castle_ibl ok 0.32 s
+[06:22:43]   p3-directional-classic-i1: flip_mean xite 0.0039, babylon_addon 0.0077, babylon_castle 0.0075, castle_native 0.0163, castle_shadows 0.0163, castle_shadows2048 0.0163 ...
+[06:22:43] --- [11/15] p4-point-quadratic-physical
+[06:22:43]   p4-point-quadratic-physical: addon_glb (attempt 1/3)
+[06:22:43]   p4-point-quadratic-physical: addon_glb ok 0.87 s
+[06:22:43]   p4-point-quadratic-physical: ref (attempt 1/3)
+[06:22:55]   p4-point-quadratic-physical: ref ok 11.47 s
+[06:22:55]   p4-point-quadratic-physical: ref_seed1 (attempt 1/3)
+[06:23:06]   p4-point-quadratic-physical: ref_seed1 ok 11.18 s
+[06:23:06]   p4-point-quadratic-physical: rig_addon (attempt 1/3)
+[06:23:10]   p4-point-quadratic-physical: rig_addon ok 4.08 s
+[06:23:10]   p4-point-quadratic-physical: castle_export (attempt 1/3)
+[06:23:10]   p4-point-quadratic-physical: castle_export ok 0.06 s
+[06:23:10]   p4-point-quadratic-physical: babylon_castle (attempt 1/3)
+[06:23:13]   p4-point-quadratic-physical: babylon_castle ok 2.83 s
+[06:23:13]   p4-point-quadratic-physical: castle_native (attempt 1/3)
+[06:23:13]   p4-point-quadratic-physical: castle_native ok 0.27 s
+[06:23:13]   p4-point-quadratic-physical: castle_shadows (attempt 1/3)
+[06:23:14]   p4-point-quadratic-physical: castle_shadows unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:23:14]   p4-point-quadratic-physical: castle_shadows2048 (attempt 1/3)
+[06:23:14]   p4-point-quadratic-physical: castle_shadows2048 unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:23:14]   p4-point-quadratic-physical: castle_ssao (attempt 1/3)
+[06:23:14]   p4-point-quadratic-physical: castle_ssao ok 0.32 s
+[06:23:14]   p4-point-quadratic-physical: castle_ssr (attempt 1/3)
+[06:23:15]   p4-point-quadratic-physical: castle_ssr ok 0.32 s
+[06:23:15]   p4-point-quadratic-physical: castle_tonemap_aces (attempt 1/3)
+[06:23:15]   p4-point-quadratic-physical: castle_tonemap_aces ok 0.32 s
+[06:23:15]   p4-point-quadratic-physical: castle_tonemap_uncharted (attempt 1/3)
+[06:23:15]   p4-point-quadratic-physical: castle_tonemap_uncharted ok 0.32 s
+[06:23:15]   p4-point-quadratic-physical: castle_tonemap_hejl (attempt 1/3)
+[06:23:15]   p4-point-quadratic-physical: castle_tonemap_hejl ok 0.27 s
+[06:23:15]   p4-point-quadratic-physical: castle_shading_phong (attempt 1/3)
+[06:23:16]   p4-point-quadratic-physical: castle_shading_phong ok 0.32 s
+[06:23:16]   p4-point-quadratic-physical: castle_shading_gouraud (attempt 1/3)
+[06:23:16]   p4-point-quadratic-physical: castle_shading_gouraud ok 0.27 s
+[06:23:16]   p4-point-quadratic-physical: castle_shading_pbr (attempt 1/3)
+[06:23:16]   p4-point-quadratic-physical: castle_shading_pbr ok 0.27 s
+[06:23:16]   p4-point-quadratic-physical: castle_msaa4 (attempt 1/3)
+[06:23:17]   p4-point-quadratic-physical: castle_msaa4 ok 0.37 s
+[06:23:17]   p4-point-quadratic-physical: castle_ssaa2 (attempt 1/3)
+[06:23:17]   p4-point-quadratic-physical: castle_ssaa2 ok 0.37 s
+[06:23:17]   p4-point-quadratic-physical: castle_ssaa4 (attempt 1/3)
+[06:23:17]   p4-point-quadratic-physical: castle_ssaa4 ok 0.42 s
+[06:23:17]   p4-point-quadratic-physical: castle_aniso16 (attempt 1/3)
+[06:23:18]   p4-point-quadratic-physical: castle_aniso16 ok 0.32 s
+[06:23:18]   p4-point-quadratic-physical: castle_colorspace_linear (attempt 1/3)
+[06:23:18]   p4-point-quadratic-physical: castle_colorspace_linear ok 0.32 s
+[06:23:18]   p4-point-quadratic-physical: castle_colorspace_srgb (attempt 1/3)
+[06:23:18]   p4-point-quadratic-physical: castle_colorspace_srgb ok 0.32 s
+[06:23:18]   p4-point-quadratic-physical: castle_ibl (attempt 1/3)
+[06:23:19]   p4-point-quadratic-physical: castle_ibl ok 0.32 s
+[06:23:34]   p4-point-quadratic-physical: flip_mean xite 0.0085, babylon_addon 0.0085, babylon_castle 0.0085, castle_native 0.0446, castle_ssao 0.0446, castle_ssr 0.0446 ...
+[06:23:34] --- [12/15] p5-directional-physical-i03
+[06:23:34]   p5-directional-physical-i03: addon_glb (attempt 1/3)
+[06:23:35]   p5-directional-physical-i03: addon_glb ok 0.77 s
+[06:23:35]   p5-directional-physical-i03: ref (attempt 1/3)
+[06:23:46]   p5-directional-physical-i03: ref ok 10.81 s
+[06:23:46]   p5-directional-physical-i03: ref_seed1 (attempt 1/3)
+[06:23:57]   p5-directional-physical-i03: ref_seed1 ok 11.58 s
+[06:23:57]   p5-directional-physical-i03: rig_addon (attempt 1/3)
+[06:24:02]   p5-directional-physical-i03: rig_addon ok 4.23 s
+[06:24:02]   p5-directional-physical-i03: castle_export (attempt 1/3)
+[06:24:02]   p5-directional-physical-i03: castle_export ok 0.06 s
+[06:24:02]   p5-directional-physical-i03: babylon_castle (attempt 1/3)
+[06:24:04]   p5-directional-physical-i03: babylon_castle ok 2.57 s
+[06:24:04]   p5-directional-physical-i03: castle_native (attempt 1/3)
+[06:24:04]   p5-directional-physical-i03: castle_native ok 0.27 s
+[06:24:04]   p5-directional-physical-i03: castle_shadows (attempt 1/3)
+[06:24:05]   p5-directional-physical-i03: castle_shadows ok 0.32 s
+[06:24:05]   p5-directional-physical-i03: castle_shadows2048 (attempt 1/3)
+[06:24:05]   p5-directional-physical-i03: castle_shadows2048 ok 0.32 s
+[06:24:05]   p5-directional-physical-i03: castle_ssao (attempt 1/3)
+[06:24:05]   p5-directional-physical-i03: castle_ssao ok 0.32 s
+[06:24:05]   p5-directional-physical-i03: castle_ssr (attempt 1/3)
+[06:24:06]   p5-directional-physical-i03: castle_ssr ok 0.27 s
+[06:24:06]   p5-directional-physical-i03: castle_tonemap_aces (attempt 1/3)
+[06:24:06]   p5-directional-physical-i03: castle_tonemap_aces ok 0.27 s
+[06:24:06]   p5-directional-physical-i03: castle_tonemap_uncharted (attempt 1/3)
+[06:24:06]   p5-directional-physical-i03: castle_tonemap_uncharted ok 0.27 s
+[06:24:06]   p5-directional-physical-i03: castle_tonemap_hejl (attempt 1/3)
+[06:24:07]   p5-directional-physical-i03: castle_tonemap_hejl ok 0.32 s
+[06:24:07]   p5-directional-physical-i03: castle_shading_phong (attempt 1/3)
+[06:24:07]   p5-directional-physical-i03: castle_shading_phong ok 0.32 s
+[06:24:07]   p5-directional-physical-i03: castle_shading_gouraud (attempt 1/3)
+[06:24:07]   p5-directional-physical-i03: castle_shading_gouraud ok 0.32 s
+[06:24:07]   p5-directional-physical-i03: castle_shading_pbr (attempt 1/3)
+[06:24:08]   p5-directional-physical-i03: castle_shading_pbr ok 0.32 s
+[06:24:08]   p5-directional-physical-i03: castle_msaa4 (attempt 1/3)
+[06:24:08]   p5-directional-physical-i03: castle_msaa4 ok 0.37 s
+[06:24:08]   p5-directional-physical-i03: castle_ssaa2 (attempt 1/3)
+[06:24:08]   p5-directional-physical-i03: castle_ssaa2 ok 0.32 s
+[06:24:08]   p5-directional-physical-i03: castle_ssaa4 (attempt 1/3)
+[06:24:09]   p5-directional-physical-i03: castle_ssaa4 ok 0.37 s
+[06:24:09]   p5-directional-physical-i03: castle_aniso16 (attempt 1/3)
+[06:24:09]   p5-directional-physical-i03: castle_aniso16 ok 0.32 s
+[06:24:09]   p5-directional-physical-i03: castle_colorspace_linear (attempt 1/3)
+[06:24:09]   p5-directional-physical-i03: castle_colorspace_linear ok 0.32 s
+[06:24:09]   p5-directional-physical-i03: castle_colorspace_srgb (attempt 1/3)
+[06:24:10]   p5-directional-physical-i03: castle_colorspace_srgb ok 0.32 s
+[06:24:10]   p5-directional-physical-i03: castle_ibl (attempt 1/3)
+[06:24:10]   p5-directional-physical-i03: castle_ibl ok 0.32 s
+[06:24:22]   p5-directional-physical-i03: flip_mean xite 0.0015, babylon_addon 0.0022, babylon_castle 0.0022, castle_native 0.0047, castle_shadows 0.0047, castle_shadows2048 0.0047 ...
+[06:24:22] --- [13/15] nurbs-weights
+[06:24:22]   nurbs-weights: addon_glb (attempt 1/3)
+[06:24:23]   nurbs-weights: addon_glb ok 1.07 s
+[06:24:23]   nurbs-weights: ref (attempt 1/3)
+[06:24:42]   nurbs-weights: ref ok 18.44 s
+[06:24:42]   nurbs-weights: ref_seed1 (attempt 1/3)
+[06:25:01]   nurbs-weights: ref_seed1 ok 18.69 s
+[06:25:01]   nurbs-weights: rig_addon (attempt 1/3)
+[06:25:06]   nurbs-weights: rig_addon ok 5.24 s
+[06:25:06]   nurbs-weights: castle_export (attempt 1/3)
+[06:25:06]   nurbs-weights: castle_export ok 0.11 s
+[06:25:06]   nurbs-weights: babylon_castle (attempt 1/3)
+[06:25:09]   nurbs-weights: babylon_castle ok 3.03 s
+[06:25:09]   nurbs-weights: castle_native (attempt 1/3)
+[06:25:09]   nurbs-weights: castle_native ok 0.42 s
+[06:25:09]   nurbs-weights: castle_shadows (attempt 1/3)
+[06:25:10]   nurbs-weights: castle_shadows ok 0.42 s
+[06:25:10]   nurbs-weights: castle_shadows2048 (attempt 1/3)
+[06:25:10]   nurbs-weights: castle_shadows2048 ok 0.42 s
+[06:25:10]   nurbs-weights: castle_ssao (attempt 1/3)
+[06:25:11]   nurbs-weights: castle_ssao ok 0.42 s
+[06:25:11]   nurbs-weights: castle_ssr (attempt 1/3)
+[06:25:11]   nurbs-weights: castle_ssr ok 0.37 s
+[06:25:11]   nurbs-weights: castle_tonemap_aces (attempt 1/3)
+[06:25:11]   nurbs-weights: castle_tonemap_aces ok 0.42 s
+[06:25:11]   nurbs-weights: castle_tonemap_uncharted (attempt 1/3)
+[06:25:12]   nurbs-weights: castle_tonemap_uncharted ok 0.37 s
+[06:25:12]   nurbs-weights: castle_tonemap_hejl (attempt 1/3)
+[06:25:12]   nurbs-weights: castle_tonemap_hejl ok 0.37 s
+[06:25:12]   nurbs-weights: castle_shading_phong (attempt 1/3)
+[06:25:12]   nurbs-weights: castle_shading_phong ok 0.37 s
+[06:25:12]   nurbs-weights: castle_shading_gouraud (attempt 1/3)
+[06:25:13]   nurbs-weights: castle_shading_gouraud ok 0.42 s
+[06:25:13]   nurbs-weights: castle_shading_pbr (attempt 1/3)
+[06:25:13]   nurbs-weights: castle_shading_pbr ok 0.42 s
+[06:25:13]   nurbs-weights: castle_msaa4 (attempt 1/3)
+[06:25:14]   nurbs-weights: castle_msaa4 ok 0.42 s
+[06:25:14]   nurbs-weights: castle_ssaa2 (attempt 1/3)
+[06:25:14]   nurbs-weights: castle_ssaa2 ok 0.42 s
+[06:25:14]   nurbs-weights: castle_ssaa4 (attempt 1/3)
+[06:25:15]   nurbs-weights: castle_ssaa4 ok 0.47 s
+[06:25:15]   nurbs-weights: castle_aniso16 (attempt 1/3)
+[06:25:15]   nurbs-weights: castle_aniso16 ok 0.37 s
+[06:25:15]   nurbs-weights: castle_colorspace_linear (attempt 1/3)
+[06:25:15]   nurbs-weights: castle_colorspace_linear ok 0.42 s
+[06:25:15]   nurbs-weights: castle_colorspace_srgb (attempt 1/3)
+[06:25:16]   nurbs-weights: castle_colorspace_srgb ok 0.42 s
+[06:25:16]   nurbs-weights: castle_ibl (attempt 1/3)
+[06:25:16]   nurbs-weights: castle_ibl ok 0.42 s
+[06:25:41]   nurbs-weights: flip_mean xite 0.1828, babylon_addon 0.0338, babylon_castle 0.1004, castle_native 0.2122, castle_shadows 0.2123, castle_shadows2048 0.2074 ...
+[06:25:41] --- [14/15] quaternion-xyzw
+[06:25:41]   quaternion-xyzw: addon_glb (attempt 1/3)
+[06:25:42]   quaternion-xyzw: addon_glb ok 0.97 s
+[06:25:42]   quaternion-xyzw: ref (attempt 1/3)
+[06:26:08]   quaternion-xyzw: ref ok 25.96 s
+[06:26:08]   quaternion-xyzw: ref_seed1 (attempt 1/3)
+[06:26:34]   quaternion-xyzw: ref_seed1 ok 25.84 s
+[06:26:34]   quaternion-xyzw: rig_addon (attempt 1/3)
+[06:26:39]   quaternion-xyzw: rig_addon ok 4.68 s
+[06:26:39]   quaternion-xyzw: castle_export (attempt 1/3)
+[06:26:39]   quaternion-xyzw: castle_export ok 0.12 s
+[06:26:39]   quaternion-xyzw: babylon_castle (attempt 1/3)
+[06:26:42]   quaternion-xyzw: babylon_castle ok 2.77 s
+[06:26:42]   quaternion-xyzw: castle_native (attempt 1/3)
+[06:26:42]   quaternion-xyzw: castle_native ok 0.32 s
+[06:26:42]   quaternion-xyzw: castle_shadows (attempt 1/3)
+[06:26:42]   quaternion-xyzw: castle_shadows ok 0.37 s
+[06:26:42]   quaternion-xyzw: castle_shadows2048 (attempt 1/3)
+[06:26:43]   quaternion-xyzw: castle_shadows2048 ok 0.37 s
+[06:26:43]   quaternion-xyzw: castle_ssao (attempt 1/3)
+[06:26:43]   quaternion-xyzw: castle_ssao ok 0.47 s
+[06:26:43]   quaternion-xyzw: castle_ssr (attempt 1/3)
+[06:26:43]   quaternion-xyzw: castle_ssr ok 0.37 s
+[06:26:43]   quaternion-xyzw: castle_tonemap_aces (attempt 1/3)
+[06:26:44]   quaternion-xyzw: castle_tonemap_aces ok 0.37 s
+[06:26:44]   quaternion-xyzw: castle_tonemap_uncharted (attempt 1/3)
+[06:26:44]   quaternion-xyzw: castle_tonemap_uncharted ok 0.37 s
+[06:26:44]   quaternion-xyzw: castle_tonemap_hejl (attempt 1/3)
+[06:26:45]   quaternion-xyzw: castle_tonemap_hejl ok 0.37 s
+[06:26:45]   quaternion-xyzw: castle_shading_phong (attempt 1/3)
+[06:26:45]   quaternion-xyzw: castle_shading_phong ok 0.37 s
+[06:26:45]   quaternion-xyzw: castle_shading_gouraud (attempt 1/3)
+[06:26:45]   quaternion-xyzw: castle_shading_gouraud ok 0.37 s
+[06:26:45]   quaternion-xyzw: castle_shading_pbr (attempt 1/3)
+[06:26:46]   quaternion-xyzw: castle_shading_pbr ok 0.37 s
+[06:26:46]   quaternion-xyzw: castle_msaa4 (attempt 1/3)
+[06:26:46]   quaternion-xyzw: castle_msaa4 ok 0.42 s
+[06:26:46]   quaternion-xyzw: castle_ssaa2 (attempt 1/3)
+[06:26:46]   quaternion-xyzw: castle_ssaa2 ok 0.37 s
+[06:26:46]   quaternion-xyzw: castle_ssaa4 (attempt 1/3)
+[06:26:47]   quaternion-xyzw: castle_ssaa4 ok 0.42 s
+[06:26:47]   quaternion-xyzw: castle_aniso16 (attempt 1/3)
+[06:26:47]   quaternion-xyzw: castle_aniso16 ok 0.42 s
+[06:26:47]   quaternion-xyzw: castle_colorspace_linear (attempt 1/3)
+[06:26:48]   quaternion-xyzw: castle_colorspace_linear ok 0.42 s
+[06:26:48]   quaternion-xyzw: castle_colorspace_srgb (attempt 1/3)
+[06:26:48]   quaternion-xyzw: castle_colorspace_srgb ok 0.37 s
+[06:26:48]   quaternion-xyzw: castle_ibl (attempt 1/3)
+[06:26:48]   quaternion-xyzw: castle_ibl ok 0.37 s
+[06:27:15]   quaternion-xyzw: flip_mean xite 0.1962, babylon_addon 0.1548, babylon_castle 0.1986, castle_native 0.2611, castle_shadows 0.261, castle_shadows2048 0.261 ...
+[06:27:15] --- [15/15] repair-2-render
+[06:27:15]   repair-2-render: addon_glb (attempt 1/3)
+[06:27:16]   repair-2-render: addon_glb ok 0.92 s
+[06:27:16]   repair-2-render: ref (attempt 1/3)
+[06:27:26]   repair-2-render: ref ok 9.51 s
+[06:27:26]   repair-2-render: ref_seed1 (attempt 1/3)
+[06:27:35]   repair-2-render: ref_seed1 ok 9.71 s
+[06:27:36]   repair-2-render: rig_addon (attempt 1/3)
+[06:27:40]   repair-2-render: rig_addon ok 4.84 s
+[06:27:40]   repair-2-render: castle_export (attempt 1/3)
+[06:27:40]   repair-2-render: castle_export ok 0.12 s
+[06:27:40]   repair-2-render: babylon_castle (attempt 1/3)
+[06:27:43]   repair-2-render: babylon_castle ok 2.95 s
+[06:27:43]   repair-2-render: castle_native (attempt 1/3)
+[06:27:44]   repair-2-render: castle_native ok 0.37 s
+[06:27:44]   repair-2-render: castle_shadows (attempt 1/3)
+[06:27:44]   repair-2-render: castle_shadows unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:27:44]   repair-2-render: castle_shadows2048 (attempt 1/3)
+[06:27:44]   repair-2-render: castle_shadows2048 unsupported: --shadows: the scene has no DirectionalLight or SpotLight to switch shadows on (1 PointLight(s) skipped: Castle 7.0-alpha.3 has no point-light shadow maps); add a Directional/Spot light in the X3D, refusing to write an unshadowed picture under a shadows label
+[06:27:44]   repair-2-render: castle_ssao (attempt 1/3)
+[06:27:45]   repair-2-render: castle_ssao ok 0.37 s
+[06:27:45]   repair-2-render: castle_ssr (attempt 1/3)
+[06:27:45]   repair-2-render: castle_ssr ok 0.27 s
+[06:27:45]   repair-2-render: castle_tonemap_aces (attempt 1/3)
+[06:27:45]   repair-2-render: castle_tonemap_aces ok 0.27 s
+[06:27:45]   repair-2-render: castle_tonemap_uncharted (attempt 1/3)
+[06:27:46]   repair-2-render: castle_tonemap_uncharted ok 0.27 s
+[06:27:46]   repair-2-render: castle_tonemap_hejl (attempt 1/3)
+[06:27:46]   repair-2-render: castle_tonemap_hejl ok 0.32 s
+[06:27:46]   repair-2-render: castle_shading_phong (attempt 1/3)
+[06:27:46]   repair-2-render: castle_shading_phong ok 0.37 s
+[06:27:46]   repair-2-render: castle_shading_gouraud (attempt 1/3)
+[06:27:47]   repair-2-render: castle_shading_gouraud ok 0.32 s
+[06:27:47]   repair-2-render: castle_shading_pbr (attempt 1/3)
+[06:27:47]   repair-2-render: castle_shading_pbr ok 0.32 s
+[06:27:47]   repair-2-render: castle_msaa4 (attempt 1/3)
+[06:27:47]   repair-2-render: castle_msaa4 ok 0.37 s
+[06:27:47]   repair-2-render: castle_ssaa2 (attempt 1/3)
+[06:27:48]   repair-2-render: castle_ssaa2 ok 0.32 s
+[06:27:48]   repair-2-render: castle_ssaa4 (attempt 1/3)
+[06:27:48]   repair-2-render: castle_ssaa4 ok 0.37 s
+[06:27:48]   repair-2-render: castle_aniso16 (attempt 1/3)
+[06:27:48]   repair-2-render: castle_aniso16 ok 0.32 s
+[06:27:48]   repair-2-render: castle_colorspace_linear (attempt 1/3)
+[06:27:49]   repair-2-render: castle_colorspace_linear ok 0.32 s
+[06:27:49]   repair-2-render: castle_colorspace_srgb (attempt 1/3)
+[06:27:49]   repair-2-render: castle_colorspace_srgb ok 0.32 s
+[06:27:49]   repair-2-render: castle_ibl (attempt 1/3)
+[06:27:49]   repair-2-render: castle_ibl ok 0.37 s
+[06:28:07]   repair-2-render: flip_mean xite 0.007, babylon_addon 0.0017, babylon_castle 0.0019, castle_native 0.0044, castle_ssao 0.0046, castle_ssr 0.0044 ...
+[06:28:07] === castle_all = ['ssaa4', 'shading_gouraud']
+[06:28:07]   stilllife-direct: castle_all (attempt 1/3)
+[06:28:08]   stilllife-direct: castle_all ok 0.67 s
+[06:28:24]   stilllife-stage: castle_all (attempt 1/3)
+[06:28:25]   stilllife-stage: castle_all ok 0.82 s
+[06:28:42]   materials-world: castle_all (attempt 1/3)
+[06:28:43]   materials-world: castle_all ok 1.02 s
+[06:28:58]   lights-after: castle_all (attempt 1/3)
+[06:28:58]   lights-after: castle_all ok 0.47 s
+[06:29:15]   village: castle_all (attempt 1/3)
+[06:29:15]   village: castle_all ok 0.67 s
+[06:29:31]   earth-planet: castle_all (attempt 1/3)
+[06:29:31]   earth-planet: castle_all ok 0.42 s
+[06:29:43]   annotation-standard: castle_all (attempt 1/3)
+[06:29:44]   annotation-standard: castle_all ok 0.47 s
+[06:30:00]   p1-point-physical: castle_all (attempt 1/3)
+[06:30:00]   p1-point-physical: castle_all ok 0.37 s
+[06:30:12]   p2-point-classic: castle_all (attempt 1/3)
+[06:30:12]   p2-point-classic: castle_all ok 0.42 s
+[06:30:27]   p3-directional-classic-i1: castle_all (attempt 1/3)
+[06:30:27]   p3-directional-classic-i1: castle_all ok 0.37 s
+[06:30:40]   p4-point-quadratic-physical: castle_all (attempt 1/3)
+[06:30:40]   p4-point-quadratic-physical: castle_all ok 0.37 s
+[06:30:52]   p5-directional-physical-i03: castle_all (attempt 1/3)
+[06:30:53]   p5-directional-physical-i03: castle_all ok 0.37 s
+[06:31:07]   nurbs-weights: castle_all (attempt 1/3)
+[06:31:07]   nurbs-weights: castle_all ok 0.47 s
+[06:31:23]   quaternion-xyzw: castle_all (attempt 1/3)
+[06:31:24]   quaternion-xyzw: castle_all ok 0.52 s
+[06:31:43]   repair-2-render: castle_all (attempt 1/3)
+[06:31:43]   repair-2-render: castle_all ok 0.42 s
+[06:32:05] === phase A-C done in 1570 s; results.json written
+[06:32:05]   stilllife-direct: ref_direct (attempt 1/3)
+[06:32:45]   stilllife-direct: ref_direct ok 40.09 s
+[06:32:45]   stilllife-direct: ref_shadows (attempt 1/3)
+[06:33:35]   stilllife-direct: ref_shadows ok 50.58 s
+[06:33:45]   stilllife-stage: ref_direct (attempt 1/3)
+[06:34:26]   stilllife-stage: ref_direct ok 41.14 s
+[06:34:26]   stilllife-stage: ref_shadows (attempt 1/3)
+[06:35:18]   stilllife-stage: ref_shadows ok 51.48 s
+[06:35:27]   materials-world: ref_direct (attempt 1/3)
+[06:36:26]   materials-world: ref_direct ok 59.12 s
+[06:36:26]   materials-world: ref_shadows (attempt 1/3)
+[06:37:42]   materials-world: ref_shadows ok 75.77 s
+[06:37:53]   lights-after: ref_direct (attempt 1/3)
+[06:38:38]   lights-after: ref_direct ok 44.76 s
+[06:38:38]   lights-after: ref_shadows (attempt 1/3)
+[06:39:33]   lights-after: ref_shadows ok 54.99 s
+[06:39:43]   village: ref_direct (attempt 1/3)
+[06:39:59]   village: ref_direct ok 16.28 s
+[06:39:59]   village: ref_shadows (attempt 1/3)
+[06:40:15]   village: ref_shadows ok 16.28 s
+[06:40:23]   earth-planet: ref_direct (attempt 1/3)
+[06:40:31]   earth-planet: ref_direct ok 7.9 s
+[06:40:31]   earth-planet: ref_shadows (attempt 1/3)
+[06:40:39]   earth-planet: ref_shadows ok 8.0 s
+[06:40:45]   annotation-standard: ref_direct (attempt 1/3)
+[06:41:09]   annotation-standard: ref_direct ok 23.95 s
+[06:41:09]   annotation-standard: ref_shadows (attempt 1/3)
+[06:41:36]   annotation-standard: ref_shadows ok 27.48 s
+[06:41:46]   p1-point-physical: ref_direct (attempt 1/3)
+[06:41:57]   p1-point-physical: ref_direct ok 10.71 s
+[06:41:57]   p1-point-physical: ref_shadows (attempt 1/3)
+[06:42:08]   p1-point-physical: ref_shadows ok 11.21 s
+[06:42:13]   p2-point-classic: ref_direct (attempt 1/3)
+[06:42:24]   p2-point-classic: ref_direct ok 10.25 s
+[06:42:24]   p2-point-classic: ref_shadows (attempt 1/3)
+[06:42:34]   p2-point-classic: ref_shadows ok 10.67 s
+[06:42:41]   p3-directional-classic-i1: ref_direct (attempt 1/3)
+[06:42:51]   p3-directional-classic-i1: ref_direct ok 10.11 s
+[06:42:51]   p3-directional-classic-i1: ref_shadows (attempt 1/3)
+[06:43:02]   p3-directional-classic-i1: ref_shadows ok 10.66 s
+[06:43:09]   p4-point-quadratic-physical: ref_direct (attempt 1/3)
+[06:43:20]   p4-point-quadratic-physical: ref_direct ok 11.27 s
+[06:43:20]   p4-point-quadratic-physical: ref_shadows (attempt 1/3)
+[06:43:32]   p4-point-quadratic-physical: ref_shadows ok 11.47 s
+[06:43:37]   p5-directional-physical-i03: ref_direct (attempt 1/3)
+[06:43:49]   p5-directional-physical-i03: ref_direct ok 11.43 s
+[06:43:49]   p5-directional-physical-i03: ref_shadows (attempt 1/3)
+[06:44:01]   p5-directional-physical-i03: ref_shadows ok 12.38 s
+[06:44:07]   nurbs-weights: ref_direct (attempt 1/3)
+[06:44:26]   nurbs-weights: ref_direct ok 19.28 s
+[06:44:26]   nurbs-weights: ref_shadows (attempt 1/3)
+[06:44:46]   nurbs-weights: ref_shadows ok 19.93 s
+[06:44:57]   quaternion-xyzw: ref_direct (attempt 1/3)
+[06:45:24]   quaternion-xyzw: ref_direct ok 26.23 s
+[06:45:24]   quaternion-xyzw: ref_shadows (attempt 1/3)
+[06:45:52]   quaternion-xyzw: ref_shadows ok 28.18 s
+[06:46:03]   repair-2-render: ref_direct (attempt 1/3)
+[06:46:13]   repair-2-render: ref_direct ok 9.71 s
+[06:46:13]   repair-2-render: ref_shadows (attempt 1/3)
+[06:46:23]   repair-2-render: ref_shadows ok 9.51 s
+[06:46:30] === extra references done; results.json rewritten
+[06:46:30] === all done in 2436 s. skipped/failed: 0
+[06:47:08] === run_quality: 15 scene(s) -> $WORK/qual/public_rerun (public set), samples 256, extra refs ['direct', 'shadows'], 17 levers, tries 3
+[06:47:08] --- [1/15] stilllife-direct
+[06:47:09]   stilllife-direct: flip_mean xite 0.0846, babylon_addon 0.0855, babylon_castle 0.0855, castle_native 0.0842, castle_shadows 0.1266, castle_shadows2048 0.1282 ...
+[06:47:09] --- [2/15] stilllife-stage
+[06:47:09]   stilllife-stage: flip_mean xite 0.0922, babylon_addon 0.0928, babylon_castle 0.0928, castle_native 0.0951, castle_shadows 0.1329, castle_shadows2048 0.1341 ...
+[06:47:09] --- [3/15] materials-world
+[06:47:09]   materials-world: flip_mean xite 0.1121, babylon_addon 0.1653, babylon_castle 0.1708, castle_native 0.5956, castle_shadows 0.5548, castle_shadows2048 0.5484 ...
+[06:47:09] --- [4/15] lights-after
+[06:47:09]   lights-after: flip_mean xite 0.1068, babylon_addon 0.1067, babylon_castle 0.1067, castle_native 0.2852, castle_shadows 0.2815, castle_shadows2048 0.2818 ...
+[06:47:09] --- [5/15] village
+[06:47:09]   village: flip_mean xite 0.078, babylon_addon 0.0499, babylon_castle 0.051, castle_native 0.0772, castle_ssao 0.1751, castle_ssr 0.0958 ...
+[06:47:09] --- [6/15] earth-planet
+[06:47:09]   earth-planet: flip_mean xite 0.0031, babylon_addon 0.0068, babylon_castle 0.0068, castle_native 0.0023, castle_ssao 0.0025, castle_ssr 0.0023 ...
+[06:47:09] --- [7/15] annotation-standard
+[06:47:09]   annotation-standard: flip_mean xite 0.1958, babylon_addon 0.0459, babylon_castle 0.1399, castle_native 0.1975, castle_shadows 0.1975, castle_shadows2048 0.1983 ...
+[06:47:09] --- [8/15] p1-point-physical
+[06:47:09]   p1-point-physical: flip_mean xite 0.0053, babylon_addon 0.006, babylon_castle 0.006, castle_native 0.0546, castle_ssao 0.0545, castle_ssr 0.0546 ...
+[06:47:09] --- [9/15] p2-point-classic
+[06:47:09]   p2-point-classic: flip_mean xite 0.0436, babylon_addon 0.0068, babylon_castle 0.0086, castle_native 0.0465, castle_ssao 0.0465, castle_ssr 0.0465 ...
+[06:47:09] --- [10/15] p3-directional-classic-i1
+[06:47:09]   p3-directional-classic-i1: flip_mean xite 0.0039, babylon_addon 0.0077, babylon_castle 0.0075, castle_native 0.0163, castle_shadows 0.0163, castle_shadows2048 0.0163 ...
+[06:47:09] --- [11/15] p4-point-quadratic-physical
+[06:47:10]   p4-point-quadratic-physical: flip_mean xite 0.0085, babylon_addon 0.0085, babylon_castle 0.0085, castle_native 0.0446, castle_ssao 0.0446, castle_ssr 0.0446 ...
+[06:47:10] --- [12/15] p5-directional-physical-i03
+[06:47:10]   p5-directional-physical-i03: flip_mean xite 0.0015, babylon_addon 0.0022, babylon_castle 0.0022, castle_native 0.0047, castle_shadows 0.0047, castle_shadows2048 0.0047 ...
+[06:47:10] --- [13/15] nurbs-weights
+[06:47:10]   nurbs-weights: flip_mean xite 0.1828, babylon_addon 0.0338, babylon_castle 0.1004, castle_native 0.2122, castle_shadows 0.2123, castle_shadows2048 0.2074 ...
+[06:47:10] --- [14/15] quaternion-xyzw
+[06:47:10]   quaternion-xyzw: flip_mean xite 0.1962, babylon_addon 0.1548, babylon_castle 0.1986, castle_native 0.2611, castle_shadows 0.261, castle_shadows2048 0.261 ...
+[06:47:10] --- [15/15] repair-2-render
+[06:47:10]   repair-2-render: flip_mean xite 0.007, babylon_addon 0.0017, babylon_castle 0.0019, castle_native 0.0044, castle_ssao 0.0046, castle_ssr 0.0044 ...
+[06:47:10] === castle_all = ['ssaa4', 'shading_gouraud']
+[06:47:10] === phase A-C done in 2 s; results.json written
+[06:47:10] === extra references done; results.json rewritten
+[06:47:10] === all done in 2 s. skipped/failed: 0

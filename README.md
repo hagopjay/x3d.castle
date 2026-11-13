@@ -13,7 +13,11 @@ the way a good proof copy does; it is not the only measure.
 |---|---|
 | `castle-convert/x3dcastleexport.pas` | the shape-tree exporter: X3D to glb from Castle's own render arrays (about 1,700 lines of Pascal, links against Castle, builds in 2 s warm) |
 | `castle-convert/x3d_castle_convert.dpr` | command line: `x3d-castle-convert in.x3d out.glb [options]` |
-| `tools/` | harness: headless Castle renders, census, Khronos validator run, rig comparison (`exporter_compare.py`), WebP prepass, contact sheets |
+| `castle-render/` | `castle-render`: our render harness around the engine, with every quality switch (shadows, SSAO, SSR, tone maps, shading, colour space, IBL, MSAA/SSAA, anisotropy, exposure) on a command line |
+| `tools/` | harness: headless Castle renders, census, Khronos validator run, rig comparison (`exporter_compare.py`), WebP prepass, contact sheets; the quality leg: `cycles_reference.py` (path-traced reference), `quality_metrics.py` (FLIP, SSIM), `run_quality.py` (every leg of every scene), `quality_tables.py` |
+| `docker/` | Dockerfile and smoke test for the whole toolchain (not yet built in CI, see `docker/README.md`) |
+| `docs/quality-leg.md` | **the quality leg**: Castle and the other renderers against a Cycles path-traced image, what Castle's quality switches are worth, where the gap comes from |
+| `docs/quality-levers.md`, `docs/quality-tables.md` | per-switch, per-scene detail and the generated tables |
 | `docs/exporter.md` | what one X3D shape becomes, the options, the light-unit and specular rules, what is not covered |
 | `docs/castle-gaps.md` | the gaps found in Castle, each graded Confirmed / Likely / Suspected |
 | `docs/reproduce.md` | versions, commands and the hardware every number came from |
@@ -30,6 +34,12 @@ the way a good proof copy does; it is not the only measure.
 * Against X_ITE 16.7.1, drawn by Babylon.js 9.32.0 from each glb (x3d-blender-io `tools/fidelity_rig`, Chromium 153 SwiftShader,
   512 x 512, mean absolute pixel difference 0 to 255), over the 21 scenes where every column exists: exporter 7.8 (median 3.5),
   add-on glb 9.2 (3.6), Castle stock glb 17.6 (17.1).
+* **Quality leg** (path-traced Cycles reference, FLIP, 15 public scenes; `docs/quality-leg.md`): X_ITE, Babylon.js on the add-on glb and Babylon.js
+  on our Castle glb are not separable on the core 11 scenes (mean FLIP 0.046 / 0.049 / 0.049); Castle's own native render is behind at 0.115, and the
+  gap is carried by four scenes where Castle applies a light's `attenuation` as written and the others apply 1/d^2 to physical lights. The best
+  single Castle quality switch (4x supersampling) changes mean FLIP by -0.003; tone maps, colour-space overrides, SSAO, SSR and the engine's
+  unfinished IBL make it worse; shadow maps are the one big switch and their sign depends on the reference. So on this evidence Castle is a fast,
+  scriptable second reader of X3D, not the quality renderer.
 * Not measured: any physical GPU, any viewer other than Babylon.js for the exporter's glbs, Unreal.
 
 ## Known gaps in the exporter
@@ -45,7 +55,6 @@ place and never modified; patched copies are made beside them. Nothing is report
 
 ## Licence
 
-MIT (see `LICENSE`): the exporter source, the tools, the docs and the result files in this repo. Chosen on 13 Nov 2026 because the exporter
-only links against other projects and carries none of their source: Castle Game Engine (engine core: LGPL with a static linking
-exception, per its COPYING.md) and its bundled PasGLTF (zlib licence) keep their own terms, which apply to a built converter
-binary that includes them. The x3d.demo scenes the harness reads are not copied here.
+MIT (see `LICENSE`). The exporter and `castle-render` link against Castle Game Engine (engine core: LGPL with a static linking exception, per its
+COPYING.md) and its bundled PasGLTF (zlib licence); check those terms before distributing a built binary. `tools/cycles_reference.py` adapts about ten lines of Viewpoint matrix maths from `x3d-blender-io/tools/fidelity_rig/compare.py` (same
+owner; the add-on is GPL-3, so the owner decides how that one file is licensed). Apart from that no Castle, X_ITE, Babylon.js or add-on source is copied here.
