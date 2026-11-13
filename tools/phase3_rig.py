@@ -44,7 +44,7 @@ def main():
     ap.add_argument("--addon-src", default=os.path.join(HERE, "..", "..", "x3d-blender-io", "source"),
                     help="the add-on's source folder (geospatial.py, used for GeoViewpoint scenes)")
     ap.add_argument("--conv", required=True); ap.add_argument("--scenes", required=True); ap.add_argument("--out", required=True)
-    ap.add_argument("--base", default="/home/user", help="scene paths in the scenes file are relative to this")
+    ap.add_argument("--base", default=os.path.join(HERE, "..", ".."), help="scene paths in the scenes file are relative to this (the folder that holds x3d.demo and x3d.castle)")
     ap.add_argument("--variant", action="append", required=True); ap.add_argument("--only", action="append")
     ap.add_argument("--reuse-xite", action="store_true", help="skip variants' X_ITE render when out/xite/NAME.png exists")
     a = ap.parse_args()
