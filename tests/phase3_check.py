@@ -292,6 +292,13 @@ def c_events_at(g, rep, val):
     return [] if b[2] > 0.9 and b[0] < 0.1 else [f"--events-at=1 baseColorFactor {b} (want blue, the interpolator end)"]
 
 
+def c_nonfinite(g, rep, val):
+    f = []
+    if rep.get("nonfinite_values_zeroed", 0) < 1:
+        f.append(f"export.json nonfinite_values_zeroed {rep.get('nonfinite_values_zeroed')} (the fixture must hit the case)")
+    return f
+
+
 def v_regress(g, rep, val):
     return []
 
@@ -313,6 +320,7 @@ CASES = [
     ("switch-hidden", "switch-hidden.x3d", ["--hidden-switch"], 0, c_switch_hidden, "--hidden-switch writes hidden choices with KHR_node_visibility"),
     ("events-default", "events-at.x3d", [], 0, c_events_default, "default writes the file as loaded"),
     ("events-at", "events-at.x3d", ["--events-at=1"], 0, c_events_at, "--events-at=1 writes the state after the TimeSensor ran 1 s"),
+    ("nonfinite-texcoord", "nonfinite-texcoord.x3d", [], 0, c_nonfinite, "NaN generated texture coordinates are written as 0 (validator ACCESSOR_INVALID_FLOAT)"),
     ("text-default", "text-atlas.x3d", [], 0, c_text_default, "default still skips Text"),
     ("text-atlas", "text-atlas.x3d", ["--text-atlas"], 0, c_text_atlas, "--text-atlas writes glyph quads with the font atlas"),
 ]

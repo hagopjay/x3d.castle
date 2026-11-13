@@ -96,7 +96,7 @@ type
     Scene: TCastleSceneCore;
     CameraNode: Integer;
     { stats }
-    NShapes, NShapesSkipped, NTextSkipped, NVerts, NTris, NLineSegs, NPoints: Integer;
+    NShapes, NShapesSkipped, NTextSkipped, NVerts, NTris, NLineSegs, NPoints, NNonFinite: Integer;
     NMaterials, NTextures, NImages, NLights, NCameras: Integer;
     NVertexColourShapes, NTexturedShapes, NUnlitMaterials, NBaked: Integer;
     ImageBytes: Int64;
@@ -285,12 +285,26 @@ var
   Acc: TPasGLTF.TAccessor;
   N, I, C: Integer;
   Mn, Mx: array [0..3] of Single;
+  Clean: TSingleArray;
 begin
   N := Length(A) div Comps;
   if N = 0 then
     Exit(-1);
+  { glTF forbids NaN and Infinity in an accessor (validator ACCESSOR_INVALID_FLOAT). Castle's arrays can hold them, for
+    example the generated texture coordinates of a degenerate line set. Write 0 for those values and count them. }
+  Clean := nil;
+  for I := 0 to Length(A) - 1 do
+    if IsNan(A[I]) or IsInfinite(A[I]) then
+    begin
+      if Clean = nil then
+        Clean := Copy(A);
+      Clean[I] := 0;
+      Inc(NNonFinite);
+    end;
+  if Clean = nil then
+    Clean := A;
   Acc := TPasGLTF.TAccessor.Create(Doc);
-  Acc.BufferView := AddView(A[0], Length(A) * SizeOf(Single), TPasGLTF.TBufferView.TTargetType.ArrayBuffer);
+  Acc.BufferView := AddView(Clean[0], Length(Clean) * SizeOf(Single), TPasGLTF.TBufferView.TTargetType.ArrayBuffer);
   Acc.ByteOffset := 0;
   Acc.ComponentType := TPasGLTF.TAccessor.TComponentType.Float;
   case Comps of
@@ -304,14 +318,14 @@ begin
   begin
     for C := 0 to Comps - 1 do
     begin
-      Mn[C] := A[C];
-      Mx[C] := A[C];
+      Mn[C] := Clean[C];
+      Mx[C] := Clean[C];
     end;
     for I := 1 to N - 1 do
       for C := 0 to Comps - 1 do
       begin
-        if A[I * Comps + C] < Mn[C] then Mn[C] := A[I * Comps + C];
-        if A[I * Comps + C] > Mx[C] then Mx[C] := A[I * Comps + C];
+        if Clean[I * Comps + C] < Mn[C] then Mn[C] := Clean[I * Comps + C];
+        if Clean[I * Comps + C] > Mx[C] then Mx[C] := Clean[I * Comps + C];
       end;
     case Comps of
       2: begin Acc.MinArray.Add([Mn[0], Mn[1]]); Acc.MaxArray.Add([Mx[0], Mx[1]]); end;
@@ -2214,6 +2228,7 @@ begin
     '  "shapes": ' + IntToStr(NShapes) + ',' + LineEnding +
     '  "shapes_skipped": ' + IntToStr(NShapesSkipped) + ',' + LineEnding +
     '  "text_shapes_skipped": ' + IntToStr(NTextSkipped) + ',' + LineEnding +
+    '  "nonfinite_values_zeroed": ' + IntToStr(NNonFinite) + ',' + LineEnding +
     '  "text_shapes_exported": ' + IntToStr(NTextExported) + ',' + LineEnding +
     '  "hidden_switch_nodes": ' + IntToStr(NHiddenSwitchNodes) + ',' + LineEnding +
     '  "shapes_baked_for_shear": ' + IntToStr(NBaked) + ',' + LineEnding +
