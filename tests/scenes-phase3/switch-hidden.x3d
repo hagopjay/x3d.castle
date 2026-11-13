@@ -4,6 +4,7 @@
 <Scene>
 <NavigationInfo headlight="false"/>
 <Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
 <Switch DEF="Frames" whichChoice="-1">
  <Transform translation="-2 0 0"><Shape><Appearance><PhysicalMaterial baseColor="1 0 0"/></Appearance><Box/></Shape></Transform>
  <Transform translation="0 0 0"><Shape><Appearance><PhysicalMaterial baseColor="0 1 0"/></Appearance><Box/></Shape></Transform>

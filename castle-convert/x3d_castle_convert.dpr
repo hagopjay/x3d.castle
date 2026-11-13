@@ -14,6 +14,7 @@
     --text-atlas             Text as glyph quads textured with Castle's font atlas, alpha blended (default: Text is skipped)
     --hidden-switch          also write unselected Switch choices, as nodes with KHR_node_visibility visible=false
     --scope-lights           global=false point/spot lights: clamp the glTF range to the extent of their scope
+    --events-at=T            run TimeSensor/interpolator events to T seconds and write that state (default: the file as loaded)
     --verbose }
 program x3d_castle_convert;
 {$mode objfpc}{$H+}
@@ -44,6 +45,7 @@ begin
     else if Copy(Arg, 1, 18) = '--specular-max-f0=' then Opt.SpecularMaxF0 := StrToFloat(Copy(Arg, 19, Length(Arg)))
     else if Arg = '--text-quads' then Opt.TextQuads := true
     else if Arg = '--text-atlas' then Opt.TextAtlas := true
+    else if Copy(Arg, 1, 12) = '--events-at=' then Opt.EventsAt := StrToFloat(Copy(Arg, 13, Length(Arg)))
     else if Arg = '--hidden-switch' then Opt.HiddenSwitch := true
     else if Arg = '--scope-lights' then Opt.ScopeLights := true
     else if Arg = '--verbose' then Opt.Verbose := true
@@ -64,7 +66,7 @@ begin
   begin
     Writeln('Usage: x3d-castle-convert in.x3d out.glb [--engine-writer] [--colour-space=as-is|srgb] ',
       '[--no-camera] [--no-lights] [--no-headlight] [--no-textures] [--no-phong-specular] [--specular-max-f0=F] [--text-quads] ',
-      '[--text-atlas] [--hidden-switch] [--scope-lights] [--light-scale=F] [--verbose]');
+      '[--text-atlas] [--events-at=T] [--hidden-switch] [--scope-lights] [--light-scale=F] [--verbose]');
     Halt(2);
   end;
   ApplicationProperties.OnWarning.Add(@ApplicationProperties.WriteWarningOnConsole);

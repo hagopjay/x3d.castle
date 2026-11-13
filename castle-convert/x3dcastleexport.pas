@@ -34,6 +34,7 @@ type
     ColourSpace: TColourSpaceMode; // csSrgb: classic (display-space) colours to linear
     LightScale: Single;     // multiplies X3D light intensity; 0 = auto (pi when the lit shapes are mostly classic Material, else 1)
     TextAtlas: Boolean;     // Text as glyph quads textured with Castle's font atlas (alpha blended); off: Text is skipped
+    EventsAt: Single;       // >= 0: run the scene's events and write the state at this time (seconds); -1 = file as loaded
     HiddenSwitch: Boolean;  // write unselected Switch choices too, as nodes with KHR_node_visibility visible=false
     ScopeLights: Boolean;   // global=false point/spot lights: clamp the glTF range to the extent of their scope
     Verbose: Boolean;
@@ -51,7 +52,7 @@ uses SysUtils, Classes, Math, TypInfo, Generics.Collections,
   CastlePasGLTF, CastlePasJSON,
   CastleUtils, CastleVectors, CastleLog, CastleClassUtils, CastleStringUtils,
   CastleDownload, CastleUriUtils, CastleImages, CastleRenderOptions,
-  CastleSceneCore, CastleShapes, X3DNodes, X3DFields,
+  CastleSceneCore, CastleShapes, CastleBoxes, X3DNodes, X3DFields,
   CastleInternalGeometryArrays, CastleInternalGLUtils;
 
 function DefaultExportOptions: TExportOptions;
@@ -67,6 +68,7 @@ begin
   Result.LightScale := 0; { 0 = auto }
   Result.TextAtlas := false;
   Result.HiddenSwitch := false;
+  Result.EventsAt := -1;
   Result.ScopeLights := false;
   Result.Verbose := false;
 end;
@@ -111,6 +113,17 @@ type
     CamFromViewpoint: Boolean;
     SamplerCodes: array of array [0..3] of Integer; { min, mag, wrapS, wrapT per glTF sampler (see WriteOut) }
     NTangentsGenerated, NEmissiveStrength, NTexCoordSets: Integer;
+    { exported shapes: the X3D Shape node, the glTF node it became, its world box (light scopes, hidden switch) }
+    ExpShapeNode: array of Pointer;
+    ExpGltfNode: array of Integer;
+    ExpBox: array of TBox3D;
+    NLightsGlobalFalse, NLightsScoped, NLightsUnscopable, NLightsRangeClamped, NLightsOff: Integer;
+    NHiddenSwitchNodes, NTextExported, NSceneExtras: Integer;
+    TextFontTex: TAbstractTexture2DNode; { set while a Text shape is exported with --text-atlas }
+    HiddenNow: Boolean;                  { set while an unselected Switch choice is exported }
+    HiddenSwitch: String;
+    HiddenChoice: Integer;
+    SceneExtrasJson: String;
 
     constructor Create;
     destructor Destroy; override;
@@ -133,6 +146,10 @@ type
     procedure UpdateLods(const T: TShapeTree);
     procedure ExportCamera;
     procedure ExportLights;
+    procedure ExportSceneExtras;
+    procedure ExportHiddenSwitchChoices(const Active: TShapeList);
+    procedure ScopeOf(const Parent: TX3DNode; out Covers: Boolean; out Nodes: TPasJSONItemArray;
+      out Box: TBox3D);
     procedure PrepareLightUnits;
     function Level(const X: Single): Single;
     function ReferenceDistance(const Origin: TVector3; const Radius: Single;
@@ -688,7 +705,7 @@ begin
 
   Key := PtrKey(App) + '|' + BoolToStr(DoubleSided, '1', '0') + '|' + IntToStr(Ord(G.ColorType)) + '|' +
     IntToStr(Ord(G.ColorMode)) + '|' + BoolToStr(Lines, '1', '0') + '|' + IntToStr(Ord(AC)) + '|' +
-    BoolToStr(G.ForceUnlit, '1', '0') + '|' + IntToStr(UvMain) + IntToStr(UvMR) + IntToStr(UvOcc) +
+    BoolToStr(G.ForceUnlit, '1', '0') + '|' + PtrKey(TextFontTex) + '|' + IntToStr(UvMain) + IntToStr(UvMR) + IntToStr(UvOcc) +
     IntToStr(UvNormal) + IntToStr(UvEmis);
   if MatCache.TryGetValue(Key, Result) then
     Exit;
@@ -700,6 +717,8 @@ begin
 
   Unlit := Lines or G.ForceUnlit or (Mat = nil) or (Mat is TUnlitMaterialNode);
   MainTex := Shape.State.MainTexture;
+  if TextFontTex <> nil then
+    MainTex := TextFontTex;
   BaseTex := GetTexture(MainTex);
   Base := Vector4(1, 1, 1, 1);
 
@@ -824,6 +843,16 @@ begin
       SetTexInfo(GM.NormalTexture, T, App, 0);
   end;
 
+  { PasGLTF writes "pbrMetallicRoughness" only when metallic or roughness differ from 1 or a texture is set:
+    its Empty test ignores baseColorFactor, so a PhysicalMaterial that has only a baseColor (X3D defaults
+    metallic 1, roughness 1) would lose its colour. A roughness of 0.9999 keeps the object in the file. }
+  if (GM.PBRMetallicRoughness.MetallicFactor = 1) and (GM.PBRMetallicRoughness.RoughnessFactor = 1) and
+     (GM.PBRMetallicRoughness.BaseColorTexture.Index < 0) and
+     (GM.PBRMetallicRoughness.MetallicRoughnessTexture.Index < 0) and
+     ((GM.PBRMetallicRoughness.BaseColorFactor[0] <> 1) or (GM.PBRMetallicRoughness.BaseColorFactor[1] <> 1) or
+      (GM.PBRMetallicRoughness.BaseColorFactor[2] <> 1) or (GM.PBRMetallicRoughness.BaseColorFactor[3] <> 1)) then
+    GM.PBRMetallicRoughness.RoughnessFactor := 0.9999;
+
   { alpha }
   AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Opaque;
   if (App <> nil) and (App.AlphaMode <> amAuto) then
@@ -838,6 +867,12 @@ begin
       acBlending: AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Blend;
       acTest: AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Mask;
     end;
+  end;
+  if (TextFontTex <> nil) and (AlphaMode = TPasGLTF.TMaterial.TAlphaMode.Opaque) then
+  begin
+    { glyph coverage is in the atlas alpha }
+    AlphaMode := TPasGLTF.TMaterial.TAlphaMode.Blend;
+    GM.DoubleSided := true;
   end;
   GM.AlphaMode := AlphaMode;
   if AlphaMode = TPasGLTF.TMaterial.TAlphaMode.Mask then
@@ -888,6 +923,7 @@ var
   NormalSet, UvSetsUsed: Integer;
   MatRef: TPasGLTF.TMaterial;
   TanT, TanB: TSingleArray;
+  Ext: TPasJSONItemObject;
   TA, TB, TC, TIdx: UInt32;
   II: Integer;
   E1, E2, TV, BV: TVector3;
@@ -1034,12 +1070,23 @@ var
   end;
 
 begin
-  if (not Opt.TextQuads) and (Shape.OriginalGeometry is TTextNode) then
+  TextFontTex := nil;
+  if (Shape.OriginalGeometry is TTextNode) then
   begin
-    Inc(NShapesSkipped);
-    Inc(NTextSkipped);
-    Warn('Text not exported (Castle gives glyph-cell quads without the font atlas): ' + Shape.NiceName);
-    Exit;
+    if Opt.TextAtlas then
+    begin
+      { the proxy's first texture coordinate set addresses the font atlas Castle draws with }
+      TextFontTex := TTextNode(Shape.OriginalGeometry).FontTextureNode;
+      if TextFontTex = nil then
+        Warn('Text font atlas not available: ' + Shape.NiceName);
+    end;
+    if (TextFontTex = nil) and (not Opt.TextQuads) then
+    begin
+      Inc(NShapesSkipped);
+      Inc(NTextSkipped);
+      Warn('Text not exported (Castle gives glyph-cell quads without the font atlas; --text-atlas writes them with it): ' + Shape.NiceName);
+      Exit;
+    end;
   end;
   G := Shape.GeometryArrays;
   try
@@ -1363,8 +1410,27 @@ begin
       if not IsIdentityGltf(M) then
         GNode.Matrix := M;
     end;
+    if HiddenNow then
+    begin
+      Ext := TPasJSONItemObject.Create;
+      Ext.Add('visible', TPasJSONItemBoolean.Create(false));
+      GNode.Extensions.Add('KHR_node_visibility', Ext);
+      if Doc.ExtensionsUsed.IndexOf('KHR_node_visibility') < 0 then
+        Doc.ExtensionsUsed.Add('KHR_node_visibility');
+      Ext := TPasJSONItemObject.Create;
+      Ext.Add('switch', TPasJSONItemString.Create(HiddenSwitch));
+      Ext.Add('choice', TPasJSONItemNumber.Create(HiddenChoice));
+      GNode.Extras.Add('x3d', Ext);
+      Inc(NHiddenSwitchNodes);
+    end;
     Doc.Nodes.Add(GNode);
     GScene.Nodes.Add(Doc.Nodes.Count - 1);
+    SetLength(ExpShapeNode, Length(ExpShapeNode) + 1);
+    SetLength(ExpGltfNode, Length(ExpGltfNode) + 1);
+    SetLength(ExpBox, Length(ExpBox) + 1);
+    ExpShapeNode[High(ExpShapeNode)] := Shape.OriginalState.ShapeNode;
+    ExpGltfNode[High(ExpGltfNode)] := Doc.Nodes.Count - 1;
+    ExpBox[High(ExpBox)] := Shape.BoundingBox;
 
     Inc(NShapes);
     Inc(NVerts, N);
@@ -1373,6 +1439,7 @@ begin
     else Inc(NTris, IdxCount div 3);
     if HasCol then Inc(NVertexColourShapes);
     if HasUV then Inc(NTexturedShapes);
+    if TextFontTex <> nil then Inc(NTextExported);
     Log(Format('shape %d %s: %d verts, %d indices, mode %d, material %d, uv=%s col=%s nrm=%s',
       [Index, Nm, N, IdxCount, Ord(Prim.Mode), MatIdx, BoolToStr(HasUV, 'y', 'n'),
        BoolToStr(HasCol, 'y', 'n'), BoolToStr(HasNormals, 'y', 'n')]));
@@ -1483,6 +1550,48 @@ type
     function Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
       ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
   end;
+
+  { Collects every node of one class under a node (the scope of a light, the first Background, ...). }
+  TNodeCollector = class
+  public
+    Found: TList;
+    constructor Create;
+    destructor Destroy; override;
+    function Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
+      ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
+  end;
+
+constructor TNodeCollector.Create;
+begin
+  inherited;
+  Found := TList.Create;
+end;
+
+destructor TNodeCollector.Destroy;
+begin
+  FreeAndNil(Found);
+  inherited;
+end;
+
+function TNodeCollector.Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
+  ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
+begin
+  Result := nil;
+  Found.Add(Node);
+end;
+
+function JNum(const V: Double): TPasJSONItemNumber;
+begin
+  Result := TPasJSONItemNumber.Create(V);
+end;
+
+function JVec3(const V: TVector3): TPasJSONItemArray;
+begin
+  Result := TPasJSONItemArray.Create;
+  Result.Add(JNum(V.X));
+  Result.Add(JNum(V.Y));
+  Result.Add(JNum(V.Z));
+end;
 
 function NewLightJson(const TypeName, Name: String; const Col: TVector3;
   const Intensity: Single): TPasJSONItemObject;
@@ -1618,6 +1727,39 @@ begin
     Result := 0.5 * (Ds[N - 1] + Ds[N]);
 end;
 
+{ Shapes under a node, as glTF node indices. Covers = the scope holds every exported shape (so nothing is lost
+  by glTF lights being global). Box = union of their world boxes. }
+procedure TExporter.ScopeOf(const Parent: TX3DNode; out Covers: Boolean; out Nodes: TPasJSONItemArray;
+  out Box: TBox3D);
+var
+  C: TNodeCollector;
+  I, J, Hits: Integer;
+begin
+  Covers := false;
+  Nodes := TPasJSONItemArray.Create;
+  Box := TBox3D.Empty;
+  if (Parent = nil) or (Parent = Scene.RootNode) then
+  begin
+    Covers := true;
+    Exit;
+  end;
+  C := TNodeCollector.Create;
+  try
+    Parent.Traverse(TAbstractShapeNode, @C.Collect);
+    Hits := 0;
+    for I := 0 to High(ExpShapeNode) do
+      for J := 0 to C.Found.Count - 1 do
+        if C.Found[J] = ExpShapeNode[I] then
+        begin
+          Nodes.Add(JNum(ExpGltfNode[I]));
+          Box := Box + ExpBox[I];
+          Inc(Hits);
+          Break;
+        end;
+    Covers := Hits >= Length(ExpShapeNode);
+  finally FreeAndNil(C) end;
+end;
+
 function TLightCollector.Collect(Node: TX3DNode; StateStack: TX3DGraphTraverseStateStack;
   ParentInfo: PTraversingInfo; var TraverseIntoChildren: Boolean): Pointer;
 var
@@ -1626,9 +1768,16 @@ var
   J: TPasJSONItemObject;
   Sp: TPasJSONItemObject;
   Nm, Kind: String;
-  Inner, Outer, D, Fade, Candela: Single;
+  Inner, Outer, D, Fade, Candela, IfOn, Written, RangeV: Single;
   Att: TVector3;
   Up: TVector3;
+  OnNow, Covers: Boolean;
+  Scope: TPasJSONItemArray;
+  Box: TBox3D;
+  Ex, X3: TPasJSONItemObject;
+  Corners8: TBoxCorners;
+  CI: Integer;
+  ParentNode: TX3DNode;
 
   { X3D 4.0 17.2.2.3: 1 / max(c1 + c2 d + c3 d^2, 1) }
   function AttenuationAt(const Dist: Single): Single;
@@ -1661,39 +1810,106 @@ var
       [Nm, D, Fade, Candela, L.Intensity]));
   end;
 
+  { Everything glTF cannot say about the light goes to extras.x3d, so a viewer that knows X3D can use it:
+    the authored intensity, ambientIntensity (glTF has no ambient light), shadows, on, global and the glTF
+    nodes of the scope. }
+  procedure AddExtras(const LJ: TPasJSONItemObject; const IfOnIntensity: Single);
+  begin
+    Ex := TPasJSONItemObject.Create;
+    X3 := TPasJSONItemObject.Create;
+    X3.Add('global', TPasJSONItemBoolean.Create(L.Global));
+    X3.Add('intensity', JNum(L.Intensity));
+    if L.AmbientIntensity <> 0 then
+      X3.Add('ambientIntensity', JNum(L.AmbientIntensity));
+    if L.Shadows then
+      X3.Add('shadows', TPasJSONItemBoolean.Create(true));
+    if not OnNow then
+    begin
+      X3.Add('on', TPasJSONItemBoolean.Create(false));
+      X3.Add('intensityIfOn', JNum(IfOnIntensity));
+    end;
+    if Scope <> nil then
+    begin
+      X3.Add('scopeNodes', Scope);
+      Scope := nil;
+    end;
+    Ex.Add('x3d', X3);
+    LJ.Add('extras', Ex);
+  end;
+
 begin
   Result := nil;
   if not (Node is TAbstractLightNode) then
     Exit;
   L := TAbstractLightNode(Node);
-  if not L.IsOn then
-    Exit;
+  OnNow := L.IsOn;
   Nm := L.X3DName;
   if Nm = '' then
     Nm := Format('light_%d', [Owner.NLights]);
   LI := L.CreateLightInstance(StateStack.Top.Transformation);
   Up := Vector3(0, 1, 0);
   Kind := L.NiceName;
+  Scope := nil;
+  Covers := true;
+  Box := TBox3D.Empty;
+  if not L.Global then
+  begin
+    { X3D scopes a global=false light to its parent group; glTF lights are global }
+    ParentNode := nil;
+    if ParentInfo <> nil then
+      ParentNode := ParentInfo^.Node;
+    Owner.ScopeOf(ParentNode, Covers, Scope, Box);
+    Inc(Owner.NLightsGlobalFalse);
+    if Covers then
+      FreeAndNil(Scope)
+    else
+      Inc(Owner.NLightsScoped);
+  end;
   if L is TDirectionalLightNode then
   begin
-    J := NewLightJson('directional', Nm, L.Color, Owner.Level(L.Intensity));
+    IfOn := Owner.Level(L.Intensity);
+    J := NewLightJson('directional', Nm, L.Color, IfThenSingle(OnNow, IfOn, 0));
+    AddExtras(J, IfOn);
     Owner.LightsArr.Add(J);
     Owner.AddLightNode(Owner.LightsArr.Count - 1,
       BasisMatrix(Vector3(0, 0, 0), LI.Direction, Up), Nm, -1);
-    Owner.Log(Format('light %s: directional, X3D intensity %.3f written %.4f', [Nm, L.Intensity, Owner.Level(L.Intensity)]));
+    Owner.Log(Format('light %s: directional, X3D intensity %.3f written %.4f', [Nm, L.Intensity, IfOn]));
+    if (not L.Global) and (not Covers) then
+    begin
+      Inc(Owner.NLightsUnscopable);
+      Owner.Warn('DirectionalLight global=false scoped to part of the scene: glTF directional lights are global (extras.x3d.scopeNodes lists the scope): ' + Nm);
+    end;
   end else
   if L is TSpotLightNode then
   begin
-    Inner := Min(TSpotLightNode(L).BeamWidth, TSpotLightNode(L).CutOffAngle);
-    Outer := TSpotLightNode(L).CutOffAngle;
+    Outer := Min(TSpotLightNode(L).CutOffAngle, Pi / 2);
+    { glTF wants innerConeAngle < outerConeAngle: an X3D beamWidth at or above cutOffAngle (hard edge) is written just inside it }
+    Inner := Max(0, Min(TSpotLightNode(L).BeamWidth, Outer - 0.001));
     PointLike(true);
-    J := NewLightJson('spot', Nm, L.Color, Candela);
+    IfOn := Candela;
+    J := NewLightJson('spot', Nm, L.Color, IfThenSingle(OnNow, IfOn, 0));
     Sp := TPasJSONItemObject.Create;
-    Sp.Add('innerConeAngle', TPasJSONItemNumber.Create(Inner));
-    Sp.Add('outerConeAngle', TPasJSONItemNumber.Create(Outer));
+    Sp.Add('innerConeAngle', JNum(Inner));
+    Sp.Add('outerConeAngle', JNum(Outer));
     J.Add('spot', Sp);
-    if TAbstractPositionalLightNode(L).Radius > 0 then
-      J.Add('range', TPasJSONItemNumber.Create(TAbstractPositionalLightNode(L).Radius));
+    RangeV := TAbstractPositionalLightNode(L).Radius;
+    if (not L.Global) and (not Covers) then
+      if Owner.Opt.ScopeLights and (not Box.IsEmpty) then
+      begin
+        D := 0;
+        Box.Corners(Corners8);
+        for CI := 0 to 7 do
+          D := Max(D, (Corners8[CI] - LI.Location).Length);
+        if (D > 0) and ((RangeV <= 0) or (D < RangeV)) then
+        begin
+          RangeV := D;
+          Inc(Owner.NLightsRangeClamped);
+        end;
+      end else
+        Inc(Owner.NLightsUnscopable);
+    if RangeV > 0 then
+      J.Add('range', JNum(RangeV));
+    AddExtras(J, IfOn);
     Owner.LightsArr.Add(J);
     Owner.AddLightNode(Owner.LightsArr.Count - 1,
       BasisMatrix(LI.Location, LI.Direction, Up), Nm, -1);
@@ -1701,20 +1917,38 @@ begin
   if L is TAbstractPositionalLightNode then
   begin
     PointLike(false);
-    J := NewLightJson('point', Nm, L.Color, Candela);
-    if TAbstractPositionalLightNode(L).Radius > 0 then
-      J.Add('range', TPasJSONItemNumber.Create(TAbstractPositionalLightNode(L).Radius));
+    IfOn := Candela;
+    J := NewLightJson('point', Nm, L.Color, IfThenSingle(OnNow, IfOn, 0));
+    RangeV := TAbstractPositionalLightNode(L).Radius;
+    if (not L.Global) and (not Covers) then
+      if Owner.Opt.ScopeLights and (not Box.IsEmpty) then
+      begin
+        D := 0;
+        Box.Corners(Corners8);
+        for CI := 0 to 7 do
+          D := Max(D, (Corners8[CI] - LI.Location).Length);
+        if (D > 0) and ((RangeV <= 0) or (D < RangeV)) then
+        begin
+          RangeV := D;
+          Inc(Owner.NLightsRangeClamped);
+        end;
+      end else
+        Inc(Owner.NLightsUnscopable);
+    if RangeV > 0 then
+      J.Add('range', JNum(RangeV));
+    AddExtras(J, IfOn);
     Owner.LightsArr.Add(J);
     Owner.AddLightNode(Owner.LightsArr.Count - 1,
       BasisMatrix(LI.Location, Vector3(0, 0, -1), Up), Nm, -1);
   end else
   begin
     Owner.Warn('light type not exported: ' + Kind);
+    FreeAndNil(Scope);
     Exit;
   end;
+  if not OnNow then
+    Inc(Owner.NLightsOff);
   Inc(Owner.NLights);
-  if (L is TDirectionalLightNode) and (not L.Global) then
-    Owner.Log(Format('light %s: global=false (X3D scopes it to its parent group; glTF lights are global)', [Nm]));
 end;
 
 procedure TExporter.ExportLights;
@@ -1756,6 +1990,209 @@ begin
     Doc.ExtensionsUsed.Add('KHR_lights_punctual');
 end;
 
+{ --hidden-switch: Castle's shape tree holds every Switch choice; the exporter normally writes only the selected one.
+  Here each shape of an unselected choice is written too, as a node with KHR_node_visibility visible=false and
+  extras.x3d.switch / choice, so the frames of a frame-by-frame Switch survive in the file. A viewer without the
+  extension would draw them all, which is why this is a flag. }
+procedure TExporter.ExportHiddenSwitchChoices(const Active: TShapeList);
+var
+  Sw: TNodeCollector;
+  All: TShapeList;
+  Choice: TNodeCollector;
+  SN: TSwitchNode;
+  I, J, K, M, Idx: Integer;
+  Sh: TShape;
+  Done: array of Boolean;
+  IsActive: Boolean;
+begin
+  All := Scene.Shapes.TraverseList(false);
+  SetLength(Done, All.Count);
+  Sw := TNodeCollector.Create;
+  try
+    if Scene.RootNode <> nil then
+      Scene.RootNode.Traverse(TSwitchNode, @Sw.Collect);
+    Idx := Active.Count;
+    for I := 0 to Sw.Found.Count - 1 do
+    begin
+      SN := TSwitchNode(Sw.Found[I]);
+      for J := 0 to SN.FdChildren.Count - 1 do
+      begin
+        if J = SN.FdWhichChoice.Value then
+          Continue;
+        Choice := TNodeCollector.Create;
+        try
+          SN.FdChildren[J].Traverse(TAbstractShapeNode, @Choice.Collect);
+          for K := 0 to All.Count - 1 do
+          begin
+            if Done[K] then
+              Continue;
+            Sh := All[K];
+            { not an active shape, and its Shape node sits under this choice }
+            IsActive := false;
+            for M := 0 to Active.Count - 1 do
+              if Active[M] = Sh then
+              begin
+                IsActive := true;
+                Break;
+              end;
+            if IsActive then
+              Continue;
+            for M := 0 to Choice.Found.Count - 1 do
+              if Choice.Found[M] = Pointer(Sh.OriginalState.ShapeNode) then
+              begin
+                Done[K] := true;
+                HiddenNow := true;
+                HiddenSwitch := SN.X3DName;
+                HiddenChoice := J;
+                try
+                  ExportShape(Sh, Idx);
+                finally
+                  HiddenNow := false;
+                end;
+                Inc(Idx);
+                Break;
+              end;
+          end;
+        finally FreeAndNil(Choice) end;
+      end;
+    end;
+  finally FreeAndNil(Sw) end;
+end;
+
+{ What the glTF core cannot hold of the scene environment goes to scene.extras.x3d: the first Background
+  (sky and ground gradient, cube urls), the first Fog and any EnvironmentLight. glTF has no sky, no fog and
+  KHR_lights_punctual has no image based light, so a viewer that knows X3D reads these; every other viewer
+  ignores them. }
+procedure TExporter.ExportSceneExtras;
+var
+  C: TNodeCollector;
+  X3, Bg, Fg, El: TPasJSONItemObject;
+  Arr: TPasJSONItemArray;
+  I: Integer;
+  B: TBackgroundNode;
+  F: TFogNode;
+  E: TEnvironmentLightNode;
+
+  function Colours(const A: TVector3List): TPasJSONItemArray;
+  var
+    K: Integer;
+  begin
+    Result := TPasJSONItemArray.Create;
+    for K := 0 to A.Count - 1 do
+      Result.Add(JVec3(A[K]));
+  end;
+
+  function Floats(const A: TSingleList): TPasJSONItemArray;
+  var
+    K: Integer;
+  begin
+    Result := TPasJSONItemArray.Create;
+    for K := 0 to A.Count - 1 do
+      Result.Add(JNum(A[K]));
+  end;
+
+  function FirstUrl(const A: TMFString): TPasJSONItemString;
+  begin
+    if A.Count > 0 then
+      Result := TPasJSONItemString.Create(A.Items[0])
+    else
+      Result := nil;
+  end;
+
+  procedure AddUrl(const O: TPasJSONItemObject; const Key: String; const A: TMFString);
+  var
+    U: TPasJSONItemString;
+  begin
+    U := FirstUrl(A);
+    if U <> nil then
+      O.Add(Key, U);
+  end;
+
+  procedure AddEnvTexture(const O: TPasJSONItemObject; const Key: String; const T: TX3DNode);
+  var
+    Tx: TPasJSONItemObject;
+  begin
+    if T = nil then
+      Exit;
+    Tx := TPasJSONItemObject.Create;
+    Tx.Add('node', TPasJSONItemString.Create(T.X3DType));
+    if T is TImageCubeMapTextureNode then
+      AddUrl(Tx, 'url', TImageCubeMapTextureNode(T).FdUrl);
+    O.Add(Key, Tx);
+  end;
+
+begin
+  X3 := TPasJSONItemObject.Create;
+  C := TNodeCollector.Create;
+  try
+    Scene.RootNode.Traverse(TBackgroundNode, @C.Collect);
+    if C.Found.Count > 0 then
+    begin
+      B := TBackgroundNode(C.Found[0]);
+      Bg := TPasJSONItemObject.Create;
+      Bg.Add('skyColor', Colours(B.FdSkyColor.Items));
+      Bg.Add('skyAngle', Floats(B.FdSkyAngle.Items));
+      Bg.Add('groundColor', Colours(B.FdGroundColor.Items));
+      Bg.Add('groundAngle', Floats(B.FdGroundAngle.Items));
+      if B.FdTransparency.Value <> 0 then
+        Bg.Add('transparency', JNum(B.FdTransparency.Value));
+      AddUrl(Bg, 'frontUrl', B.FdFrontUrl);
+      AddUrl(Bg, 'backUrl', B.FdBackUrl);
+      AddUrl(Bg, 'leftUrl', B.FdLeftUrl);
+      AddUrl(Bg, 'rightUrl', B.FdRightUrl);
+      AddUrl(Bg, 'topUrl', B.FdTopUrl);
+      AddUrl(Bg, 'bottomUrl', B.FdBottomUrl);
+      X3.Add('background', Bg);
+      Inc(NSceneExtras);
+    end;
+  finally FreeAndNil(C) end;
+  C := TNodeCollector.Create;
+  try
+    Scene.RootNode.Traverse(TFogNode, @C.Collect);
+    if C.Found.Count > 0 then
+    begin
+      F := TFogNode(C.Found[0]);
+      Fg := TPasJSONItemObject.Create;
+      Fg.Add('type', TPasJSONItemString.Create(F.FdFogType.Value));
+      Fg.Add('color', JVec3(F.Color));
+      Fg.Add('visibilityRange', JNum(F.VisibilityRange));
+      X3.Add('fog', Fg);
+      Inc(NSceneExtras);
+    end;
+  finally FreeAndNil(C) end;
+  C := TNodeCollector.Create;
+  try
+    Scene.RootNode.Traverse(TEnvironmentLightNode, @C.Collect);
+    if C.Found.Count > 0 then
+    begin
+      Arr := TPasJSONItemArray.Create;
+      for I := 0 to C.Found.Count - 1 do
+      begin
+        E := TEnvironmentLightNode(C.Found[I]);
+        El := TPasJSONItemObject.Create;
+        El.Add('color', JVec3(E.Color));
+        El.Add('intensity', JNum(E.Intensity));
+        AddEnvTexture(El, 'diffuseTexture', E.DiffuseTexture);
+        AddEnvTexture(El, 'specularTexture', E.SpecularTexture);
+        Arr.Add(El);
+      end;
+      { one is the usual case; the first is the one written as "environmentLight", all are listed in "environmentLights" }
+      X3.Add('environmentLight', TPasJSONItemObject(TPasJSONItemObject(Arr.Items[0]).Clone));
+      if Arr.Count > 1 then
+        X3.Add('environmentLights', Arr)
+      else
+        FreeAndNil(Arr);
+      Inc(NSceneExtras);
+    end;
+  finally FreeAndNil(C) end;
+  if X3.Count = 0 then
+  begin
+    FreeAndNil(X3);
+    Exit;
+  end;
+  GScene.Extras.Add('x3d', X3);
+end;
+
 { Driver ----------------------------------------------------------------------- }
 
 function JsonStr(const S: String): String;
@@ -1777,6 +2214,8 @@ begin
     '  "shapes": ' + IntToStr(NShapes) + ',' + LineEnding +
     '  "shapes_skipped": ' + IntToStr(NShapesSkipped) + ',' + LineEnding +
     '  "text_shapes_skipped": ' + IntToStr(NTextSkipped) + ',' + LineEnding +
+    '  "text_shapes_exported": ' + IntToStr(NTextExported) + ',' + LineEnding +
+    '  "hidden_switch_nodes": ' + IntToStr(NHiddenSwitchNodes) + ',' + LineEnding +
     '  "shapes_baked_for_shear": ' + IntToStr(NBaked) + ',' + LineEnding +
     '  "vertices": ' + IntToStr(NVerts) + ',' + LineEnding +
     '  "triangles": ' + IntToStr(NTris) + ',' + LineEnding +
@@ -1792,6 +2231,15 @@ begin
     '  "lights": ' + IntToStr(NLights) + ',' + LineEnding +
     '  "headlight": ' + BoolToStr(HeadlightWritten, 'true', 'false') + ',' + LineEnding +
     '  "cameras": ' + IntToStr(NCameras) + ',' + LineEnding +
+    '  "lights_global_false": ' + IntToStr(NLightsGlobalFalse) + ',' + LineEnding +
+    '  "lights_scoped_to_part_of_scene": ' + IntToStr(NLightsScoped) + ',' + LineEnding +
+    '  "lights_scoped_unscopable": ' + IntToStr(NLightsUnscopable) + ',' + LineEnding +
+    '  "lights_scope_range_clamped": ' + IntToStr(NLightsRangeClamped) + ',' + LineEnding +
+    '  "lights_off": ' + IntToStr(NLightsOff) + ',' + LineEnding +
+    '  "scene_extras": ' + IntToStr(NSceneExtras) + ',' + LineEnding +
+    '  "tangents_generated_shapes": ' + IntToStr(NTangentsGenerated) + ',' + LineEnding +
+    '  "emissive_strength_materials": ' + IntToStr(NEmissiveStrength) + ',' + LineEnding +
+    '  "shapes_with_several_texcoord_sets": ' + IntToStr(NTexCoordSets) + ',' + LineEnding +
     '  "light_units": ' + JsonStr(LightUnitsName) + ',' + LineEnding +
     '  "lit_classic_shapes": ' + IntToStr(NLitClassic) + ',' + LineEnding +
     '  "lit_physical_shapes": ' + IntToStr(NLitPhysical) + ',' + LineEnding +
@@ -1878,6 +2326,16 @@ begin
   Doc := TPasGLTF.TDocument.Create;
   try
     Scene.Load(InUrl);
+    if Opt.EventsAt >= 0 then
+    begin
+      { TimeSensor, interpolators and scripts-free routes move fields; the exporter reads node fields, so the state
+        at this time is what gets written (a still of the animation, not the animation) }
+      Scene.ProcessEvents := true;
+      Scene.ResetTime(0);
+      if Opt.EventsAt > 0 then
+        Scene.SetTime(Opt.EventsAt);
+      Log(Format('events run to t = %.3f s', [Opt.EventsAt]));
+    end;
     Doc.Asset.Version := '2.0';
     Doc.Asset.Generator := 'x3d-castle-convert (Castle Game Engine shape-tree exporter)';
     Buf := TPasGLTF.TBuffer.Create(Doc);
@@ -1893,10 +2351,13 @@ begin
     Log(Format('%d active shapes', [Shapes.Count]));
     for I := 0 to Shapes.Count - 1 do
       ExportShape(Shapes[I], I);
+    if Opt.HiddenSwitch then
+      ExportHiddenSwitchChoices(Shapes);
     if Opt.Camera or Opt.Headlight then
       ExportCamera;
     if Opt.Lights or Opt.Headlight then
       ExportLights;
+    ExportSceneExtras;
 
     Align4;
     if Buf.Data.Size = 0 then

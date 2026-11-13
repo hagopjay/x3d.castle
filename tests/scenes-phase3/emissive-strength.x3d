@@ -4,6 +4,7 @@
 <Scene>
 <NavigationInfo headlight="false"/>
 <Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
 <Shape>
  <Appearance><PhysicalMaterial baseColor="0.1 0.1 0.1" emissiveColor="4 2 1"/></Appearance>
  <Sphere radius="0.8"/>

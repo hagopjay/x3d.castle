@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="A TimeSensor drives a ColorInterpolator on a PhysicalMaterial baseColor: the file as loaded is red, --events-at=1 writes the state at t = 1 s (blue)"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
+<Shape><Appearance><PhysicalMaterial DEF="M" baseColor="1 0 0" metallic="0" roughness="0.5"/></Appearance><Sphere radius="0.5"/></Shape>
+<TimeSensor DEF="T" cycleInterval="1" loop="false" startTime="0"/>
+<ColorInterpolator DEF="CI" key="0 1" keyValue="1 0 0, 0 0 1"/>
+<ROUTE fromNode="T" fromField="fraction_changed" toNode="CI" toField="set_fraction"/>
+<ROUTE fromNode="CI" fromField="value_changed" toNode="M" toField="baseColor"/>
+</Scene>
+</X3D>

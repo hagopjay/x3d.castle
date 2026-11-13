@@ -4,6 +4,7 @@
 <Scene>
 <NavigationInfo headlight="false"/>
 <Viewpoint position="0 0 6"/>
+<DirectionalLight direction="0 0 -1"/>
 <Shape>
  <Appearance><Material diffuseColor="1 0.8 0.2"/></Appearance>
  <Text string='"Castle" "glb"'><FontStyle size="1" justify='"MIDDLE" "MIDDLE"'/></Text>

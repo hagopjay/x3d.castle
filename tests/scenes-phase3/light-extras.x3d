@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <X3D profile="Immersive" version="4.0">
-<head><meta name="description" content="ambientIntensity, shadows, on=FALSE and global kept on the glTF light as extras; an off light has intensity 0 and its real intensity in extras"/></head>
+<head><meta name="description" content="ambientIntensity, shadows, on=false and global kept on the glTF light as extras; an off light has intensity 0 and its real intensity in extras"/></head>
 <Scene>
 <NavigationInfo headlight="false"/>
 <Viewpoint position="0 0 6"/>

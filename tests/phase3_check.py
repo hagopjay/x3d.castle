@@ -153,8 +153,10 @@ def c_light_extras(g, rep, val):
         f.append(f"Sun extras.x3d.ambientIntensity {x.get('ambientIntensity')} (want 0.3)")
     if x.get("shadows") is not True:
         f.append(f"Sun extras.x3d.shadows {x.get('shadows')} (want true)")
-    if x.get("global") is not True:
-        f.append(f"Sun extras.x3d.global {x.get('global')} (want true)")
+    if x.get("global") is not False:
+        f.append(f"Sun extras.x3d.global {x.get('global')} (want false: the X3D default for DirectionalLight)")
+    if "scopeNodes" in x:
+        f.append("Sun sits at the scene root: its scope is everything, scopeNodes must be omitted")
     xo = (off.get("extras") or {}).get("x3d") or {}
     if off.get("intensity") != 0:
         f.append(f"Off light intensity {off.get('intensity')} (want 0)")
@@ -181,8 +183,10 @@ def c_scope_extras(g, rep, val):
             nd = g["nodes"][sc[0]]
             if abs(nd.get("matrix", [0] * 16)[12] + 6) > 1e-4:
                 f.append(f"{n} scope node is not the sphere at x=-6")
-    if rep.get("lights_scoped_unscopable", None) != 1:
-        f.append(f"export.json lights_scoped_unscopable {rep.get('lights_scoped_unscopable')} (want 1: the directional)")
+    want = 1 if "lights_scope_range_clamped" in rep and rep["lights_scope_range_clamped"] == 1 else 2
+    if rep.get("lights_scoped_unscopable", None) != want:
+        f.append(f"export.json lights_scoped_unscopable {rep.get('lights_scoped_unscopable')} (want {want}: the directional light"
+                 + (", and the point light when --scope-lights is off)" if want == 2 else ")"))
     return f
 
 
@@ -266,6 +270,28 @@ def c_text_atlas(g, rep, val):
     return f
 
 
+def c_base_only(g, rep, val):
+    m = g["materials"][0]
+    bc = (m.get("pbrMetallicRoughness") or {}).get("baseColorFactor")
+    if not bc or abs(bc[0] - 1) > 1e-6 or abs(bc[1] - 1) > 1e-6 or abs(bc[2]) > 1e-6 or abs(bc[3] - 0.75) > 1e-6:
+        return [f"baseColorFactor {bc} (want 1 1 0 0.75)"]
+    return []
+
+
+def _base(g):
+    return (g["materials"][0].get("pbrMetallicRoughness") or {}).get("baseColorFactor") or [0, 0, 0, 1]
+
+
+def c_events_default(g, rep, val):
+    b = _base(g)
+    return [] if b[0] > 0.9 and b[2] < 0.1 else [f"default baseColorFactor {b} (want red, the file as loaded)"]
+
+
+def c_events_at(g, rep, val):
+    b = _base(g)
+    return [] if b[2] > 0.9 and b[0] < 0.1 else [f"--events-at=1 baseColorFactor {b} (want blue, the interpolator end)"]
+
+
 def v_regress(g, rep, val):
     return []
 
@@ -276,6 +302,7 @@ CASES = [
     ("emissive-strength", "emissive-strength.x3d", [], 0, c_emissive_strength, "KHR_materials_emissive_strength"),
     ("texture-properties", "texture-properties.x3d", [], 0, c_texprops, "TextureProperties to sampler"),
     ("texcoord-sets", "texcoord-sets.x3d", [], 0, c_texcoord_sets, "texCoord sets above 0 via *TextureMapping"),
+    ("material-base-only", "material-base-only.x3d", [], 0, c_base_only, "baseColor kept when metallic and roughness are the X3D defaults (PasGLTF Empty test)"),
     ("alpha-modes", "alpha-modes.x3d", [], 0, c_alpha, "alpha modes, cutoff, doubleSided, unlit alpha texture"),
     ("spot-cone", "spot-cone.x3d", [], 0, c_spot, "spot cone angles and range"),
     ("light-extras", "light-extras.x3d", [], 0, c_light_extras, "light ambientIntensity / shadows / on / global as extras"),
@@ -284,6 +311,8 @@ CASES = [
     ("environment", "environment.x3d", [], 0, c_env, "Background / Fog / EnvironmentLight as scene extras"),
     ("switch-default", "switch-hidden.x3d", [], 0, c_switch_default, "default keeps writing active Switch choices only"),
     ("switch-hidden", "switch-hidden.x3d", ["--hidden-switch"], 0, c_switch_hidden, "--hidden-switch writes hidden choices with KHR_node_visibility"),
+    ("events-default", "events-at.x3d", [], 0, c_events_default, "default writes the file as loaded"),
+    ("events-at", "events-at.x3d", ["--events-at=1"], 0, c_events_at, "--events-at=1 writes the state after the TimeSensor ran 1 s"),
     ("text-default", "text-atlas.x3d", [], 0, c_text_default, "default still skips Text"),
     ("text-atlas", "text-atlas.x3d", ["--text-atlas"], 0, c_text_atlas, "--text-atlas writes glyph quads with the font atlas"),
 ]
