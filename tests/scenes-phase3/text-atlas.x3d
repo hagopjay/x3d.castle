@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="Text: skipped by default; with --text-atlas the glyph quads carry the font atlas as a texture with alpha blending"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Shape>
+ <Appearance><Material diffuseColor="1 0.8 0.2"/></Appearance>
+ <Text string='"Castle" "glb"'><FontStyle size="1" justify='"MIDDLE" "MIDDLE"'/></Text>
+</Shape>
+</Scene>
+</X3D>

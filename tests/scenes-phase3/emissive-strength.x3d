@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="emissiveColor above 1 must become emissiveFactor within 0..1 plus KHR_materials_emissive_strength"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Shape>
+ <Appearance><PhysicalMaterial baseColor="0.1 0.1 0.1" emissiveColor="4 2 1"/></Appearance>
+ <Sphere radius="0.8"/>
+</Shape>
+</Scene>
+</X3D>

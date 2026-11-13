@@ -1,0 +1,86 @@
+[
+ {
+  "name": "lights-before",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lights-before.x3d"
+ },
+ {
+  "name": "lights-after",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lights-after.x3d"
+ },
+ {
+  "name": "nurbs-weights",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/nurbs-weights.x3d"
+ },
+ {
+  "name": "quaternion-xyzw",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/quaternion-xyzw.x3d"
+ },
+ {
+  "name": "profile-tables",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/profile-tables.x3d"
+ },
+ {
+  "name": "annotation-standard",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/annotation-standard.x3d"
+ },
+ {
+  "name": "repair-2-render",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-2-render.x3d"
+ },
+ {
+  "name": "lod-control",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lod-control.x3d"
+ },
+ {
+  "name": "village",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/village.x3d"
+ },
+ {
+  "name": "earth-planet",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-planet.x3d"
+ },
+ {
+  "name": "villagers",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/villagers.x3d"
+ },
+ {
+  "name": "earth-clouds",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-clouds.x3d"
+ },
+ {
+  "name": "ontology-constellation",
+  "x3d": "x3d.demo/docs/demos/ontology-constellation/v1/ontology-constellation.x3d"
+ },
+ {
+  "name": "p1-point-physical",
+  "x3d": "x3d-blender-io/tools/fidelity_rig/probes/p1-point-physical.x3d"
+ },
+ {
+  "name": "p2-point-classic",
+  "x3d": "x3d-blender-io/tools/fidelity_rig/probes/p2-point-classic.x3d"
+ },
+ {
+  "name": "p3-directional-classic-i1",
+  "x3d": "x3d-blender-io/tools/fidelity_rig/probes/p3-directional-classic-i1.x3d"
+ },
+ {
+  "name": "p4-point-quadratic-physical",
+  "x3d": "x3d-blender-io/tools/fidelity_rig/probes/p4-point-quadratic-physical.x3d"
+ },
+ {
+  "name": "p5-directional-physical-i03",
+  "x3d": "x3d-blender-io/tools/fidelity_rig/probes/p5-directional-physical-i03.x3d"
+ },
+ {
+  "name": "materials-world",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/materials.x3d"
+ },
+ {
+  "name": "habsburg-timeline",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/habsburg.x3d"
+ },
+ {
+  "name": "stilllife-direct",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-x3d40.x3d"
+ }
+]

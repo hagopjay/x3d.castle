@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="ambientIntensity, shadows, on=FALSE and global kept on the glTF light as extras; an off light has intensity 0 and its real intensity in extras"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Shape><Appearance><PhysicalMaterial baseColor="0.8 0.8 0.8"/></Appearance><Sphere/></Shape>
+<DirectionalLight DEF="Sun" direction="0 -1 -1" intensity="1.5" ambientIntensity="0.3" shadows="true"/>
+<PointLight DEF="Off" location="2 2 2" intensity="3" on="false"/>
+</Scene>
+</X3D>

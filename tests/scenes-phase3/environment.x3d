@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0">
+<head><meta name="description" content="Background, Fog and EnvironmentLight kept as scene extras (glTF core has no sky; KHR_lights_punctual has no IBL)"/></head>
+<Scene>
+<NavigationInfo headlight="false"/>
+<Viewpoint position="0 0 6"/>
+<Background skyColor="0.1 0.2 0.6, 0.6 0.7 1" skyAngle="1.4" groundColor="0.2 0.15 0.1, 0.4 0.4 0.3" groundAngle="1.4"/>
+<Fog color="0.7 0.7 0.8" fogType="EXPONENTIAL" visibilityRange="40"/>
+<EnvironmentLight color="1 1 1" intensity="0.5"/>
+<Shape><Appearance><PhysicalMaterial baseColor="0.8 0.8 0.8"/></Appearance><Sphere/></Shape>
+</Scene>
+</X3D>
