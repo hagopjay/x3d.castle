@@ -1,0 +1,170 @@
+{
+ "lights-before": {
+  "median": 61.92,
+  "repeats": [
+   61.92,
+   61.92,
+   61.92
+  ]
+ },
+ "lights-after": {
+  "median": 0.11,
+  "repeats": [
+   0.11,
+   0.11,
+   0.11
+  ]
+ },
+ "nurbs-weights": {
+  "median": 15.85,
+  "repeats": [
+   15.85,
+   15.85,
+   15.85
+  ]
+ },
+ "quaternion-xyzw": {
+  "median": 21.29,
+  "repeats": [
+   21.29,
+   21.29,
+   21.29
+  ]
+ },
+ "profile-tables": {
+  "median": 11.47,
+  "repeats": [
+   11.47,
+   11.47,
+   11.47
+  ]
+ },
+ "annotation-standard": {
+  "median": 18.05,
+  "repeats": [
+   18.05,
+   18.05,
+   18.05
+  ]
+ },
+ "repair-2-render": {
+  "median": 0.44,
+  "repeats": [
+   0.41,
+   0.68,
+   0.44
+  ]
+ },
+ "lod-control": {
+  "median": 0.06,
+  "repeats": [
+   0.06,
+   0.06,
+   0.06
+  ]
+ },
+ "village": {
+  "median": 3.49,
+  "repeats": [
+   3.49,
+   3.49,
+   3.49
+  ]
+ },
+ "earth-planet": {
+  "median": 0.4,
+  "repeats": [
+   0.4,
+   0.4,
+   0.4
+  ]
+ },
+ "villagers": {
+  "median": 0.54,
+  "repeats": [
+   0.54,
+   5.51,
+   0.52
+  ]
+ },
+ "earth-clouds": {
+  "median": 0.09,
+  "repeats": [
+   0.09,
+   0.09,
+   0.09
+  ]
+ },
+ "ontology-constellation": {
+  "median": 5.0,
+  "repeats": [
+   5.0,
+   5.0,
+   5.0
+  ]
+ },
+ "p1-point-physical": {
+  "median": 0.07,
+  "repeats": [
+   0.07,
+   0.07,
+   0.07
+  ]
+ },
+ "p2-point-classic": {
+  "median": 4.48,
+  "repeats": [
+   4.48,
+   4.48,
+   4.48
+  ]
+ },
+ "p3-directional-classic-i1": {
+  "median": 0.3,
+  "repeats": [
+   0.3,
+   0.3,
+   0.3
+  ]
+ },
+ "p4-point-quadratic-physical": {
+  "median": 0.34,
+  "repeats": [
+   0.34,
+   0.34,
+   0.34
+  ]
+ },
+ "p5-directional-physical-i03": {
+  "median": 0.08,
+  "repeats": [
+   0.08,
+   0.08,
+   0.08
+  ]
+ },
+ "materials-world": {
+  "median": 4.35,
+  "repeats": [
+   5.28,
+   3.66,
+   4.35
+  ]
+ },
+ "habsburg-timeline": {
+  "median": 9.46,
+  "repeats": [
+   9.46,
+   9.46,
+   9.46
+  ]
+ },
+ "stilllife-direct": {
+  "median": 0.35,
+  "repeats": [
+   0.35,
+   0.35,
+   0.35
+  ]
+ }
+}

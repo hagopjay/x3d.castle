@@ -1,0 +1,199 @@
+[
+ {
+  "case": "tangent-normalmap",
+  "fixture": "tangent-normalmap.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "validator warnings 1 (want 0) ['MESH_PRIMITIVE_GENERATED_TANGENT_SPACE @ /meshes/0/primitives/0/material']",
+   "primitive has no TANGENT"
+  ],
+  "note": "TANGENT generated when Castle has none"
+ },
+ {
+  "case": "emissive-strength",
+  "fixture": "emissive-strength.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "validator errors 2 ['VALUE_NOT_IN_RANGE @ /materials/0/emissiveFactor/0', 'VALUE_NOT_IN_RANGE @ /materials/0/emissiveFactor/1']",
+   "emissiveStrength None (want 4)",
+   "emissiveFactor [4, 2, 1] (want 1 0.5 0.25)",
+   "extension not in extensionsUsed"
+  ],
+  "note": "KHR_materials_emissive_strength"
+ },
+ {
+  "case": "texture-properties",
+  "fixture": "texture-properties.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "magFilter 9729 (want 9728 NEAREST)",
+   "minFilter 9987 (want 9728 NEAREST, generateMipMaps=false)",
+   "wrapS None (want 33648 MIRRORED_REPEAT)",
+   "wrapT None (want 33071 CLAMP_TO_EDGE)"
+  ],
+  "note": "TextureProperties to sampler"
+ },
+ {
+  "case": "texcoord-sets",
+  "fixture": "texcoord-sets.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "missing TEXCOORD_1",
+   "emissiveTexture {'index': 1} (want texCoord 1)",
+   "emissiveFactor [1, 1, 1] (X3D multiplies the texture by emissiveColor, default 0 0 0: nothing is emitted)"
+  ],
+  "note": "texCoord sets above 0 via *TextureMapping"
+ },
+ {
+  "case": "material-base-only",
+  "fixture": "material-base-only.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "baseColorFactor None (want 1 1 0 0.75)"
+  ],
+  "note": "baseColor kept when metallic and roughness are the X3D defaults (PasGLTF Empty test)"
+ },
+ {
+  "case": "alpha-modes",
+  "fixture": "alpha-modes.x3d",
+  "args": [],
+  "status": "PASS",
+  "failures": [],
+  "note": "alpha modes, cutoff, doubleSided, unlit alpha texture"
+ },
+ {
+  "case": "spot-cone",
+  "fixture": "spot-cone.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "validator errors 1 ['KHR_LIGHTS_PUNCTUAL_LIGHT_SPOT_ANGLES @ /extensions/KHR_lights_punctual/lights/1/spot/outerConeAngle']",
+   "S2 cone {'innerConeAngle': 0.5, 'outerConeAngle': 0.5} (want inner < outer = 0.5)"
+  ],
+  "note": "spot cone angles and range"
+ },
+ {
+  "case": "light-extras",
+  "fixture": "light-extras.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "lights present ['Sun'] (want Sun and Off)"
+  ],
+  "note": "light ambientIntensity / shadows / on / global as extras"
+ },
+ {
+  "case": "light-scope",
+  "fixture": "light-scope.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "ScopedSun extras.x3d.global None (want false)",
+   "ScopedSun extras.x3d.scopeNodes None (want the one sphere node under its group)",
+   "ScopedPoint extras.x3d.global None (want false)",
+   "ScopedPoint extras.x3d.scopeNodes None (want the one sphere node under its group)",
+   "export.json lights_scoped_unscopable None (want 2: the directional light, and the point light when --scope-lights is off)"
+  ],
+  "note": "global=false scope recorded as extras"
+ },
+ {
+  "case": "light-scope-range",
+  "fixture": "light-scope.x3d",
+  "args": [
+   "--scope-lights"
+  ],
+  "status": "FAIL",
+  "failures": [
+   "converter exit 2"
+  ],
+  "note": "--scope-lights clamps a scoped point light's range"
+ },
+ {
+  "case": "environment",
+  "fixture": "environment.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "scene extras.x3d.background missing",
+   "fog None",
+   "environmentLight None"
+  ],
+  "note": "Background / Fog / EnvironmentLight as scene extras"
+ },
+ {
+  "case": "switch-default",
+  "fixture": "switch-hidden.x3d",
+  "args": [],
+  "status": "PASS",
+  "failures": [],
+  "note": "default keeps writing active Switch choices only"
+ },
+ {
+  "case": "switch-hidden",
+  "fixture": "switch-hidden.x3d",
+  "args": [
+   "--hidden-switch"
+  ],
+  "status": "FAIL",
+  "failures": [
+   "converter exit 2"
+  ],
+  "note": "--hidden-switch writes hidden choices with KHR_node_visibility"
+ },
+ {
+  "case": "events-default",
+  "fixture": "events-at.x3d",
+  "args": [],
+  "status": "PASS",
+  "failures": [],
+  "note": "default writes the file as loaded"
+ },
+ {
+  "case": "events-at",
+  "fixture": "events-at.x3d",
+  "args": [
+   "--events-at=1"
+  ],
+  "status": "FAIL",
+  "failures": [
+   "converter exit 2"
+  ],
+  "note": "--events-at=1 writes the state after the TimeSensor ran 1 s"
+ },
+ {
+  "case": "nonfinite-texcoord",
+  "fixture": "nonfinite-texcoord.x3d",
+  "args": [],
+  "status": "FAIL",
+  "failures": [
+   "validator errors 2 ['ACCESSOR_INVALID_FLOAT @ /accessors/1', 'ACCESSOR_INVALID_FLOAT @ /accessors/1']",
+   "export.json nonfinite_values_zeroed None (the fixture must hit the case)"
+  ],
+  "note": "NaN generated texture coordinates are written as 0 (validator ACCESSOR_INVALID_FLOAT)"
+ },
+ {
+  "case": "text-default",
+  "fixture": "text-atlas.x3d",
+  "args": [],
+  "status": "PASS",
+  "failures": [],
+  "note": "default still skips Text"
+ },
+ {
+  "case": "text-atlas",
+  "fixture": "text-atlas.x3d",
+  "args": [
+   "--text-atlas"
+  ],
+  "status": "FAIL",
+  "failures": [
+   "converter exit 2"
+  ],
+  "note": "--text-atlas writes glyph quads with the font atlas"
+ }
+]

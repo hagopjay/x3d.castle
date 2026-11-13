@@ -1,0 +1,24 @@
+[
+ {
+  "file": "results/phase3/fixtures/alpha-modes.glb",
+  "bytes": 7964,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_materials_unlit",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 48,
+   "vertices": 96,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

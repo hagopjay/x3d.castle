@@ -1,0 +1,24 @@
+[
+ {
+  "file": "results/phase3/fixtures/switch-hidden.glb",
+  "bytes": 50264,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "x3d-castle-convert (Castle Game Engine shape-tree exporter)",
+  "extensionsUsed": [
+   "KHR_node_visibility",
+   "KHR_lights_punctual"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 2304,
+   "vertices": 1350,
+   "animations": 0
+  },
+  "messages": []
+ }
+]

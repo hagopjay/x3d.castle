@@ -1,0 +1,586 @@
+{
+ "base-self": {
+  "median_per_scene": {
+   "lights-before": 61.92,
+   "lights-after": 0.11,
+   "nurbs-weights": 15.7,
+   "quaternion-xyzw": 21.27,
+   "profile-tables": 11.49,
+   "annotation-standard": 17.94,
+   "repair-2-render": 0.67,
+   "lod-control": 0.06,
+   "village": 3.49,
+   "earth-planet": 0.4,
+   "villagers": 1.05,
+   "earth-clouds": 0.09,
+   "ontology-constellation": 5.08,
+   "p1-point-physical": 0.07,
+   "p2-point-classic": 4.48,
+   "p3-directional-classic-i1": 0.3,
+   "p4-point-quadratic-physical": 0.34,
+   "p5-directional-physical-i03": 0.08,
+   "materials-world": 4.53,
+   "habsburg-timeline": 8.67,
+   "stilllife-direct": 0.35
+  },
+  "repeats": {
+   "lights-before": [
+    61.92,
+    61.92,
+    61.92
+   ],
+   "lights-after": [
+    0.11,
+    0.11,
+    0.11
+   ],
+   "nurbs-weights": [
+    15.7,
+    15.7,
+    15.7
+   ],
+   "quaternion-xyzw": [
+    21.27,
+    21.27,
+    21.27
+   ],
+   "profile-tables": [
+    11.49,
+    11.49,
+    11.49
+   ],
+   "annotation-standard": [
+    17.94,
+    17.94,
+    17.94
+   ],
+   "repair-2-render": [
+    0.43,
+    0.67,
+    0.68
+   ],
+   "lod-control": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "village": [
+    3.49,
+    3.49,
+    3.49
+   ],
+   "earth-planet": [
+    0.4,
+    0.4,
+    0.4
+   ],
+   "villagers": [
+    1.33,
+    0.52,
+    1.05
+   ],
+   "earth-clouds": [
+    0.09,
+    0.09,
+    0.09
+   ],
+   "ontology-constellation": [
+    5.08,
+    5.08,
+    5.08
+   ],
+   "p1-point-physical": [
+    0.07,
+    0.07,
+    0.07
+   ],
+   "p2-point-classic": [
+    4.48,
+    4.48,
+    4.48
+   ],
+   "p3-directional-classic-i1": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "p4-point-quadratic-physical": [
+    0.34,
+    0.34,
+    0.34
+   ],
+   "p5-directional-physical-i03": [
+    0.08,
+    0.08,
+    0.08
+   ],
+   "materials-world": [
+    5.37,
+    4.53,
+    4.13
+   ],
+   "habsburg-timeline": [
+    8.67,
+    8.67,
+    8.67
+   ],
+   "stilllife-direct": [
+    0.35,
+    0.35,
+    0.35
+   ]
+  },
+  "repeat_summary": [
+   [
+    7.57,
+    1.33
+   ],
+   [
+    7.5,
+    0.67
+   ],
+   [
+    7.51,
+    1.05
+   ]
+  ]
+ },
+ "base-rigcam": {
+  "median_per_scene": {
+   "lights-before": 61.92,
+   "lights-after": 0.11,
+   "nurbs-weights": 15.7,
+   "quaternion-xyzw": 21.27,
+   "profile-tables": 11.49,
+   "annotation-standard": 17.94,
+   "repair-2-render": 0.67,
+   "lod-control": 2.24,
+   "village": 3.49,
+   "earth-planet": 0.4,
+   "villagers": 0.85,
+   "earth-clouds": 0.09,
+   "ontology-constellation": 6.18,
+   "p1-point-physical": 0.07,
+   "p2-point-classic": 4.48,
+   "p3-directional-classic-i1": 0.3,
+   "p4-point-quadratic-physical": 0.34,
+   "p5-directional-physical-i03": 0.08,
+   "materials-world": 10.45,
+   "habsburg-timeline": 8.67,
+   "stilllife-direct": 0.35
+  },
+  "repeats": {
+   "lights-before": [
+    61.92,
+    61.92,
+    61.92
+   ],
+   "lights-after": [
+    0.11,
+    0.11,
+    0.11
+   ],
+   "nurbs-weights": [
+    15.7,
+    15.7,
+    15.7
+   ],
+   "quaternion-xyzw": [
+    21.27,
+    21.27,
+    21.27
+   ],
+   "profile-tables": [
+    11.49,
+    11.49,
+    11.49
+   ],
+   "annotation-standard": [
+    17.94,
+    17.94,
+    17.94
+   ],
+   "repair-2-render": [
+    0.39,
+    0.67,
+    0.69
+   ],
+   "lod-control": [
+    2.24,
+    2.24,
+    2.24
+   ],
+   "village": [
+    3.49,
+    3.49,
+    3.49
+   ],
+   "earth-planet": [
+    0.4,
+    0.4,
+    0.4
+   ],
+   "villagers": [
+    2.38,
+    0.54,
+    0.85
+   ],
+   "earth-clouds": [
+    0.09,
+    0.09,
+    0.09
+   ],
+   "ontology-constellation": [
+    6.18,
+    6.18,
+    6.18
+   ],
+   "p1-point-physical": [
+    0.07,
+    0.07,
+    0.07
+   ],
+   "p2-point-classic": [
+    4.48,
+    4.48,
+    4.48
+   ],
+   "p3-directional-classic-i1": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "p4-point-quadratic-physical": [
+    0.34,
+    0.34,
+    0.34
+   ],
+   "p5-directional-physical-i03": [
+    0.08,
+    0.08,
+    0.08
+   ],
+   "materials-world": [
+    10.33,
+    10.45,
+    10.53
+   ],
+   "habsburg-timeline": [
+    8.67,
+    8.67,
+    8.67
+   ],
+   "stilllife-direct": [
+    0.35,
+    0.35,
+    0.35
+   ]
+  },
+  "repeat_summary": [
+   [
+    8.01,
+    2.38
+   ],
+   [
+    7.94,
+    2.24
+   ],
+   [
+    7.96,
+    2.24
+   ]
+  ]
+ },
+ "new-self": {
+  "median_per_scene": {
+   "lights-before": 61.92,
+   "lights-after": 0.11,
+   "nurbs-weights": 15.7,
+   "quaternion-xyzw": 21.27,
+   "profile-tables": 11.49,
+   "annotation-standard": 17.94,
+   "repair-2-render": 0.67,
+   "lod-control": 0.06,
+   "village": 3.49,
+   "earth-planet": 0.4,
+   "villagers": 7.93,
+   "earth-clouds": 0.09,
+   "ontology-constellation": 5.08,
+   "p1-point-physical": 0.07,
+   "p2-point-classic": 4.48,
+   "p3-directional-classic-i1": 0.3,
+   "p4-point-quadratic-physical": 0.34,
+   "p5-directional-physical-i03": 0.08,
+   "materials-world": 3.4,
+   "habsburg-timeline": 8.67,
+   "stilllife-direct": 0.35
+  },
+  "repeats": {
+   "lights-before": [
+    61.92,
+    61.92,
+    61.92
+   ],
+   "lights-after": [
+    0.11,
+    0.11,
+    0.11
+   ],
+   "nurbs-weights": [
+    15.7,
+    15.7,
+    15.7
+   ],
+   "quaternion-xyzw": [
+    21.27,
+    21.27,
+    21.27
+   ],
+   "profile-tables": [
+    11.49,
+    11.49,
+    11.49
+   ],
+   "annotation-standard": [
+    17.94,
+    17.94,
+    17.94
+   ],
+   "repair-2-render": [
+    0.66,
+    0.68,
+    0.67
+   ],
+   "lod-control": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "village": [
+    3.49,
+    3.49,
+    3.49
+   ],
+   "earth-planet": [
+    0.4,
+    0.4,
+    0.4
+   ],
+   "villagers": [
+    0.49,
+    7.93,
+    8.7
+   ],
+   "earth-clouds": [
+    0.09,
+    0.09,
+    0.09
+   ],
+   "ontology-constellation": [
+    5.08,
+    5.08,
+    5.08
+   ],
+   "p1-point-physical": [
+    0.07,
+    0.07,
+    0.07
+   ],
+   "p2-point-classic": [
+    4.48,
+    4.48,
+    4.48
+   ],
+   "p3-directional-classic-i1": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "p4-point-quadratic-physical": [
+    0.34,
+    0.34,
+    0.34
+   ],
+   "p5-directional-physical-i03": [
+    0.08,
+    0.08,
+    0.08
+   ],
+   "materials-world": [
+    2.85,
+    3.4,
+    5.04
+   ],
+   "habsburg-timeline": [
+    8.67,
+    8.67,
+    8.67
+   ],
+   "stilllife-direct": [
+    0.35,
+    0.35,
+    0.35
+   ]
+  },
+  "repeat_summary": [
+   [
+    7.42,
+    0.66
+   ],
+   [
+    7.8,
+    3.4
+   ],
+   [
+    7.92,
+    3.49
+   ]
+  ]
+ },
+ "new-rigcam": {
+  "median_per_scene": {
+   "lights-before": 61.92,
+   "lights-after": 0.11,
+   "nurbs-weights": 15.7,
+   "quaternion-xyzw": 21.27,
+   "profile-tables": 11.49,
+   "annotation-standard": 17.94,
+   "repair-2-render": 0.68,
+   "lod-control": 2.24,
+   "village": 3.49,
+   "earth-planet": 0.4,
+   "villagers": 0.64,
+   "earth-clouds": 0.09,
+   "ontology-constellation": 6.18,
+   "p1-point-physical": 0.07,
+   "p2-point-classic": 4.48,
+   "p3-directional-classic-i1": 0.3,
+   "p4-point-quadratic-physical": 0.34,
+   "p5-directional-physical-i03": 0.08,
+   "materials-world": 10.56,
+   "habsburg-timeline": 8.67,
+   "stilllife-direct": 0.35
+  },
+  "repeats": {
+   "lights-before": [
+    61.92,
+    61.92,
+    61.92
+   ],
+   "lights-after": [
+    0.11,
+    0.11,
+    0.11
+   ],
+   "nurbs-weights": [
+    15.7,
+    15.7,
+    15.7
+   ],
+   "quaternion-xyzw": [
+    21.27,
+    21.27,
+    21.27
+   ],
+   "profile-tables": [
+    11.49,
+    11.49,
+    11.49
+   ],
+   "annotation-standard": [
+    17.94,
+    17.94,
+    17.94
+   ],
+   "repair-2-render": [
+    0.68,
+    0.69,
+    0.59
+   ],
+   "lod-control": [
+    2.24,
+    2.24,
+    2.24
+   ],
+   "village": [
+    3.49,
+    3.49,
+    3.49
+   ],
+   "earth-planet": [
+    0.4,
+    0.4,
+    0.4
+   ],
+   "villagers": [
+    0.64,
+    0.6,
+    0.96
+   ],
+   "earth-clouds": [
+    0.09,
+    0.09,
+    0.09
+   ],
+   "ontology-constellation": [
+    6.18,
+    6.18,
+    6.18
+   ],
+   "p1-point-physical": [
+    0.07,
+    0.07,
+    0.07
+   ],
+   "p2-point-classic": [
+    4.48,
+    4.48,
+    4.48
+   ],
+   "p3-directional-classic-i1": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "p4-point-quadratic-physical": [
+    0.34,
+    0.34,
+    0.34
+   ],
+   "p5-directional-physical-i03": [
+    0.08,
+    0.08,
+    0.08
+   ],
+   "materials-world": [
+    10.56,
+    10.6,
+    10.27
+   ],
+   "habsburg-timeline": [
+    8.67,
+    8.67,
+    8.67
+   ],
+   "stilllife-direct": [
+    0.35,
+    0.35,
+    0.35
+   ]
+  },
+  "repeat_summary": [
+   [
+    7.95,
+    2.24
+   ],
+   [
+    7.95,
+    2.24
+   ],
+   [
+    7.95,
+    2.24
+   ]
+  ]
+ }
+}
