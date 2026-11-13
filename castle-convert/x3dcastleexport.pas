@@ -786,10 +786,8 @@ begin
     if T >= 0 then
     begin
       SetTexInfo(GM.EmissiveTexture, T, App, UvEmis);
-      { X3D (and X_ITE) multiply the texture by emissiveColor, so the colour is kept. Only a black emissiveColor,
-        which would hide the texture altogether, becomes white. }
-      if Phys.EmissiveColor.Length < 1e-6 then
-        GM.EmissiveFactor := V3G(Vector3(1, 1, 1));
+      { X3D multiplies the emissive texture by emissiveColor (X_ITE does too), so the colour is kept, black included:
+        a PhysicalMaterial with an emissiveTexture and the default emissiveColor 0 0 0 emits nothing, as in the X3D text. }
     end;
   end else
   begin
@@ -823,9 +821,7 @@ begin
     T := GetTexture(Phong.EmissiveTexture);
     if T >= 0 then
     begin
-      SetTexInfo(GM.EmissiveTexture, T, App, UvEmis);
-      if Em.Length < 1e-6 then
-        GM.EmissiveFactor := V3G(Vector3(1, 1, 1));
+      SetTexInfo(GM.EmissiveTexture, T, App, UvEmis); { texture times emissiveColor, as in X3D }
     end;
     if Opt.PhongSpecular then
     begin

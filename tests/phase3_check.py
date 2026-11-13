@@ -102,6 +102,8 @@ def c_texcoord_sets(g, rep, val):
         f.append(f"baseColorTexture {bt} (want texCoord 0)")
     if not et or et.get("texCoord", 0) != 1:
         f.append(f"emissiveTexture {et} (want texCoord 1)")
+    if any(m.get("emissiveFactor", [0, 0, 0])):
+        f.append(f"emissiveFactor {m.get('emissiveFactor')} (X3D multiplies the texture by emissiveColor, default 0 0 0: nothing is emitted)")
     return f
 
 
