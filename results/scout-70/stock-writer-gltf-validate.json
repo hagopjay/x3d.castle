@@ -1,0 +1,1454 @@
+[
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__annotation-standard.glb",
+  "bytes": 45560,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 7,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 7,
+   "triangles": 1404,
+   "vertices": 947,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__annotation.glb",
+  "bytes": 16388,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 6,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 5,
+   "triangles": 264,
+   "vertices": 296,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth.glb",
+  "bytes": 360,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 3,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 1,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon.glb",
+  "bytes": 360,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 3,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 1,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin.glb",
+  "bytes": 244,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__geolod-origin.glb",
+  "bytes": 244,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__lights-after.glb",
+  "bytes": 20832,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 6,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 974,
+   "vertices": 577,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__lights-before.glb",
+  "bytes": 20832,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 6,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 3,
+   "triangles": 974,
+   "vertices": 577,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__lod-control.glb",
+  "bytes": 3800,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 24,
+   "vertices": 48,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__lod-scaled.glb",
+  "bytes": 3928,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 24,
+   "vertices": 48,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied.glb",
+  "bytes": 215640,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 14,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 9,
+   "materials": 14,
+   "triangles": 8220,
+   "vertices": 4805,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights.glb",
+  "bytes": 273836,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 17,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 11,
+   "materials": 17,
+   "triangles": 10500,
+   "vertices": 6107,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed.glb",
+  "bytes": 53000,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 6,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 6,
+   "triangles": 1620,
+   "vertices": 1147,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables.glb",
+  "bytes": 53000,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 6,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 6,
+   "triangles": 1620,
+   "vertices": 1147,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz.glb",
+  "bytes": 12380,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 3,
+   "triangles": 240,
+   "vertices": 248,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw.glb",
+  "bytes": 12380,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 3,
+   "triangles": 240,
+   "vertices": 248,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__repair-0-written.glb",
+  "bytes": 115512,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 4560,
+   "vertices": 2604,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__repair-1-validator.glb",
+  "bytes": 115500,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 4560,
+   "vertices": 2604,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__repair-2-render.glb",
+  "bytes": 115416,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 4,
+   "triangles": 4560,
+   "vertices": 2604,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__stars-splats.glb",
+  "bytes": 276,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__stars-view.glb",
+  "bytes": 304,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k.glb",
+  "bytes": 480,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 3,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-stage.glb",
+  "bytes": 376,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40.glb",
+  "bytes": 600008,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 5,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 5,
+   "triangles": 27560,
+   "vertices": 14705,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__confluence-ifc__v1__snapshot__scene-0.glb",
+  "bytes": 329972,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 113,
+   "materials": 11,
+   "triangles": 11306,
+   "vertices": 6504,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood.glb",
+  "bytes": 365628,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 314,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 278,
+   "materials": 592,
+   "triangles": 736,
+   "vertices": 1472,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__habsburg.glb",
+  "bytes": 315456,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 271,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 238,
+   "materials": 509,
+   "triangles": 708,
+   "vertices": 1416,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood.glb",
+  "bytes": 163040,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 8960,
+   "vertices": 4482,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg.glb",
+  "bytes": 163040,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 8960,
+   "vertices": 4482,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild.glb",
+  "bytes": 163040,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 8960,
+   "vertices": 4482,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood.glb",
+  "bytes": 415820,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 11,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 12,
+   "materials": 7,
+   "triangles": 22668,
+   "vertices": 21732,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg.glb",
+  "bytes": 503936,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 9,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 10,
+   "materials": 5,
+   "triangles": 27508,
+   "vertices": 26840,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild.glb",
+  "bytes": 753948,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 20,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 18,
+   "materials": 13,
+   "triangles": 40756,
+   "vertices": 40272,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__rothschild.glb",
+  "bytes": 480644,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 409,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 366,
+   "materials": 775,
+   "triangles": 992,
+   "vertices": 1984,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood.glb",
+  "bytes": 163040,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 8960,
+   "vertices": 4482,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg.glb",
+  "bytes": 163040,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 8960,
+   "vertices": 4482,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild.glb",
+  "bytes": 163040,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 8960,
+   "vertices": 4482,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood.glb",
+  "bytes": 415820,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 11,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 12,
+   "materials": 7,
+   "triangles": 22668,
+   "vertices": 21732,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg.glb",
+  "bytes": 503936,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 9,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 10,
+   "materials": 5,
+   "triangles": 27508,
+   "vertices": 26840,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild.glb",
+  "bytes": 753948,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 20,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 18,
+   "materials": 13,
+   "triangles": 40756,
+   "vertices": 40272,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds.glb",
+  "bytes": 52418,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 0,
+   "triangles": 2267,
+   "vertices": 3161,
+   "animations": 0
+  },
+  "messages": [
+   "GLB_CHUNK_LENGTH_UNALIGNED @ undefined"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon.glb",
+  "bytes": 54580,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 0,
+   "triangles": 1280,
+   "vertices": 3835,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet.glb",
+  "bytes": 172620,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 0,
+   "triangles": 5120,
+   "vertices": 11751,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village.glb",
+  "bytes": 547004,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 5,
+   "materials": 0,
+   "triangles": 21114,
+   "vertices": 34750,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers.glb",
+  "bytes": 3912,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 13,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3.glb",
+  "bytes": 611580,
+  "errors": 14128,
+  "warnings": 0,
+  "infos": 20,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 33,
+   "materials": 42,
+   "triangles": 15399,
+   "vertices": 20924,
+   "animations": 0
+  },
+  "messages": [
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/3/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/4/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/5/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/6/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/8/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/9/primitives/0/attributes/NORMAL"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield.glb",
+  "bytes": 5308836,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 3,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 4,
+   "triangles": 240700,
+   "vertices": 121403,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky.glb",
+  "bytes": 13848,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 544,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest.glb",
+  "bytes": 739508,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 101,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 92,
+   "materials": 99,
+   "triangles": 21972,
+   "vertices": 15523,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky.glb",
+  "bytes": 13848,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 544,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials.glb",
+  "bytes": 256264,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 16,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 12,
+   "materials": 15,
+   "triangles": 11784,
+   "vertices": 7008,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky.glb",
+  "bytes": 13848,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 544,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon.glb",
+  "bytes": 400,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky.glb",
+  "bytes": 13848,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 2,
+   "triangles": 1024,
+   "vertices": 544,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__source__bird.glb",
+  "bytes": 1390780,
+  "errors": 6,
+  "warnings": 0,
+  "infos": 306,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 141,
+   "materials": 290,
+   "triangles": 51440,
+   "vertices": 61035,
+   "animations": 0
+  },
+  "messages": [
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/3/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/4/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/5/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/6/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/8/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/9/primitives/0/attributes/NORMAL"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler-worlds-within__v1__source__giza-nest.glb",
+  "bytes": 739216,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 101,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 92,
+   "materials": 99,
+   "triangles": 21972,
+   "vertices": 15523,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__gobbler3-webgpu__v1__gobbler3.glb",
+  "bytes": 148152,
+  "errors": 6,
+  "warnings": 0,
+  "infos": 18,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 11,
+   "materials": 20,
+   "triangles": 6853,
+   "vertices": 4501,
+   "animations": 0
+  },
+  "messages": [
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/3/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/4/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/5/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/6/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/8/primitives/0/attributes/NORMAL",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/9/primitives/0/attributes/NORMAL"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__heritage-facade__v1__facade.glb",
+  "bytes": 200,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__library-hall-webgpu__v1__hall.glb",
+  "bytes": 6551072,
+  "errors": 9,
+  "warnings": 0,
+  "infos": 104,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 109,
+   "materials": 125,
+   "triangles": 142142,
+   "vertices": 273649,
+   "animations": 0
+  },
+  "messages": [
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/19/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/20/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/21/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/22/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/23/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/24/primitives/0/attributes/TEXCOORD_0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__loomsong__v1__worlds__ode.glb",
+  "bytes": 795296,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 11,
+   "materials": 1,
+   "triangles": 22284,
+   "vertices": 33525,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__loomsong__v1__worlds__turca.glb",
+  "bytes": 1320052,
+  "errors": 8,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 30,
+   "materials": 2,
+   "triangles": 60686,
+   "vertices": 53696,
+   "animations": 0
+  },
+  "messages": [
+   "ACCESSOR_VECTOR3_NON_UNIT @ /meshes/10/primitives/0/attributes/NORMAL",
+   "ACCESSOR_VECTOR3_NON_UNIT @ /meshes/10/primitives/0/attributes/NORMAL",
+   "ACCESSOR_VECTOR3_NON_UNIT @ /meshes/10/primitives/0/attributes/NORMAL",
+   "ACCESSOR_VECTOR3_NON_UNIT @ /meshes/10/primitives/0/attributes/NORMAL",
+   "ACCESSOR_VECTOR3_NON_UNIT @ /meshes/10/primitives/0/attributes/NORMAL",
+   "ACCESSOR_VECTOR3_NON_UNIT @ /meshes/10/primitives/0/attributes/NORMAL"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__manifold-webgpu__v1__scenes__manifold.glb",
+  "bytes": 11596764,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 4,
+   "materials": 1,
+   "triangles": 525390,
+   "vertices": 266475,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__material-odyssey-webgpu__v1__odyssey.glb",
+  "bytes": 2307412,
+  "errors": 200,
+  "warnings": 0,
+  "infos": 286,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [
+   "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 285,
+   "materials": 100,
+   "triangles": 107606,
+   "vertices": 62459,
+   "animations": 0
+  },
+  "messages": [
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/1/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/2/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/8/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/9/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/10/primitives/0/attributes/TEXCOORD_0",
+   "MESH_PRIMITIVE_UNEQUAL_ACCESSOR_COUNT @ /meshes/11/primitives/0/attributes/TEXCOORD_0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__ontology-constellation__v1__ontology-constellation.glb",
+  "bytes": 11777484,
+  "errors": 0,
+  "warnings": 0,
+  "infos": 515,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 484,
+   "materials": 151,
+   "triangles": 460392,
+   "vertices": 264297,
+   "animations": 0
+  },
+  "messages": []
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__stem__v1__chirp__scenes__chirp.glb",
+  "bytes": 58524,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 4,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 5,
+   "triangles": 2280,
+   "vertices": 1302,
+   "animations": 0
+  },
+  "messages": [
+   "UNDEFINED_PROPERTY @ /meshes/2/primitives/0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__stem__v1__electron-cloud__scenes__cloud.glb",
+  "bytes": 58508,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 3,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 3,
+   "materials": 4,
+   "triangles": 2280,
+   "vertices": 1302,
+   "animations": 0
+  },
+  "messages": [
+   "UNDEFINED_PROPERTY @ /meshes/0/primitives/0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__stem__v1__living-heart__scenes__heart.glb",
+  "bytes": 448,
+  "errors": 2,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 1,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength",
+   "UNDEFINED_PROPERTY @ /meshes/0/primitives/0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__stem__v1__turing-garden__scenes__garden.glb",
+  "bytes": 776,
+  "errors": 2,
+  "warnings": 0,
+  "infos": 2,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 1,
+   "materials": 2,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength",
+   "UNDEFINED_PROPERTY @ /meshes/0/primitives/0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__stem__v1__vortex-sound__scenes__vortex.glb",
+  "bytes": 828,
+  "errors": 3,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 2,
+   "materials": 2,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength",
+   "UNDEFINED_PROPERTY @ /meshes/0/primitives/0",
+   "UNDEFINED_PROPERTY @ /meshes/1/primitives/0"
+  ]
+ },
+ {
+  "file": "$WORK/run2/glb/docs__demos__tether-firehose__v4__data__physics-ledger.glb",
+  "bytes": 200,
+  "errors": 1,
+  "warnings": 0,
+  "infos": 1,
+  "hints": 0,
+  "generator": "castle-model-converter, https://castle-engine.io/castle-model-converter",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "stats": {
+   "meshes": 0,
+   "materials": 0,
+   "triangles": 0,
+   "vertices": 0,
+   "animations": 0
+  },
+  "messages": [
+   "VALUE_NOT_IN_RANGE @ /buffers/0/byteLength"
+  ]
+ }
+]

@@ -1,0 +1,1556 @@
+{
+ "rig_label": [
+  "h2h",
+  "h2h2"
+ ],
+ "rows": [
+  {
+   "scene": "stilllife-stage",
+   "xite_vs_babylon_addon": {
+    "frame": 0.33,
+    "geometry": 0.46
+   },
+   "xite_vs_castle": {
+    "frame": 0.56,
+    "geometry": 0.79
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.52,
+    "geometry": 0.77
+   },
+   "castle_vs_babylon_castleglb": null,
+   "xite_vs_babylon_castleglb": null,
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 1.27,
+    "geometry": 0.77
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 0.75,
+    "geometry": 0.0
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 63.4,
+     "p1": 12.9,
+     "p99": 143.6,
+     "clip_share": 0.003
+    },
+    "babylon_addon": {
+     "sharpness": 127.3,
+     "p1": 12.9,
+     "p99": 144.1,
+     "clip_share": 0.0032
+    },
+    "castle": {
+     "sharpness": 106.3,
+     "p1": 12.9,
+     "p99": 141.3,
+     "clip_share": 0.0031
+    },
+    "babylon_castleglb": null,
+    "castle_on_addon_glb": {
+     "sharpness": 106.7,
+     "p1": 12.9,
+     "p99": 141.3,
+     "clip_share": 0.0031
+    }
+   },
+   "castle_glb_bytes": 376,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.83
+  },
+  {
+   "scene": "lights-before",
+   "xite_vs_babylon_addon": {
+    "frame": 61.93,
+    "geometry": 70.17
+   },
+   "xite_vs_castle": {
+    "frame": 42.25,
+    "geometry": 47.87
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 20.81,
+    "geometry": 23.58
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 55.94,
+    "geometry": 63.4
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 13.72,
+    "geometry": 15.54
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 24.24,
+    "geometry": 24.01
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 44.17,
+    "geometry": 46.6
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 4.6,
+     "p1": 0.0,
+     "p99": 36.3,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 111.6,
+     "p1": 0.0,
+     "p99": 120.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 99.0,
+     "p1": 0.0,
+     "p99": 94.5,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 108.1,
+     "p1": 26.0,
+     "p99": 146.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 20832,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.61
+  },
+  {
+   "scene": "lights-after",
+   "xite_vs_babylon_addon": {
+    "frame": 0.12,
+    "geometry": 0.12
+   },
+   "xite_vs_castle": {
+    "frame": 16.69,
+    "geometry": 18.89
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 16.6,
+    "geometry": 18.81
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 91.93,
+    "geometry": 104.18
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 75.61,
+    "geometry": 85.66
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 24.24,
+    "geometry": 24.01
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 14.88,
+    "geometry": 13.4
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 49.3,
+     "p1": 0.0,
+     "p99": 120.0,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 111.6,
+     "p1": 0.0,
+     "p99": 120.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 171.4,
+     "p1": 0.0,
+     "p99": 137.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 108.1,
+     "p1": 26.0,
+     "p99": 146.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 20832,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.63
+  },
+  {
+   "scene": "nurbs-weights",
+   "xite_vs_babylon_addon": {
+    "frame": 14.85,
+    "geometry": 24.08
+   },
+   "xite_vs_castle": {
+    "frame": 9.55,
+    "geometry": 23.28
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 22.48,
+    "geometry": 42.97
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 17.13,
+    "geometry": 13.68
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 17.05,
+    "geometry": 31.08
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 22.11,
+    "geometry": 17.08
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 27.55,
+    "geometry": 58.34
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 569.5,
+     "p1": 5.4,
+     "p99": 151.3,
+     "clip_share": 0.0087
+    },
+    "babylon_addon": {
+     "sharpness": 803.1,
+     "p1": 2.9,
+     "p99": 94.6,
+     "clip_share": 0.0027
+    },
+    "castle": {
+     "sharpness": 668.1,
+     "p1": 4.5,
+     "p99": 177.4,
+     "clip_share": 0.0101
+    },
+    "babylon_castleglb": {
+     "sharpness": 172.6,
+     "p1": 0.0,
+     "p99": 102.3,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 520.2,
+     "p1": 26.0,
+     "p99": 112.2,
+     "clip_share": 0.0028
+    }
+   },
+   "castle_glb_bytes": 273836,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.66
+  },
+  {
+   "scene": "quaternion-xyzw",
+   "xite_vs_babylon_addon": {
+    "frame": 20.24,
+    "geometry": 23.83
+   },
+   "xite_vs_castle": {
+    "frame": 12.68,
+    "geometry": 25.46
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 15.84,
+    "geometry": 43.78
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 14.46,
+    "geometry": 9.43
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 25.44,
+    "geometry": 30.14
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 22.26,
+    "geometry": 17.09
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 21.21,
+    "geometry": 58.03
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 261.6,
+     "p1": 5.4,
+     "p99": 172.4,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 1442.3,
+     "p1": 2.9,
+     "p99": 129.1,
+     "clip_share": 0.0008
+    },
+    "castle": {
+     "sharpness": 96.8,
+     "p1": 5.2,
+     "p99": 46.5,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 144.0,
+     "p1": 0.0,
+     "p99": 77.2,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 443.2,
+     "p1": 26.0,
+     "p99": 127.3,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 12380,
+   "castle_validate": "warnings",
+   "castle_render_seconds": 0.7
+  },
+  {
+   "scene": "profile-tables",
+   "xite_vs_babylon_addon": {
+    "frame": 12.23,
+    "geometry": 14.25
+   },
+   "xite_vs_castle": {
+    "frame": 10.35,
+    "geometry": 27.51
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 13.97,
+    "geometry": 18.24
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 13.09,
+    "geometry": 12.86
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 19.44,
+    "geometry": 34.6
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 19.12,
+    "geometry": 9.62
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 19.27,
+    "geometry": 26.48
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 351.9,
+     "p1": 5.4,
+     "p99": 166.8,
+     "clip_share": 0.0057
+    },
+    "babylon_addon": {
+     "sharpness": 573.5,
+     "p1": 2.9,
+     "p99": 162.6,
+     "clip_share": 0.002
+    },
+    "castle": {
+     "sharpness": 170.0,
+     "p1": 4.3,
+     "p99": 146.5,
+     "clip_share": 0.0008
+    },
+    "babylon_castleglb": {
+     "sharpness": 152.1,
+     "p1": 0.0,
+     "p99": 77.2,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 453.7,
+     "p1": 22.3,
+     "p99": 162.3,
+     "clip_share": 0.0029
+    }
+   },
+   "castle_glb_bytes": 53000,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.65
+  },
+  {
+   "scene": "annotation-standard",
+   "xite_vs_babylon_addon": {
+    "frame": 15.5,
+    "geometry": 21.88
+   },
+   "xite_vs_castle": {
+    "frame": 11.32,
+    "geometry": 28.32
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 23.94,
+    "geometry": 47.64
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 12.66,
+    "geometry": 11.06
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 19.51,
+    "geometry": 34.46
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 22.72,
+    "geometry": 21.33
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 32.08,
+    "geometry": 68.68
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 403.4,
+     "p1": 5.4,
+     "p99": 232.9,
+     "clip_share": 0.0239
+    },
+    "babylon_addon": {
+     "sharpness": 1012.1,
+     "p1": 2.9,
+     "p99": 239.2,
+     "clip_share": 0.0238
+    },
+    "castle": {
+     "sharpness": 181.7,
+     "p1": 4.2,
+     "p99": 131.1,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 127.1,
+     "p1": 0.0,
+     "p99": 77.2,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 923.7,
+     "p1": 26.0,
+     "p99": 243.0,
+     "clip_share": 0.0236
+    }
+   },
+   "castle_glb_bytes": 45560,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.66
+  },
+  {
+   "scene": "repair-2-render",
+   "xite_vs_babylon_addon": {
+    "frame": 0.46,
+    "geometry": 17.15
+   },
+   "xite_vs_castle": {
+    "frame": 0.74,
+    "geometry": 38.06
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.35,
+    "geometry": 24.36
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 0.59,
+    "geometry": 42.66
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 0.71,
+    "geometry": 35.3
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 8.58,
+    "geometry": 2.34
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 8.9,
+    "geometry": 25.17
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 49.0,
+     "p1": 13.9,
+     "p99": 80.3,
+     "clip_share": 0.0089
+    },
+    "babylon_addon": {
+     "sharpness": 121.1,
+     "p1": 13.9,
+     "p99": 85.7,
+     "clip_share": 0.0091
+    },
+    "castle": {
+     "sharpness": 156.6,
+     "p1": 13.9,
+     "p99": 222.4,
+     "clip_share": 0.01
+    },
+    "babylon_castleglb": {
+     "sharpness": 139.6,
+     "p1": 13.9,
+     "p99": 88.8,
+     "clip_share": 0.0092
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 106.4,
+     "p1": 26.0,
+     "p99": 78.4,
+     "clip_share": 0.0091
+    }
+   },
+   "castle_glb_bytes": 115416,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.67
+  },
+  {
+   "scene": "lod-control",
+   "xite_vs_babylon_addon": {
+    "frame": 0.06,
+    "geometry": 0.86
+   },
+   "xite_vs_castle": {
+    "frame": 0.26,
+    "geometry": 3.55
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.24,
+    "geometry": 3.33
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 4.7,
+    "geometry": 64.72
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 4.96,
+    "geometry": 68.27
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 32.75,
+    "geometry": 118.95
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 32.99,
+    "geometry": 122.29
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 4.5,
+     "p1": 0.0,
+     "p99": 48.9,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 10.1,
+     "p1": 0.0,
+     "p99": 48.7,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 11.0,
+     "p1": 0.0,
+     "p99": 50.8,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 65.6,
+     "p1": 0.0,
+     "p99": 126.0,
+     "clip_share": 0.0726
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 28.7,
+     "p1": 26.0,
+     "p99": 108.9,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 3800,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.55
+  },
+  {
+   "scene": "materials-world",
+   "xite_vs_babylon_addon": {
+    "frame": 10.99,
+    "geometry": 17.05
+   },
+   "xite_vs_castle": {
+    "frame": 82.96,
+    "geometry": 129.85
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 92.74,
+    "geometry": 145.36
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 78.14,
+    "geometry": 122.47
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 27.35,
+    "geometry": 42.7
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 56.94,
+    "geometry": 65.89
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 76.83,
+    "geometry": 97.07
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 407.6,
+     "p1": 0.0,
+     "p99": 170.7,
+     "clip_share": 0.0024
+    },
+    "babylon_addon": {
+     "sharpness": 830.8,
+     "p1": 0.0,
+     "p99": 127.8,
+     "clip_share": 0.0012
+    },
+    "castle": {
+     "sharpness": 780.6,
+     "p1": 0.0,
+     "p99": 255.0,
+     "clip_share": 0.2407
+    },
+    "babylon_castleglb": {
+     "sharpness": 281.2,
+     "p1": 0.0,
+     "p99": 159.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 256.7,
+     "p1": 15.2,
+     "p99": 170.7,
+     "clip_share": 0.0009
+    }
+   },
+   "castle_glb_bytes": 256264,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.94
+  },
+  {
+   "scene": "drillfield-world",
+   "xite_vs_babylon_addon": null,
+   "xite_vs_castle": null,
+   "babylon_addon_vs_castle": {
+    "frame": 11.5,
+    "geometry": 22.79
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 30.33,
+    "geometry": 60.53
+   },
+   "xite_vs_babylon_castleglb": null,
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 20.11,
+    "geometry": 14.08
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 24.54,
+    "geometry": 23.04
+   },
+   "quality": {
+    "xite": null,
+    "babylon_addon": {
+     "sharpness": 2294.3,
+     "p1": 0.0,
+     "p99": 242.9,
+     "clip_share": 0.0098
+    },
+    "castle": {
+     "sharpness": 1257.3,
+     "p1": 0.0,
+     "p99": 203.5,
+     "clip_share": 0.0024
+    },
+    "babylon_castleglb": {
+     "sharpness": 4083.7,
+     "p1": 0.0,
+     "p99": 254.0,
+     "clip_share": 0.0543
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 702.1,
+     "p1": 26.0,
+     "p99": 197.4,
+     "clip_share": 0.0011
+    }
+   },
+   "castle_glb_bytes": 5308836,
+   "castle_validate": "clean",
+   "castle_render_seconds": 1.68
+  },
+  {
+   "scene": "village",
+   "xite_vs_babylon_addon": {
+    "frame": 3.56,
+    "geometry": 4.13
+   },
+   "xite_vs_castle": {
+    "frame": 0.94,
+    "geometry": 0.85
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 2.77,
+    "geometry": 3.45
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 35.07,
+    "geometry": 43.89
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 35.08,
+    "geometry": 43.6
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 72.73,
+    "geometry": 84.51
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 70.67,
+    "geometry": 81.92
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 793.6,
+     "p1": 0.0,
+     "p99": 233.4,
+     "clip_share": 0.0059
+    },
+    "babylon_addon": {
+     "sharpness": 1850.2,
+     "p1": 0.0,
+     "p99": 234.4,
+     "clip_share": 0.0071
+    },
+    "castle": {
+     "sharpness": 1878.5,
+     "p1": 0.0,
+     "p99": 234.6,
+     "clip_share": 0.0072
+    },
+    "babylon_castleglb": {
+     "sharpness": 1029.1,
+     "p1": 0.0,
+     "p99": 137.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 267.7,
+     "p1": 26.0,
+     "p99": 89.2,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 547004,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.72
+  },
+  {
+   "scene": "ontology-constellation",
+   "xite_vs_babylon_addon": {
+    "frame": 6.13,
+    "geometry": 28.5
+   },
+   "xite_vs_castle": {
+    "frame": 5.37,
+    "geometry": 15.06
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 7.59,
+    "geometry": 21.19
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 13.36,
+    "geometry": 68.11
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 10.11,
+    "geometry": 60.68
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 230.0,
+    "geometry": 135.58
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 225.15,
+    "geometry": 137.07
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 3070.3,
+     "p1": 10.2,
+     "p99": 229.1,
+     "clip_share": 0.0239
+    },
+    "babylon_addon": {
+     "sharpness": 8184.2,
+     "p1": 10.2,
+     "p99": 209.5,
+     "clip_share": 0.0218
+    },
+    "castle": {
+     "sharpness": 3737.5,
+     "p1": 10.2,
+     "p99": 233.9,
+     "clip_share": 0.0326
+    },
+    "babylon_castleglb": {
+     "sharpness": 1463.4,
+     "p1": 10.2,
+     "p99": 238.4,
+     "clip_share": 0.0224
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 0.4,
+     "p1": 255.0,
+     "p99": 255.0,
+     "clip_share": 1.0
+    }
+   },
+   "castle_glb_bytes": 11777484,
+   "castle_validate": "clean",
+   "castle_render_seconds": 1.54
+  },
+  {
+   "scene": "habsburg-timeline",
+   "xite_vs_babylon_addon": {
+    "frame": 37.03,
+    "geometry": 159.19
+   },
+   "xite_vs_castle": {
+    "frame": 12.49,
+    "geometry": 30.9
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 43.86,
+    "geometry": 169.11
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 39.25,
+    "geometry": 77.03
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 36.18,
+    "geometry": 73.03
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 82.73,
+    "geometry": 136.74
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 71.46,
+    "geometry": 82.14
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 2972.5,
+     "p1": 13.4,
+     "p99": 217.4,
+     "clip_share": 0.0002
+    },
+    "babylon_addon": {
+     "sharpness": 6555.7,
+     "p1": 13.4,
+     "p99": 255.0,
+     "clip_share": 0.148
+    },
+    "castle": {
+     "sharpness": 2957.9,
+     "p1": 13.4,
+     "p99": 216.7,
+     "clip_share": 0.0005
+    },
+    "babylon_castleglb": {
+     "sharpness": 516.9,
+     "p1": 13.4,
+     "p99": 255.0,
+     "clip_share": 0.0189
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 2287.9,
+     "p1": 5.5,
+     "p99": 255.0,
+     "clip_share": 0.2334
+    }
+   },
+   "castle_glb_bytes": 315456,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.78
+  },
+  {
+   "scene": "p1-point-physical",
+   "xite_vs_babylon_addon": {
+    "frame": 0.07,
+    "geometry": 0.24
+   },
+   "xite_vs_castle": {
+    "frame": 5.21,
+    "geometry": 57.04
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 5.15,
+    "geometry": 56.8
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 10.48,
+    "geometry": 116.09
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 5.37,
+    "geometry": 59.05
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 31.13,
+    "geometry": 82.69
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 26.06,
+    "geometry": 26.72
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 13.3,
+     "p1": 0.0,
+     "p99": 73.0,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 28.3,
+     "p1": 0.0,
+     "p99": 73.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 109.1,
+     "p1": 0.0,
+     "p99": 132.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 104.5,
+     "p1": 26.0,
+     "p99": 147.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 5772,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.59
+  },
+  {
+   "scene": "p2-point-classic",
+   "xite_vs_babylon_addon": {
+    "frame": 4.5,
+    "geometry": 48.19
+   },
+   "xite_vs_castle": {
+    "frame": 0.94,
+    "geometry": 8.71
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 4.32,
+    "geometry": 47.46
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 14.77,
+    "geometry": 163.49
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 14.09,
+    "geometry": 154.78
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 27.16,
+    "geometry": 38.51
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 28.92,
+    "geometry": 58.43
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 93.3,
+     "p1": 0.0,
+     "p99": 201.0,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 218.8,
+     "p1": 0.0,
+     "p99": 207.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 232.6,
+     "p1": 0.0,
+     "p99": 209.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 242.4,
+     "p1": 26.0,
+     "p99": 244.0,
+     "clip_share": 0.0014
+    }
+   },
+   "castle_glb_bytes": 5884,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.59
+  },
+  {
+   "scene": "p3-directional-classic-i1",
+   "xite_vs_babylon_addon": {
+    "frame": 0.3,
+    "geometry": 1.5
+   },
+   "xite_vs_castle": {
+    "frame": 0.93,
+    "geometry": 8.52
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.92,
+    "geometry": 9.58
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 18.92,
+    "geometry": 209.63
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 18.27,
+    "geometry": 201.11
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 27.17,
+    "geometry": 38.33
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 26.27,
+    "geometry": 28.94
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 199.3,
+     "p1": 0.0,
+     "p99": 204.0,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 334.0,
+     "p1": 0.0,
+     "p99": 203.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 360.4,
+     "p1": 0.0,
+     "p99": 212.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 396.9,
+     "p1": 26.0,
+     "p99": 245.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 5884,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.61
+  },
+  {
+   "scene": "p4-point-quadratic-physical",
+   "xite_vs_babylon_addon": {
+    "frame": 0.34,
+    "geometry": 3.37
+   },
+   "xite_vs_castle": {
+    "frame": 3.57,
+    "geometry": 39.11
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 3.45,
+    "geometry": 38.2
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 7.54,
+    "geometry": 83.57
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 4.04,
+    "geometry": 44.46
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 31.98,
+    "geometry": 92.13
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 28.59,
+    "geometry": 54.63
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 8.0,
+     "p1": 0.0,
+     "p99": 59.0,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 16.6,
+     "p1": 0.0,
+     "p99": 56.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 55.4,
+     "p1": 0.0,
+     "p99": 101.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 99.3,
+     "p1": 26.0,
+     "p99": 141.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 5772,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.63
+  },
+  {
+   "scene": "p5-directional-physical-i03",
+   "xite_vs_babylon_addon": {
+    "frame": 0.08,
+    "geometry": 0.2
+   },
+   "xite_vs_castle": {
+    "frame": 0.17,
+    "geometry": 1.17
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.11,
+    "geometry": 0.99
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 6.87,
+    "geometry": 76.11
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 6.98,
+    "geometry": 76.9
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 30.1,
+    "geometry": 71.16
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 30.17,
+    "geometry": 72.15
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 29.2,
+     "p1": 0.0,
+     "p99": 78.0,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 49.4,
+     "p1": 0.0,
+     "p99": 78.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 48.2,
+     "p1": 0.0,
+     "p99": 77.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 137.7,
+     "p1": 26.0,
+     "p99": 150.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 5772,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.59
+  },
+  {
+   "scene": "stilllife-direct",
+   "xite_vs_babylon_addon": {
+    "frame": 0.35,
+    "geometry": 0.47
+   },
+   "xite_vs_castle": {
+    "frame": 0.46,
+    "geometry": 0.63
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.42,
+    "geometry": 0.62
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 27.25,
+    "geometry": 40.07
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 27.53,
+    "geometry": 40.44
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 17.74,
+    "geometry": 14.32
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 18.08,
+    "geometry": 14.82
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 76.9,
+     "p1": 1.0,
+     "p99": 119.9,
+     "clip_share": 0.002
+    },
+    "babylon_addon": {
+     "sharpness": 168.4,
+     "p1": 0.0,
+     "p99": 122.2,
+     "clip_share": 0.0021
+    },
+    "castle": {
+     "sharpness": 144.0,
+     "p1": 0.0,
+     "p99": 119.7,
+     "clip_share": 0.002
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 1.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 106.7,
+     "p1": 12.9,
+     "p99": 141.3,
+     "clip_share": 0.0031
+    }
+   },
+   "castle_glb_bytes": 600008,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.84
+  },
+  {
+   "scene": "earth-planet",
+   "xite_vs_babylon_addon": {
+    "frame": 0.4,
+    "geometry": 8.5
+   },
+   "xite_vs_castle": {
+    "frame": 0.12,
+    "geometry": 2.38
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.32,
+    "geometry": 6.87
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 4.91,
+    "geometry": 106.32
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 4.86,
+    "geometry": 105.02
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 23.13,
+    "geometry": 28.43
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 22.83,
+    "geometry": 21.9
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 104.9,
+     "p1": 0.0,
+     "p99": 15.7,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 250.1,
+     "p1": 0.0,
+     "p99": 23.1,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 277.7,
+     "p1": 0.0,
+     "p99": 15.7,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 65.6,
+     "p1": 0.0,
+     "p99": 134.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 265.1,
+     "p1": 1.0,
+     "p99": 26.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 172620,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.65
+  },
+  {
+   "scene": "villagers",
+   "xite_vs_babylon_addon": {
+    "frame": 0.97,
+    "geometry": 119.07
+   },
+   "xite_vs_castle": {
+    "frame": 0.88,
+    "geometry": 0.0
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 0.09,
+    "geometry": 119.07
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 0.0,
+    "geometry": 0.0
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 0.88,
+    "geometry": 0.0
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 26.36,
+    "geometry": 93.07
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 26.31,
+    "geometry": 26.0
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 51.4,
+     "p1": 0.0,
+     "p99": 22.3,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 15.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 0.0,
+     "p1": 0.0,
+     "p99": 0.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 78.3,
+     "p1": 26.0,
+     "p99": 26.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 3912,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.65
+  },
+  {
+   "scene": "earth-clouds",
+   "xite_vs_babylon_addon": {
+    "frame": 3.57,
+    "geometry": 102.93
+   },
+   "xite_vs_castle": {
+    "frame": 0.09,
+    "geometry": 1.96
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 3.55,
+    "geometry": 103.09
+   },
+   "castle_vs_babylon_castleglb": {
+    "frame": 2.86,
+    "geometry": 83.09
+   },
+   "xite_vs_babylon_castleglb": {
+    "frame": 2.88,
+    "geometry": 82.83
+   },
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 36.53,
+    "geometry": 115.0
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 34.88,
+    "geometry": 67.06
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 80.6,
+     "p1": 0.0,
+     "p99": 22.4,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 795.3,
+     "p1": 0.0,
+     "p99": 252.1,
+     "clip_share": 0.0108
+    },
+    "castle": {
+     "sharpness": 125.3,
+     "p1": 0.0,
+     "p99": 21.9,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": {
+     "sharpness": 342.0,
+     "p1": 0.0,
+     "p99": 127.0,
+     "clip_share": 0.0
+    },
+    "castle_on_addon_glb": {
+     "sharpness": 1182.8,
+     "p1": 9.5,
+     "p99": 249.0,
+     "clip_share": 0.0397
+    }
+   },
+   "castle_glb_bytes": 52418,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.59
+  },
+  {
+   "scene": "chirp",
+   "xite_vs_babylon_addon": {
+    "frame": 0.0,
+    "geometry": 1.48
+   },
+   "xite_vs_castle": {
+    "frame": 6.98,
+    "geometry": 0.17
+   },
+   "babylon_addon_vs_castle": {
+    "frame": 6.99,
+    "geometry": 1.54
+   },
+   "castle_vs_babylon_castleglb": null,
+   "xite_vs_babylon_castleglb": null,
+   "castle_on_addon_glb_vs_babylon_addon": {
+    "frame": 22.28,
+    "geometry": 2.65
+   },
+   "castle_on_addon_glb_vs_castle_native": {
+    "frame": 15.3,
+    "geometry": 2.28
+   },
+   "quality": {
+    "xite": {
+     "sharpness": 2.1,
+     "p1": 3.1,
+     "p99": 3.1,
+     "clip_share": 0.0
+    },
+    "babylon_addon": {
+     "sharpness": 2.2,
+     "p1": 3.1,
+     "p99": 3.1,
+     "clip_share": 0.0
+    },
+    "castle": {
+     "sharpness": 2.1,
+     "p1": 9.2,
+     "p99": 9.2,
+     "clip_share": 0.0
+    },
+    "babylon_castleglb": null,
+    "castle_on_addon_glb": {
+     "sharpness": 2.7,
+     "p1": 26.0,
+     "p99": 26.0,
+     "clip_share": 0.0
+    }
+   },
+   "castle_glb_bytes": 58524,
+   "castle_validate": "clean",
+   "castle_render_seconds": 0.62
+  }
+ ]
+}

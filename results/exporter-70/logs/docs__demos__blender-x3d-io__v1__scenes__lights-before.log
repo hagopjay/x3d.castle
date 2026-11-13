@@ -1,0 +1,9 @@
+[export] Viewpoint "CA_Camera": fov 0.3996 rad
+[export] 3 active shapes
+[export] shape 0 ME_Plane: 6 verts, 6 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 ME_Sphere: 559 verts, 2880 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 ME_Cube: 36 verts, 36 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 3 PhysicalMaterial shapes), median albedo 0.800
+[export] light LA_Sun: directional, X3D intensity 1.000 written 1.0000
+[export] light LA_Sun: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light LA_Point: reference distance 5.559, attenuation factor 1.0000, written 1.0000 (X3D intensity 1.000)

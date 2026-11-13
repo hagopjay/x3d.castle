@@ -1,0 +1,51 @@
+[export] Viewpoint "Wide": fov 0.7000 rad
+[export] 31 active shapes
+[export] shape 0 shape_0: 651 verts, 3420 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 shape_1: 651 verts, 3420 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 651 verts, 3420 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 3 shape_3: 300 verts, 300 indices, mode 0, material 3, uv=n col=y nrm=n
+[export] shape 4 shape_4: 1 verts, 1 indices, mode 0, material 4, uv=n col=y nrm=n
+[export] shape 5 shape_5: 1 verts, 1 indices, mode 0, material 5, uv=n col=y nrm=n
+[export] shape 6 shape_6: 1 verts, 1 indices, mode 0, material 6, uv=n col=y nrm=n
+[export] shape 7 shape_7: 1 verts, 1 indices, mode 0, material 7, uv=n col=y nrm=n
+[export] shape 8 shape_8: 1407 verts, 1407 indices, mode 4, material 8, uv=n col=y nrm=y
+[export] shape 9 shape_9: 324 verts, 324 indices, mode 4, material 9, uv=n col=y nrm=y
+[export] shape 10 shape_10: 4368 verts, 4368 indices, mode 4, material 10, uv=n col=y nrm=y
+[export] shape 11 shape_11: 1182 verts, 1182 indices, mode 4, material 11, uv=n col=y nrm=y
+[export] shape 12 shape_12: 346 verts, 1850 indices, mode 1, material 12, uv=n col=n nrm=n
+[export] shape 13 shape_13: 346 verts, 346 indices, mode 0, material 13, uv=n col=y nrm=n
+[export] shape 14 shape_14: 96 verts, 96 indices, mode 4, material 14, uv=n col=n nrm=y
+[export] shape 15 shape_15: 672 verts, 672 indices, mode 4, material 15, uv=n col=y nrm=y
+[export] shape 16 shape_16: 377 verts, 224 indices, mode 1, material 16, uv=n col=n nrm=n
+[export] shape 17 shape_17: 750 verts, 750 indices, mode 4, material 17, uv=n col=y nrm=y
+[export] shape 18 shape_18: 377 verts, 377 indices, mode 0, material 18, uv=n col=y nrm=n
+[export] shape 19 shape_19: 1500 verts, 1500 indices, mode 4, material 19, uv=n col=y nrm=y
+[export] shape 20 shape_20: 138 verts, 138 indices, mode 4, material 20, uv=n col=y nrm=y
+[export] shape 21 MeridianRing0Shape: 1200 verts, 1200 indices, mode 4, material 21, uv=n col=y nrm=y
+[export] shape 22 MeridianRing1Shape: 1200 verts, 1200 indices, mode 4, material 22, uv=n col=y nrm=y
+[export] shape 23 MeridianRing2Shape: 1200 verts, 1200 indices, mode 4, material 23, uv=n col=y nrm=y
+[export] shape 24 MeridianRing3Shape: 1200 verts, 1200 indices, mode 4, material 24, uv=n col=y nrm=y
+[export] shape 25 MeridianRing4Shape: 1200 verts, 1200 indices, mode 4, material 25, uv=n col=y nrm=y
+[export] shape 26 MeridianRing5Shape: 1200 verts, 1200 indices, mode 4, material 26, uv=n col=y nrm=y
+[export] shape 27 MeridianRing6Shape: 1200 verts, 1200 indices, mode 4, material 27, uv=n col=y nrm=y
+[export] shape 28 MeridianRing7Shape: 1200 verts, 1200 indices, mode 4, material 28, uv=n col=y nrm=y
+[export] shape 29 MeridianRing8Shape: 1200 verts, 1200 indices, mode 4, material 29, uv=n col=y nrm=y
+[export] shape 30 MeridianRing9Shape: 1200 verts, 1200 indices, mode 4, material 30, uv=n col=y nrm=y
+[export] light units AUTO: classic scene (21 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.706
+[export] light light_0: reference distance 0.212, attenuation factor 0.9823, written 0.1076 (X3D intensity 0.900)
+[export] light LightGold: reference distance 13.258, attenuation factor 0.2215, written 25.5138 (X3D intensity 1.000)
+[export] light LightEmber: reference distance 9.043, attenuation factor 0.3794, written 29.6464 (X3D intensity 0.950)
+[export] light LightCyan: reference distance 8.467, attenuation factor 0.4109, written 33.7513 (X3D intensity 1.000)
+[export] light LightViolet: reference distance 11.770, attenuation factor 0.2652, written 30.5523 (X3D intensity 1.050)
+[export] light KeyLight: directional, X3D intensity 1.000 written 3.1416
+[export] light KeyLight: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light WarmLight: directional, X3D intensity 0.600 written 1.0322
+[export] light WarmLight: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light RoseLight: directional, X3D intensity 0.450 written 0.5663
+[export] light RoseLight: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light KeyLight: directional, X3D intensity 1.000 written 3.1416
+[export] light KeyLight: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light WarmLight: directional, X3D intensity 0.600 written 1.0322
+[export] light WarmLight: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light RoseLight: directional, X3D intensity 0.450 written 0.5663
+[export] light RoseLight: global=false (X3D scopes it to its parent group; glTF lights are global)

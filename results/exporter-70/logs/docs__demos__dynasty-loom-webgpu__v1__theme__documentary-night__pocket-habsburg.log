@@ -1,0 +1,17 @@
+[export] Viewpoint "Wide": fov 0.8000 rad
+[export] 9 active shapes
+[export] shape 0 Seed: 642 verts, 3840 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 SeedGlowShape: 162 verts, 960 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 Threads: 12608 verts, 36450 indices, mode 4, material 2, uv=n col=y nrm=n
+[export] shape 3 Glow: 12608 verts, 36450 indices, mode 4, material 3, uv=n col=y nrm=n
+[export] shape 4 Shell: 642 verts, 3840 indices, mode 4, material 4, uv=n col=n nrm=y
+[export] image 0: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg/png/32dcf0f5b807ee51.png, 816612 bytes
+[export] shape 5 PlateQuad: 4 verts, 6 indices, mode 4, material 5, uv=y col=n nrm=y
+[export] image 1: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg/png/da9c04ef4d5dc35b.png, 594881 bytes
+[export] shape 6 PlateQuad: 4 verts, 6 indices, mode 4, material 6, uv=y col=n nrm=y
+[export] image 2: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg/png/a2ce346077b21d1c.png, 630106 bytes
+[export] shape 7 PlateQuad: 4 verts, 6 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] image 3: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg/png/58e3792a0c8823bb.png, 959080 bytes
+[export] shape 8 PlateQuad: 4 verts, 6 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 1 PhysicalMaterial shapes), median albedo 0.800
+[export] light SeedLight: reference distance 0.713, attenuation factor 1.0000, written 0.3500 (X3D intensity 0.350)

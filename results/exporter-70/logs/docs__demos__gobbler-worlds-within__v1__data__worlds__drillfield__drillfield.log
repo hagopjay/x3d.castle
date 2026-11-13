@@ -1,0 +1,14 @@
+x3d-castle-convert: Warning: DirectionalLight(Sun) does not know the world transformation, results (like shadow maps) may be incorrect
+[export] Viewpoint "VP_arrival": fov 0.7500 rad
+[export] 4 active shapes
+[export] image 0: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/drillfield-rgb.jpg, 767801 bytes
+[export] shape 0 DSM: 120701 verts, 720000 indices, mode 4, material 0, uv=y col=n nrm=y
+[export] shape 1 shape_1: 2100 verts, 2100 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 351 verts, 700 indices, mode 1, material 2, uv=n col=n nrm=n
+[export] shape 3 shape_3: 4 verts, 8 indices, mode 1, material 3, uv=n col=n nrm=n
+[export] light units AUTO: classic scene (2 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 1.000
+[export] light Sun: directional, X3D intensity 1.200 written 3.1416
+[export] light Sun: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light SkyFill: directional, X3D intensity 0.350 written 0.3157
+[export] light SkyFill: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] headlight written as a directional light under the camera node

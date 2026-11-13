@@ -1,0 +1,5 @@
+castle-convert/castle-engine-output/
+castle-convert/x3d-castle-convert
+__pycache__/
+node_modules/
+*.pyc

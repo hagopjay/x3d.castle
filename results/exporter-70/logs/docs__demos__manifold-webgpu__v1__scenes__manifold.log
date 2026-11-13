@@ -1,0 +1,10 @@
+[export] Viewpoint "Cam": fov 0.7330 rad
+[export] 7 active shapes
+[export] shape 0 Sky: 3 verts, 3 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 Surface: 263169 verts, 1572864 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] WARNING: shape with no vertices skipped: //Veil/ElevationGrid
+[export] shape 3 Flows: 3 verts, 3 indices, mode 4, material 2, uv=n col=n nrm=n
+[export] shape 4 Filaments: 3300 verts, 3300 indices, mode 4, material 3, uv=n col=n nrm=n
+[export] shape 5 Sources: 7 verts, 7 indices, mode 0, material 4, uv=n col=n nrm=n
+[export] shape 6 Motes: 900 verts, 900 indices, mode 0, material 5, uv=n col=y nrm=n
+[export] light units AUTO: classic scene (1 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.265

@@ -1,0 +1,10 @@
+[export] Viewpoint "": fov 0.7854 rad
+[export] 4 active shapes
+[export] shape 0 shape_0: 651 verts, 3420 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 shape_1: 651 verts, 3420 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 651 verts, 3420 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 3 shape_3: 651 verts, 3420 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] light units AUTO: physical scene (1 classic-Material shapes, 3 PhysicalMaterial shapes), median albedo 0.800
+[export] WARNING: scene mixes classic Material and PhysicalMaterial: physical light units chosen, classic shapes will look darker than in an X3D browser
+[export] light light_0: reference distance 17.000, attenuation factor 1.0000, written 10.0000 (X3D intensity 10.000)
+[export] headlight written as a directional light under the camera node

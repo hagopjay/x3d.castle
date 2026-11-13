@@ -1,0 +1,48 @@
+[export] Viewpoint "Host": fov 0.9000 rad
+[export] 21 active shapes
+[export] shape 0 SkyDome: 162 verts, 960 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 shape_1: 1440 verts, 8640 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 1440 verts, 8640 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 3 shape_3: 1440 verts, 8640 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 4 Seed: 642 verts, 3840 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 5 SeedGlowShape: 162 verts, 960 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] shape 6 Threads: 19308 verts, 56298 indices, mode 4, material 4, uv=n col=y nrm=n
+[export] shape 7 Glow: 19308 verts, 56298 indices, mode 4, material 5, uv=n col=y nrm=n
+[export] shape 8 Shell: 642 verts, 3840 indices, mode 4, material 6, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q1557224/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q1557224/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q1557224)
+[export] shape 9 PlateQuad: 4 verts, 6 indices, mode 4, material 7, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q76988/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q76988/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q76988)
+[export] shape 10 PlateQuad: 4 verts, 6 indices, mode 4, material 8, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q922667/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q922667/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q922667)
+[export] shape 11 PlateQuad: 4 verts, 6 indices, mode 4, material 9, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q7044697/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q7044697/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q7044697)
+[export] shape 12 PlateQuad: 4 verts, 6 indices, mode 4, material 10, uv=n col=n nrm=y
+[export] shape 13 PlateQuad: 4 verts, 6 indices, mode 4, material 11, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q333605/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q333605/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q333605)
+[export] shape 14 PlateQuad: 4 verts, 6 indices, mode 4, material 12, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q547291/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q547291/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q547291)
+[export] shape 15 PlateQuad: 4 verts, 6 indices, mode 4, material 13, uv=n col=n nrm=y
+[export] shape 16 PlateQuad: 4 verts, 6 indices, mode 4, material 14, uv=n col=n nrm=y
+[export] shape 17 PlateQuad: 4 verts, 6 indices, mode 4, material 15, uv=n col=n nrm=y
+x3d-castle-convert: Warning: Texture: Cannot load the texture:
+  Error EImageFormatNotSupported when loading texture from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q467167/v1/cutout-768.webp": Error loading image from URL "file://x3d.demo/docs/demos/dynasty-loom-webgpu/v1/portraits/Q467167/v1/cutout-768.webp": Unrecognized image MIME type: ""
+[export] WARNING: texture failed to load: ImageTexture(Tex_Q467167)
+[export] shape 18 PlateQuad: 4 verts, 6 indices, mode 4, material 16, uv=n col=n nrm=y
+[export] shape 19 PlateQuad: 4 verts, 6 indices, mode 4, material 17, uv=n col=n nrm=y
+[export] shape 20 PlateQuad: 4 verts, 6 indices, mode 4, material 18, uv=n col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 4 PhysicalMaterial shapes), median albedo 0.800
+[export] light Key: directional, X3D intensity 0.500 written 0.5000
+[export] light Rim: directional, X3D intensity 0.350 written 0.3500
+[export] light SeedLight: reference distance 2.748, attenuation factor 1.0000, written 0.3500 (X3D intensity 0.350)

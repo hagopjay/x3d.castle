@@ -1,0 +1,14 @@
+[export] Viewpoint "Cam": fov 0.9000 rad
+[export] 11 active shapes
+[export] shape 0 shape_0: 18857 verts, 44094 indices, mode 4, material 0, uv=n col=y nrm=y
+[export] shape 1 shape_1: 4 verts, 6 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 49 verts, 144 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 3 Fx_Shafts: 128 verts, 192 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] shape 4 shape_4: 12408 verts, 18612 indices, mode 4, material 4, uv=n col=n nrm=y
+[export] shape 5 shape_5: 96 verts, 144 indices, mode 4, material 5, uv=n col=y nrm=y
+[export] shape 6 shape_6: 24 verts, 36 indices, mode 4, material 6, uv=n col=y nrm=y
+[export] shape 7 shape_7: 600 verts, 900 indices, mode 4, material 7, uv=n col=y nrm=y
+[export] shape 8 shape_8: 90 verts, 420 indices, mode 4, material 8, uv=n col=y nrm=y
+[export] shape 9 shape_9: 117 verts, 576 indices, mode 4, material 9, uv=n col=y nrm=y
+[export] shape 10 shape_10: 1152 verts, 1728 indices, mode 4, material 10, uv=n col=y nrm=y
+[export] light units AUTO: classic scene (1 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800

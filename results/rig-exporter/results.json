@@ -1,0 +1,2206 @@
+{
+ "rig_label": [
+  "h2h",
+  "h2h2"
+ ],
+ "variants": [
+  [
+   "rigcam",
+   "--no-headlight"
+  ],
+  [
+   "self",
+   ""
+  ],
+  [
+   "naive",
+   "--no-headlight --colour-space=as-is --light-scale=1"
+  ]
+ ],
+ "rows": [
+  {
+   "scene": "stilllife-stage",
+   "xite_vs_babylon_addon": {
+    "frame": 0.33,
+    "geometry": 0.46
+   },
+   "xite_vs_castle": {
+    "frame": 0.56,
+    "geometry": 0.79
+   },
+   "xite_vs_babylon_stockglb": null,
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.33,
+      "geometry": 0.46
+     },
+     "castle_native": {
+      "frame": 0.52,
+      "geometry": 0.77
+     },
+     "quality": {
+      "sharpness": 127.3,
+      "p1": 12.9,
+      "p99": 144.0,
+      "clip_share": 0.0032
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 27560,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.33,
+      "geometry": 0.46
+     },
+     "castle_native": {
+      "frame": 0.52,
+      "geometry": 0.77
+     },
+     "quality": {
+      "sharpness": 127.3,
+      "p1": 12.9,
+      "p99": 144.0,
+      "clip_share": 0.0032
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 27560,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.33,
+      "geometry": 0.46
+     },
+     "castle_native": {
+      "frame": 0.52,
+      "geometry": 0.77
+     },
+     "quality": {
+      "sharpness": 127.3,
+      "p1": 12.9,
+      "p99": 144.0,
+      "clip_share": 0.0032
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 27560,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "lights-before",
+   "xite_vs_babylon_addon": {
+    "frame": 61.93,
+    "geometry": 70.17
+   },
+   "xite_vs_castle": {
+    "frame": 42.25,
+    "geometry": 47.87
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 13.72,
+    "geometry": 15.54
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 61.92,
+      "geometry": 70.17
+     },
+     "castle_native": {
+      "frame": 20.81,
+      "geometry": 23.58
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 0.0,
+      "p99": 120.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 974,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 61.92,
+      "geometry": 70.17
+     },
+     "castle_native": {
+      "frame": 20.81,
+      "geometry": 23.58
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 0.0,
+      "p99": 120.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 974,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 61.92,
+      "geometry": 70.17
+     },
+     "castle_native": {
+      "frame": 20.81,
+      "geometry": 23.58
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 0.0,
+      "p99": 120.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 974,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "lights-after",
+   "xite_vs_babylon_addon": {
+    "frame": 0.12,
+    "geometry": 0.12
+   },
+   "xite_vs_castle": {
+    "frame": 16.69,
+    "geometry": 18.89
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 75.61,
+    "geometry": 85.66
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.11,
+      "geometry": 0.11
+     },
+     "castle_native": {
+      "frame": 16.59,
+      "geometry": 18.8
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 0.0,
+      "p99": 120.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 974,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.11,
+      "geometry": 0.11
+     },
+     "castle_native": {
+      "frame": 16.59,
+      "geometry": 18.8
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 0.0,
+      "p99": 120.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 974,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.11,
+      "geometry": 0.11
+     },
+     "castle_native": {
+      "frame": 16.59,
+      "geometry": 18.8
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 0.0,
+      "p99": 120.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 974,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "nurbs-weights",
+   "xite_vs_babylon_addon": {
+    "frame": 14.85,
+    "geometry": 24.08
+   },
+   "xite_vs_castle": {
+    "frame": 9.55,
+    "geometry": 23.28
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 17.05,
+    "geometry": 31.08
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 15.7,
+      "geometry": 29.48
+     },
+     "castle_native": {
+      "frame": 23.35,
+      "geometry": 48.12
+     },
+     "quality": {
+      "sharpness": 1301.2,
+      "p1": 2.9,
+      "p99": 72.5,
+      "clip_share": 0.004
+     },
+     "info": {
+      "shapes": 14,
+      "triangles": 10500,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 15.7,
+      "geometry": 29.48
+     },
+     "castle_native": {
+      "frame": 23.35,
+      "geometry": 48.12
+     },
+     "quality": {
+      "sharpness": 1301.2,
+      "p1": 2.9,
+      "p99": 72.5,
+      "clip_share": 0.004
+     },
+     "info": {
+      "shapes": 14,
+      "triangles": 10500,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 15.3,
+      "geometry": 27.3
+     },
+     "castle_native": {
+      "frame": 22.77,
+      "geometry": 45.03
+     },
+     "quality": {
+      "sharpness": 2070.8,
+      "p1": 2.9,
+      "p99": 108.4,
+      "clip_share": 0.0018
+     },
+     "info": {
+      "shapes": 14,
+      "triangles": 10500,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "quaternion-xyzw",
+   "xite_vs_babylon_addon": {
+    "frame": 20.24,
+    "geometry": 23.83
+   },
+   "xite_vs_castle": {
+    "frame": 12.68,
+    "geometry": 25.46
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 25.44,
+    "geometry": 30.14
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 21.27,
+      "geometry": 30.83
+     },
+     "castle_native": {
+      "frame": 16.3,
+      "geometry": 46.65
+     },
+     "quality": {
+      "sharpness": 112.9,
+      "p1": 2.9,
+      "p99": 89.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 2,
+      "triangles": 240,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 21.27,
+      "geometry": 30.83
+     },
+     "castle_native": {
+      "frame": 16.3,
+      "geometry": 46.65
+     },
+     "quality": {
+      "sharpness": 112.9,
+      "p1": 2.9,
+      "p99": 89.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 2,
+      "triangles": 240,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 21.07,
+      "geometry": 29.26
+     },
+     "castle_native": {
+      "frame": 16.13,
+      "geometry": 45.28
+     },
+     "quality": {
+      "sharpness": 111.6,
+      "p1": 2.9,
+      "p99": 99.7,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 2,
+      "triangles": 240,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "profile-tables",
+   "xite_vs_babylon_addon": {
+    "frame": 12.23,
+    "geometry": 14.25
+   },
+   "xite_vs_castle": {
+    "frame": 10.35,
+    "geometry": 27.51
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 19.44,
+    "geometry": 34.6
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 11.49,
+      "geometry": 12.04
+     },
+     "castle_native": {
+      "frame": 14.12,
+      "geometry": 19.03
+     },
+     "quality": {
+      "sharpness": 98.8,
+      "p1": 2.9,
+      "p99": 162.8,
+      "clip_share": 0.002
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1620,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 11.49,
+      "geometry": 12.04
+     },
+     "castle_native": {
+      "frame": 14.12,
+      "geometry": 19.03
+     },
+     "quality": {
+      "sharpness": 98.8,
+      "p1": 2.9,
+      "p99": 162.8,
+      "clip_share": 0.002
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1620,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 14.86,
+      "geometry": 22.74
+     },
+     "castle_native": {
+      "frame": 21.99,
+      "geometry": 44.04
+     },
+     "quality": {
+      "sharpness": 213.8,
+      "p1": 2.9,
+      "p99": 162.8,
+      "clip_share": 0.0021
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1620,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "annotation-standard",
+   "xite_vs_babylon_addon": {
+    "frame": 15.5,
+    "geometry": 21.88
+   },
+   "xite_vs_castle": {
+    "frame": 11.32,
+    "geometry": 28.32
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 19.51,
+    "geometry": 34.46
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 17.94,
+      "geometry": 29.82
+     },
+     "castle_native": {
+      "frame": 25.23,
+      "geometry": 51.72
+     },
+     "quality": {
+      "sharpness": 310.8,
+      "p1": 2.9,
+      "p99": 193.4,
+      "clip_share": 0.0237
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1404,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 17.94,
+      "geometry": 29.82
+     },
+     "castle_native": {
+      "frame": 25.23,
+      "geometry": 51.72
+     },
+     "quality": {
+      "sharpness": 310.8,
+      "p1": 2.9,
+      "p99": 193.4,
+      "clip_share": 0.0237
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1404,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 18.81,
+      "geometry": 32.48
+     },
+     "castle_native": {
+      "frame": 23.23,
+      "geometry": 45.12
+     },
+     "quality": {
+      "sharpness": 169.5,
+      "p1": 2.9,
+      "p99": 119.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1404,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "repair-2-render",
+   "xite_vs_babylon_addon": {
+    "frame": 0.46,
+    "geometry": 17.15
+   },
+   "xite_vs_castle": {
+    "frame": 0.74,
+    "geometry": 38.06
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 0.71,
+    "geometry": 35.3
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.46,
+      "geometry": 17.24
+     },
+     "castle_native": {
+      "frame": 0.33,
+      "geometry": 24.11
+     },
+     "quality": {
+      "sharpness": 121.4,
+      "p1": 13.9,
+      "p99": 89.0,
+      "clip_share": 0.0092
+     },
+     "info": {
+      "shapes": 4,
+      "triangles": 4560,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.46,
+      "geometry": 17.24
+     },
+     "castle_native": {
+      "frame": 0.33,
+      "geometry": 24.11
+     },
+     "quality": {
+      "sharpness": 121.4,
+      "p1": 13.9,
+      "p99": 89.0,
+      "clip_share": 0.0092
+     },
+     "info": {
+      "shapes": 4,
+      "triangles": 4560,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.7,
+      "geometry": 35.22
+     },
+     "castle_native": {
+      "frame": 0.58,
+      "geometry": 42.09
+     },
+     "quality": {
+      "sharpness": 139.0,
+      "p1": 13.9,
+      "p99": 89.0,
+      "clip_share": 0.0092
+     },
+     "info": {
+      "shapes": 4,
+      "triangles": 4560,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "lod-control",
+   "xite_vs_babylon_addon": {
+    "frame": 0.06,
+    "geometry": 0.86
+   },
+   "xite_vs_castle": {
+    "frame": 0.26,
+    "geometry": 3.55
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 4.96,
+    "geometry": 68.27
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.06,
+      "geometry": 0.86
+     },
+     "castle_native": {
+      "frame": 0.24,
+      "geometry": 3.33
+     },
+     "quality": {
+      "sharpness": 10.1,
+      "p1": 0.0,
+      "p99": 48.7,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 12,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.06,
+      "geometry": 0.86
+     },
+     "castle_native": {
+      "frame": 0.24,
+      "geometry": 3.33
+     },
+     "quality": {
+      "sharpness": 10.1,
+      "p1": 0.0,
+      "p99": 48.7,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 12,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.35,
+      "geometry": 4.88
+     },
+     "castle_native": {
+      "frame": 0.1,
+      "geometry": 1.33
+     },
+     "quality": {
+      "sharpness": 11.4,
+      "p1": 0.0,
+      "p99": 51.7,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 12,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "materials-world",
+   "xite_vs_babylon_addon": {
+    "frame": 10.99,
+    "geometry": 17.05
+   },
+   "xite_vs_castle": {
+    "frame": 82.96,
+    "geometry": 129.85
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 27.35,
+    "geometry": 42.7
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 10.57,
+      "geometry": 16.4
+     },
+     "castle_native": {
+      "frame": 92.56,
+      "geometry": 145.08
+     },
+     "quality": {
+      "sharpness": 178.7,
+      "p1": 0.0,
+      "p99": 123.8,
+      "clip_share": 0.001
+     },
+     "info": {
+      "shapes": 12,
+      "triangles": 11784,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 28,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 2.9,
+      "geometry": 4.37
+     },
+     "castle_native": {
+      "frame": 82.45,
+      "geometry": 129.23
+     },
+     "quality": {
+      "sharpness": 229.8,
+      "p1": 0.0,
+      "p99": 169.7,
+      "clip_share": 0.0022
+     },
+     "info": {
+      "shapes": 12,
+      "triangles": 11784,
+      "lights": 5,
+      "cameras": 1,
+      "textures": 28,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 10.57,
+      "geometry": 16.4
+     },
+     "castle_native": {
+      "frame": 92.56,
+      "geometry": 145.08
+     },
+     "quality": {
+      "sharpness": 178.7,
+      "p1": 0.0,
+      "p99": 123.8,
+      "clip_share": 0.001
+     },
+     "info": {
+      "shapes": 12,
+      "triangles": 11784,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 28,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "drillfield-world",
+   "xite_vs_babylon_addon": null,
+   "xite_vs_castle": null,
+   "xite_vs_babylon_stockglb": null,
+   "variants": {
+    "rigcam": {
+     "xite": null,
+     "castle_native": {
+      "frame": 11.44,
+      "geometry": 22.67
+     },
+     "quality": {
+      "sharpness": 2034.3,
+      "p1": 0.0,
+      "p99": 245.7,
+      "clip_share": 0.0107
+     },
+     "info": {
+      "shapes": 4,
+      "triangles": 240700,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": null,
+     "castle_native": {
+      "frame": 11.44,
+      "geometry": 22.67
+     },
+     "quality": {
+      "sharpness": 2034.3,
+      "p1": 0.0,
+      "p99": 245.7,
+      "clip_share": 0.0107
+     },
+     "info": {
+      "shapes": 4,
+      "triangles": 240700,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": null,
+     "castle_native": {
+      "frame": 9.97,
+      "geometry": 19.73
+     },
+     "quality": {
+      "sharpness": 1714.7,
+      "p1": 0.0,
+      "p99": 212.8,
+      "clip_share": 0.0017
+     },
+     "info": {
+      "shapes": 4,
+      "triangles": 240700,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "village",
+   "xite_vs_babylon_addon": {
+    "frame": 3.56,
+    "geometry": 4.13
+   },
+   "xite_vs_castle": {
+    "frame": 0.94,
+    "geometry": 0.85
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 35.08,
+    "geometry": 43.6
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 3.49,
+      "geometry": 4.05
+     },
+     "castle_native": {
+      "frame": 2.7,
+      "geometry": 3.37
+     },
+     "quality": {
+      "sharpness": 1846.7,
+      "p1": 0.0,
+      "p99": 234.4,
+      "clip_share": 0.0071
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 21114,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 5,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 3.49,
+      "geometry": 4.05
+     },
+     "castle_native": {
+      "frame": 2.7,
+      "geometry": 3.37
+     },
+     "quality": {
+      "sharpness": 1846.7,
+      "p1": 0.0,
+      "p99": 234.4,
+      "clip_share": 0.0071
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 21114,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 5,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 48.78,
+      "geometry": 60.75
+     },
+     "castle_native": {
+      "frame": 48.3,
+      "geometry": 60.45
+     },
+     "quality": {
+      "sharpness": 2092.4,
+      "p1": 0.0,
+      "p99": 245.4,
+      "clip_share": 0.0221
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 21114,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 5,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "ontology-constellation",
+   "xite_vs_babylon_addon": {
+    "frame": 6.13,
+    "geometry": 28.5
+   },
+   "xite_vs_castle": {
+    "frame": 5.37,
+    "geometry": 15.06
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 10.11,
+    "geometry": 60.68
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 5.08,
+      "geometry": 19.8
+     },
+     "castle_native": {
+      "frame": 6.55,
+      "geometry": 12.57
+     },
+     "quality": {
+      "sharpness": 5551.4,
+      "p1": 10.2,
+      "p99": 209.0,
+      "clip_share": 0.019
+     },
+     "info": {
+      "shapes": 489,
+      "triangles": 460392,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 5.08,
+      "geometry": 19.8
+     },
+     "castle_native": {
+      "frame": 6.55,
+      "geometry": 12.57
+     },
+     "quality": {
+      "sharpness": 5551.4,
+      "p1": 10.2,
+      "p99": 209.0,
+      "clip_share": 0.019
+     },
+     "info": {
+      "shapes": 489,
+      "triangles": 460392,
+      "lights": 2,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 10.36,
+      "geometry": 63.43
+     },
+     "castle_native": {
+      "frame": 11.82,
+      "geometry": 56.09
+     },
+     "quality": {
+      "sharpness": 14051.7,
+      "p1": 10.2,
+      "p99": 252.9,
+      "clip_share": 0.0254
+     },
+     "info": {
+      "shapes": 489,
+      "triangles": 460392,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "habsburg-timeline",
+   "xite_vs_babylon_addon": {
+    "frame": 37.03,
+    "geometry": 159.19
+   },
+   "xite_vs_castle": {
+    "frame": 12.49,
+    "geometry": 30.9
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 36.18,
+    "geometry": 73.03
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 8.67,
+      "geometry": 26.17
+     },
+     "castle_native": {
+      "frame": 14.09,
+      "geometry": 29.81
+     },
+     "quality": {
+      "sharpness": 2894.4,
+      "p1": 13.4,
+      "p99": 176.7,
+      "clip_share": 0.0001
+     },
+     "info": {
+      "shapes": 41,
+      "triangles": 278,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 6,
+      "shapes_baked_for_shear": 1
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 8.67,
+      "geometry": 26.17
+     },
+     "castle_native": {
+      "frame": 14.09,
+      "geometry": 29.81
+     },
+     "quality": {
+      "sharpness": 2894.4,
+      "p1": 13.4,
+      "p99": 176.7,
+      "clip_share": 0.0001
+     },
+     "info": {
+      "shapes": 41,
+      "triangles": 278,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 6,
+      "shapes_baked_for_shear": 1
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 16.6,
+      "geometry": 59.52
+     },
+     "castle_native": {
+      "frame": 23.02,
+      "geometry": 68.79
+     },
+     "quality": {
+      "sharpness": 4345.8,
+      "p1": 13.4,
+      "p99": 213.5,
+      "clip_share": 0.001
+     },
+     "info": {
+      "shapes": 41,
+      "triangles": 278,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 6,
+      "shapes_baked_for_shear": 1
+     }
+    }
+   }
+  },
+  {
+   "scene": "p1-point-physical",
+   "xite_vs_babylon_addon": {
+    "frame": 0.07,
+    "geometry": 0.24
+   },
+   "xite_vs_castle": {
+    "frame": 5.21,
+    "geometry": 57.04
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 5.37,
+    "geometry": 59.05
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.07,
+      "geometry": 0.24
+     },
+     "castle_native": {
+      "frame": 5.15,
+      "geometry": 56.8
+     },
+     "quality": {
+      "sharpness": 28.3,
+      "p1": 0.0,
+      "p99": 73.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.07,
+      "geometry": 0.24
+     },
+     "castle_native": {
+      "frame": 5.15,
+      "geometry": 56.8
+     },
+     "quality": {
+      "sharpness": 28.3,
+      "p1": 0.0,
+      "p99": 73.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.07,
+      "geometry": 0.24
+     },
+     "castle_native": {
+      "frame": 5.15,
+      "geometry": 56.8
+     },
+     "quality": {
+      "sharpness": 28.3,
+      "p1": 0.0,
+      "p99": 73.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "p2-point-classic",
+   "xite_vs_babylon_addon": {
+    "frame": 4.5,
+    "geometry": 48.19
+   },
+   "xite_vs_castle": {
+    "frame": 0.94,
+    "geometry": 8.71
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 14.09,
+    "geometry": 154.78
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 4.48,
+      "geometry": 48.04
+     },
+     "castle_native": {
+      "frame": 4.31,
+      "geometry": 47.28
+     },
+     "quality": {
+      "sharpness": 222.7,
+      "p1": 0.0,
+      "p99": 207.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 4.48,
+      "geometry": 48.04
+     },
+     "castle_native": {
+      "frame": 4.31,
+      "geometry": 47.28
+     },
+     "quality": {
+      "sharpness": 222.7,
+      "p1": 0.0,
+      "p99": 207.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 8.69,
+      "geometry": 94.83
+     },
+     "castle_native": {
+      "frame": 9.37,
+      "geometry": 103.55
+     },
+     "quality": {
+      "sharpness": 28.9,
+      "p1": 0.0,
+      "p99": 74.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "p3-directional-classic-i1",
+   "xite_vs_babylon_addon": {
+    "frame": 0.3,
+    "geometry": 1.5
+   },
+   "xite_vs_castle": {
+    "frame": 0.93,
+    "geometry": 8.52
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 18.27,
+    "geometry": 201.11
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.3,
+      "geometry": 1.5
+     },
+     "castle_native": {
+      "frame": 0.86,
+      "geometry": 8.99
+     },
+     "quality": {
+      "sharpness": 334.6,
+      "p1": 0.0,
+      "p99": 203.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.3,
+      "geometry": 1.5
+     },
+     "castle_native": {
+      "frame": 0.86,
+      "geometry": 8.99
+     },
+     "quality": {
+      "sharpness": 334.6,
+      "p1": 0.0,
+      "p99": 203.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 6.1,
+      "geometry": 65.9
+     },
+     "castle_native": {
+      "frame": 6.74,
+      "geometry": 74.22
+     },
+     "quality": {
+      "sharpness": 152.4,
+      "p1": 0.0,
+      "p99": 137.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "p4-point-quadratic-physical",
+   "xite_vs_babylon_addon": {
+    "frame": 0.34,
+    "geometry": 3.37
+   },
+   "xite_vs_castle": {
+    "frame": 3.57,
+    "geometry": 39.11
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 4.04,
+    "geometry": 44.46
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.34,
+      "geometry": 3.37
+     },
+     "castle_native": {
+      "frame": 3.45,
+      "geometry": 38.2
+     },
+     "quality": {
+      "sharpness": 16.6,
+      "p1": 0.0,
+      "p99": 56.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.34,
+      "geometry": 3.37
+     },
+     "castle_native": {
+      "frame": 3.45,
+      "geometry": 38.2
+     },
+     "quality": {
+      "sharpness": 16.6,
+      "p1": 0.0,
+      "p99": 56.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 1.37,
+      "geometry": 14.83
+     },
+     "castle_native": {
+      "frame": 2.2,
+      "geometry": 24.28
+     },
+     "quality": {
+      "sharpness": 28.3,
+      "p1": 0.0,
+      "p99": 73.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "p5-directional-physical-i03",
+   "xite_vs_babylon_addon": {
+    "frame": 0.08,
+    "geometry": 0.2
+   },
+   "xite_vs_castle": {
+    "frame": 0.17,
+    "geometry": 1.17
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 6.98,
+    "geometry": 76.9
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.08,
+      "geometry": 0.2
+     },
+     "castle_native": {
+      "frame": 0.11,
+      "geometry": 0.99
+     },
+     "quality": {
+      "sharpness": 49.4,
+      "p1": 0.0,
+      "p99": 78.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.08,
+      "geometry": 0.2
+     },
+     "castle_native": {
+      "frame": 0.11,
+      "geometry": 0.99
+     },
+     "quality": {
+      "sharpness": 49.4,
+      "p1": 0.0,
+      "p99": 78.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.08,
+      "geometry": 0.2
+     },
+     "castle_native": {
+      "frame": 0.11,
+      "geometry": 0.99
+     },
+     "quality": {
+      "sharpness": 49.4,
+      "p1": 0.0,
+      "p99": 78.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 3,
+      "triangles": 36,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "stilllife-direct",
+   "xite_vs_babylon_addon": {
+    "frame": 0.35,
+    "geometry": 0.47
+   },
+   "xite_vs_castle": {
+    "frame": 0.46,
+    "geometry": 0.63
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 27.53,
+    "geometry": 40.44
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.35,
+      "geometry": 0.47
+     },
+     "castle_native": {
+      "frame": 0.42,
+      "geometry": 0.62
+     },
+     "quality": {
+      "sharpness": 168.4,
+      "p1": 0.0,
+      "p99": 122.2,
+      "clip_share": 0.0021
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 27560,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.35,
+      "geometry": 0.47
+     },
+     "castle_native": {
+      "frame": 0.42,
+      "geometry": 0.62
+     },
+     "quality": {
+      "sharpness": 168.4,
+      "p1": 0.0,
+      "p99": 122.2,
+      "clip_share": 0.0021
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 27560,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.35,
+      "geometry": 0.47
+     },
+     "castle_native": {
+      "frame": 0.42,
+      "geometry": 0.62
+     },
+     "quality": {
+      "sharpness": 168.4,
+      "p1": 0.0,
+      "p99": 122.2,
+      "clip_share": 0.0021
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 27560,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 1,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "earth-planet",
+   "xite_vs_babylon_addon": {
+    "frame": 0.4,
+    "geometry": 8.5
+   },
+   "xite_vs_castle": {
+    "frame": 0.12,
+    "geometry": 2.38
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 4.86,
+    "geometry": 105.02
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.4,
+      "geometry": 8.5
+     },
+     "castle_native": {
+      "frame": 0.32,
+      "geometry": 6.87
+     },
+     "quality": {
+      "sharpness": 250.1,
+      "p1": 0.0,
+      "p99": 23.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 5120,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 1,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.4,
+      "geometry": 8.5
+     },
+     "castle_native": {
+      "frame": 0.32,
+      "geometry": 6.87
+     },
+     "quality": {
+      "sharpness": 250.1,
+      "p1": 0.0,
+      "p99": 23.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 5120,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 1,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 2.51,
+      "geometry": 54.21
+     },
+     "castle_native": {
+      "frame": 2.49,
+      "geometry": 53.79
+     },
+     "quality": {
+      "sharpness": 274.3,
+      "p1": 0.0,
+      "p99": 71.8,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 5120,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 1,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "villagers",
+   "xite_vs_babylon_addon": {
+    "frame": 0.97,
+    "geometry": 119.07
+   },
+   "xite_vs_castle": {
+    "frame": 0.88,
+    "geometry": 0.0
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 0.88,
+    "geometry": 0.0
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.88,
+      "geometry": 0.0
+     },
+     "castle_native": {
+      "frame": 0.0,
+      "geometry": 0.0
+     },
+     "quality": {
+      "sharpness": 0.0,
+      "p1": 0.0,
+      "p99": 0.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 12,
+      "triangles": 4496,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 12,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.88,
+      "geometry": 0.0
+     },
+     "castle_native": {
+      "frame": 0.0,
+      "geometry": 0.0
+     },
+     "quality": {
+      "sharpness": 0.0,
+      "p1": 0.0,
+      "p99": 0.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 12,
+      "triangles": 4496,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 12,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.88,
+      "geometry": 0.0
+     },
+     "castle_native": {
+      "frame": 0.0,
+      "geometry": 0.0
+     },
+     "quality": {
+      "sharpness": 0.0,
+      "p1": 0.0,
+      "p99": 0.0,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 12,
+      "triangles": 4496,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 12,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "earth-clouds",
+   "xite_vs_babylon_addon": {
+    "frame": 3.57,
+    "geometry": 102.93
+   },
+   "xite_vs_castle": {
+    "frame": 0.09,
+    "geometry": 1.96
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 2.88,
+    "geometry": 82.83
+   },
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.09,
+      "geometry": 2.05
+     },
+     "castle_native": {
+      "frame": 0.02,
+      "geometry": 0.52
+     },
+     "quality": {
+      "sharpness": 125.7,
+      "p1": 0.0,
+      "p99": 22.4,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 2267,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 1,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.09,
+      "geometry": 2.05
+     },
+     "castle_native": {
+      "frame": 0.02,
+      "geometry": 0.52
+     },
+     "quality": {
+      "sharpness": 125.7,
+      "p1": 0.0,
+      "p99": 22.4,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 2267,
+      "lights": 1,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 1,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.3,
+      "geometry": 8.21
+     },
+     "castle_native": {
+      "frame": 0.24,
+      "geometry": 6.99
+     },
+     "quality": {
+      "sharpness": 171.9,
+      "p1": 0.0,
+      "p99": 37.5,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 1,
+      "triangles": 2267,
+      "lights": 0,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 1,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  },
+  {
+   "scene": "chirp",
+   "xite_vs_babylon_addon": {
+    "frame": 0.0,
+    "geometry": 1.48
+   },
+   "xite_vs_castle": {
+    "frame": 6.98,
+    "geometry": 0.17
+   },
+   "xite_vs_babylon_stockglb": null,
+   "variants": {
+    "rigcam": {
+     "xite": {
+      "frame": 0.0,
+      "geometry": 1.49
+     },
+     "castle_native": {
+      "frame": 6.99,
+      "geometry": 1.58
+     },
+     "quality": {
+      "sharpness": 2.4,
+      "p1": 3.1,
+      "p99": 3.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 2,
+      "triangles": 2280,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "self": {
+     "xite": {
+      "frame": 0.0,
+      "geometry": 1.49
+     },
+     "castle_native": {
+      "frame": 6.99,
+      "geometry": 1.58
+     },
+     "quality": {
+      "sharpness": 2.4,
+      "p1": 3.1,
+      "p99": 3.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 2,
+      "triangles": 2280,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    },
+    "naive": {
+     "xite": {
+      "frame": 0.0,
+      "geometry": 1.49
+     },
+     "castle_native": {
+      "frame": 6.99,
+      "geometry": 1.58
+     },
+     "quality": {
+      "sharpness": 2.4,
+      "p1": 3.1,
+      "p99": 3.1,
+      "clip_share": 0.0
+     },
+     "info": {
+      "shapes": 2,
+      "triangles": 2280,
+      "lights": 3,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  }
+ ]
+}

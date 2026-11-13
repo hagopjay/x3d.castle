@@ -1,0 +1,25 @@
+x3d-castle-convert: Warning: DirectionalLight(Key) does not know the world transformation, results (like shadow maps) may be incorrect
+[export] Viewpoint "Front": fov 0.7000 rad
+[export] 17 active shapes
+[export] shape 0 shape_0: 124 verts, 360 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 shape_1: 124 verts, 360 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 ControlPolygon: 5 verts, 8 indices, mode 1, material 2, uv=n col=n nrm=n
+[export] shape 3 CurveAsDrawn: 121 verts, 240 indices, mode 1, material 3, uv=n col=n nrm=n
+[export] shape 4 PieglTillerDots: 61 verts, 61 indices, mode 0, material 4, uv=n col=n nrm=n
+[export] shape 5 shape_5: 651 verts, 3420 indices, mode 4, material 5, uv=n col=n nrm=y
+[export] shape 6 shape_6: 651 verts, 3420 indices, mode 4, material 6, uv=n col=n nrm=y
+[export] shape 7 shape_7: 651 verts, 3420 indices, mode 4, material 7, uv=n col=n nrm=y
+[export] shape 8 shape_8: 651 verts, 3420 indices, mode 4, material 8, uv=n col=n nrm=y
+[export] shape 9 shape_9: 651 verts, 3420 indices, mode 4, material 9, uv=n col=n nrm=y
+[export] shape 10 shape_10: 651 verts, 3420 indices, mode 4, material 10, uv=n col=n nrm=y
+[export] shape 11 shape_11: 651 verts, 3420 indices, mode 4, material 11, uv=n col=n nrm=y
+[export] shape 12 shape_12: 651 verts, 3420 indices, mode 4, material 12, uv=n col=n nrm=y
+[export] shape 13 shape_13: 651 verts, 3420 indices, mode 4, material 13, uv=n col=n nrm=y
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): ///Text
+[export] light units AUTO: classic scene (11 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.357
+[export] light Key: directional, X3D intensity 2.400 written 21.1427
+[export] light Key: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light WarmFill: reference distance 5.108, attenuation factor 0.6571, written 28.7143 (X3D intensity 0.900)
+[export] light MaroonRim: reference distance 5.196, attenuation factor 0.6494, written 117.7129 (X3D intensity 1.800)
+[export] light Soft: directional, X3D intensity 0.350 written 0.4303
+[export] light Soft: global=false (X3D scopes it to its parent group; glTF lights are global)

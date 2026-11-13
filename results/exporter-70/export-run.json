@@ -1,0 +1,702 @@
+[
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__annotation-standard",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/annotation-standard.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__annotation-standard.glb",
+  "rc": 0,
+  "seconds": 0.09,
+  "ok": true,
+  "bytes": 38588
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__annotation",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/annotation.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__annotation.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 15024
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/ellipsoid-earth.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 700
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/ellipsoid-moon.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 700
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/geolod-no-origin.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 452
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__geolod-origin",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/geolod-origin.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__geolod-origin.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 452
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__lights-after",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lights-after.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__lights-after.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 24292
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__lights-before",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lights-before.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__lights-before.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 24292
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__lod-control",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lod-control.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__lod-control.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 2216
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__lod-scaled",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lod-scaled.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__lod-scaled.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 2336
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/nurbs-weights-premultiplied.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 181844
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__nurbs-weights",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/nurbs-weights.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 229044
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/profile-tables-fixed.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 44516
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__profile-tables",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/profile-tables.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables.glb",
+  "rc": 0,
+  "seconds": 0.08,
+  "ok": true,
+  "bytes": 44516
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/quaternion-wxyz.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 11536
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/quaternion-xyzw.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 11536
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__repair-0-written",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-0-written.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__repair-0-written.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 94428
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__repair-1-validator",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-1-validator.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__repair-1-validator.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 94428
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__repair-2-render",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-2-render.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__repair-2-render.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 94320
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__stars-splats",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stars-splats.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__stars-splats.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 700
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__stars-view",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stars-view.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__stars-view.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 524
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-splats-24k.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k.glb",
+  "rc": 0,
+  "seconds": 0.07,
+  "ok": true,
+  "bytes": 896
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-stage",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-stage.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-stage.glb",
+  "rc": 0,
+  "seconds": 0.2,
+  "ok": true,
+  "bytes": 1240888
+ },
+ {
+  "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40",
+  "x3d": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-x3d40.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40.glb",
+  "rc": 0,
+  "seconds": 0.14,
+  "ok": true,
+  "bytes": 1240732
+ },
+ {
+  "key": "docs__demos__confluence-ifc__v1__snapshot__scene-0",
+  "x3d": "x3d.demo/docs/demos/confluence-ifc/v1/snapshot/scene-0.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__confluence-ifc__v1__snapshot__scene-0.glb",
+  "rc": 0,
+  "seconds": 0.1,
+  "ok": true,
+  "bytes": 324292
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/darwin_wedgwood.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood.glb",
+  "rc": 0,
+  "seconds": 0.2,
+  "ok": true,
+  "bytes": 72568
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__habsburg",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/habsburg.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__habsburg.glb",
+  "rc": 0,
+  "seconds": 0.15,
+  "ok": true,
+  "bytes": 76420
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/hyper-darwin_wedgwood.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood.glb",
+  "rc": 0,
+  "seconds": 0.15,
+  "ok": true,
+  "bytes": 828980
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/hyper-habsburg.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg.glb",
+  "rc": 0,
+  "seconds": 0.18,
+  "ok": true,
+  "bytes": 978704
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/hyper-rothschild.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild.glb",
+  "rc": 0,
+  "seconds": 0.24,
+  "ok": true,
+  "bytes": 1388256
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/pocket-darwin_wedgwood.x3d",
+  "webp_prepass": true,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood.glb",
+  "rc": 0,
+  "seconds": 0.2,
+  "ok": true,
+  "bytes": 2592144
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/pocket-habsburg.x3d",
+  "webp_prepass": true,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg.glb",
+  "rc": 0,
+  "seconds": 0.26,
+  "ok": true,
+  "bytes": 3815036
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/pocket-rothschild.x3d",
+  "webp_prepass": true,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild.glb",
+  "rc": 0,
+  "seconds": 0.35,
+  "ok": true,
+  "bytes": 5771188
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__rothschild",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/rothschild.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__rothschild.glb",
+  "rc": 0,
+  "seconds": 0.23,
+  "ok": true,
+  "bytes": 88424
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-darwin_wedgwood.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood.glb",
+  "rc": 0,
+  "seconds": 0.15,
+  "ok": true,
+  "bytes": 828980
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-habsburg.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg.glb",
+  "rc": 0,
+  "seconds": 0.2,
+  "ok": true,
+  "bytes": 978704
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-rothschild.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild.glb",
+  "rc": 0,
+  "seconds": 0.24,
+  "ok": true,
+  "bytes": 1388256
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-darwin_wedgwood.x3d",
+  "webp_prepass": true,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood.glb",
+  "rc": 0,
+  "seconds": 0.19,
+  "ok": true,
+  "bytes": 2592144
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-habsburg.x3d",
+  "webp_prepass": true,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg.glb",
+  "rc": 0,
+  "seconds": 0.24,
+  "ok": true,
+  "bytes": 3815036
+ },
+ {
+  "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild",
+  "x3d": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-rothschild.x3d",
+  "webp_prepass": true,
+  "glb": "new3/glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild.glb",
+  "rc": 0,
+  "seconds": 0.36,
+  "ok": true,
+  "bytes": 5771188
+ },
+ {
+  "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-clouds.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 287544
+ },
+ {
+  "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-moon.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 147792
+ },
+ {
+  "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-planet.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet.glb",
+  "rc": 0,
+  "seconds": 0.08,
+  "ok": true,
+  "bytes": 585568
+ },
+ {
+  "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/village.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village.glb",
+  "rc": 0,
+  "seconds": 0.17,
+  "ok": true,
+  "bytes": 2413304
+ },
+ {
+  "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers",
+  "x3d": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/villagers.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 580660
+ },
+ {
+  "key": "docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3",
+  "x3d": "x3d.demo/docs/demos/gobbler-gyroscope-webgpu/v1/gobbler3.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3.glb",
+  "rc": 0,
+  "seconds": 0.17,
+  "ok": true,
+  "bytes": 1088224
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/drillfield.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield.glb",
+  "rc": 0,
+  "seconds": 0.28,
+  "ok": true,
+  "bytes": 7575920
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/sky.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 122904
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/giza-nest.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest.glb",
+  "rc": 0,
+  "seconds": 0.08,
+  "ok": true,
+  "bytes": 666008
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sky.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 122904
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/materials.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials.glb",
+  "rc": 0,
+  "seconds": 0.28,
+  "ok": true,
+  "bytes": 2164084
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/sky.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky.glb",
+  "rc": 0,
+  "seconds": 0.06,
+  "ok": true,
+  "bytes": 122904
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/pantheon/pantheon.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon.glb",
+  "rc": 0,
+  "seconds": 0.09,
+  "ok": true,
+  "bytes": 700
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/pantheon/sky.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 122904
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__source__bird",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/source/bird.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__source__bird.glb",
+  "rc": 0,
+  "seconds": 0.27,
+  "ok": true,
+  "bytes": 3930360
+ },
+ {
+  "key": "docs__demos__gobbler-worlds-within__v1__source__giza-nest",
+  "x3d": "x3d.demo/docs/demos/gobbler-worlds-within/v1/source/giza-nest.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler-worlds-within__v1__source__giza-nest.glb",
+  "rc": 0,
+  "seconds": 0.09,
+  "ok": true,
+  "bytes": 665692
+ },
+ {
+  "key": "docs__demos__gobbler3-webgpu__v1__gobbler3",
+  "x3d": "x3d.demo/docs/demos/gobbler3-webgpu/v1/gobbler3.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__gobbler3-webgpu__v1__gobbler3.glb",
+  "rc": 0,
+  "seconds": 0.09,
+  "ok": true,
+  "bytes": 565900
+ },
+ {
+  "key": "docs__demos__heritage-facade__v1__facade",
+  "x3d": "x3d.demo/docs/demos/heritage-facade/v1/facade.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__heritage-facade__v1__facade.glb",
+  "rc": 0,
+  "seconds": 0.14,
+  "ok": true,
+  "bytes": 452
+ },
+ {
+  "key": "docs__demos__library-hall-webgpu__v1__hall",
+  "x3d": "x3d.demo/docs/demos/library-hall-webgpu/v1/hall.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__library-hall-webgpu__v1__hall.glb",
+  "rc": 0,
+  "seconds": 2.45,
+  "ok": true,
+  "bytes": 30095952
+ },
+ {
+  "key": "docs__demos__loomsong__v1__worlds__ode",
+  "x3d": "x3d.demo/docs/demos/loomsong/v1/worlds/ode.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__loomsong__v1__worlds__ode.glb",
+  "rc": 0,
+  "seconds": 0.25,
+  "ok": true,
+  "bytes": 1201176
+ },
+ {
+  "key": "docs__demos__loomsong__v1__worlds__turca",
+  "x3d": "x3d.demo/docs/demos/loomsong/v1/worlds/turca.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__loomsong__v1__worlds__turca.glb",
+  "rc": 0,
+  "seconds": 0.29,
+  "ok": true,
+  "bytes": 1807648
+ },
+ {
+  "key": "docs__demos__manifold-webgpu__v1__scenes__manifold",
+  "x3d": "x3d.demo/docs/demos/manifold-webgpu/v1/scenes/manifold.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__manifold-webgpu__v1__scenes__manifold.glb",
+  "rc": 0,
+  "seconds": 0.42,
+  "ok": true,
+  "bytes": 12682592
+ },
+ {
+  "key": "docs__demos__material-odyssey-webgpu__v1__odyssey",
+  "x3d": "x3d.demo/docs/demos/material-odyssey-webgpu/v1/odyssey.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__material-odyssey-webgpu__v1__odyssey.glb",
+  "rc": 0,
+  "seconds": 1.98,
+  "ok": true,
+  "bytes": 33878504
+ },
+ {
+  "key": "docs__demos__ontology-constellation__v1__ontology-constellation",
+  "x3d": "x3d.demo/docs/demos/ontology-constellation/v1/ontology-constellation.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__ontology-constellation__v1__ontology-constellation.glb",
+  "rc": 0,
+  "seconds": 0.31,
+  "ok": true,
+  "bytes": 9567040
+ },
+ {
+  "key": "docs__demos__stem__v1__chirp__scenes__chirp",
+  "x3d": "x3d.demo/docs/demos/stem/v1/chirp/scenes/chirp.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__stem__v1__chirp__scenes__chirp.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 48424
+ },
+ {
+  "key": "docs__demos__stem__v1__electron-cloud__scenes__cloud",
+  "x3d": "x3d.demo/docs/demos/stem/v1/electron-cloud/scenes/cloud.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__stem__v1__electron-cloud__scenes__cloud.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 26372
+ },
+ {
+  "key": "docs__demos__stem__v1__living-heart__scenes__heart",
+  "x3d": "x3d.demo/docs/demos/stem/v1/living-heart/scenes/heart.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__stem__v1__living-heart__scenes__heart.glb",
+  "rc": 0,
+  "seconds": 0.05,
+  "ok": true,
+  "bytes": 1644
+ },
+ {
+  "key": "docs__demos__stem__v1__turing-garden__scenes__garden",
+  "x3d": "x3d.demo/docs/demos/stem/v1/turing-garden/scenes/garden.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__stem__v1__turing-garden__scenes__garden.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 2840
+ },
+ {
+  "key": "docs__demos__stem__v1__vortex-sound__scenes__vortex",
+  "x3d": "x3d.demo/docs/demos/stem/v1/vortex-sound/scenes/vortex.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__stem__v1__vortex-sound__scenes__vortex.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 1736
+ },
+ {
+  "key": "docs__demos__tether-firehose__v4__data__physics-ledger",
+  "x3d": "x3d.demo/docs/demos/tether-firehose/v4/data/physics-ledger.x3d",
+  "webp_prepass": false,
+  "glb": "new3/glb/docs__demos__tether-firehose__v4__data__physics-ledger.glb",
+  "rc": 0,
+  "seconds": 0.04,
+  "ok": true,
+  "bytes": 700
+ }
+]

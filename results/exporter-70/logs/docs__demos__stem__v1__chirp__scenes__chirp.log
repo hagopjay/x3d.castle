@@ -1,0 +1,14 @@
+[export] Viewpoint "Close": fov 0.7000 rad
+[export] 5 active shapes
+[export] shape 0 Hole1Sphere: 651 verts, 3420 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 Hole2Sphere: 651 verts, 3420 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] WARNING: shape with no vertices skipped: /System/Trail1/IndexedLineSet(Trail1Lines)
+[export] WARNING: shape with no vertices skipped: /System/Trail2/IndexedLineSet(Trail2Lines)
+[export] WARNING: shape with no vertices skipped: /System/Ripple/IndexedTriangleSet(RippleGeom)
+[export] light units AUTO: physical scene (0 classic-Material shapes, 2 PhysicalMaterial shapes), median albedo 0.800
+[export] light light_0: directional, X3D intensity 2.200 written 2.2000
+[export] light light_0: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light light_1: directional, X3D intensity 1.000 written 1.0000
+[export] light light_1: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light light_2: directional, X3D intensity 0.500 written 0.5000
+[export] light light_2: global=false (X3D scopes it to its parent group; glTF lights are global)

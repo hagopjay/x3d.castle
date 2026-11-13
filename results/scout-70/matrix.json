@@ -1,0 +1,4146 @@
+{
+ "meta": {
+  "tool": [
+   "5.3.0"
+  ],
+  "hardware": "no GPU: Mesa llvmpipe (LLVM 20.1.2, 256-bit), 4 vCPU, Xvfb 24-bit",
+  "size": 512,
+  "anti_alias": 0,
+  "wall_seconds": 38.3,
+  "scenes": 70
+ },
+ "rows": [
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__annotation-standard",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/annotation-standard.x3d",
+   "bytes": 3858,
+   "sha1": "4afcfe5200e6",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/annotation-standard.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model shou#X3D V4.0 utf8\n\nPROFILE Immersive\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"annotation-standard.x3d\"\nMETA \"title\" \"annotation-standard\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: X_ITE 16.4.3 ships an unregistered Annotation component (clause 43 of the X3D v4",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.64,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__annotation-standard.png",
+    "stats": {
+     "mean_rgb": [
+      24.5,
+      15.4,
+      9.2
+     ],
+     "corner_rgb": [
+      17,
+      12,
+      8
+     ],
+     "non_background_share": 0.715,
+     "unique_colours": 1232,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 45560,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__annotation-standard.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__annotation",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/annotation.x3d",
+   "bytes": 3922,
+   "sha1": "a3fb2607b4f1",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"AnnotationTarget\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"AnnotationTarget:TX3DUnknownNode(GemNote)\" inside node \"Transform(Note)\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/annotation.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work i#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Annotation:1\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"annotation.x3d\"\nMETA \"title\" \"annotation\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: X_ITE 16.4.3 ships an unregistered Annotation component (clause 43 of the ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.6,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__annotation.png",
+    "stats": {
+     "mean_rgb": [
+      25.8,
+      16.9,
+      9.9
+     ],
+     "corner_rgb": [
+      17,
+      12,
+      8
+     ],
+     "non_background_share": 0.732,
+     "unique_colours": 783,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 16388,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__annotation.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"AnnotationTarget\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"AnnotationTarget:TX3DUnknownNode(GemNote)\" inside node \"Transform(Note)\"",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/ellipsoid-earth.x3d",
+   "bytes": 2213,
+   "sha1": "5f123b492eb3",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/ellipsoid-earth.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Geospatial:1\n\nMETA \"title\" \"R3 GeoElevationGrid with geoSystem GD WE\"\nMETA \"creator\" \"[creator string redacted]\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"ellipsoid-earth.x3d\"\n\nGeoViewpoint {\n\tnavType [\n\t\t\"EXAMINE\",\n\t\t\"ANY\",\n\t]\n\tposit",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.56,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 360,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-earth.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TGeoElevationGridNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/ellipsoid-moon.x3d",
+   "bytes": 2217,
+   "sha1": "725a9b9fdb9f",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/ellipsoid-moon.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wo#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Geospatial:1\n\nMETA \"title\" \"R3 GeoElevationGrid with geoSystem GD MOON\"\nMETA \"creator\" \"[creator string redacted]\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"ellipsoid-moon.x3d\"\n\nGeoViewpoint {\n\tnavType [\n\t\t\"EXAMINE\",\n\t\t\"ANY\",\n\t]\n\tposi",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.58,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 360,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__ellipsoid-moon.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TGeoElevationGridNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/geolod-no-origin.x3d",
+   "bytes": 3729,
+   "sha1": "e6087f108a17",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/geolod-no-origin.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Geospatial:1\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"geolod-no-origin.x3d\"\nMETA \"title\" \"geolod-origin\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: the X3D 4.0 XSD content model for GeoLOD is an optional sequence ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.58,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin.png",
+    "stats": {
+     "mean_rgb": [
+      9.0,
+      7.0,
+      5.0
+     ],
+     "corner_rgb": [
+      9,
+      7,
+      5
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 244,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__geolod-no-origin.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__geolod-origin",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/geolod-origin.x3d",
+   "bytes": 3764,
+   "sha1": "9dc62c8580cf",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/geolod-origin.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wor#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Geospatial:1\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"geolod-origin.x3d\"\nMETA \"title\" \"geolod-origin\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: the X3D 4.0 XSD content model for GeoLOD is an optional sequence (ro",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.56,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__geolod-origin.png",
+    "stats": {
+     "mean_rgb": [
+      9.0,
+      7.0,
+      5.0
+     ],
+     "corner_rgb": [
+      9,
+      7,
+      5
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 244,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__geolod-origin.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lights-after",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/lights-after.x3d",
+   "bytes": 39254,
+   "sha1": "ac32fc705379",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lights-after.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"Web3D X3D/VRML2 format v2.5.1\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"filename\" \"after.x3d\"\nMETA \"license\" \"NONE\"\nMETA \"source\" \"lights-after.x3d\"\n\nNavigationInfo {\n\tavatarSize [\n\t\t0.25, 1.6000000238418579",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.65,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__lights-after.png",
+    "stats": {
+     "mean_rgb": [
+      115.3,
+      88.1,
+      72.4
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.874,
+     "unique_colours": 2690,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 20832,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__lights-after.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lights-before",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/lights-before.x3d",
+   "bytes": 39233,
+   "sha1": "5a27987f8830",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lights-before.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wor#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"Web3D X3D/VRML2 format v2.5.1\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"filename\" \"before.x3d\"\nMETA \"license\" \"NONE\"\nMETA \"source\" \"lights-before.x3d\"\n\nNavigationInfo {\n\tavatarSize [\n\t\t0.25, 1.60000002384185",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.76,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__lights-before.png",
+    "stats": {
+     "mean_rgb": [
+      73.4,
+      53.2,
+      41.3
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.752,
+     "unique_colours": 3085,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 20832,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__lights-before.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lod-control",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/lod-control.x3d",
+   "bytes": 693,
+   "sha1": "651c99828bfd",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lod-control.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work #X3D V4.0 utf8\n\nPROFILE Immersive\n\nMETA \"title\" \"R4 control: LOD range 5, no scale, viewer 10 away\"\nMETA \"creator\" \"[creator string redacted]\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"lod-control.x3d\"\n\nViewpoint {\n\tdescription \"10 units away\"\n}\nNavigationInfo {\n\tavatarSize [\n\t\t",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.69,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__lod-control.png",
+    "stats": {
+     "mean_rgb": [
+      17.4,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.073,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 3800,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__lod-control.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__lod-scaled",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/lod-scaled.x3d",
+   "bytes": 754,
+   "sha1": "117ef813abc7",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/lod-scaled.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work i#X3D V4.0 utf8\n\nPROFILE Immersive\n\nMETA \"title\" \"R4 LOD range under Transform scale 0.001\"\nMETA \"creator\" \"[creator string redacted]\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"lod-scaled.x3d\"\n\nViewpoint {\n\tdescription \"10 units away\"\n}\nNavigationInfo {\n\tavatarSize [\n\t\t0.25, 1.60",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.61,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__lod-scaled.png",
+    "stats": {
+     "mean_rgb": [
+      17.4,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.073,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 3928,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__lod-scaled.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/nurbs-weights-premultiplied.x3d",
+   "bytes": 7800,
+   "sha1": "17581a5fae09",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/nurbs-weights-premultiplied.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This mo#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT NURBS:1\nCOMPONENT Shape:5\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"nurbs-weights-premultiplied.x3d\"\nMETA \"title\" \"nurbs-weights-premultiplied\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: X3D 4.0 clause 27 holds Nur",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.67,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied.png",
+    "stats": {
+     "mean_rgb": [
+      26.3,
+      14.3,
+      12.4
+     ],
+     "corner_rgb": [
+      13,
+      9,
+      7
+     ],
+     "non_background_share": 0.775,
+     "unique_colours": 1830,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 215640,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights-premultiplied.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TNurbsCurveNode, proxy to TLineSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__nurbs-weights",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/nurbs-weights.x3d",
+   "bytes": 8548,
+   "sha1": "cbcc86f123f2",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/nurbs-weights.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wor#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT NURBS:1\nCOMPONENT Shape:5\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"nurbs-weights.x3d\"\nMETA \"title\" \"nurbs-weights\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: X3D 4.0 clause 27 holds NurbsCurve control points and w",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.73,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights.png",
+    "stats": {
+     "mean_rgb": [
+      28.1,
+      16.1,
+      13.0
+     ],
+     "corner_rgb": [
+      13,
+      9,
+      7
+     ],
+     "non_background_share": 0.772,
+     "unique_colours": 2596,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 273836,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__nurbs-weights.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TNurbsCurveNode, proxy to TLineSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/profile-tables-fixed.x3d",
+   "bytes": 3671,
+   "sha1": "84a44cebf46c",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/profile-tables-fixed.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model sho#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"profile-tables-fixed.x3d\"\nMETA \"title\" \"profile-tables\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: a PhysicalMaterial sphere under profile Immersive. X3D 4.0 Annex ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.69,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed.png",
+    "stats": {
+     "mean_rgb": [
+      25.5,
+      17.6,
+      11.3
+     ],
+     "corner_rgb": [
+      18,
+      13,
+      8
+     ],
+     "non_background_share": 0.783,
+     "unique_colours": 3074,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 53000,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables-fixed.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__profile-tables",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/profile-tables.x3d",
+   "bytes": 3631,
+   "sha1": "a145917fcef6",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/profile-tables.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wo#X3D V4.0 utf8\n\nPROFILE Immersive\n\nMETA \"generator-previous\" \"hand-written Python generator, X3D research showcase\"\nMETA \"source\" \"profile-tables.x3d\"\nMETA \"title\" \"profile-tables\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Repro for a spec question: a PhysicalMaterial sphere under profile Immersive. X3D 4.0 Annex E Table E.2 with Table 12",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.72,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__profile-tables.png",
+    "stats": {
+     "mean_rgb": [
+      25.5,
+      17.6,
+      11.3
+     ],
+     "corner_rgb": [
+      18,
+      13,
+      8
+     ],
+     "non_background_share": 0.783,
+     "unique_colours": 3074,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "bytes": 53000,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__profile-tables.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/quaternion-wxyz.x3d",
+   "bytes": 19467,
+   "sha1": "820c7567521d",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(Splats)\" inside node \"Transform(Medallion)\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/quaternion-wxyz.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT GaussianSplats:1\n\nMETA \"creator\" \"HagopJay\"\nMETA \"source\" \"quaternion-wxyz.x3d\"\nMETA \"description\" \"Repro for a spec question: the X3D 4.1 draft GaussianSplats node types orientations as MFQuaternion and does not state the component order. This file writes 197 anisotropic splats (a medallion: tange",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.67,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz.png",
+    "stats": {
+     "mean_rgb": [
+      18.5,
+      12.3,
+      7.9
+     ],
+     "corner_rgb": [
+      16,
+      11,
+      7
+     ],
+     "non_background_share": 0.737,
+     "unique_colours": 531,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 12380,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-wxyz.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(Splats)\" inside node \"Transform(Medallion)\"",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/quaternion-xyzw.x3d",
+   "bytes": 19467,
+   "sha1": "edb64dc8bca0",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(Splats)\" inside node \"Transform(Medallion)\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/quaternion-xyzw.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT GaussianSplats:1\n\nMETA \"creator\" \"HagopJay\"\nMETA \"source\" \"quaternion-xyzw.x3d\"\nMETA \"description\" \"Repro for a spec question: the X3D 4.1 draft GaussianSplats node types orientations as MFQuaternion and does not state the component order. This file writes 197 anisotropic splats (a medallion: tange",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.71,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw.png",
+    "stats": {
+     "mean_rgb": [
+      18.5,
+      12.3,
+      7.9
+     ],
+     "corner_rgb": [
+      16,
+      11,
+      7
+     ],
+     "non_background_share": 0.737,
+     "unique_colours": 532,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 12380,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__quaternion-xyzw.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(Splats)\" inside node \"Transform(Medallion)\"",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__repair-0-written",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/repair-0-written.x3d",
+   "bytes": 2679,
+   "sha1": "6708423751c2",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-0-written.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT EnvironmentalEffects:3\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"repair-0-written.x3d\"\n\nWorldInfo {\n\ttitle \"Solar System X3D 4.0\"\n}\nViewpoint {\n\tposition 0 20 60\n\tdescription \"Solar System Overview\"\n\torientation 1 0 0 -0.3000000119209",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.7,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__repair-0-written.png",
+    "stats": {
+     "mean_rgb": [
+      3.2,
+      3.2,
+      2.1
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.016,
+     "unique_colours": 1185,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 115512,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__repair-0-written.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__repair-1-validator",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/repair-1-validator.x3d",
+   "bytes": 2709,
+   "sha1": "dc2e13a74e23",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-1-validator.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model shoul#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT EnvironmentalEffects:3\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"repair-1-validator.x3d\"\n\nWorldInfo {\n\ttitle \"Solar System X3D 4.0\"\n}\nViewpoint {\n\tposition 0 20 60\n\tdescription \"Solar System Overview\"\n\torientation 1 ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.62,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__repair-1-validator.png",
+    "stats": {
+     "mean_rgb": [
+      3.2,
+      3.2,
+      2.1
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.016,
+     "unique_colours": 1185,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 115500,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__repair-1-validator.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__repair-2-render",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/repair-2-render.x3d",
+   "bytes": 3010,
+   "sha1": "f6bec6425e2d",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/repair-2-render.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Lighting:3\nCOMPONENT EnvironmentalEffects:3\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"repair-2-render.x3d\"\n\nWorldInfo {\n\ttitle \"Solar System X3D 4.0\"\n}\nViewpoint {\n\tposition 0 40 80\n\tdescription \"Solar System Overvie",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.62,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__repair-2-render.png",
+    "stats": {
+     "mean_rgb": [
+      15.7,
+      15.5,
+      26.7
+     ],
+     "corner_rgb": [
+      13,
+      13,
+      26
+     ],
+     "non_background_share": 0.014,
+     "unique_colours": 613,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 115416,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__repair-2-render.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stars-splats",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/stars-splats.x3d",
+   "bytes": 146655,
+   "sha1": "42c6afee5b16",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(StarSplats)\" inside node \"Transform\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stars-splats.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model should work#X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT GaussianSplats:1\n\nMETA \"creator\" \"[creator string redacted]\"\nMETA \"created\" \"11 October 2026\"\nMETA \"description\" \"978 HYG v4.1 stars (plus the Sun) at true 3D positions for the planet-scale zoom, two isotropic splats each: a core sized by absolute magnitude (300 x 10^(-0.12 (M - 4.8))",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.6,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__stars-splats.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 276,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__stars-splats.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(StarSplats)\" inside node \"Transform\""
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stars-view",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/stars-view.x3d",
+   "bytes": 1318,
+   "sha1": "44a3bd02c291",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(StarSplats)\" inside node \"Transform\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stars-view.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model should work i#X3D V4.1 utf8\n\nPROFILE Immersive\n\nMETA \"title\" \"The 978 stars within 50 light-years, as X3D 4.1 Gaussian splats\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Viewer wrapper: Inlines stars-splats.x3d (HYG v4.1 catalogue, two splats per star) with two viewpoints. One unit is one",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.58,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__stars-view.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      3.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      3
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 304,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__stars-view.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(StarSplats)\" inside node \"Transform\""
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/stilllife-splats-24k.x3d",
+   "bytes": 3159852,
+   "sha1": "5f6f1f8f8ad6",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.07,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(GS_StillLifeSplats)\" inside node \"Transform(OB_StillLifeSplats)\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-splats-24k.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model sho#X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT GaussianSplats:1\n\nMETA \"creator\" \"Scene built and rendered in Blender (Cycles); splats trained with gsplat; X3D written by x3d-blender-io\"\nMETA \"keywords\" \"X3D 4.1, GaussianSplats, synthetic data, Blender, Cycles, gsplat\"\nMETA \"description\" \"A Blender still life rendered from 181 known camera poses",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.6,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k.png",
+    "stats": {
+     "mean_rgb": [
+      29.0,
+      26.0,
+      22.0
+     ],
+     "corner_rgb": [
+      29,
+      26,
+      22
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "bytes": 480,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-splats-24k.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(GS_StillLifeSplats)\" inside node \"Transform(OB_StillLifeSplats)\""
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-stage",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/stilllife-stage.x3d",
+   "bytes": 1223,
+   "sha1": "9f60ca40b3ce",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.16,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-stage.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"title\" \"Stage for the Blender export\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Inlines stilllife-x3d40.x3d unchanged. Two additions: a Background whose skyColor is the colour Cycles displays behind the scene: sRGB(",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.8,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__stilllife-stage.png",
+    "stats": {
+     "mean_rgb": [
+      55.9,
+      43.9,
+      36.9
+     ],
+     "corner_rgb": [
+      29,
+      26,
+      22
+     ],
+     "non_background_share": 0.65,
+     "unique_colours": 7680,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.11,
+    "bytes": 376,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-stage.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40",
+   "scene": "docs/demos/blender-x3d-io/v1/scenes/stilllife-x3d40.x3d",
+   "bytes": 1312295,
+   "sha1": "c175e1f18f58",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.11,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/blender-x3d-io/v1/scenes/stilllife-x3d40.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"filename\" \"stilllife-x3d40.x3d\"\nMETA \"description\" \"Exported from Blender by x3d-blender-io (X3D 4.0 PhysicalMaterial path)\"\nMETA \"source\" \"stilllife-x3d40.x3d\"\nMETA \"generator-previous\" \"Web3D X3D/VRML2 format v2.5.1\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.i",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.86,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40.png",
+    "stats": {
+     "mean_rgb": [
+      33.7,
+      26.6,
+      22.5
+     ],
+     "corner_rgb": [
+      1,
+      1,
+      1
+     ],
+     "non_background_share": 0.669,
+     "unique_colours": 6993,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.11,
+    "bytes": 600008,
+    "path": "glb/docs__demos__blender-x3d-io__v1__scenes__stilllife-x3d40.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__confluence-ifc__v1__snapshot__scene-0",
+   "scene": "docs/demos/confluence-ifc/v1/snapshot/scene-0.x3d",
+   "bytes": 291325,
+   "sha1": "3acfb00fc586",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.07,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/confluence-ifc/v1/snapshot/scene-0.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\n\nMETA \"projection:geometrySha256\" \"7f8f15bb43e61451f36e646592c7fdf3130c30adabed291c51dd23dbc789aa8c\"\nMETA \"shadow:sha256\" \"a195dd1b20585beea11b7d8ec5d26746ee70b3258edd8905606dae1d3dfd79d9\"\nMETA \"ifc:sourceSha256\" \"32dc72111d14d91964ba523f8f04ef65e0b6909fd161d5e068ab0cfb5ceef0fb\"\nMETA \"gen",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.6,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__confluence-ifc__v1__snapshot__scene-0.png",
+    "stats": {
+     "mean_rgb": [
+      118.5,
+      7.8,
+      124.1
+     ],
+     "corner_rgb": [
+      9,
+      14,
+      19
+     ],
+     "non_background_share": 0.445,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.08,
+    "bytes": 329972,
+    "path": "glb/docs__demos__confluence-ifc__v1__snapshot__scene-0.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/darwin_wedgwood.x3d",
+   "bytes": 161449,
+   "sha1": "5f57e6c08e3f",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.13,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/darwin_wedgwood.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wor#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Rendering:5\nCOMPONENT Shape:2\n\nMETA \"data\" \"loom-view.json (2aef8ce474a1, built by proto/ingest/ingest.py 0.2.0 (loomview.py))\"\nMETA \"created\" \"2026-10-30\"\nMETA \"description\" \"Tapestry loom (layout v2) for the Darwin\u2013Wedgwood family: time runs up, houses west to east by longitude, latitude as depth",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.73,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood.png",
+    "stats": {
+     "mean_rgb": [
+      30.0,
+      30.2,
+      27.8
+     ],
+     "corner_rgb": [
+      15,
+      13,
+      12
+     ],
+     "non_background_share": 0.268,
+     "unique_colours": 2358,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.19,
+    "bytes": 365628,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__darwin_wedgwood.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__habsburg",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/habsburg.x3d",
+   "bytes": 160377,
+   "sha1": "fd3e78aa08f1",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.11,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/habsburg.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in an#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Rendering:5\nCOMPONENT Shape:2\n\nMETA \"data\" \"loom-view.json (2aef8ce474a1, built by proto/ingest/ingest.py 0.2.0 (loomview.py))\"\nMETA \"created\" \"2026-10-30\"\nMETA \"description\" \"Tapestry loom (layout v2) for the Habsburg family: time runs up, houses west to east by longitude, latitude as depth; each ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.73,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__habsburg.png",
+    "stats": {
+     "mean_rgb": [
+      32.6,
+      29.1,
+      24.3
+     ],
+     "corner_rgb": [
+      15,
+      13,
+      12
+     ],
+     "non_background_share": 0.277,
+     "unique_colours": 1966,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.15,
+    "bytes": 315456,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__habsburg.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/hyper-darwin_wedgwood.x3d",
+   "bytes": 312027,
+   "sha1": "ac8ee7cbed16",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.13,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/hyper-darwin_wedgwood.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model shou#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"generator-previous\" \"nav (orbit camera + hyperbolic lens) on build_hypersphere.py 2.0\"\nMETA \"title\" \"hyper-darwin_wedgwood.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Hos",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.8,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood.png",
+    "stats": {
+     "mean_rgb": [
+      232.1,
+      222.1,
+      205.2
+     ],
+     "corner_rgb": [
+      232,
+      223,
+      205
+     ],
+     "non_background_share": 0.004,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.2,
+    "bytes": 163040,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__hyper-darwin_wedgwood.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/hyper-habsburg.x3d",
+   "bytes": 311590,
+   "sha1": "b4b6ef8e57a1",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.17,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/hyper-habsburg.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"generator-previous\" \"nav (orbit camera + hyperbolic lens) on build_hypersphere.py 2.0\"\nMETA \"title\" \"hyper-habsburg.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Host space",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.83,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg.png",
+    "stats": {
+     "mean_rgb": [
+      232.1,
+      222.1,
+      205.2
+     ],
+     "corner_rgb": [
+      232,
+      223,
+      205
+     ],
+     "non_background_share": 0.004,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.18,
+    "bytes": 163040,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__hyper-habsburg.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/hyper-rothschild.x3d",
+   "bytes": 313756,
+   "sha1": "77384fad2d98",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.22,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/hyper-rothschild.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wo#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"generator-previous\" \"nav (orbit camera + hyperbolic lens) on build_hypersphere.py 2.0\"\nMETA \"title\" \"hyper-rothschild.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Host spa",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.86,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild.png",
+    "stats": {
+     "mean_rgb": [
+      232.1,
+      222.1,
+      205.2
+     ],
+     "corner_rgb": [
+      232,
+      223,
+      205
+     ],
+     "non_background_share": 0.004,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.21,
+    "bytes": 163040,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__hyper-rothschild.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/pocket-darwin_wedgwood.x3d",
+   "bytes": 1240068,
+   "sha1": "d12261d81875",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.13,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/pocket-darwin_wedgwood.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model sho#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"data\" \"proto/merged/loom-view.json (via proto/scene2/out/darwin_wedgwood.cards.json)\"\nMETA \"source\" \"pocket-darwin_wedgwood.x3d\"\nMETA \"description\" \"Dynasty hypersphere, Darwin\u2013Wedgwood: the pocket world, to be Inlined in a host (it EXPORTs i",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.74,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood.png",
+    "stats": {
+     "mean_rgb": [
+      232.0,
+      223.0,
+      205.0
+     ],
+     "corner_rgb": [
+      232,
+      223,
+      205
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.12,
+    "bytes": 415820,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/pocket-habsburg.x3d",
+   "bytes": 1522483,
+   "sha1": "c87a818b28a9",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.13,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/pocket-habsburg.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wor#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"data\" \"proto/merged/loom-view.json (via proto/scene2/out/habsburg.cards.json)\"\nMETA \"source\" \"pocket-habsburg.x3d\"\nMETA \"description\" \"Dynasty hypersphere, Habsburg: the pocket world, to be Inlined in a host (it EXPORTs its shots, Probe, sens",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.77,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg.png",
+    "stats": {
+     "mean_rgb": [
+      232.0,
+      223.0,
+      205.0
+     ],
+     "corner_rgb": [
+      232,
+      223,
+      205
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.16,
+    "bytes": 503936,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__pocket-habsburg.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/pocket-rothschild.x3d",
+   "bytes": 2272432,
+   "sha1": "67c5780bb3cd",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.19,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/pocket-rothschild.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should w#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"data\" \"proto/merged/loom-view.json (via proto/scene2/out/rothschild.cards.json)\"\nMETA \"source\" \"pocket-rothschild.x3d\"\nMETA \"description\" \"Dynasty hypersphere, Rothschild: the pocket world, to be Inlined in a host (it EXPORTs its shots, Probe",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.83,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild.png",
+    "stats": {
+     "mean_rgb": [
+      232.0,
+      223.0,
+      205.0
+     ],
+     "corner_rgb": [
+      232,
+      223,
+      205
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.2,
+    "bytes": 753948,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__pocket-rothschild.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__rothschild",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/rothschild.x3d",
+   "bytes": 209880,
+   "sha1": "4d3cd5a63c5b",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/rothschild.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Rendering:5\nCOMPONENT Shape:2\n\nMETA \"data\" \"loom-view.json (2aef8ce474a1, built by proto/ingest/ingest.py 0.2.0 (loomview.py))\"\nMETA \"created\" \"2026-10-30\"\nMETA \"description\" \"Tapestry loom (layout v2) for the Rothschild family: time runs up, houses west to east by longitude, latitude as depth; eac",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.86,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__rothschild.png",
+    "stats": {
+     "mean_rgb": [
+      52.6,
+      39.0,
+      33.4
+     ],
+     "corner_rgb": [
+      15,
+      13,
+      12
+     ],
+     "non_background_share": 0.355,
+     "unique_colours": 2291,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.17,
+    "bytes": 480644,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__rothschild.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-darwin_wedgwood.x3d",
+   "bytes": 312061,
+   "sha1": "91ff094ca58c",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-darwin_wedgwood.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensi#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"generator-previous\" \"nav (orbit camera + hyperbolic lens) on build_hypersphere.py 2.0\"\nMETA \"title\" \"hyper-darwin_wedgwood.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Hos",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": true
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.83,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood.png",
+    "stats": {
+     "mean_rgb": [
+      16.0,
+      18.9,
+      27.9
+     ],
+     "corner_rgb": [
+      15,
+      19,
+      27
+     ],
+     "non_background_share": 0.004,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "bytes": 163040,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-darwin_wedgwood.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-habsburg.x3d",
+   "bytes": 311624,
+   "sha1": "67a831b1840a",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.16,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-habsburg.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n  #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"generator-previous\" \"nav (orbit camera + hyperbolic lens) on build_hypersphere.py 2.0\"\nMETA \"title\" \"hyper-habsburg.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Host space",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.79,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg.png",
+    "stats": {
+     "mean_rgb": [
+      16.0,
+      18.9,
+      27.9
+     ],
+     "corner_rgb": [
+      15,
+      19,
+      27
+     ],
+     "non_background_share": 0.004,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.18,
+    "bytes": 163040,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-habsburg.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-rothschild.x3d",
+   "bytes": 313790,
+   "sha1": "822f728931a0",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.23,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/hyper-rothschild.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"generator-previous\" \"nav (orbit camera + hyperbolic lens) on build_hypersphere.py 2.0\"\nMETA \"title\" \"hyper-rothschild.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"Host spa",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.87,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild.png",
+    "stats": {
+     "mean_rgb": [
+      16.0,
+      18.9,
+      27.9
+     ],
+     "corner_rgb": [
+      15,
+      19,
+      27
+     ],
+     "non_background_share": 0.004,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.21,
+    "bytes": 163040,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__hyper-rothschild.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-darwin_wedgwood.x3d",
+   "bytes": 1240267,
+   "sha1": "074c9cdae992",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.13,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-darwin_wedgwood.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extens#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"data\" \"proto/merged/loom-view.json (via proto/scene2/out/darwin_wedgwood.cards.json)\"\nMETA \"source\" \"pocket-darwin_wedgwood.x3d\"\nMETA \"description\" \"Dynasty hypersphere, Darwin\u2013Wedgwood: the pocket world, to be Inlined in a host (it EXPORTs i",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": true
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.71,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood.png",
+    "stats": {
+     "mean_rgb": [
+      15.0,
+      19.0,
+      27.0
+     ],
+     "corner_rgb": [
+      15,
+      19,
+      27
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.12,
+    "bytes": 415820,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-darwin_wedgwood.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-habsburg.x3d",
+   "bytes": 1506794,
+   "sha1": "c49076c81408",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.15,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-habsburg.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"data\" \"proto/merged/loom-view.json (via proto/scene2/out/habsburg.cards.json)\"\nMETA \"source\" \"pocket-habsburg.x3d\"\nMETA \"description\" \"Dynasty hypersphere, Habsburg: the pocket world, to be Inlined in a host (it EXPORTs its shots, Probe, sens",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.75,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg.png",
+    "stats": {
+     "mean_rgb": [
+      15.0,
+      19.0,
+      27.0
+     ],
+     "corner_rgb": [
+      15,
+      19,
+      27
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "bytes": 503936,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-habsburg.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild",
+   "scene": "docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-rothschild.x3d",
+   "bytes": 2268251,
+   "sha1": "c061b2557879",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.19,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/dynasty-loom-webgpu/v1/theme/documentary-night/pocket-rothschild.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT Rendering:5\n\nMETA \"data\" \"proto/merged/loom-view.json (via proto/scene2/out/rothschild.cards.json)\"\nMETA \"source\" \"pocket-rothschild.x3d\"\nMETA \"description\" \"Dynasty hypersphere, Rothschild: the pocket world, to be Inlined in a host (it EXPORTs its shots, Probe",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.82,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild.png",
+    "stats": {
+     "mean_rgb": [
+      15.0,
+      19.0,
+      27.0
+     ],
+     "corner_rgb": [
+      15,
+      19,
+      27
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.2,
+    "bytes": 753948,
+    "path": "glb/docs__demos__dynasty-loom-webgpu__v1__theme__documentary-night__pocket-rothschild.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds",
+   "scene": "docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-clouds.x3d",
+   "bytes": 170541,
+   "sha1": "ff698ca4c1b8",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.07,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-clouds.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"earth-clouds.x3d\"\n\nDEF OB_Clouds Transform {\n\tchildren Shape {\n\t\tappearance Appearance {\n\t\t}\n\t\tgeometry DEF ME_Clouds IndexedFaceSet {\n\t\t\tsolid FALSE\n\t\t\tcoordIndex [\n0, 1, 2, -1,\n0, 2,",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.58,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds.png",
+    "stats": {
+     "mean_rgb": [
+      0.9,
+      0.9,
+      0.8
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.018,
+     "unique_colours": 1093,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 52418,
+    "path": "glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-clouds.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon",
+   "scene": "docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-moon.x3d",
+   "bytes": 172666,
+   "sha1": "40c0cf265093",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-moon.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model s#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"earth-moon.x3d\"\n\nDEF OB_Moon Transform {\n\tchildren Shape {\n\t\tappearance Appearance {\n\t\t}\n\t\tgeometry DEF ME_Moon IndexedFaceSet {\n\t\t\tsolid FALSE\n\t\t\tcoordIndex [\n0, 1, 2, -1,\n3, 4, 5, -1",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.59,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon.png",
+    "stats": {
+     "mean_rgb": [
+      0.8,
+      1.0,
+      1.4
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.046,
+     "unique_colours": 91,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 54580,
+    "path": "glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-moon.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet",
+   "scene": "docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-planet.x3d",
+   "bytes": 556130,
+   "sha1": "75992f31ca56",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.07,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/earth-planet.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"earth-planet.x3d\"\n\nDEF OB_Earth Transform {\n\tchildren Shape {\n\t\tappearance Appearance {\n\t\t}\n\t\tgeometry DEF ME_Earth IndexedFaceSet {\n\t\t\tsolid FALSE\n\t\t\tcoordIndex [\n0, 1, 2, -1,\n3, 4, 5",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.62,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet.png",
+    "stats": {
+     "mean_rgb": [
+      0.7,
+      0.9,
+      1.5
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.046,
+     "unique_colours": 168,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.08,
+    "bytes": 172620,
+    "path": "glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__earth-planet.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village",
+   "scene": "docs/demos/gobbler-demiurge-webgpu/v1/data/bird/village.x3d",
+   "bytes": 1577790,
+   "sha1": "033972c3c37b",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/village.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model shou#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"village.x3d\"\n\nDEF OB_Ground Transform {\n\tchildren Shape {\n\t\tappearance Appearance {\n\t\t}\n\t\tgeometry DEF ME_Ground IndexedFaceSet {\n\t\t\tsolid FALSE\n\t\t\tcoordIndex [\n0, 1, 2, -1,\n3, 4, 5, -",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.77,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village.png",
+    "stats": {
+     "mean_rgb": [
+      110.7,
+      84.1,
+      66.6
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.799,
+     "unique_colours": 7776,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "bytes": 547004,
+    "path": "glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__village.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers",
+   "scene": "docs/demos/gobbler-demiurge-webgpu/v1/data/bird/villagers.x3d",
+   "bytes": 157377,
+   "sha1": "d9842be38bdb",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-demiurge-webgpu/v1/data/bird/villagers.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model sh#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT HAnim:1\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"villagers.x3d\"\n\nDEF Villager0 Transform {\n\tchildren Transform {\n\t\tchildren Transform {\n\t\t\tchildren DEF VillagerBody0 Group {\n\t\t\t\tchildren Transform {\n\t\t\t\t\tchildren DEF hanim_T3 HAnimHu",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.69,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "bytes": 3912,
+    "path": "glb/docs__demos__gobbler-demiurge-webgpu__v1__data__bird__villagers.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3",
+   "scene": "docs/demos/gobbler-gyroscope-webgpu/v1/gobbler3.x3d",
+   "bytes": 1985373,
+   "sha1": "a572d2160926",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.16,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-gyroscope-webgpu/v1/gobbler3.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Texturing3D:1\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT ParticleSystems:3\n\nMETA \"x3d-build\" \"Standard X3D 4.0 build. The X_ITE extras build, gobbler-xite.x3d, is the same scene plus X_ITE-only nodes and the standard switches, triggers and ROUTEs that drive them.\"\nMETA \"created\" \"26 October 20",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.77,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3.png",
+    "stats": {
+     "mean_rgb": [
+      252.7,
+      9.7,
+      251.5
+     ],
+     "corner_rgb": [
+      255,
+      0,
+      255
+     ],
+     "non_background_share": 0.27,
+     "unique_colours": 68,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.16,
+    "bytes": 611580,
+    "path": "glb/docs__demos__gobbler-gyroscope-webgpu__v1__gobbler3.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/drillfield.x3d",
+   "bytes": 549839,
+   "sha1": "466987b27a0d",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.09,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/drillfield.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    T#X3D V4.0 utf8\n\nPROFILE Immersive\n\nMETA \"generator-previous\" \"gen.py, drillfield gift, PolyXandria v2\"\nMETA \"source\" \"drillfield.x3d\"\nMETA \"title\" \"The Drillfield from orbit\"\nMETA \"attribution\" \"Imagery and data: Google\"\nMETA \"description\" \"Virginia Tech Drillfield and Burruss Hall, Blacksburg VA: 400 m x 300 m digital surface model (0.25 m, ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.73,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield.png",
+    "stats": {
+     "mean_rgb": [
+      55.2,
+      57.3,
+      52.7
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.5,
+     "unique_colours": 48087,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "bytes": 5308836,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__drillfield.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/sky.x3d",
+   "bytes": 47123,
+   "sha1": "0fa69c1d84db",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/drillfield/sky.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This mod#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:1\n\nMETA \"title\" \"sky.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"the inside of a world bubble: a sky drawn only from inside (gobbler-worlds/tools/build_worlds.py)\"\nMETA \"source\" \"sky.x3d\"\n\nShape {\n\tappearance Appearance {",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.55,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky.png",
+    "stats": {
+     "mean_rgb": [
+      0.8,
+      0.7,
+      0.7
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.006,
+     "unique_colours": 71,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 13848,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__drillfield__sky.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/giza/giza-nest.x3d",
+   "bytes": 51148,
+   "sha1": "85cf48ad36ec",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/plateau-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/plateau-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-terrain-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-terrain-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-context-today-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-context-today-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/osiris-paganini-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/osiris-paganini-v21.xml\"",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: X3D: Route destination node name \"KhufuLook\" not found",
+     "castle-model-converter: Warning: X3D: Route destination node name \"InteriorSwitch\" not found",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 10
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/giza-nest.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This mod#X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT Interpolation:5\nCOMPONENT Lighting:3\nCOMPONENT Rendering:5\nCOMPONENT Shape:4\nCOMPONENT EventUtilities:1\nCOMPONENT Networking:3\n\nMETA \"hall-of-records\" \"Hypothetical. Edgar Cayce (1930s readings) placed a \\\"Hall of Records\\\" under the Sphinx; a 1991 seismic survey reported a cavity under the left pa",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.66,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest.png",
+    "stats": {
+     "mean_rgb": [
+      5.7,
+      3.8,
+      1.5
+     ],
+     "corner_rgb": [
+      16,
+      10,
+      4
+     ],
+     "non_background_share": 0.764,
+     "unique_colours": 4,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.07,
+    "bytes": 739508,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__giza-nest.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/plateau-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/plateau-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-terrain-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-terrain-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-context-today-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-context-today-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/osiris-paganini-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/osiris-paganini-v21.xml\"",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: X3D: Route destination node name \"KhufuLook\" not found",
+     "castle-model-converter: Warning: X3D: Route destination node name \"InteriorSwitch\" not found",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sky.x3d",
+   "bytes": 47603,
+   "sha1": "ca9083fcd979",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sky.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model sho#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:1\n\nMETA \"title\" \"sky.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"the inside of a world bubble: a sky drawn only from inside (gobbler-worlds/tools/build_worlds.py)\"\nMETA \"source\" \"sky.x3d\"\n\nShape {\n\tappearance Appearance {",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.57,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky.png",
+    "stats": {
+     "mean_rgb": [
+      0.8,
+      0.7,
+      0.6
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.006,
+     "unique_colours": 50,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 13848,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__giza__sky.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/materials/materials.x3d",
+   "bytes": 143370,
+   "sha1": "1c5dbd33c2c9",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/materials.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    Thi#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Lighting:3\nCOMPONENT Shape:2\n\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"materials.x3d\"\nMETA \"title\" \"materials.x3d\"\nMETA \"creator\" \"HagopJay\"\nMETA \"description\" \"Gift 5, Materials from nothing: a swatch shelf of eight PhysicalMaterial ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.97,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials.png",
+    "stats": {
+     "mean_rgb": [
+      142.2,
+      118.7,
+      96.8
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.638,
+     "unique_colours": 24784,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.05,
+    "bytes": 256264,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__materials.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/materials/sky.x3d",
+   "bytes": 47911,
+   "sha1": "2216355bb671",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/sky.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This mode#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:1\n\nMETA \"title\" \"sky.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"the inside of a world bubble: a sky drawn only from inside (gobbler-worlds/tools/build_worlds.py)\"\nMETA \"source\" \"sky.x3d\"\n\nShape {\n\tappearance Appearance {",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.6,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky.png",
+    "stats": {
+     "mean_rgb": [
+      0.7,
+      0.7,
+      0.6
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.006,
+     "unique_colours": 24,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 13848,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__materials__sky.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/pantheon/pantheon.x3d",
+   "bytes": 6542952,
+   "sha1": "41ddab8edb50",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.09,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(GS_PantheonInterior)\" inside node \"Transform(OB_PantheonInterior)\"",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/pantheon/pantheon.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This #X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT GaussianSplats:1\n\nMETA \"creator\" \"Splats generated with World Labs Marble (exported 2026-04-10); X3D written by x3d-blender-io\"\nMETA \"keywords\" \"X3D 4.1, GaussianSplats, Gaussian splatting, cultural heritage, Pantheon, Library of PolyXandria\"\nMETA \"description\" \"Interior of the Roman Pantheon as an",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.63,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.09,
+    "bytes": 400,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__pantheon.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (indicated by containerField value) \"\" by node \"GaussianSplats:TX3DUnknownNode(GS_PantheonInterior)\" inside node \"Transform(OB_PantheonInterior)\""
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky",
+   "scene": "docs/demos/gobbler-worlds-within/v1/data/worlds/pantheon/sky.x3d",
+   "bytes": 47811,
+   "sha1": "cbe1db89615d",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/pantheon/sky.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:1\n\nMETA \"title\" \"sky.x3d\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"description\" \"the inside of a world bubble: a sky drawn only from inside (gobbler-worlds/tools/build_worlds.py)\"\nMETA \"source\" \"sky.x3d\"\n\nShape {\n\tappearance Appearance {",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.56,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky.png",
+    "stats": {
+     "mean_rgb": [
+      0.7,
+      0.7,
+      0.6
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.006,
+     "unique_colours": 40,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 13848,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__data__worlds__pantheon__sky.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__source__bird",
+   "scene": "docs/demos/gobbler-worlds-within/v1/source/bird.x3d",
+   "bytes": 1714665,
+   "sha1": "72a3aca18040",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.2,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/source/bird.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Texturing3D:1\nCOMPONENT HAnim:1\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT ParticleSystems:3\n\nMETA \"worlds\" \"four nested worlds in glass bubbles round the heart (gobbler-worlds/tools/build_worlds.py)\"\nMETA \"x3d-build\" \"Standard X3D 4.0 build. The X_ITE extras build, gobbler-xite.x3d, is the sa",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.73,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__source__bird.png",
+    "stats": {
+     "mean_rgb": [
+      249.7,
+      19.9,
+      236.3
+     ],
+     "corner_rgb": [
+      255,
+      0,
+      255
+     ],
+     "non_background_share": 0.141,
+     "unique_colours": 345,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.22,
+    "bytes": 1390780,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__source__bird.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler-worlds-within__v1__source__giza-nest",
+   "scene": "docs/demos/gobbler-worlds-within/v1/source/giza-nest.x3d",
+   "bytes": 50805,
+   "sha1": "b422a4ede0b5",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.05,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/plateau-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/plateau-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-terrain-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-terrain-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-context-today-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-context-today-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/osiris-paganini-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/osiris-paganini-v21.xml\"",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: X3D: Route destination node name \"KhufuLook\" not found",
+     "castle-model-converter: Warning: X3D: Route destination node name \"InteriorSwitch\" not found",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 10
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler-worlds-within/v1/source/giza-nest.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model should #X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT Interpolation:5\nCOMPONENT Lighting:3\nCOMPONENT Rendering:5\nCOMPONENT Shape:4\nCOMPONENT EventUtilities:1\nCOMPONENT Networking:3\n\nMETA \"hall-of-records\" \"Hypothetical. Edgar Cayce (1930s readings) placed a \\\"Hall of Records\\\" under the Sphinx; a 1991 seismic survey reported a cavity under the left pa",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.63,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler-worlds-within__v1__source__giza-nest.png",
+    "stats": {
+     "mean_rgb": [
+      38.4,
+      11.8,
+      30.4
+     ],
+     "corner_rgb": [
+      122,
+      36,
+      98
+     ],
+     "non_background_share": 0.764,
+     "unique_colours": 4,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.07,
+    "bytes": 739216,
+    "path": "glb/docs__demos__gobbler-worlds-within__v1__source__giza-nest.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/plateau-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/plateau-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-terrain-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-terrain-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-context-today-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/sphinx-context-today-v21.xml\"",
+     "castle-model-converter: Warning: X3D: Error Exception when loading inline file from URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/osiris-paganini-v21.xml\": Unrecognized file type \"application/xml\" for scene with base URL \"file://x3d.demo/docs/demos/gobbler-worlds-within/v1/source/osiris-paganini-v21.xml\"",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: VRML/X3D: Inline node name \"Plateau\" not found (or nothing was EXPORTed from it), cannot IMPORT",
+     "castle-model-converter: Warning: X3D: Route destination node name \"KhufuLook\" not found",
+     "castle-model-converter: Warning: X3D: Route destination node name \"InteriorSwitch\" not found",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__gobbler3-webgpu__v1__gobbler3",
+   "scene": "docs/demos/gobbler3-webgpu/v1/gobbler3.x3d",
+   "bytes": 276599,
+   "sha1": "0a346b8193c8",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/gobbler3-webgpu/v1/gobbler3.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in any X3#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Texturing3D:1\nCOMPONENT Shaders:1\nCOMPONENT Shape:2\nCOMPONENT ParticleSystems:3\n\nMETA \"x3d-build\" \"Standard X3D 4.0 build. The X_ITE extras build, gobbler-xite.x3d, is the same scene plus X_ITE-only nodes and the standard switches, triggers and ROUTEs that drive them.\"\nMETA \"created\" \"26 October 20",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.62,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__gobbler3-webgpu__v1__gobbler3.png",
+    "stats": {
+     "mean_rgb": [
+      254.2,
+      2.8,
+      253.9
+     ],
+     "corner_rgb": [
+      255,
+      0,
+      255
+     ],
+     "non_background_share": 0.096,
+     "unique_colours": 46,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.06,
+    "bytes": 148152,
+    "path": "glb/docs__demos__gobbler3-webgpu__v1__gobbler3.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__heritage-facade__v1__facade",
+   "scene": "docs/demos/heritage-facade/v1/facade.x3d",
+   "bytes": 12257463,
+   "sha1": "979983442eb4",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.13,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: VRML/X3D: Node \"GaussianSplats\" is not allowed at the top level of the X3D file",
+     "Exception \"Exception\":",
+     "Validation failed (consult the warnings above), exiting with non-zero status"
+    ],
+    "line_count": 4
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/heritage-facade/v1/facade.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model should work in any X3D #X3D V4.1 utf8\n\nPROFILE Immersive\n\nCOMPONENT GaussianSplats:1\n\nMETA \"source\" \"facade.x3d\"\nMETA \"title\" \"Qasr al-Farid style facade (synthetic)\"\nMETA \"license\" \"CC0 (generated)\"\nMETA \"description\" \"Synthetic stand-in: procedural rock-cut tomb facade rendered as 140000 Gaussian splats. Not a scan of any real monument.\"\nMETA \"generator\" \"castle-",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.64,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__heritage-facade__v1__facade.png",
+    "stats": {
+     "mean_rgb": [
+      13.0,
+      15.0,
+      26.0
+     ],
+     "corner_rgb": [
+      13,
+      15,
+      26
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.16,
+    "bytes": 200,
+    "path": "glb/docs__demos__heritage-facade__v1__facade.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D node type \"GaussianSplats\"",
+     "castle-model-converter: Warning: VRML/X3D: Node \"GaussianSplats\" is not allowed at the top level of the X3D file"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__library-hall-webgpu__v1__hall",
+   "scene": "docs/demos/library-hall-webgpu/v1/hall.x3d",
+   "bytes": 14007399,
+   "sha1": "7f94fd7db324",
+   "validate": {
+    "exit": 1,
+    "timeout": false,
+    "seconds": 0.93,
+    "verdict": "warnings",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowBias\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowMapSize\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowBias\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowMapSize\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceAlphaFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"sourceColorFactor\" in node \"BlendMode\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"destinationAlphaFactor\" in node \"BlendMode\""
+    ],
+    "line_count": 126
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/library-hall-webgpu/v1/hall.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model uses X3D extensions.\n    This model may require Castle Game Engine / #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Geometry2D:2\nCOMPONENT Lighting:3\nCOMPONENT Interpolation:3\nCOMPONENT Shape:5\nCOMPONENT X_ITE:1\n\nMETA \"creator\" \"x3d.io\"\nMETA \"created\" \"16 October 2026\"\nMETA \"description\" \"Every X3D scene the project holds is a pane of glass in an octagonal hall; a pane is lit only by proof (valid on both validat",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": true
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 9.83,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__library-hall-webgpu__v1__hall.png",
+    "stats": {
+     "mean_rgb": [
+      14.8,
+      13.7,
+      18.8
+     ],
+     "corner_rgb": [
+      23,
+      23,
+      44
+     ],
+     "non_background_share": 0.838,
+     "unique_colours": 1724,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.94,
+    "bytes": 6551072,
+    "path": "glb/docs__demos__library-hall-webgpu__v1__hall.glb",
+    "lines": [
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowBias\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowMapSize\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowBias\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"shadowMapSize\" in node \"DirectionalLight\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\"",
+     "castle-model-converter: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) \"castShadow\" in node \"Shape\""
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__loomsong__v1__worlds__ode",
+   "scene": "docs/demos/loomsong/v1/worlds/ode.x3d",
+   "bytes": 3103914,
+   "sha1": "d987a54f4d8c",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.24,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/loomsong/v1/worlds/ode.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in any X3D bro#X3D V4.0 utf8\n\nPROFILE Interchange\n\nCOMPONENT Interpolation:2\nCOMPONENT Shaders:1\nCOMPONENT Navigation:3\nCOMPONENT Time:1\nCOMPONENT PointingDeviceSensor:1\nCOMPONENT Texturing:2\nCOMPONENT Shape:1\n\nMETA \"generator-previous\" \"loomsong gen/world_ode.py\"\nMETA \"source\" \"ode.x3d\"\nMETA \"title\" \"Ode to Joy: the Jacquard tapestry\"\nMETA \"generator\" \"ca",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.87,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__loomsong__v1__worlds__ode.png",
+    "stats": {
+     "mean_rgb": [
+      255.0,
+      0.0,
+      255.0
+     ],
+     "corner_rgb": [
+      255,
+      0,
+      255
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.21,
+    "bytes": 795296,
+    "path": "glb/docs__demos__loomsong__v1__worlds__ode.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__loomsong__v1__worlds__turca",
+   "scene": "docs/demos/loomsong/v1/worlds/turca.x3d",
+   "bytes": 3671053,
+   "sha1": "fb5a936456ed",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.25,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/loomsong/v1/worlds/turca.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in any X3D b#X3D V4.0 utf8\n\nPROFILE Interchange\n\nCOMPONENT Interpolation:2\nCOMPONENT Shaders:1\nCOMPONENT Navigation:3\nCOMPONENT Time:1\nCOMPONENT PointingDeviceSensor:1\nCOMPONENT Texturing:2\nCOMPONENT Shape:1\n\nMETA \"generator-previous\" \"loomsong gen/world_turca.py\"\nMETA \"source\" \"turca.x3d\"\nMETA \"title\" \"Rondo alla Turca: the pinned barrel\"\nMETA \"generato",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.47,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__loomsong__v1__worlds__turca.png",
+    "stats": {
+     "mean_rgb": [
+      96.6,
+      2.5,
+      99.8
+     ],
+     "corner_rgb": [
+      3,
+      4,
+      8
+     ],
+     "non_background_share": 0.372,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.26,
+    "bytes": 1320052,
+    "path": "glb/docs__demos__loomsong__v1__worlds__turca.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__manifold-webgpu__v1__scenes__manifold",
+   "scene": "docs/demos/manifold-webgpu/v1/scenes/manifold.x3d",
+   "bytes": 2190327,
+   "sha1": "467ac58cdff1",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.17,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/manifold-webgpu/v1/scenes/manifold.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shaders:1\n\nMETA \"rest-heights-sha256\" \"429011fe9978b969839cd095d28dcefba96e8a996bce940e44fb76233460ca53\"\nMETA \"source\" \"manifold.x3d\"\nMETA \"description\" \"An emotional field as a Riemannian surface: the conformal metric g = lambda^2 (dx^2 + dz^2), lambda = 1 + seven breathing anisotropic Gaussians, ",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 2.14,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__manifold-webgpu__v1__scenes__manifold.png",
+    "stats": {
+     "mean_rgb": [
+      185.1,
+      0.0,
+      185.1
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.726,
+     "unique_colours": 2,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.32,
+    "bytes": 11596764,
+    "path": "glb/docs__demos__manifold-webgpu__v1__scenes__manifold.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TElevationGridNode, proxy to TIndexedTriangleSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TPointSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__material-odyssey-webgpu__v1__odyssey",
+   "scene": "docs/demos/material-odyssey-webgpu/v1/odyssey.x3d",
+   "bytes": 876155,
+   "sha1": "03f9037e4613",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.12,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/material-odyssey-webgpu/v1/odyssey.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Lighting:3\nCOMPONENT Shape:2\n\nMETA \"camera\" \"CamPos/CamRot/CamFov: 4141 keys each; time-parameterised Catmull-Rom on position, view and up vectors with zero tangents at holds; fieldOfView = 2 atan(12 / lens_mm) (smaller viewport dimension)\"\nMETA \"creator\" \"HagopJay\"\nMETA \"created\" \"11 October 2026\"",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 3.43,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__material-odyssey-webgpu__v1__odyssey.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.17,
+    "bytes": 2307412,
+    "path": "glb/docs__demos__material-odyssey-webgpu__v1__odyssey.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__ontology-constellation__v1__ontology-constellation",
+   "scene": "docs/demos/ontology-constellation/v1/ontology-constellation.x3d",
+   "bytes": 165953,
+   "sha1": "5dbe0ad840a1",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.1,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/ontology-constellation/v1/ontology-constellation.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.1\n  Model does not use any X3D extensions.\n    This model #X3D V4.1 utf8\n\nPROFILE Immersive\n\nMETA \"created\" \"2026-10-21T04:27:41Z\"\nMETA \"description\" \"364 classes of X3D Ontology 4.1 (Web3D draft dated 29 September 2026) on a shell: longitude = layout angle, latitude = class depth. Layout is a display choice, not an ontology fact. Square boxes are abstract types, spheres concrete nodes. Core star is",
+    "x3d_version": "4.1",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 1.55,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__ontology-constellation__v1__ontology-constellation.png",
+    "stats": {
+     "mean_rgb": [
+      23.1,
+      27.6,
+      38.8
+     ],
+     "corner_rgb": [
+      8,
+      10,
+      18
+     ],
+     "non_background_share": 0.177,
+     "unique_colours": 4742,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.24,
+    "bytes": 11777484,
+    "path": "glb/docs__demos__ontology-constellation__v1__ontology-constellation.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TTextNode, proxy to TQuadSetNode"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__chirp__scenes__chirp",
+   "scene": "docs/demos/stem/v1/chirp/scenes/chirp.x3d",
+   "bytes": 2056,
+   "sha1": "6943362dcfaa",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/stem/v1/chirp/scenes/chirp.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in any X3D#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"studies/chirp/tools/scene.py\"\nMETA \"title\" \"Chirp\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"chirp.x3d\"\n\nWorldInfo {\n\ttitle \"Chirp\"\n}\nNavigationInfo {\n\tavatarSize [\n\t\t0.25, 1.6000000238418579, 0.75,\n",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.59,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__stem__v1__chirp__scenes__chirp.png",
+    "stats": {
+     "mean_rgb": [
+      8.0,
+      9.0,
+      15.0
+     ],
+     "corner_rgb": [
+      8,
+      9,
+      15
+     ],
+     "non_background_share": 0.002,
+     "unique_colours": 98,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 58524,
+    "path": "glb/docs__demos__stem__v1__chirp__scenes__chirp.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy",
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__electron-cloud__scenes__cloud",
+   "scene": "docs/demos/stem/v1/electron-cloud/scenes/cloud.x3d",
+   "bytes": 2876,
+   "sha1": "918689d03b76",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/stem/v1/electron-cloud/scenes/cloud.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work i#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Rendering:5\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"studies/electron-cloud/tools/scene.py\"\nMETA \"title\" \"Electron Cloud Observatory\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"cloud.x3d\"\n\nWorldInfo {\n\ttitle \"Electron Cloud Observa",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.59,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__stem__v1__electron-cloud__scenes__cloud.png",
+    "stats": {
+     "mean_rgb": [
+      3.2,
+      3.7,
+      6.5
+     ],
+     "corner_rgb": [
+      2,
+      2,
+      4
+     ],
+     "non_background_share": 0.019,
+     "unique_colours": 6,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 58508,
+    "path": "glb/docs__demos__stem__v1__electron-cloud__scenes__cloud.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__living-heart__scenes__heart",
+   "scene": "docs/demos/stem/v1/living-heart/scenes/heart.x3d",
+   "bytes": 2137,
+   "sha1": "425473391be1",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/stem/v1/living-heart/scenes/heart.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in #X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Rendering:5\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"studies/living-heart/tools/scene.py\"\nMETA \"title\" \"Living Heart\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"heart.x3d\"\n\nWorldInfo {\n\ttitle \"Living Heart\"\n}\nNavigationInfo {\n\tavat",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.6,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__stem__v1__living-heart__scenes__heart.png",
+    "stats": {
+     "mean_rgb": [
+      15.0,
+      10.0,
+      13.0
+     ],
+     "corner_rgb": [
+      15,
+      10,
+      13
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 448,
+    "path": "glb/docs__demos__stem__v1__living-heart__scenes__heart.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__turing-garden__scenes__garden",
+   "scene": "docs/demos/stem/v1/turing-garden/scenes/garden.x3d",
+   "bytes": 2639,
+   "sha1": "619363713fab",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/stem/v1/turing-garden/scenes/garden.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work i#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Rendering:5\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"studies/turing-garden/tools/scene.py\"\nMETA \"title\" \"Turing Garden\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"garden.x3d\"\n\nWorldInfo {\n\ttitle \"Turing Garden\"\n}\nNavigationInfo {\n\t",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.69,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__stem__v1__turing-garden__scenes__garden.png",
+    "stats": {
+     "mean_rgb": [
+      4.9,
+      5.0,
+      5.4
+     ],
+     "corner_rgb": [
+      3,
+      3,
+      4
+     ],
+     "non_background_share": 0.018,
+     "unique_colours": 5,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 776,
+    "path": "glb/docs__demos__stem__v1__turing-garden__scenes__garden.glb",
+    "lines": [
+     "castle-model-converter: Warning: glTF: Unsupported geometry: TIndexedLineSetNode, no proxy"
+    ]
+   }
+  },
+  {
+   "key": "docs__demos__stem__v1__vortex-sound__scenes__vortex",
+   "scene": "docs/demos/stem/v1/vortex-sound/scenes/vortex.x3d",
+   "bytes": 2453,
+   "sha1": "b9aba68324e2",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/stem/v1/vortex-sound/scenes/vortex.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should work in#X3D V4.0 utf8\n\nPROFILE Immersive\n\nCOMPONENT Shape:2\n\nMETA \"generator-previous\" \"studies/vortex-sound/tools/scene.py\"\nMETA \"title\" \"Vortex Reconnection and Sound\"\nMETA \"generator\" \"castle-model-converter, https://castle-engine.io/castle-model-converter\"\nMETA \"source\" \"vortex.x3d\"\n\nWorldInfo {\n\ttitle \"Vortex Reconnection and Sound\"\n}\nNavigatio",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.62,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__stem__v1__vortex-sound__scenes__vortex.png",
+    "stats": {
+     "mean_rgb": [
+      8.0,
+      13.0,
+      20.0
+     ],
+     "corner_rgb": [
+      8,
+      13,
+      20
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 828,
+    "path": "glb/docs__demos__stem__v1__vortex-sound__scenes__vortex.glb",
+    "lines": []
+   }
+  },
+  {
+   "key": "docs__demos__tether-firehose__v4__data__physics-ledger",
+   "scene": "docs/demos/tether-firehose/v4/data/physics-ledger.x3d",
+   "bytes": 219464,
+   "sha1": "659da1f109d7",
+   "validate": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "verdict": "clean",
+    "lines": [],
+    "line_count": 0
+   },
+   "identify": {
+    "text": "x3d.demo/docs/demos/tether-firehose/v4/data/physics-ledger.x3d:\n  Mime Type: model/x3d+xml\n  Loaded as X3D 4.0\n  Model does not use any X3D extensions.\n    This model should wor#X3D V4.0 utf8\n\nPROFILE Interchange\n\nMETA \"x3dprov.step.25\" \"{\\\"agent\\\":\\\"x3d\\\",\\\"groups\\\":[[\\\"machine\\\",\\\"cpu\\\",\\\"-\\\",1,\\\"cpu-redacted\\\"],[\\\"machine\\\",\\\"ram\\\",\\\"-\\\",1,8589934592],[\\\"machine\\\",\\\"os-redacted\\\",\\\"-\\\",1,\\\"26.0.1\\\"],[\\\"machine\\\",\\\"blender\\\",\\\"-\\\",1,\\\"Blender 5.1.0 (hash adfe2921d5f3 built 2026-03-17 01:48:20)\\\"],[\\\"machine\\\",\\\"py",
+    "x3d_version": "4.0",
+    "uses_cge_extensions": false
+   },
+   "render": {
+    "spec_defaults_added": [
+     "<Viewpoint position='0 0 10'/>",
+     "<Background skyColor='0 0 0'/>"
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.58,
+    "stderr_lines": [],
+    "png": "screens/docs__demos__tether-firehose__v4__data__physics-ledger.png",
+    "stats": {
+     "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "corner_rgb": [
+      0,
+      0,
+      0
+     ],
+     "non_background_share": 0.0,
+     "unique_colours": 1,
+     "size": [
+      512,
+      512
+     ]
+    }
+   },
+   "glb": {
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.04,
+    "bytes": 200,
+    "path": "glb/docs__demos__tether-firehose__v4__data__physics-ledger.glb",
+    "lines": []
+   }
+  }
+ ]
+}

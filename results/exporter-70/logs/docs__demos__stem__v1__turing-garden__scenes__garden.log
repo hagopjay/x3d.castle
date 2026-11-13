@@ -1,0 +1,11 @@
+x3d-castle-convert: Warning: DirectionalLight does not know the world transformation, results (like shadow maps) may be incorrect
+[export] Viewpoint "Front": fov 0.6200 rad
+[export] 1 active shapes
+[export] shape 0 shape_0: 8 verts, 24 indices, mode 1, material 0, uv=n col=n nrm=n
+[export] light units AUTO: physical scene (0 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800
+[export] light light_0: directional, X3D intensity 2.600 written 2.6000
+[export] light light_0: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light light_1: directional, X3D intensity 0.900 written 0.9000
+[export] light light_1: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light light_2: directional, X3D intensity 0.600 written 0.6000
+[export] light light_2: global=false (X3D scopes it to its parent group; glTF lights are global)

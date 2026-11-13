@@ -1,0 +1,17 @@
+x3d-castle-convert: Warning: X3D: Unknown X3D node type "AnnotationTarget"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (indicated by containerField value) "" by node "AnnotationTarget:TX3DUnknownNode(GemNote)" inside node "Transform(Note)"
+x3d-castle-convert: Warning: DirectionalLight(Key) does not know the world transformation, results (like shadow maps) may be incorrect
+[export] Viewpoint "Front": fov 0.6000 rad
+[export] 5 active shapes
+[export] shape 0 shape_0: 124 verts, 360 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 shape_1: 124 verts, 360 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 24 verts, 36 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 3 shape_3: 24 verts, 36 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): ///Text
+[export] light units AUTO: classic scene (4 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.229
+[export] light Key: directional, X3D intensity 2.400 written 19.2637
+[export] light Key: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light WarmFill: reference distance 5.023, attenuation factor 0.6647, written 30.9645 (X3D intensity 0.900)
+[export] light MaroonRim: reference distance 5.192, attenuation factor 0.6497, written 115.1661 (X3D intensity 1.800)
+[export] light Soft: directional, X3D intensity 0.350 written 0.5285
+[export] light Soft: global=false (X3D scopes it to its parent group; glTF lights are global)

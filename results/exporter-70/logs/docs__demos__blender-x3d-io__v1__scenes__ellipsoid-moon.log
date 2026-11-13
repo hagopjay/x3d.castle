@@ -1,0 +1,6 @@
+[export] WARNING: Viewpoint could not be resolved (EAbstractError: Abstract method called), X3D default camera written instead (GeoViewpoint is not supported by Castle)
+[export] no Viewpoint: X3D default (0 0 10)
+[export] 1 active shapes
+[export] WARNING: shape with no vertices skipped: //GeoElevationGrid
+[export] light units AUTO: physical scene (0 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800
+[export] headlight written as a directional light under the camera node

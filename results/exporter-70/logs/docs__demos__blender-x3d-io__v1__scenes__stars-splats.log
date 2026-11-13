@@ -1,0 +1,6 @@
+x3d-castle-convert: Warning: X3D: Unknown X3D node type "GaussianSplats"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (indicated by containerField value) "" by node "GaussianSplats:TX3DUnknownNode(StarSplats)" inside node "Transform"
+[export] no Viewpoint: X3D default (0 0 10)
+[export] 0 active shapes
+[export] light units AUTO: physical scene (0 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800
+[export] headlight written as a directional light under the camera node

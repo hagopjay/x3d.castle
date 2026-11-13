@@ -1,0 +1,33 @@
+[export] Viewpoint "Cam": fov 0.9000 rad
+[export] 30 active shapes
+[export] shape 0 shape_0: 2425 verts, 13824 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 shape_1: 600 verts, 1440 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 shape_2: 1067 verts, 5760 indices, mode 4, material 2, uv=n col=y nrm=y
+[export] shape 3 shape_3: 65 verts, 192 indices, mode 4, material 3, uv=n col=y nrm=y
+[export] shape 4 shape_4: 6105 verts, 10944 indices, mode 4, material 4, uv=n col=y nrm=y
+[export] shape 5 shape_5: 194 verts, 576 indices, mode 4, material 5, uv=n col=y nrm=y
+[export] shape 6 shape_6: 96 verts, 144 indices, mode 4, material 6, uv=n col=y nrm=y
+[export] shape 7 shape_7: 248 verts, 648 indices, mode 4, material 7, uv=n col=y nrm=y
+[export] shape 8 shape_8: 4284 verts, 6426 indices, mode 4, material 8, uv=n col=n nrm=y
+[export] shape 9 shape_9: 1026 verts, 4044 indices, mode 4, material 9, uv=n col=n nrm=y
+[export] shape 10 shape_10: 6402 verts, 37440 indices, mode 4, material 10, uv=n col=n nrm=y
+[export] shape 11 shape_11: 15800 verts, 61422 indices, mode 4, material 11, uv=n col=n nrm=y
+[export] shape 12 Fx_Halo: 6452 verts, 9678 indices, mode 4, material 12, uv=n col=n nrm=n
+[export] shape 13 shape_13: 3744 verts, 10080 indices, mode 4, material 13, uv=n col=y nrm=y
+[export] shape 14 Fx_Flares: 96 verts, 144 indices, mode 4, material 14, uv=n col=y nrm=n
+[export] shape 15 shape_15: 799 verts, 2784 indices, mode 4, material 15, uv=n col=y nrm=y
+[export] shape 16 shape_16: 101 verts, 396 indices, mode 4, material 16, uv=n col=y nrm=y
+[export] shape 17 shape_17: 206 verts, 828 indices, mode 4, material 17, uv=n col=y nrm=y
+[export] shape 18 shape_18: 567 verts, 2112 indices, mode 4, material 18, uv=n col=y nrm=y
+[export] shape 19 shape_19: 201 verts, 684 indices, mode 4, material 19, uv=n col=y nrm=y
+[export] shape 20 shape_20: 201 verts, 684 indices, mode 4, material 20, uv=n col=y nrm=y
+[export] shape 21 shape_21: 911 verts, 3756 indices, mode 4, material 21, uv=n col=y nrm=y
+[export] shape 22 shape_22: 101 verts, 396 indices, mode 4, material 22, uv=n col=y nrm=y
+[export] shape 23 shape_23: 129 verts, 468 indices, mode 4, material 23, uv=n col=y nrm=y
+[export] shape 24 shape_24: 595 verts, 2220 indices, mode 4, material 24, uv=n col=y nrm=y
+[export] shape 25 shape_25: 101 verts, 396 indices, mode 4, material 25, uv=n col=y nrm=y
+[export] shape 26 shape_26: 129 verts, 468 indices, mode 4, material 26, uv=n col=y nrm=y
+[export] shape 27 shape_27: 603 verts, 2208 indices, mode 4, material 27, uv=n col=y nrm=y
+[export] shape 28 shape_28: 101 verts, 396 indices, mode 4, material 28, uv=n col=y nrm=y
+[export] shape 29 shape_29: 347 verts, 1500 indices, mode 4, material 29, uv=n col=y nrm=y
+[export] light units AUTO: classic scene (2 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800

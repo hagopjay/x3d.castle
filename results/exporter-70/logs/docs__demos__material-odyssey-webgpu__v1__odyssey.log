@@ -1,0 +1,462 @@
+x3d-castle-convert: Warning: SpotLight(Oculus) does not know the world transformation, results (like shadow maps) may be incorrect
+[export] Viewpoint "DroneCam": fov 0.4887 rad
+[export] 285 active shapes
+[export] image 0: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/starry_sky.jpg, 113602 bytes
+[export] shape 0 shape_0: 651 verts, 3420 indices, mode 4, material 0, uv=y col=n nrm=y
+[export] image 1: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/walnut_floor.jpg, 170983 bytes
+[export] image 2: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/walnut_floor_mr.jpg, 89717 bytes
+[export] image 3: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/walnut_floor_normal.png, 503655 bytes
+[export] shape 1 shape_1: 1764 verts, 1764 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] shape 2 shape_2: 1764 verts, 1764 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] image 4: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_satin.jpg, 423162 bytes
+[export] image 5: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_satin_mr.jpg, 179288 bytes
+[export] image 6: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_satin_normal.png, 684348 bytes
+[export] shape 3 shape_3: 24 verts, 36 indices, mode 4, material 2, uv=y col=n nrm=y
+[export] image 7: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_leaf.jpg, 328872 bytes
+[export] image 8: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_leaf_mr.jpg, 195613 bytes
+[export] image 9: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_leaf_normal.png, 719242 bytes
+[export] shape 4 shape_4: 651 verts, 3420 indices, mode 4, material 3, uv=y col=n nrm=y
+[export] image 10: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/carrara_marble.jpg, 65092 bytes
+[export] image 11: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/carrara_marble_mr.jpg, 42160 bytes
+[export] image 12: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/carrara_marble_normal.png, 201561 bytes
+[export] shape 5 shape_5: 651 verts, 3420 indices, mode 4, material 4, uv=y col=n nrm=y
+[export] image 13: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/orange_velvet.jpg, 259121 bytes
+[export] image 14: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/orange_velvet_mr.jpg, 182540 bytes
+[export] image 15: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/orange_velvet_normal.png, 651281 bytes
+[export] shape 6 shape_6: 651 verts, 3420 indices, mode 4, material 5, uv=y col=n nrm=y
+[export] image 16: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_silk.jpg, 139968 bytes
+[export] image 17: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_silk_normal.png, 253091 bytes
+[export] shape 7 shape_7: 651 verts, 3420 indices, mode 4, material 6, uv=y col=n nrm=y
+[export] image 18: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hokie_stone.jpg, 334292 bytes
+[export] image 19: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hokie_stone_mr.jpg, 141925 bytes
+[export] image 20: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hokie_stone_normal.png, 709825 bytes
+[export] shape 8 RB4: 2916 verts, 2916 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] image 21: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/giftwrap_cream.jpg, 182449 bytes
+[export] image 22: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/giftwrap_cream_normal.png, 341644 bytes
+[export] shape 9 RB4: 2916 verts, 2916 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] image 23: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/brushed_brass.jpg, 115943 bytes
+[export] image 24: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/brushed_brass_mr.jpg, 113373 bytes
+[export] image 25: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/brushed_brass_normal.png, 287558 bytes
+[export] shape 10 RB4: 2916 verts, 2916 indices, mode 4, material 9, uv=y col=n nrm=y
+[export] image 26: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/giftwrap_maroon.jpg, 218542 bytes
+[export] image 27: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/giftwrap_maroon_mr.jpg, 115856 bytes
+[export] image 28: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/giftwrap_maroon_normal.png, 383997 bytes
+[export] shape 11 RB4: 2916 verts, 2916 indices, mode 4, material 10, uv=y col=n nrm=y
+[export] image 29: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/black_granite.jpg, 233542 bytes
+[export] image 30: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/black_granite_normal.png, 417907 bytes
+[export] shape 12 shape_12: 124 verts, 360 indices, mode 4, material 11, uv=y col=n nrm=y
+[export] shape 13 shape_13: 6 verts, 6 indices, mode 4, material 12, uv=n col=n nrm=y
+[export] shape 14 shape_14: 36 verts, 36 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 15 shape_15: 108 verts, 108 indices, mode 4, material 14, uv=y col=n nrm=y
+[export] shape 16 shape_16: 972 verts, 972 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] image 31: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hex_carpet.jpg, 462911 bytes
+[export] image 32: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hex_carpet_mr.jpg, 157817 bytes
+[export] image 33: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hex_carpet_normal.png, 687883 bytes
+[export] shape 17 shape_17: 6 verts, 6 indices, mode 4, material 15, uv=y col=n nrm=y
+[export] shape 18 shape_18: 12 verts, 12 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 19 shape_19: 12 verts, 12 indices, mode 4, material 16, uv=y col=n nrm=y
+[export] shape 20 shape_20: 72 verts, 72 indices, mode 4, material 14, uv=y col=n nrm=y
+[export] shape 21 shape_21: 36 verts, 36 indices, mode 4, material 17, uv=y col=n nrm=y
+[export] image 34: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_damask.jpg, 370152 bytes
+[export] image 35: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_damask_mr.jpg, 191109 bytes
+[export] image 36: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_damask_normal.png, 495410 bytes
+[export] shape 22 shape_22: 84 verts, 84 indices, mode 4, material 18, uv=y col=n nrm=y
+[export] shape 23 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 24 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 25 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 26 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 27 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 28 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 29 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 30 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 31 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 32 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 33 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 34 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 35 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 36 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 37 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 38 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] image 37: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_lacquer.jpg, 143144 bytes
+[export] image 38: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_lacquer_mr.jpg, 124111 bytes
+[export] image 39: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/maroon_lacquer_normal.png, 267626 bytes
+[export] shape 39 shape_39: 1008 verts, 1008 indices, mode 4, material 19, uv=y col=n nrm=y
+[export] image 40: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_mosaic_tesserae.jpg, 410877 bytes
+[export] image 41: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_mosaic_tesserae_mr.jpg, 201912 bytes
+[export] image 42: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/gold_mosaic_tesserae_normal.png, 674335 bytes
+[export] shape 40 shape_40: 42 verts, 42 indices, mode 4, material 20, uv=y col=n nrm=y
+[export] shape 41 shape_41: 72 verts, 72 indices, mode 4, material 21, uv=n col=n nrm=y
+[export] image 43: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/burl_walnut_veneer.jpg, 242601 bytes
+[export] image 44: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/burl_walnut_veneer_mr.jpg, 195828 bytes
+[export] image 45: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/burl_walnut_veneer_normal.png, 454089 bytes
+[export] shape 42 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 43 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 46: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/mother_of_pearl.jpg, 178076 bytes
+[export] image 47: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/mother_of_pearl_mr.jpg, 95326 bytes
+[export] image 48: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/mother_of_pearl_normal.png, 382328 bytes
+[export] shape 44 shape_44: 651 verts, 3420 indices, mode 4, material 24, uv=y col=n nrm=y
+[export] shape 45 shape_45: 93 verts, 270 indices, mode 4, material 25, uv=n col=n nrm=y
+[export] shape 46 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 47 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 48 shape_48: 651 verts, 3420 indices, mode 4, material 24, uv=y col=n nrm=y
+[export] shape 49 shape_49: 93 verts, 270 indices, mode 4, material 25, uv=n col=n nrm=y
+[export] shape 50 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 51 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 49: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hammered_copper.jpg, 335500 bytes
+[export] image 50: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hammered_copper_mr.jpg, 194791 bytes
+[export] image 51: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/hammered_copper_normal.png, 692857 bytes
+[export] shape 52 RB4: 2916 verts, 2916 indices, mode 4, material 26, uv=y col=n nrm=y
+[export] shape 53 shape_53: 93 verts, 270 indices, mode 4, material 27, uv=n col=n nrm=y
+[export] shape 54 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 55 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 56 RB4: 2916 verts, 2916 indices, mode 4, material 26, uv=y col=n nrm=y
+[export] shape 57 shape_57: 93 verts, 270 indices, mode 4, material 27, uv=n col=n nrm=y
+[export] shape 58 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 59 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 52: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/nero_marquina.jpg, 138366 bytes
+[export] image 53: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/nero_marquina_mr.jpg, 77574 bytes
+[export] image 54: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/nero_marquina_normal.png, 287871 bytes
+[export] shape 60 shape_60: 651 verts, 3420 indices, mode 4, material 28, uv=y col=n nrm=y
+[export] shape 61 shape_61: 93 verts, 270 indices, mode 4, material 29, uv=n col=n nrm=y
+[export] shape 62 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 63 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 64 shape_64: 651 verts, 3420 indices, mode 4, material 28, uv=y col=n nrm=y
+[export] shape 65 shape_65: 93 verts, 270 indices, mode 4, material 29, uv=n col=n nrm=y
+[export] shape 66 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 67 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 68 RB4: 2916 verts, 2916 indices, mode 4, material 30, uv=y col=n nrm=y
+[export] shape 69 shape_69: 93 verts, 270 indices, mode 4, material 31, uv=n col=n nrm=y
+[export] shape 70 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 71 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 72 RB4: 2916 verts, 2916 indices, mode 4, material 30, uv=y col=n nrm=y
+[export] shape 73 shape_73: 93 verts, 270 indices, mode 4, material 31, uv=n col=n nrm=y
+[export] shape 74 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 75 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 76 shape_76: 651 verts, 3420 indices, mode 4, material 32, uv=y col=n nrm=y
+[export] shape 77 shape_77: 93 verts, 270 indices, mode 4, material 33, uv=n col=n nrm=y
+[export] shape 78 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 79 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 80 shape_80: 651 verts, 3420 indices, mode 4, material 32, uv=y col=n nrm=y
+[export] shape 81 shape_81: 93 verts, 270 indices, mode 4, material 33, uv=n col=n nrm=y
+[export] shape 82 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 83 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 84 RB4: 2916 verts, 2916 indices, mode 4, material 34, uv=y col=n nrm=y
+[export] shape 85 shape_85: 93 verts, 270 indices, mode 4, material 35, uv=n col=n nrm=y
+[export] shape 86 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 87 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 88 RB4: 2916 verts, 2916 indices, mode 4, material 34, uv=y col=n nrm=y
+[export] shape 89 shape_89: 93 verts, 270 indices, mode 4, material 35, uv=n col=n nrm=y
+[export] shape 90 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 91 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 55: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/bronze_patina.jpg, 219893 bytes
+[export] image 56: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/bronze_patina_mr.jpg, 207519 bytes
+[export] image 57: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/bronze_patina_normal.png, 568646 bytes
+[export] shape 92 shape_92: 651 verts, 3420 indices, mode 4, material 36, uv=y col=n nrm=y
+[export] shape 93 shape_93: 93 verts, 270 indices, mode 4, material 37, uv=n col=n nrm=y
+[export] shape 94 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 95 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 96 shape_96: 651 verts, 3420 indices, mode 4, material 36, uv=y col=n nrm=y
+[export] shape 97 shape_97: 93 verts, 270 indices, mode 4, material 37, uv=n col=n nrm=y
+[export] shape 98 shape_98: 6 verts, 6 indices, mode 4, material 15, uv=y col=n nrm=y
+[export] shape 99 shape_99: 12 verts, 12 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 100 shape_100: 12 verts, 12 indices, mode 4, material 16, uv=y col=n nrm=y
+[export] shape 101 shape_101: 72 verts, 72 indices, mode 4, material 14, uv=y col=n nrm=y
+[export] shape 102 shape_102: 36 verts, 36 indices, mode 4, material 17, uv=y col=n nrm=y
+[export] shape 103 shape_103: 84 verts, 84 indices, mode 4, material 18, uv=y col=n nrm=y
+[export] shape 104 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 105 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 106 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 107 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 108 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 109 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 110 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 111 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 112 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 113 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 114 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 115 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 116 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 117 Pilaster: 900 verts, 900 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 118 shape_118: 1152 verts, 1152 indices, mode 4, material 19, uv=y col=n nrm=y
+[export] shape 119 shape_119: 48 verts, 48 indices, mode 4, material 20, uv=y col=n nrm=y
+[export] shape 120 shape_120: 72 verts, 72 indices, mode 4, material 21, uv=n col=n nrm=y
+[export] shape 121 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 122 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 58: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/travertine_cream.jpg, 197871 bytes
+[export] image 59: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/travertine_cream_mr.jpg, 193916 bytes
+[export] image 60: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/travertine_cream_normal.png, 527910 bytes
+[export] shape 123 RB4: 2916 verts, 2916 indices, mode 4, material 38, uv=y col=n nrm=y
+[export] shape 124 shape_124: 93 verts, 270 indices, mode 4, material 39, uv=n col=n nrm=y
+[export] shape 125 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 126 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 127 RB4: 2916 verts, 2916 indices, mode 4, material 38, uv=y col=n nrm=y
+[export] shape 128 shape_128: 93 verts, 270 indices, mode 4, material 39, uv=n col=n nrm=y
+[export] shape 129 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 130 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 61: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/engraved_brass_guilloche.jpg, 388018 bytes
+[export] image 62: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/engraved_brass_guilloche_mr.jpg, 228330 bytes
+[export] image 63: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/engraved_brass_guilloche_normal.png, 605779 bytes
+[export] shape 131 shape_131: 651 verts, 3420 indices, mode 4, material 40, uv=y col=n nrm=y
+[export] shape 132 shape_132: 93 verts, 270 indices, mode 4, material 41, uv=n col=n nrm=y
+[export] shape 133 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 134 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 135 shape_135: 651 verts, 3420 indices, mode 4, material 40, uv=y col=n nrm=y
+[export] shape 136 shape_136: 93 verts, 270 indices, mode 4, material 41, uv=n col=n nrm=y
+[export] shape 137 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 138 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 64: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/oxblood_leather.jpg, 231532 bytes
+[export] image 65: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/oxblood_leather_mr.jpg, 274534 bytes
+[export] image 66: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/oxblood_leather_normal.png, 601946 bytes
+[export] shape 139 RB4: 2916 verts, 2916 indices, mode 4, material 42, uv=y col=n nrm=y
+[export] shape 140 shape_140: 93 verts, 270 indices, mode 4, material 43, uv=n col=n nrm=y
+[export] shape 141 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 142 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 143 RB4: 2916 verts, 2916 indices, mode 4, material 42, uv=y col=n nrm=y
+[export] shape 144 shape_144: 93 verts, 270 indices, mode 4, material 43, uv=n col=n nrm=y
+[export] shape 145 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 146 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 67: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/honey_onyx.jpg, 287727 bytes
+[export] image 68: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/honey_onyx_mr.jpg, 70591 bytes
+[export] image 69: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/honey_onyx_normal.png, 303713 bytes
+[export] shape 147 shape_147: 651 verts, 3420 indices, mode 4, material 44, uv=y col=n nrm=y
+[export] shape 148 shape_148: 93 verts, 270 indices, mode 4, material 45, uv=n col=n nrm=y
+[export] shape 149 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 150 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 151 shape_151: 651 verts, 3420 indices, mode 4, material 44, uv=y col=n nrm=y
+[export] shape 152 shape_152: 93 verts, 270 indices, mode 4, material 45, uv=n col=n nrm=y
+[export] shape 153 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 154 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 70: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/crackle_gilt.jpg, 419030 bytes
+[export] image 71: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/crackle_gilt_mr.jpg, 158550 bytes
+[export] image 72: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/crackle_gilt_normal.png, 675764 bytes
+[export] shape 155 RB4: 2916 verts, 2916 indices, mode 4, material 46, uv=y col=n nrm=y
+[export] shape 156 shape_156: 93 verts, 270 indices, mode 4, material 47, uv=n col=n nrm=y
+[export] shape 157 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 158 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 159 RB4: 2916 verts, 2916 indices, mode 4, material 46, uv=y col=n nrm=y
+[export] shape 160 shape_160: 93 verts, 270 indices, mode 4, material 47, uv=n col=n nrm=y
+[export] shape 161 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 162 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] image 73: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/solar_granulation.jpg, 313862 bytes
+[export] shape 163 shape_163: 651 verts, 3420 indices, mode 4, material 48, uv=y col=n nrm=y
+[export] shape 164 shape_164: 93 verts, 270 indices, mode 4, material 49, uv=n col=n nrm=y
+[export] shape 165 PlinthShaft: 900 verts, 900 indices, mode 4, material 22, uv=y col=n nrm=y
+[export] shape 166 PlinthCap: 900 verts, 900 indices, mode 4, material 23, uv=y col=n nrm=y
+[export] shape 167 shape_167: 651 verts, 3420 indices, mode 4, material 48, uv=y col=n nrm=y
+[export] shape 168 shape_168: 93 verts, 270 indices, mode 4, material 49, uv=n col=n nrm=y
+[export] image 74: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/nero_portoro.jpg, 211934 bytes
+[export] image 75: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/nero_portoro_mr.jpg, 98551 bytes
+[export] image 76: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/nero_portoro_normal.png, 382295 bytes
+[export] shape 169 shape_169: 2700 verts, 2700 indices, mode 4, material 50, uv=y col=n nrm=y
+[export] shape 170 shape_170: 108 verts, 108 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 171 shape_171: 6 verts, 6 indices, mode 4, material 51, uv=y col=n nrm=y
+[export] shape 172 shape_172: 5820 verts, 5820 indices, mode 4, material 52, uv=y col=n nrm=y
+[export] shape 173 shape_173: 4512 verts, 4512 indices, mode 4, material 53, uv=y col=n nrm=y
+[export] shape 174 shape_174: 144 verts, 144 indices, mode 4, material 50, uv=y col=n nrm=y
+[export] shape 175 shape_175: 216 verts, 216 indices, mode 4, material 54, uv=y col=n nrm=y
+[export] shape 176 shape_176: 36 verts, 36 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] image 77: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/obsidian_monolith.jpg, 63745 bytes
+[export] image 78: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/obsidian_monolith_mr.jpg, 55605 bytes
+[export] image 79: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/obsidian_monolith_normal.png, 144695 bytes
+[export] shape 177 Monolith: 900 verts, 900 indices, mode 4, material 55, uv=y col=n nrm=y
+[export] shape 178 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] image 80: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/antique_mirror_bronze.jpg, 91957 bytes
+[export] image 81: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/antique_mirror_bronze_mr.jpg, 61965 bytes
+[export] shape 179 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 180 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 181 shape_181: 651 verts, 3420 indices, mode 4, material 3, uv=y col=n nrm=y
+[export] shape 182 UplightRing: 288 verts, 288 indices, mode 4, material 59, uv=n col=n nrm=y
+[export] shape 183 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 184 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 185 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 186 shape_186: 651 verts, 3420 indices, mode 4, material 4, uv=y col=n nrm=y
+[export] shape 187 UplightRing: 288 verts, 288 indices, mode 4, material 60, uv=n col=n nrm=y
+[export] shape 188 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 189 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 190 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 191 shape_191: 651 verts, 3420 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] shape 192 UplightRing: 288 verts, 288 indices, mode 4, material 61, uv=n col=n nrm=y
+[export] shape 193 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 194 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 195 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 196 shape_196: 651 verts, 3420 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] shape 197 UplightRing: 288 verts, 288 indices, mode 4, material 62, uv=n col=n nrm=y
+[export] shape 198 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 199 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 200 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 201 shape_201: 651 verts, 3420 indices, mode 4, material 5, uv=y col=n nrm=y
+[export] shape 202 UplightRing: 288 verts, 288 indices, mode 4, material 63, uv=n col=n nrm=y
+[export] shape 203 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 204 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 205 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 206 shape_206: 651 verts, 3420 indices, mode 4, material 6, uv=y col=n nrm=y
+[export] shape 207 UplightRing: 288 verts, 288 indices, mode 4, material 64, uv=n col=n nrm=y
+[export] shape 208 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 209 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 210 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 211 shape_211: 651 verts, 3420 indices, mode 4, material 9, uv=y col=n nrm=y
+[export] shape 212 UplightRing: 288 verts, 288 indices, mode 4, material 65, uv=n col=n nrm=y
+[export] shape 213 OctBase: 324 verts, 324 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] shape 214 OctShaft: 324 verts, 324 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 215 OctCap: 324 verts, 324 indices, mode 4, material 58, uv=y col=n nrm=y
+[export] shape 216 shape_216: 651 verts, 3420 indices, mode 4, material 10, uv=y col=n nrm=y
+[export] shape 217 UplightRing: 288 verts, 288 indices, mode 4, material 66, uv=n col=n nrm=y
+[export] shape 218 shape_218: 651 verts, 3420 indices, mode 4, material 67, uv=y col=n nrm=y
+[export] shape 219 shape_219: 651 verts, 3420 indices, mode 4, material 68, uv=y col=n nrm=y
+[export] shape 220 shape_220: 651 verts, 3420 indices, mode 4, material 69, uv=y col=n nrm=y
+[export] shape 221 shape_221: 651 verts, 3420 indices, mode 4, material 70, uv=y col=n nrm=y
+[export] shape 222 shape_222: 651 verts, 3420 indices, mode 4, material 71, uv=y col=n nrm=y
+[export] shape 223 shape_223: 108 verts, 108 indices, mode 4, material 50, uv=y col=n nrm=y
+[export] shape 224 shape_224: 1080 verts, 1080 indices, mode 4, material 72, uv=y col=n nrm=y
+[export] image 82: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/slitscan_streaks_ember.jpg, 97689 bytes
+[export] shape 225 CorWallGeo: 12 verts, 12 indices, mode 4, material 73, uv=y col=n nrm=y
+[export] image 83: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/slitscan_interference_gold.jpg, 299444 bytes
+[export] shape 226 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 74, uv=y col=n nrm=y
+[export] shape 227 CorWallGeo: 12 verts, 12 indices, mode 4, material 75, uv=y col=n nrm=y
+[export] shape 228 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 76, uv=y col=n nrm=y
+[export] shape 229 CorWallGeo: 12 verts, 12 indices, mode 4, material 77, uv=y col=n nrm=y
+[export] shape 230 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 78, uv=y col=n nrm=y
+[export] shape 231 CorWallGeo: 12 verts, 12 indices, mode 4, material 79, uv=y col=n nrm=y
+[export] shape 232 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 80, uv=y col=n nrm=y
+[export] shape 233 CorWallGeo: 12 verts, 12 indices, mode 4, material 81, uv=y col=n nrm=y
+[export] shape 234 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 82, uv=y col=n nrm=y
+[export] shape 235 CorWallGeo: 12 verts, 12 indices, mode 4, material 83, uv=y col=n nrm=y
+[export] shape 236 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 84, uv=y col=n nrm=y
+[export] shape 237 CorWallGeo: 12 verts, 12 indices, mode 4, material 85, uv=y col=n nrm=y
+[export] shape 238 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 86, uv=y col=n nrm=y
+[export] shape 239 CorWallGeo: 12 verts, 12 indices, mode 4, material 87, uv=y col=n nrm=y
+[export] shape 240 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 88, uv=y col=n nrm=y
+[export] shape 241 CorWallGeo: 12 verts, 12 indices, mode 4, material 89, uv=y col=n nrm=y
+[export] shape 242 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 90, uv=y col=n nrm=y
+[export] shape 243 CorWallGeo: 12 verts, 12 indices, mode 4, material 91, uv=y col=n nrm=y
+[export] shape 244 CorFloorCeilGeo: 18 verts, 18 indices, mode 4, material 92, uv=y col=n nrm=y
+[export] shape 245 shape_245: 6 verts, 6 indices, mode 4, material 93, uv=y col=n nrm=y
+[export] shape 246 shape_246: 1272 verts, 1272 indices, mode 4, material 94, uv=n col=n nrm=y
+[export] image 84: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/terrazzo_ember.jpg, 207336 bytes
+[export] image 85: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/terrazzo_ember_mr.jpg, 103688 bytes
+[export] image 86: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/terrazzo_ember_normal.png, 339058 bytes
+[export] shape 247 shape_247: 24 verts, 24 indices, mode 4, material 95, uv=y col=n nrm=y
+[export] shape 248 shape_248: 1062 verts, 1062 indices, mode 4, material 54, uv=y col=n nrm=y
+[export] image 87: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/lightpanel_onyx.jpg, 45623 bytes
+[export] shape 249 shape_249: 960 verts, 960 indices, mode 4, material 96, uv=y col=n nrm=y
+[export] image 88: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/venetian_plaster_white.jpg, 74332 bytes
+[export] image 89: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/venetian_plaster_white_mr.jpg, 159788 bytes
+[export] image 90: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/venetian_plaster_white_normal.png, 153754 bytes
+[export] shape 250 shape_250: 684 verts, 684 indices, mode 4, material 97, uv=y col=n nrm=y
+[export] shape 251 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 252 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 253 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 254 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 255 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 256 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 257 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 258 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 259 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 260 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 261 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 262 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 263 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 264 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 265 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 266 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 267 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 268 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 269 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] shape 270 WRPilaster: 900 verts, 900 indices, mode 4, material 98, uv=y col=n nrm=y
+[export] image 91: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/cream_gold_damask.jpg, 162347 bytes
+[export] image 92: image/jpeg file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/cream_gold_damask_mr.jpg, 136644 bytes
+[export] image 93: image/png file://x3d.demo/docs/demos/material-odyssey-webgpu/v1/materials/cream_gold_damask_normal.png, 337651 bytes
+[export] shape 271 shape_271: 96 verts, 96 indices, mode 4, material 99, uv=y col=n nrm=y
+[export] shape 272 shape_272: 96 verts, 96 indices, mode 4, material 13, uv=y col=n nrm=y
+[export] shape 273 Monolith: 900 verts, 900 indices, mode 4, material 55, uv=y col=n nrm=y
+[export] shape 274 shape_274: 1764 verts, 1764 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] shape 275 shape_275: 1764 verts, 1764 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] shape 276 shape_276: 24 verts, 36 indices, mode 4, material 2, uv=y col=n nrm=y
+[export] shape 277 shape_277: 651 verts, 3420 indices, mode 4, material 3, uv=y col=n nrm=y
+[export] shape 278 shape_278: 651 verts, 3420 indices, mode 4, material 4, uv=y col=n nrm=y
+[export] shape 279 shape_279: 651 verts, 3420 indices, mode 4, material 5, uv=y col=n nrm=y
+[export] shape 280 shape_280: 651 verts, 3420 indices, mode 4, material 6, uv=y col=n nrm=y
+[export] shape 281 RB4: 2916 verts, 2916 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] shape 282 RB4: 2916 verts, 2916 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] shape 283 RB4: 2916 verts, 2916 indices, mode 4, material 9, uv=y col=n nrm=y
+[export] shape 284 RB4: 2916 verts, 2916 indices, mode 4, material 10, uv=y col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 226 PhysicalMaterial shapes), median albedo 0.800
+[export] light DroneLamp: reference distance 3.400, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Key: reference distance 10.262, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Fill: reference distance 24.245, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Rim: reference distance 6.003, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light ShelfDir: directional, X3D intensity 0.000 written 0.0000
+[export] light ShelfDir: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light Pin0: reference distance 12.961, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin1: reference distance 12.021, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin2: reference distance 12.021, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin3: reference distance 12.961, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin4: reference distance 12.961, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin5: reference distance 12.021, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin6: reference distance 12.021, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin7: reference distance 12.961, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light DaisPool: reference distance 11.599, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Rim: reference distance 6.003, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light SweepSpot: reference distance 20.101, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallSpotA0: reference distance 15.623, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallSpotA1: reference distance 14.599, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallSpotA2: reference distance 14.599, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL0: reference distance 22.605, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR0: reference distance 22.605, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL1: reference distance 22.605, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR1: reference distance 22.605, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL2: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR2: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL3: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR3: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL4: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR4: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL5: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR5: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL6: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR6: reference distance 23.070, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallSpotB0: reference distance 13.158, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallSpotB1: reference distance 14.030, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallSpotB2: reference distance 15.648, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL7: reference distance 23.125, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR7: reference distance 23.125, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL8: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR8: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL9: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR9: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL10: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR10: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL11: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR11: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinL12: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light HallPinR12: reference distance 22.684, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light GateUpL: reference distance 31.193, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light GateUpR: reference distance 27.888, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Oculus: reference distance 48.738, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light EdgeL: reference distance 39.518, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light EdgeR: reference distance 39.518, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Syzygy: directional, X3D intensity 0.000 written 0.0000
+[export] light Syzygy: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light WashL: reference distance 33.787, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light WashR: reference distance 33.787, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Syzygy: directional, X3D intensity 0.000 written 0.0000
+[export] light Syzygy: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light WRSpotL622: reference distance 9.281, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light WRSpotR622: reference distance 9.281, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light WRSpotL640: reference distance 17.653, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light WRSpotR640: reference distance 17.653, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Bounce: directional, X3D intensity 0.000 written 0.0000
+[export] light Bounce: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light Key: reference distance 10.934, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Fill: reference distance 17.653, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Rim: reference distance 16.110, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light ShelfDir: directional, X3D intensity 0.000 written 0.0000
+[export] light ShelfDir: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light Pin0: reference distance 20.744, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin1: reference distance 20.725, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin2: reference distance 20.725, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin3: reference distance 20.744, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin4: reference distance 20.744, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin5: reference distance 20.725, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin6: reference distance 20.725, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)
+[export] light Pin7: reference distance 20.744, attenuation factor 1.0000, written 0.0000 (X3D intensity 0.000)

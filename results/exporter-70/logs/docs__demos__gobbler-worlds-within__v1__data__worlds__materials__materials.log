@@ -1,0 +1,50 @@
+[export] Viewpoint "Shelf": fov 0.6200 rad
+[export] 16 active shapes
+[export] shape 0 shape_0: 24 verts, 36 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] image 0: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/walnut_floor.jpg, 27137 bytes
+[export] image 1: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/walnut_floor_mr.jpg, 15191 bytes
+[export] image 2: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/walnut_floor_normal.jpg, 59038 bytes
+[export] shape 1 StepFront: 3600 verts, 3600 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] shape 2 StepBack: 3600 verts, 3600 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] image 3: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/gold_satin.jpg, 69662 bytes
+[export] image 4: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/gold_satin_mr.jpg, 14259 bytes
+[export] image 5: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/gold_satin_normal.jpg, 106664 bytes
+[export] shape 3 shape_3: 24 verts, 36 indices, mode 4, material 2, uv=y col=n nrm=y
+[export] image 6: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/gold_leaf.jpg, 69805 bytes
+[export] image 7: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/gold_leaf_mr.jpg, 37038 bytes
+[export] image 8: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/gold_leaf_normal.jpg, 153148 bytes
+[export] shape 4 shape_4: 651 verts, 3420 indices, mode 4, material 3, uv=y col=n nrm=y
+[export] image 9: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/carrara_marble.jpg, 15349 bytes
+[export] image 10: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/carrara_marble_mr.jpg, 8481 bytes
+[export] image 11: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/carrara_marble_normal.jpg, 7476 bytes
+[export] shape 5 shape_5: 651 verts, 3420 indices, mode 4, material 4, uv=y col=n nrm=y
+[export] image 12: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/orange_velvet.jpg, 58309 bytes
+[export] image 13: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/orange_velvet_mr.jpg, 39649 bytes
+[export] image 14: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/orange_velvet_normal.jpg, 127910 bytes
+[export] shape 6 shape_6: 651 verts, 3420 indices, mode 4, material 5, uv=y col=n nrm=y
+[export] image 15: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/maroon_silk.jpg, 22762 bytes
+[export] image 16: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/maroon_silk_normal.jpg, 16692 bytes
+[export] shape 7 shape_7: 651 verts, 3420 indices, mode 4, material 6, uv=y col=n nrm=y
+[export] image 17: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/hokie_stone.jpg, 66129 bytes
+[export] image 18: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/hokie_stone_mr.jpg, 24882 bytes
+[export] image 19: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/hokie_stone_normal.jpg, 148120 bytes
+[export] shape 8 RB4: 3600 verts, 3600 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] image 20: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/giftwrap_cream.jpg, 33247 bytes
+[export] image 21: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/giftwrap_cream_normal.jpg, 31262 bytes
+[export] shape 9 RB4: 3600 verts, 3600 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] image 22: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/brushed_brass.jpg, 15530 bytes
+[export] image 23: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/brushed_brass_mr.jpg, 12700 bytes
+[export] image 24: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/brushed_brass_normal.jpg, 23286 bytes
+[export] shape 10 RB4: 3600 verts, 3600 indices, mode 4, material 9, uv=y col=n nrm=y
+[export] image 25: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/giftwrap_maroon.jpg, 38247 bytes
+[export] image 26: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/giftwrap_maroon_mr.jpg, 16617 bytes
+[export] image 27: image/jpeg file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/materials/giftwrap_maroon_normal.jpg, 35880 bytes
+[export] shape 11 RB4: 3600 verts, 3600 indices, mode 4, material 10, uv=y col=n nrm=y
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): Labels///Text
+[export] light units AUTO: physical scene (0 classic-Material shapes, 12 PhysicalMaterial shapes), median albedo 0.800
+[export] light Key: reference distance 6.446, attenuation factor 1.0000, written 30.0000 (X3D intensity 30.000)
+[export] light Fill: reference distance 6.208, attenuation factor 1.0000, written 7.0000 (X3D intensity 7.000)
+[export] light Rim: reference distance 5.712, attenuation factor 1.0000, written 26.0000 (X3D intensity 26.000)
+[export] light light_3: directional, X3D intensity 0.120 written 0.1200
+[export] light light_3: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] headlight written as a directional light under the camera node

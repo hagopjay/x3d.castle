@@ -1,0 +1,18 @@
+[export] Viewpoint "Wide": fov 0.8000 rad
+[export] 11 active shapes
+[export] shape 0 Seed: 642 verts, 3840 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 SeedGlowShape: 162 verts, 960 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 Threads: 10050 verts, 29184 indices, mode 4, material 2, uv=n col=y nrm=n
+[export] shape 3 Glow: 10050 verts, 29184 indices, mode 4, material 3, uv=n col=y nrm=n
+[export] shape 4 Shell: 642 verts, 3840 indices, mode 4, material 4, uv=n col=n nrm=y
+[export] image 0: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood/png/b83733c720778b82.png, 647510 bytes
+[export] shape 5 PlateQuad: 4 verts, 6 indices, mode 4, material 5, uv=y col=n nrm=y
+[export] image 1: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood/png/d2a2ed962a0d6d2a.png, 690009 bytes
+[export] shape 6 PlateQuad: 4 verts, 6 indices, mode 4, material 6, uv=y col=n nrm=y
+[export] image 2: image/png file://$WORK/new3/prepass/docs__demos__dynasty-loom-webgpu__v1__pocket-darwin_wedgwood/png/823c21d12240904f.png, 589741 bytes
+[export] shape 7 PlateQuad: 4 verts, 6 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] shape 8 PlateQuad: 4 verts, 6 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] shape 9 PlateQuad: 4 verts, 6 indices, mode 4, material 9, uv=y col=n nrm=y
+[export] shape 10 PlateQuad: 4 verts, 6 indices, mode 4, material 10, uv=y col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 1 PhysicalMaterial shapes), median albedo 0.800
+[export] light SeedLight: reference distance 0.515, attenuation factor 1.0000, written 0.3500 (X3D intensity 0.350)

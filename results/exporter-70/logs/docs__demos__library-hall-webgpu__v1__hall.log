@@ -1,0 +1,325 @@
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowBias" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowMapSize" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowBias" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowMapSize" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowBias" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowMapSize" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowBias" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowMapSize" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowBias" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "shadowMapSize" in node "DirectionalLight"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "sourceColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationAlphaFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "destinationColorFactor" in node "BlendMode"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: X3D: Unknown X3D field name (unhandled X3D XML attribute) "castShadow" in node "Shape"
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/CormorantSC-Medium.ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/CormorantSC-Medium.ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: DirectionalLight(SunBlacksburg) does not know the world transformation, results (like shadow maps) may be incorrect
+x3d-castle-convert: Warning: DirectionalLight(SunDoha) does not know the world transformation, results (like shadow maps) may be incorrect
+x3d-castle-convert: Warning: DirectionalLight(LampWestPort) does not know the world transformation, results (like shadow maps) may be incorrect
+x3d-castle-convert: Warning: DirectionalLight(LampSkylight) does not know the world transformation, results (like shadow maps) may be incorrect
+x3d-castle-convert: Warning: DirectionalLight(LampSouthPort) does not know the world transformation, results (like shadow maps) may be incorrect
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/CormorantSC-Medium.ttf" not supported
+x3d-castle-convert: Warning: VRML/X3D: Font family "fonts/JetBrainsMono[wght].ttf" not supported
+[export] Viewpoint "FilmCamera": fov 1.0245 rad
+[export] 102 active shapes
+[export] shape 0 SillPlates: 110088 verts, 110088 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] image 0: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/floor_v3.jpg, 495269 bytes
+[export] image 1: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/floor_mr_v3.png, 116298 bytes
+[export] shape 1 WellFloor: 330 verts, 330 indices, mode 4, material 1, uv=y col=n nrm=y
+[export] image 2: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/hokie_v2.jpg, 72772 bytes
+[export] shape 2 AmbulatoryFloor: 48 verts, 48 indices, mode 4, material 2, uv=y col=n nrm=y
+[export] shape 3 PoolRim: 576 verts, 576 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] shape 4 PoolWall: 576 verts, 576 indices, mode 4, material 4, uv=n col=n nrm=y
+[export] shape 5 PoolBed: 282 verts, 282 indices, mode 4, material 5, uv=n col=n nrm=y
+[export] shape 6 MeridianThroughThePool: 36 verts, 36 indices, mode 4, material 6, uv=n col=n nrm=y
+[export] image 3: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/hokie_v2.jpg, 72772 bytes
+[export] shape 7 RisingStair: 540 verts, 540 indices, mode 4, material 7, uv=y col=n nrm=y
+[export] shape 8 Masonry: 46572 verts, 46572 indices, mode 4, material 8, uv=y col=n nrm=y
+[export] image 4: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/oak.jpg, 89266 bytes
+[export] shape 9 OakTier: 36096 verts, 36096 indices, mode 4, material 9, uv=y col=n nrm=y
+[export] image 5: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/bronze.jpg, 8733 bytes
+[export] shape 10 BronzeTier: 36096 verts, 36096 indices, mode 4, material 10, uv=y col=n nrm=y
+[export] shape 11 TierIVGrid: 47496 verts, 47496 indices, mode 4, material 11, uv=n col=n nrm=y
+[export] shape 12 GalleryRails: 7812 verts, 7812 indices, mode 4, material 12, uv=n col=n nrm=y
+[export] shape 13 MeridianAperture: 192 verts, 192 indices, mode 4, material 13, uv=n col=n nrm=y
+[export] image 6: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/sundisc.jpg, 40520 bytes
+[export] shape 14 SunDisc16X2026: 138 verts, 138 indices, mode 4, material 14, uv=y col=n nrm=y
+[export] shape 15 AmbulatoryWall: 792 verts, 792 indices, mode 4, material 15, uv=y col=n nrm=y
+[export] shape 16 TowerShell: 144 verts, 144 indices, mode 4, material 16, uv=y col=n nrm=y
+[export] image 7: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/coffer.jpg, 77090 bytes
+[export] shape 17 Vault: 11736 verts, 11736 indices, mode 4, material 17, uv=y col=n nrm=y
+[export] shape 18 DomeShell: 13272 verts, 13272 indices, mode 4, material 18, uv=n col=n nrm=y
+[export] shape 19 shape_19: 972 verts, 972 indices, mode 4, material 19, uv=n col=n nrm=y
+[export] shape 20 shape_20: 972 verts, 972 indices, mode 4, material 20, uv=n col=n nrm=y
+[export] shape 21 shape_21: 972 verts, 972 indices, mode 4, material 21, uv=n col=n nrm=y
+[export] shape 22 shape_22: 972 verts, 972 indices, mode 4, material 22, uv=n col=n nrm=y
+[export] shape 23 shape_23: 972 verts, 972 indices, mode 4, material 23, uv=n col=n nrm=y
+[export] shape 24 shape_24: 972 verts, 972 indices, mode 4, material 24, uv=n col=n nrm=y
+[export] shape 25 shape_25: 972 verts, 972 indices, mode 4, material 25, uv=n col=n nrm=y
+[export] shape 26 shape_26: 972 verts, 972 indices, mode 4, material 26, uv=n col=n nrm=y
+[export] shape 27 OculusRing: 192 verts, 192 indices, mode 4, material 27, uv=n col=n nrm=y
+[export] shape 28 Lectern: 108 verts, 108 indices, mode 4, material 28, uv=n col=n nrm=y
+[export] shape 29 Crypt: 78 verts, 78 indices, mode 4, material 29, uv=y col=n nrm=y
+[export] shape 30 CryptLenses: 300 verts, 300 indices, mode 4, material 30, uv=n col=n nrm=y
+[export] image 8: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/mobius_atlas.jpg, 1588027 bytes
+[export] shape 31 MobiusBand: 720 verts, 1920 indices, mode 4, material 31, uv=y col=n nrm=y
+[export] image 9: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_0.jpg, 713052 bytes
+[export] shape 32 Face0Panes: 1710 verts, 1710 indices, mode 4, material 32, uv=y col=n nrm=y
+[export] image 10: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_0.jpg, 713052 bytes
+[export] shape 33 Face0Clerestory: 576 verts, 576 indices, mode 4, material 33, uv=y col=n nrm=y
+[export] image 11: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_1.jpg, 675891 bytes
+[export] shape 34 Face1Panes: 1728 verts, 1728 indices, mode 4, material 34, uv=y col=n nrm=y
+[export] image 12: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_1.jpg, 675891 bytes
+[export] shape 35 Face1Clerestory: 564 verts, 564 indices, mode 4, material 35, uv=y col=n nrm=y
+[export] image 13: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_2.jpg, 756141 bytes
+[export] shape 36 Face2Panes: 1722 verts, 1722 indices, mode 4, material 36, uv=y col=n nrm=y
+[export] image 14: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_2.jpg, 756141 bytes
+[export] shape 37 Face2Clerestory: 570 verts, 570 indices, mode 4, material 37, uv=y col=n nrm=y
+[export] image 15: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_3.jpg, 799991 bytes
+[export] shape 38 Face3Panes: 1722 verts, 1722 indices, mode 4, material 38, uv=y col=n nrm=y
+[export] image 16: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_3.jpg, 799991 bytes
+[export] shape 39 Face3Clerestory: 570 verts, 570 indices, mode 4, material 39, uv=y col=n nrm=y
+[export] image 17: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_4.jpg, 648160 bytes
+[export] shape 40 Face4Panes: 1722 verts, 1722 indices, mode 4, material 40, uv=y col=n nrm=y
+[export] image 18: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_4.jpg, 648160 bytes
+[export] shape 41 Face4Clerestory: 570 verts, 570 indices, mode 4, material 41, uv=y col=n nrm=y
+[export] image 19: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_5.jpg, 407440 bytes
+[export] shape 42 Face5Panes: 1728 verts, 1728 indices, mode 4, material 42, uv=y col=n nrm=y
+[export] image 20: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_5.jpg, 407440 bytes
+[export] shape 43 Face5Clerestory: 564 verts, 564 indices, mode 4, material 43, uv=y col=n nrm=y
+[export] image 21: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_6.jpg, 311720 bytes
+[export] shape 44 Face6Panes: 1728 verts, 1728 indices, mode 4, material 44, uv=y col=n nrm=y
+[export] image 22: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_6.jpg, 311720 bytes
+[export] shape 45 Face6Clerestory: 570 verts, 570 indices, mode 4, material 45, uv=y col=n nrm=y
+[export] image 23: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_7.jpg, 501386 bytes
+[export] shape 46 Face7Panes: 1728 verts, 1728 indices, mode 4, material 46, uv=y col=n nrm=y
+[export] image 24: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_7.jpg, 501386 bytes
+[export] shape 47 Face7Clerestory: 564 verts, 564 indices, mode 4, material 47, uv=y col=n nrm=y
+[export] image 25: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_4.jpg, 648160 bytes
+[export] shape 48 FirstPane: 6 verts, 6 indices, mode 4, material 48, uv=y col=n nrm=y
+[export] shape 49 SourceSide: 4584 verts, 4584 indices, mode 4, material 49, uv=n col=n nrm=y
+[export] image 26: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_0.jpg, 713052 bytes
+[export] shape 50 Face0ClerestoryOutside: 576 verts, 576 indices, mode 4, material 50, uv=y col=n nrm=y
+[export] image 27: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_1.jpg, 675891 bytes
+[export] shape 51 Face1ClerestoryOutside: 564 verts, 564 indices, mode 4, material 51, uv=y col=n nrm=y
+[export] image 28: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_2.jpg, 756141 bytes
+[export] shape 52 Face2ClerestoryOutside: 570 verts, 570 indices, mode 4, material 52, uv=y col=n nrm=y
+[export] image 29: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_3.jpg, 799991 bytes
+[export] shape 53 Face3ClerestoryOutside: 570 verts, 570 indices, mode 4, material 53, uv=y col=n nrm=y
+[export] image 30: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_4.jpg, 648160 bytes
+[export] shape 54 Face4ClerestoryOutside: 570 verts, 570 indices, mode 4, material 54, uv=y col=n nrm=y
+[export] image 31: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_5.jpg, 407440 bytes
+[export] shape 55 Face5ClerestoryOutside: 564 verts, 564 indices, mode 4, material 55, uv=y col=n nrm=y
+[export] image 32: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_6.jpg, 311720 bytes
+[export] shape 56 Face6ClerestoryOutside: 570 verts, 570 indices, mode 4, material 56, uv=y col=n nrm=y
+[export] image 33: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/face_7.jpg, 501386 bytes
+[export] shape 57 Face7ClerestoryOutside: 564 verts, 564 indices, mode 4, material 57, uv=y col=n nrm=y
+[export] shape 58 PoolWater: 282 verts, 282 indices, mode 4, material 58, uv=n col=n nrm=y
+[export] shape 59 RailGlass: 150 verts, 150 indices, mode 4, material 59, uv=n col=n nrm=y
+[export] image 34: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/shaft.png, 2329 bytes
+[export] shape 60 DawnBeamCard: 12 verts, 12 indices, mode 4, material 60, uv=y col=n nrm=y
+[export] image 35: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/sunpatch_v2.png, 60138 bytes
+[export] shape 61 SunPatchBlacksburgCard: 6 verts, 6 indices, mode 4, material 61, uv=y col=n nrm=y
+[export] image 36: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/shaft.png, 2329 bytes
+[export] shape 62 BeamBlacksburgCard: 12 verts, 12 indices, mode 4, material 62, uv=y col=n nrm=y
+[export] image 37: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/sunpatch_v2.png, 60138 bytes
+[export] shape 63 SunPatchDohaCard: 6 verts, 6 indices, mode 4, material 63, uv=y col=n nrm=y
+[export] image 38: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/shaft.png, 2329 bytes
+[export] shape 64 BeamDohaCard: 12 verts, 12 indices, mode 4, material 64, uv=y col=n nrm=y
+[export] image 39: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/lunette_ramp.png, 97 bytes
+[export] image 40: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/lattice_mask_v1.png, 5251 bytes
+[export] shape 65 LunettePatchBlacksburg0: 1224 verts, 1224 indices, mode 4, material 65, uv=y col=n nrm=y
+[export] shape 66 LunettePatchBlacksburg1: 1104 verts, 1104 indices, mode 4, material 66, uv=y col=n nrm=y
+[export] shape 67 LunettePatchBlacksburg2: 564 verts, 564 indices, mode 4, material 67, uv=y col=n nrm=y
+[export] shape 68 LunettePatchBlacksburg7: 936 verts, 936 indices, mode 4, material 68, uv=y col=n nrm=y
+[export] image 41: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/lunette_ramp.png, 97 bytes
+[export] image 42: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/lattice_mask_v1.png, 5251 bytes
+[export] shape 69 LunettePatchDoha2: 834 verts, 834 indices, mode 4, material 69, uv=y col=n nrm=y
+[export] shape 70 LunettePatchDoha3: 1170 verts, 1170 indices, mode 4, material 70, uv=y col=n nrm=y
+[export] shape 71 LunettePatchDoha4: 1140 verts, 1140 indices, mode 4, material 71, uv=y col=n nrm=y
+[export] shape 72 LunettePatchDoha5: 1134 verts, 1134 indices, mode 4, material 72, uv=y col=n nrm=y
+[export] shape 73 RiteSlab: 30 verts, 30 indices, mode 4, material 73, uv=n col=n nrm=y
+[export] image 43: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/rite_before_v1_4.jpg, 22391 bytes
+[export] shape 74 RiteBeforeLayer: 6 verts, 6 indices, mode 4, material 74, uv=y col=n nrm=y
+[export] image 44: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/rite_after_v1_4.jpg, 22092 bytes
+[export] shape 75 RiteAfterLayer: 6 verts, 6 indices, mode 4, material 75, uv=y col=n nrm=y
+[export] image 45: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/rite_molten_v1.jpg, 3902 bytes
+[export] shape 76 RiteMoltenLayer: 6 verts, 6 indices, mode 4, material 76, uv=y col=n nrm=y
+[export] image 46: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/rite_fringes_v1.png, 141408 bytes
+[export] shape 77 RiteFringesLayer: 6 verts, 6 indices, mode 4, material 77, uv=y col=n nrm=y
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): RiteWords//RiteReportText/Text
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): RiteWords//RiteRepairText/Text
+[export] image 47: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/hokie_v2.jpg, 72772 bytes
+[export] shape 80 CubeWalls: 504 verts, 504 indices, mode 4, material 78, uv=y col=n nrm=y
+[export] shape 81 CubeFloor: 18 verts, 18 indices, mode 4, material 79, uv=y col=n nrm=y
+[export] shape 82 Descent: 504 verts, 504 indices, mode 4, material 80, uv=y col=n nrm=y
+[export] shape 83 DescentRail: 252 verts, 252 indices, mode 4, material 81, uv=n col=n nrm=y
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): InscriptionsInside///Text
+[export] shape 85 Triplet: 2688 verts, 2688 indices, mode 4, material 82, uv=n col=n nrm=y
+[export] shape 86 shape_86: 124 verts, 360 indices, mode 4, material 83, uv=n col=n nrm=y
+[export] shape 87 CubeWallsOutside: 348 verts, 348 indices, mode 4, material 84, uv=y col=n nrm=y
+[export] image 48: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/lampglow_v2.jpg, 4296 bytes
+[export] shape 88 LampOpenings: 18 verts, 18 indices, mode 4, material 85, uv=y col=n nrm=y
+[export] WARNING: Text not exported (Castle gives glyph-cell quads without the font atlas): Inscriptions///Text
+[export] shape 90 CubeSunShield: 30 verts, 30 indices, mode 4, material 86, uv=n col=n nrm=y
+[export] image 49: image/jpeg file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/pave_v2.jpg, 86223 bytes
+[export] shape 91 Plaza: 72 verts, 72 indices, mode 4, material 87, uv=y col=n nrm=y
+[export] shape 92 Causeway: 84 verts, 84 indices, mode 4, material 88, uv=y col=n nrm=y
+[export] shape 93 shape_93: 32 verts, 90 indices, mode 4, material 89, uv=n col=n nrm=y
+[export] image 50: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/halo.png, 3952 bytes
+[export] shape 94 shape_94: 6 verts, 6 indices, mode 4, material 90, uv=y col=n nrm=y
+[export] image 51: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/dawn_v1.png, 19449 bytes
+[export] shape 95 shape_95: 7344 verts, 7344 indices, mode 4, material 91, uv=y col=n nrm=y
+[export] shape 96 shape_96: 32 verts, 90 indices, mode 4, material 92, uv=n col=n nrm=y
+[export] image 52: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/halo.png, 3952 bytes
+[export] shape 97 shape_97: 6 verts, 6 indices, mode 4, material 93, uv=y col=n nrm=y
+[export] image 53: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/skyglow_v2.png, 6724 bytes
+[export] shape 98 shape_98: 2592 verts, 2592 indices, mode 4, material 94, uv=y col=n nrm=y
+[export] image 54: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/sky_v2.png, 279 bytes
+[export] shape 99 DohaSky: 6912 verts, 6912 indices, mode 4, material 95, uv=y col=n nrm=y
+[export] image 55: image/png file://x3d.demo/docs/demos/library-hall-webgpu/v1/textures/sky_mask_v2.png, 4863 bytes
+[export] shape 100 BlacksburgSky: 6912 verts, 6912 indices, mode 4, material 96, uv=y col=n nrm=y
+[export] shape 101 StillWaterPlain: 36 verts, 36 indices, mode 4, material 97, uv=n col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 78 PhysicalMaterial shapes), median albedo 0.800
+[export] light SunBlacksburg: directional, X3D intensity 0.000 written 0.0000
+[export] light SunDoha: directional, X3D intensity 2.400 written 2.4000
+[export] light PaneGlow3: reference distance 21.088, attenuation factor 0.7034, written 21.4934 (X3D intensity 30.558)
+[export] light PaneGlow2: reference distance 21.490, attenuation factor 0.6994, written 30.5667 (X3D intensity 43.704)
+[export] light PaneGlow1: reference distance 21.188, attenuation factor 0.7024, written 41.8025 (X3D intensity 59.517)
+[export] light PaneGlow0: reference distance 19.459, attenuation factor 0.7199, written 35.9268 (X3D intensity 49.909)
+[export] light LensLight7: reference distance 25.462, attenuation factor 0.0077, written 0.1837 (X3D intensity 24.000)
+[export] light LensLight5: reference distance 25.462, attenuation factor 0.0077, written 0.1837 (X3D intensity 24.000)
+[export] light LensLight3: reference distance 26.225, attenuation factor 0.0072, written 0.1732 (X3D intensity 24.000)
+[export] light LensLight1: reference distance 26.225, attenuation factor 0.0072, written 0.1732 (X3D intensity 24.000)
+[export] light LensLight9: reference distance 26.225, attenuation factor 0.0072, written 0.1732 (X3D intensity 24.000)
+[export] light CubeTwilightBounce: directional, X3D intensity 0.437 written 0.4366
+[export] light CubeTwilightBounce: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light CubeTwilight1: directional, X3D intensity 2.190 written 2.1900
+[export] light CubeTwilight1: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light CubeTwilight0: directional, X3D intensity 2.190 written 2.1900
+[export] light CubeTwilight0: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light LampWestPort: directional, X3D intensity 2.576 written 2.5760
+[export] light LampWestPort: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light LampSkylight: directional, X3D intensity 3.248 written 3.2480
+[export] light LampSkylight: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light LampSouthPort: directional, X3D intensity 2.912 written 2.9120
+[export] light LampSouthPort: global=false (X3D scopes it to its parent group; glTF lights are global)

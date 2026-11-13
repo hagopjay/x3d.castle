@@ -1,0 +1,6 @@
+[export] Viewpoint "": fov 0.7854 rad
+[export] LOD "": level 1 chosen for the viewpoint
+[export] 1 active shapes
+[export] shape 0 shape_0: 24 verts, 36 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] light units AUTO: classic scene (1 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.191
+[export] headlight written as a directional light under the camera node

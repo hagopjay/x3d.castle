@@ -1,0 +1,15 @@
+[export] Viewpoint "CA_Camera": fov 0.3824 rad
+[export] 5 active shapes
+[export] shape 0 ME_Plinth: 384 verts, 564 indices, mode 4, material 0, uv=n col=n nrm=y
+[export] shape 1 ME_Sphere: 4751 verts, 27072 indices, mode 4, material 1, uv=n col=n nrm=y
+[export] shape 2 ME_Torus: 3977 verts, 23040 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 3 ME_OrangeVase: 5377 verts, 31680 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] image 0: image/png file://x3d.demo/docs/demos/blender-x3d-io/v1/scenes/marble.png, 712691 bytes
+[export] shape 4 ME_MarbleCube: 216 verts, 324 indices, mode 4, material 4, uv=y col=n nrm=y
+[export] light units AUTO: physical scene (0 classic-Material shapes, 5 PhysicalMaterial shapes), median albedo 0.800
+[export] light LA_RimSun: directional, X3D intensity 0.750 written 0.7500
+[export] light LA_RimSun: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light LA_FillSun: directional, X3D intensity 0.300 written 0.3000
+[export] light LA_FillSun: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light LA_KeySun: directional, X3D intensity 1.000 written 1.0000
+[export] light LA_KeySun: global=false (X3D scopes it to its parent group; glTF lights are global)

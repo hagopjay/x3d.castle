@@ -1,0 +1,9 @@
+[export] Viewpoint "Oblique": fov 0.7000 rad
+[export] 0 active shapes
+[export] light units AUTO: physical scene (0 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800
+[export] light light_0: directional, X3D intensity 2.000 written 2.0000
+[export] light light_0: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light light_1: directional, X3D intensity 1.000 written 1.0000
+[export] light light_1: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light light_2: directional, X3D intensity 0.500 written 0.5000
+[export] light light_2: global=false (X3D scopes it to its parent group; glTF lights are global)

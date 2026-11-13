@@ -1,0 +1,56 @@
+{
+ "rig_label": [
+  "h2h",
+  "h2h2"
+ ],
+ "variants": [
+  [
+   "uncapped",
+   "--no-headlight --specular-max-f0=25"
+  ]
+ ],
+ "rows": [
+  {
+   "scene": "annotation-standard",
+   "xite_vs_babylon_addon": {
+    "frame": 15.5,
+    "geometry": 21.88
+   },
+   "xite_vs_castle": {
+    "frame": 11.32,
+    "geometry": 28.32
+   },
+   "xite_vs_babylon_stockglb": {
+    "frame": 19.51,
+    "geometry": 34.46
+   },
+   "variants": {
+    "uncapped": {
+     "xite": {
+      "frame": 20.25,
+      "geometry": 37.23
+     },
+     "castle_native": {
+      "frame": 24.9,
+      "geometry": 50.71
+     },
+     "quality": {
+      "sharpness": 173.4,
+      "p1": 2.9,
+      "p99": 136.3,
+      "clip_share": 0.001
+     },
+     "info": {
+      "shapes": 5,
+      "triangles": 1404,
+      "lights": 4,
+      "cameras": 1,
+      "textures": 0,
+      "shapes_with_vertex_colours": 0,
+      "shapes_baked_for_shear": 0
+     }
+    }
+   }
+  }
+ ]
+}

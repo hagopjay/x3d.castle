@@ -1,0 +1,6 @@
+[export] no Viewpoint: X3D default (0 0 10)
+[export] 2 active shapes
+[export] shape 0 shape_0: 3072 verts, 3072 indices, mode 4, material 0, uv=n col=y nrm=y
+[export] shape 1 shape_1: 260 verts, 260 indices, mode 0, material 1, uv=n col=n nrm=n
+[export] light units AUTO: physical scene (0 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.800
+[export] headlight written as a directional light under the camera node

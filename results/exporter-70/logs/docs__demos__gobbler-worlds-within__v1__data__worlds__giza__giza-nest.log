@@ -1,0 +1,116 @@
+x3d-castle-convert: Warning: X3D: Error Exception when loading inline file from URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/plateau-v21.xml": Unrecognized file type "application/xml" for scene with base URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/plateau-v21.xml"
+x3d-castle-convert: Warning: X3D: Error Exception when loading inline file from URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-terrain-v21.xml": Unrecognized file type "application/xml" for scene with base URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-terrain-v21.xml"
+x3d-castle-convert: Warning: X3D: Error Exception when loading inline file from URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-context-today-v21.xml": Unrecognized file type "application/xml" for scene with base URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/sphinx-context-today-v21.xml"
+x3d-castle-convert: Warning: X3D: Error Exception when loading inline file from URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/osiris-paganini-v21.xml": Unrecognized file type "application/xml" for scene with base URL "file://x3d.demo/docs/demos/gobbler-worlds-within/v1/data/worlds/giza/osiris-paganini-v21.xml"
+x3d-castle-convert: Warning: VRML/X3D: Inline node name "Plateau" not found (or nothing was EXPORTed from it), cannot IMPORT
+x3d-castle-convert: Warning: VRML/X3D: Inline node name "Plateau" not found (or nothing was EXPORTed from it), cannot IMPORT
+x3d-castle-convert: Warning: X3D: Route destination node name "KhufuLook" not found
+x3d-castle-convert: Warning: X3D: Route destination node name "InteriorSwitch" not found
+[export] no Viewpoint: X3D default (0 0 10)
+[export] 99 active shapes
+[export] shape 0 shape_0: 2 verts, 2 indices, mode 1, material 0, uv=n col=n nrm=n
+[export] shape 1 shape_1: 1728 verts, 1728 indices, mode 4, material 1, uv=n col=y nrm=y
+[export] shape 2 shape_2: 651 verts, 3420 indices, mode 4, material 2, uv=n col=n nrm=y
+[export] shape 3 shape_3: 651 verts, 3510 indices, mode 4, material 3, uv=n col=n nrm=y
+[export] shape 4 shape_4: 651 verts, 3510 indices, mode 4, material 4, uv=n col=n nrm=y
+[export] shape 5 shape_5: 651 verts, 3510 indices, mode 4, material 5, uv=n col=n nrm=y
+[export] shape 6 shape_6: 651 verts, 3510 indices, mode 4, material 6, uv=n col=n nrm=y
+[export] shape 7 shape_7: 651 verts, 3510 indices, mode 4, material 7, uv=n col=n nrm=y
+[export] shape 8 shape_8: 651 verts, 3510 indices, mode 4, material 8, uv=n col=n nrm=y
+[export] shape 9 shape_9: 651 verts, 3510 indices, mode 4, material 9, uv=n col=n nrm=y
+[export] shape 10 shape_10: 651 verts, 3510 indices, mode 4, material 10, uv=n col=n nrm=y
+[export] shape 11 shape_11: 651 verts, 3510 indices, mode 4, material 11, uv=n col=n nrm=y
+[export] shape 12 shape_12: 651 verts, 3510 indices, mode 4, material 12, uv=n col=n nrm=y
+[export] shape 13 shape_13: 651 verts, 3510 indices, mode 4, material 13, uv=n col=n nrm=y
+[export] shape 14 shape_14: 651 verts, 3510 indices, mode 4, material 14, uv=n col=n nrm=y
+[export] shape 15 shape_15: 6 verts, 10 indices, mode 1, material 15, uv=n col=n nrm=n
+[export] shape 16 shape_16: 6 verts, 10 indices, mode 1, material 16, uv=n col=n nrm=n
+[export] shape 17 shape_17: 24 verts, 36 indices, mode 4, material 17, uv=n col=n nrm=y
+[export] shape 18 shape_18: 24 verts, 36 indices, mode 4, material 18, uv=n col=n nrm=y
+[export] shape 19 shape_19: 24 verts, 36 indices, mode 4, material 19, uv=n col=n nrm=y
+[export] shape 20 shape_20: 24 verts, 36 indices, mode 4, material 20, uv=n col=n nrm=y
+[export] shape 21 shape_21: 24 verts, 36 indices, mode 4, material 21, uv=n col=n nrm=y
+[export] shape 22 shape_22: 24 verts, 36 indices, mode 4, material 22, uv=n col=n nrm=y
+[export] shape 23 shape_23: 24 verts, 36 indices, mode 4, material 23, uv=n col=n nrm=y
+[export] shape 24 shape_24: 24 verts, 36 indices, mode 4, material 24, uv=n col=n nrm=y
+[export] shape 25 shape_25: 24 verts, 36 indices, mode 4, material 25, uv=n col=n nrm=y
+[export] shape 26 shape_26: 24 verts, 36 indices, mode 4, material 26, uv=n col=n nrm=y
+[export] shape 27 shape_27: 24 verts, 36 indices, mode 4, material 27, uv=n col=n nrm=y
+[export] shape 28 shape_28: 24 verts, 36 indices, mode 4, material 28, uv=n col=n nrm=y
+[export] shape 29 shape_29: 24 verts, 36 indices, mode 4, material 29, uv=n col=n nrm=y
+[export] shape 30 shape_30: 24 verts, 36 indices, mode 4, material 30, uv=n col=n nrm=y
+[export] shape 31 shape_31: 24 verts, 36 indices, mode 4, material 31, uv=n col=n nrm=y
+[export] shape 32 shape_32: 24 verts, 36 indices, mode 4, material 32, uv=n col=n nrm=y
+[export] shape 33 shape_33: 24 verts, 36 indices, mode 4, material 33, uv=n col=n nrm=y
+[export] shape 34 shape_34: 24 verts, 36 indices, mode 4, material 34, uv=n col=n nrm=y
+[export] shape 35 shape_35: 24 verts, 36 indices, mode 4, material 35, uv=n col=n nrm=y
+[export] shape 36 shape_36: 24 verts, 36 indices, mode 4, material 36, uv=n col=n nrm=y
+[export] shape 37 shape_37: 24 verts, 36 indices, mode 4, material 37, uv=n col=n nrm=y
+[export] shape 38 shape_38: 24 verts, 36 indices, mode 4, material 38, uv=n col=n nrm=y
+[export] shape 39 shape_39: 24 verts, 36 indices, mode 4, material 39, uv=n col=n nrm=y
+[export] shape 40 shape_40: 24 verts, 36 indices, mode 4, material 40, uv=n col=n nrm=y
+[export] shape 41 shape_41: 24 verts, 36 indices, mode 4, material 41, uv=n col=n nrm=y
+[export] shape 42 shape_42: 96 verts, 192 indices, mode 1, material 42, uv=n col=n nrm=n
+[export] shape 43 shape_43: 96 verts, 192 indices, mode 1, material 43, uv=n col=n nrm=n
+[export] shape 44 shape_44: 64 verts, 128 indices, mode 1, material 44, uv=n col=n nrm=n
+[export] shape 45 shape_45: 62 verts, 180 indices, mode 4, material 45, uv=n col=n nrm=y
+[export] shape 46 shape_46: 24 verts, 36 indices, mode 4, material 46, uv=n col=n nrm=y
+[export] shape 47 shape_47: 11 verts, 28 indices, mode 1, material 47, uv=n col=n nrm=n
+[export] shape 48 shape_48: 24 verts, 36 indices, mode 4, material 48, uv=n col=n nrm=y
+[export] shape 49 shape_49: 24 verts, 36 indices, mode 4, material 49, uv=n col=n nrm=y
+[export] shape 50 shape_50: 124 verts, 360 indices, mode 4, material 50, uv=n col=n nrm=y
+[export] shape 51 shape_51: 124 verts, 360 indices, mode 4, material 51, uv=n col=n nrm=y
+[export] shape 52 shape_52: 124 verts, 360 indices, mode 4, material 52, uv=n col=n nrm=y
+[export] shape 53 shape_53: 124 verts, 360 indices, mode 4, material 53, uv=n col=n nrm=y
+[export] shape 54 shape_54: 124 verts, 360 indices, mode 4, material 54, uv=n col=n nrm=y
+[export] shape 55 shape_55: 124 verts, 360 indices, mode 4, material 55, uv=n col=n nrm=y
+[export] shape 56 shape_56: 124 verts, 360 indices, mode 4, material 56, uv=n col=n nrm=y
+[export] shape 57 shape_57: 124 verts, 360 indices, mode 4, material 57, uv=n col=n nrm=y
+[export] shape 58 shape_58: 124 verts, 360 indices, mode 4, material 58, uv=n col=n nrm=y
+[export] shape 59 shape_59: 124 verts, 360 indices, mode 4, material 59, uv=n col=n nrm=y
+[export] shape 60 shape_60: 124 verts, 360 indices, mode 4, material 60, uv=n col=n nrm=y
+[export] shape 61 shape_61: 124 verts, 360 indices, mode 4, material 61, uv=n col=n nrm=y
+[export] shape 62 shape_62: 124 verts, 360 indices, mode 4, material 62, uv=n col=n nrm=y
+[export] shape 63 shape_63: 124 verts, 360 indices, mode 4, material 63, uv=n col=n nrm=y
+[export] shape 64 shape_64: 124 verts, 360 indices, mode 4, material 64, uv=n col=n nrm=y
+[export] shape 65 shape_65: 124 verts, 360 indices, mode 4, material 65, uv=n col=n nrm=y
+[export] shape 66 shape_66: 124 verts, 360 indices, mode 4, material 66, uv=n col=n nrm=y
+[export] shape 67 shape_67: 124 verts, 360 indices, mode 4, material 67, uv=n col=n nrm=y
+[export] shape 68 shape_68: 124 verts, 360 indices, mode 4, material 68, uv=n col=n nrm=y
+[export] shape 69 shape_69: 124 verts, 360 indices, mode 4, material 69, uv=n col=n nrm=y
+[export] shape 70 shape_70: 124 verts, 360 indices, mode 4, material 70, uv=n col=n nrm=y
+[export] shape 71 shape_71: 124 verts, 360 indices, mode 4, material 71, uv=n col=n nrm=y
+[export] shape 72 shape_72: 124 verts, 360 indices, mode 4, material 72, uv=n col=n nrm=y
+[export] shape 73 shape_73: 124 verts, 360 indices, mode 4, material 73, uv=n col=n nrm=y
+[export] shape 74 shape_74: 124 verts, 360 indices, mode 4, material 74, uv=n col=n nrm=y
+[export] shape 75 shape_75: 124 verts, 360 indices, mode 4, material 75, uv=n col=n nrm=y
+[export] shape 76 shape_76: 124 verts, 360 indices, mode 4, material 76, uv=n col=n nrm=y
+[export] shape 77 shape_77: 124 verts, 360 indices, mode 4, material 77, uv=n col=n nrm=y
+[export] shape 78 shape_78: 124 verts, 360 indices, mode 4, material 78, uv=n col=n nrm=y
+[export] shape 79 shape_79: 124 verts, 360 indices, mode 4, material 79, uv=n col=n nrm=y
+[export] shape 80 shape_80: 124 verts, 360 indices, mode 4, material 80, uv=n col=n nrm=y
+[export] shape 81 shape_81: 124 verts, 360 indices, mode 4, material 81, uv=n col=n nrm=y
+[export] shape 82 shape_82: 124 verts, 360 indices, mode 4, material 82, uv=n col=n nrm=y
+[export] shape 83 shape_83: 124 verts, 360 indices, mode 4, material 83, uv=n col=n nrm=y
+[export] shape 84 shape_84: 124 verts, 360 indices, mode 4, material 84, uv=n col=n nrm=y
+[export] shape 85 shape_85: 124 verts, 360 indices, mode 4, material 85, uv=n col=n nrm=y
+[export] shape 86 shape_86: 124 verts, 360 indices, mode 4, material 86, uv=n col=n nrm=y
+[export] shape 87 shape_87: 124 verts, 360 indices, mode 4, material 87, uv=n col=n nrm=y
+[export] shape 88 shape_88: 124 verts, 360 indices, mode 4, material 88, uv=n col=n nrm=y
+[export] shape 89 shape_89: 124 verts, 360 indices, mode 4, material 89, uv=n col=n nrm=y
+[export] shape 90 shape_90: 124 verts, 360 indices, mode 4, material 90, uv=n col=n nrm=y
+[export] shape 91 shape_91: 124 verts, 360 indices, mode 4, material 91, uv=n col=n nrm=y
+[export] shape 92 shape_92: 124 verts, 360 indices, mode 4, material 92, uv=n col=n nrm=y
+[export] shape 93 shape_93: 124 verts, 360 indices, mode 4, material 93, uv=n col=n nrm=y
+[export] shape 94 shape_94: 124 verts, 360 indices, mode 4, material 94, uv=n col=n nrm=y
+[export] shape 95 shape_95: 124 verts, 360 indices, mode 4, material 95, uv=n col=n nrm=y
+[export] shape 96 shape_96: 124 verts, 360 indices, mode 4, material 96, uv=n col=n nrm=y
+[export] shape 97 shape_97: 124 verts, 360 indices, mode 4, material 97, uv=n col=n nrm=y
+[export] shape 98 shape_98: 62 verts, 180 indices, mode 4, material 98, uv=n col=n nrm=y
+[export] light units AUTO: classic scene (1 classic-Material shapes, 0 PhysicalMaterial shapes), median albedo 0.804
+[export] light DuskSun: directional, X3D intensity 1.450 written 5.1505
+[export] light DuskSun: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light NightFill: directional, X3D intensity 0.420 written 0.4801
+[export] light NightFill: global=false (X3D scopes it to its parent group; glTF lights are global)
+[export] light BallLight: reference distance 593.236, attenuation factor 1.0000, written 1668982.5000 (X3D intensity 1.200)
+[export] headlight written as a directional light under the camera node
