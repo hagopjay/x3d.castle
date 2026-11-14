@@ -135,11 +135,18 @@ Raw files: `results/phase3/`.
   27 of 27, lines 16 of 17, points 11 of 11 and 3,786 meshes against 1,946 (hall's hidden Switch choices and habsburg's frames).
 * Rig, 21 scenes where every column exists, 3 repeats, per-scene median. Variant `self` (the glb carries camera and headlight): phase 2 binary mean 7.53, this
   branch 7.80. Variant `rigcam` (`--no-headlight`, the rig adds its headlight): 7.96 and 7.95. The default output is the same to within noise: 5 of the 21 glbs are
-  byte-identical, the others differ by extras, extension lists and metadata, and no deterministic scene moves by more than 0.01. Two animated scenes move, materials-world
+  byte-identical, 14 differ by extras, extension lists and metadata only, and two differ in content: stilllife-direct (sampler wrap modes now written) and materials-world
+  (11 more accessors: generated TANGENT and TEXCOORD_0 on its normal-mapped meshes, 2.16 to 2.55 MB; its rig number is animated and noisy, so the rig cannot show whether it moved).
+  No deterministic scene moves by more than 0.01. Two animated scenes move, materials-world
   (4.53 to 3.40, repeats 5.37 / 4.53 / 4.13 against 2.85 / 3.40 / 5.04, overlapping) and villagers (0.49, 7.93, 8.70 against 1.33, 0.52, 1.05), whose glb is byte-identical on both sides: it is the rig, whose animated scenes land on a different phase each run
   (an earlier pair of runs gave 5.51 and 0.37 on one glb). Excluding villagers the `self` mean is 7.85 before and 7.80 after. The median of the 21 is not a stable statistic
   here: it flips between about 0.5 and 3.49 (village) with the noisy scenes, so the published "median 3.5" is one state of a rig that gives 0.5 to 3.5; per-scene tables are in
   `results/phase3/rig-gate-summary.json`.
+* Independent re-run of the `self` variant (review of PR 1, 14 Nov 2026; phase 2 binary built from 80fd146 and this branch's binary, interleaved, 3 runs each, no median taken; X_ITE 16.7.1,
+  Babylon.js 9.32.0, Chromium 153.0.8010.12 SwiftShader, 4 vCPU, no GPU): mean 7.77 / 7.53 / 7.51 (phase 2) and 7.48 / 7.45 / 7.49 (phase 3); median of the 21 3.34 / 0.77 / 0.78 and 0.67 / 0.74 / 0.57.
+  18 of the 21 scenes gave the same number to 0.01 in all six runs, phase 2 and phase 3 alike. The three that move: villagers 7.61 / 0.77 / 0.78 (phase 2) and 0.67 / 0.74 / 0.57 (phase 3), a glb
+  that is byte-identical in both; materials-world 3.34 / 5.02 / 4.58 and 4.13 / 3.12 / 4.56; repair-2-render 0.42 to 0.66 on both sides. The median of the 21 is the 11th smallest value, and eleven scenes
+  sit below 0.8, so it jumps to about 3.4 whenever villagers lands on its high phase (here in a phase 2 run, as in the published phase 3 run): the 1.05 to 3.40 change is the rig, not the exporter.
 * Where the new code does show on the rig (fixtures, `results/phase3/rig-fixtures-summary.json`, 2 repeats, base = phase 2 binary): texture-properties 9.68 to 0.34
   (clamp instead of repeat), texcoord-sets 32.06 to 2.87 (the emissive fix and the second coordinate set), alpha-modes 5.06 to 1.92, light-extras 6.84 to 4.44
   (an `on=false` light no longer lights), switch-hidden 2.26 to 0.94. Opt-in flags: text-atlas 6.90 to 9.41 and habsburg-timeline 8.67 to 9.46 get *worse* by the pixel metric
