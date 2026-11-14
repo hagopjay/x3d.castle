@@ -55,7 +55,7 @@ The rig (`x3d-blender-io/tools/fidelity_rig`) is reused as it is, not copied.
 ### Phase 3 gate (fixtures, 70 scenes, 21-scene rig)
 
     (cd tools && npm ci)                                             # pins gltf-validator 2.0.0-dev.3.10
-    CASTLE_CONVERT=castle-convert/x3d-castle-convert python3 tests/phase3_check.py --json results/phase3/fixtures.json   # 17 fixtures, each also validated
+    CASTLE_CONVERT=castle-convert/x3d-castle-convert python3 tests/phase3_check.py --json results/phase3/fixtures.json   # 18 cases from 14 scene files, each also validated
     python3 tools/export_all.py scenes.txt out/ castle-convert/x3d-castle-convert REPO_ROOT   # then the validator and census as above
     # rig: a folder holding render.mjs, xite.html, babylon.html of the x3d-blender-io fidelity rig plus `npm install` there
     python3 tools/phase3_rig.py --rig /path/rigcopy --conv castle-convert/x3d-castle-convert --scenes tools/phase3_scenes.json \
