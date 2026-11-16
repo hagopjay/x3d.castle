@@ -11,7 +11,7 @@ the way a good proof copy does; it is not the only measure.
 
 | path | what |
 |---|---|
-| `castle-convert/x3dcastleexport.pas` | the shape-tree exporter: X3D to glb from Castle's own render arrays (about 1,700 lines of Pascal, links against Castle, builds in 2 s warm) |
+| `castle-convert/x3dcastleexport.pas` | the shape-tree exporter: X3D to glb from Castle's own render arrays (about 2,400 lines of Pascal, links against Castle, builds in 2 s warm) |
 | `castle-convert/x3d_castle_convert.dpr` | command line: `x3d-castle-convert in.x3d out.glb [options]` |
 | `castle-render/` | `castle-render`: our render harness around the engine, with every quality switch (shadows, SSAO, SSR, tone maps, shading, colour space, IBL, MSAA/SSAA, anisotropy, exposure) on a command line |
 | `tools/` | harness: headless Castle renders, census, Khronos validator run, rig comparison (`exporter_compare.py`), WebP prepass, contact sheets; the quality leg: `cycles_reference.py` (path-traced reference), `quality_metrics.py` (FLIP, SSIM), `run_quality.py` (every leg of every scene), `quality_tables.py` |

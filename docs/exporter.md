@@ -1,6 +1,6 @@
 # x3d-castle-convert: a glb exporter on Castle's render arrays
 
-`castle-convert/x3dcastleexport.pas` (about 2,500 lines of Pascal) replaces the work Castle's stock glTF writer does for
+`castle-convert/x3dcastleexport.pas` (about 2,400 lines of Pascal) replaces the work Castle's stock glTF writer does for
 X3D to glb. It does not patch the engine: it links against the engine's public units and is built with
 `castle-engine compile`.
 
